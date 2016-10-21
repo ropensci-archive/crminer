@@ -44,7 +44,6 @@
 #' crm_links(cr_r(1))
 #' crm_links(doi="10.3389/fnagi.2014.00130")
 #' }
-
 crm_links <- function(doi, type='xml', ...) {
   res <- crm_works_links(dois = doi, ...)[[1]]
   if (is.null(unlist(res$links))) {
@@ -86,7 +85,7 @@ crm_links <- function(doi, type='xml', ...) {
         )
       } else {
         y <- match.arg(type, c('xml','plain','pdf','unspecified'))
-        out <- makeurl(withtype[[y]]$URL, y, doi)
+        out <- makeurl(x = withtype[[y]]$URL, y = y, z = doi)
       }
 
       structure(out, member = res$member)

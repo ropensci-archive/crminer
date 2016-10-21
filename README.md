@@ -1,14 +1,7 @@
 crminer
 =======
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(
-  warning = FALSE,
-  message = FALSE,
-  collapse = TRUE,
-  comment = "#>"
-)
-```
+
 
 [![Build Status](https://travis-ci.org/ropenscilabs/crminer.svg?branch=master)](https://travis-ci.org/ropenscilabs/crminer)
 [![codecov.io](https://codecov.io/github/ropenscilabs/crminer/coverage.svg?branch=master)](https://codecov.io/github/ropenscilabs/crminer?branch=master)
@@ -23,11 +16,13 @@ coming soon ...
 
 Development version
 
-```{r eval=FALSE}
+
+```r
 devtools::install_github("ropenscilabs/crminer")
 ```
 
-```{r}
+
+```r
 library("crminer")
 library("rcrossref")
 ```
@@ -38,25 +33,49 @@ Get some DOIs for articles that provide full text, and that have
 `CC-BY 4.0` licenses (i.e., more likely to actually be open), and from
 PeerJ
 
-```{r}
+
+```r
 out <-
   cr_members(4443, works = TRUE, filter = list(
     has_full_text = TRUE,
     license_url = "http://creativecommons.org/licenses/by/4.0/")
   )
 (dois <- out$data$DOI)
+#>  [1] "10.7717/peerj-cs.23" "10.7717/peerj.1229"  "10.7717/peerj.1256" 
+#>  [4] "10.7717/peerj.1257"  "10.7717/peerj.1259"  "10.7717/peerj.1261" 
+#>  [7] "10.7717/peerj.1263"  "10.7717/peerj.1265"  "10.7717/peerj.1268" 
+#> [10] "10.7717/peerj.1269"  "10.7717/peerj.1258"  "10.7717/peerj-cs.32"
+#> [13] "10.7717/peerj.1287"  "10.7717/peerj.1286"  "10.7717/peerj.1285" 
+#> [16] "10.7717/peerj.1282"  "10.7717/peerj.1279"  "10.7717/peerj.1278" 
+#> [19] "10.7717/peerj.1275"  "10.7717/peerj.1241"
 ```
 
 Then get URLs to full text content
 
-```{r}
+
+```r
 links <- lapply(dois, crm_links, type = "xml")
 (links <- Filter(Negate(is.null), links))[1:5]
+#> [[1]]
+#> <url> https://peerj.com/articles/cs-23.xml
+#> 
+#> [[2]]
+#> <url> https://peerj.com/articles/1229.xml
+#> 
+#> [[3]]
+#> <url> https://peerj.com/articles/1256.xml
+#> 
+#> [[4]]
+#> <url> https://peerj.com/articles/1257.xml
+#> 
+#> [[5]]
+#> <url> https://peerj.com/articles/1259.xml
 ```
 
 Then use those URLs to get full text
 
-```{r eval=FALSE}
+
+```r
 crm_text(url = links[[1]])
 #> {xml_document}
 #> <article article-type="research-article" dtd-version="1.0" xmlns:xlink="http://www.w3.org/1999/xlink" ...

@@ -5,12 +5,12 @@
 #' @return An object of class xpdf_char
 #' @examples \dontrun{
 #' path <- system.file("examples", "MairChamberlain2014RJournal.pdf",
-#'    package = "rcrossref")
-#' (res_xpdf <- extract_xpdf(path))
+#'    package = "crminer")
+#' (res_xpdf <- crm_extract(path))
 #' res_xpdf$meta
 #' res_xpdf$data
 #' }
-extract_xpdf <- function(path){
+crm_extract <- function(path){
   path <- path.expand(path)
   system2("pdftotext", shQuote(path))
   newpath <- sub("\\.pdf", ".txt", path)

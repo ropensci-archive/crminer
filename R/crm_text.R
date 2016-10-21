@@ -21,7 +21,7 @@
 #' when \code{cache=TRUE}. Default: \code{TRUE}
 #' @param ... Named parameters passed on to \code{\link[httr]{GET}}
 #' @details Note that \code{\link{crm_text}},
-#' \code{\link{cr_ft_pdf}}, \code{\link{cr_ft_xml}}, \code{\link{cr_ft_plain}}
+#' \code{\link{crm_pdf}}, \code{\link{crm_xml}}, \code{\link{crm_plain}}
 #' are not vectorized.
 #'
 #' Note that some links returned will not in fact lead you to full text
@@ -83,15 +83,15 @@
 #' (links <- crm_links(out$data$DOI[40], "all"))
 #' # crm_text(links, 'xml')
 #'
-#' ## You can use cr_ft_xml, cr_ft_plain, and cr_ft_pdf to go directly to
+#' ## You can use crm_xml, crm_plain, and crm_pdf to go directly to
 #' ## that format
 #' licenseurl <- "http://creativecommons.org/licenses/by/3.0/"
 #' out <- cr_works(
 #'   filter = list(has_full_text = TRUE, license_url = licenseurl),
 #'   limit = 100)
 #' (links <- crm_links(out$data$DOI[50], "all"))
-#' cr_ft_xml(links)
-#' #cr_ft_pdf(links)
+#' crm_xml(links)
+#' #crm_pdf(links)
 #'
 #' ### Caching, for PDFs
 #' # out <- cr_members(2258, filter=c(has_full_text = TRUE), works = TRUE)
@@ -172,7 +172,7 @@ crm_text <- function(url, type='xml', path = cr_cache_path(), overwrite = TRUE,
   )
 }
 
-cr_cache_path <- function() paste0(rappdirs::user_cache_dir(), "/crossref")
+cr_cache_path <- function() paste0(rappdirs::user_cache_dir(), "/crminer")
 
 get_url <- function(a, b){
   url <- if (inherits(a, "tdmurl")) a[[1]] else a[[b]]
@@ -185,7 +185,7 @@ get_url <- function(a, b){
 
 #' @export
 #' @rdname crm_text
-cr_ft_plain <- function(url, path = cr_cache_path(), overwrite = TRUE, read=TRUE,
+crm_plain <- function(url, path = cr_cache_path(), overwrite = TRUE, read=TRUE,
                         verbose=TRUE, ...) {
   if (is.null(url$plain[[1]])) {
     stop("no plain text link found", call. = FALSE)
@@ -195,7 +195,7 @@ cr_ft_plain <- function(url, path = cr_cache_path(), overwrite = TRUE, read=TRUE
 
 #' @export
 #' @rdname crm_text
-cr_ft_xml <- function(url, path = cr_cache_path(), overwrite = TRUE, read=TRUE,
+crm_xml <- function(url, path = cr_cache_path(), overwrite = TRUE, read=TRUE,
                       verbose=TRUE, ...) {
   if (is.null(url$xml[[1]])) {
     stop("no xml link found", call. = FALSE)
@@ -205,7 +205,7 @@ cr_ft_xml <- function(url, path = cr_cache_path(), overwrite = TRUE, read=TRUE,
 
 #' @export
 #' @rdname crm_text
-cr_ft_pdf <- function(url, path = cr_cache_path(), overwrite = TRUE, read=TRUE,
+crm_pdf <- function(url, path = cr_cache_path(), overwrite = TRUE, read=TRUE,
                       cache=FALSE, verbose=TRUE, ...) {
   if (is.null(url$pdf[[1]])) {
     stop("no pdf link found", call. = FALSE)
@@ -217,7 +217,7 @@ cr_ft_pdf <- function(url, path = cr_cache_path(), overwrite = TRUE, read=TRUE,
 pick_type <- function(x, z) {
   x <- match.arg(x, c("xml","plain","pdf"))
   if (length(z) == 1) {
-    avail <- attr(z[[1]], which = "type")
+    avail <- attr(z, which = "type")
   } else {
     avail <- vapply(z, function(x) attr(x, which = "type"), character(1),
                     USE.NAMES = FALSE)
