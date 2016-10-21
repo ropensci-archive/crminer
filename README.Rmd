@@ -1,0 +1,106 @@
+crminer
+=======
+
+```{r echo=FALSE}
+library("knitr")
+hook_output <- knitr::knit_hooks$get("output")
+knitr::knit_hooks$set(output = function(x, options) {
+   lines <- options$output.lines
+   if (is.null(lines)) {
+     return(hook_output(x, options))  # pass to default hook
+   }
+   x <- unlist(strsplit(x, "\n"))
+   more <- "..."
+   if (length(lines)==1) {        # first n lines
+     if (length(x) > lines) {
+       # truncate the output, but add ....
+       x <- c(head(x, lines), more)
+     }
+   } else {
+     x <- c(if (abs(lines[1])>1) more else NULL,
+            x[lines],
+            if (length(x)>lines[abs(length(lines))]) more else NULL
+           )
+   }
+   # paste these lines together
+   x <- paste(c(x, ""), collapse = "\n")
+   hook_output(x, options)
+ })
+
+knitr::opts_chunk$set(
+  warning = FALSE,
+  message = FALSE,
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+[![Build Status](https://travis-ci.org/ropenscilabs/crminer.svg?branch=master)](https://travis-ci.org/ropenscilabs/crminer)
+[![codecov.io](https://codecov.io/github/ropenscilabs/crminer/coverage.svg?branch=master)](https://codecov.io/github/ropenscilabs/crminer?branch=master)
+
+Publishers can optionally provide links in the metadata they provide to Crossref for full text of the work, but that data is often missing. Find out more about it at [http://tdmsupport.crossref.org/](http://tdmsupport.crossref.org/).
+
+
+## Authentication
+
+xxxx
+
+## Install
+
+Development version
+
+```{r eval=FALSE}
+devtools::install_github("ropenscilabs/crminer")
+```
+
+```{r}
+library("crminer")
+```
+
+## Search
+
+Get some DOIs for articles that provide full text, and that have `CC-BY 3.0` licenses (i.e., more likely to actually be open)
+
+```{r}
+library("rcossref")
+out <-
+  cr_works(filter = list(has_full_text = TRUE,
+    license_url = "http://creativecommons.org/licenses/by/3.0/"))
+(dois <- out$data$DOI)
+```
+
+Then get URLs to full text content
+
+```{r}
+(links <- crm_links(dois[1]))
+```
+
+Then use those URLs to get full text
+
+```{r eval=FALSE}
+crm_text(links, "xml")
+#> <?xml version="1.0"?>
+#> <article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://jats.nlm.nih.gov/publishing/1.1d1/xsd/JATS-journalpublishing1-mathml3.xsd" dtd-version="1.1d1">
+#>   <front>
+#>     <journal-meta>
+#>       <journal-id journal-id-type="publisher-id">SV</journal-id>
+#>       <journal-title-group>
+#>         <journal-title>Shock and Vibration</journal-title>
+#>       </journal-title-group>
+#>       <issn pub-type="epub">1875-9203</issn>
+#>       <issn pub-type="ppub">1070-9622</issn>
+#>       <publisher>
+#>         <publisher-name>Hindawi Publishing Corporation</publisher-name>
+#>       </publisher>
+#>     </journal-meta>
+#> .................... cutoff
+```
+
+
+## Meta
+
+* Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
+
+[docs]: http://apiv3.iucnredlist.org/api/v3/docs
+[token]: http://apiv3.iucnredlist.org/api/v3/token
+[spatial]: http://apiv3.iucnredlist.org/spatial
