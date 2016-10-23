@@ -2,8 +2,8 @@
 
 S3method(as_tdmurl,character)
 S3method(as_tdmurl,tdmurl)
+S3method(print,crm_pdf)
 S3method(print,tdmurl)
-S3method(print,xpdf_char)
 export(as_tdmurl)
 export(crm_extract)
 export(crm_links)

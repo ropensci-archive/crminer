@@ -2,26 +2,39 @@
 % Please edit documentation in R/crm_extract.R
 \name{crm_extract}
 \alias{crm_extract}
-\title{Extract text from a single pdf document.}
+\title{Extract text from a single pdf document}
 \usage{
 crm_extract(path)
 }
 \arguments{
-\item{path}{Path to a file}
+\item{path}{Path to a file. required}
 }
 \value{
-An object of class xpdf_char
+An object of class crm_pdf
 }
 \description{
-Extract text from a single pdf document.
+Extract text from a single pdf document
+}
+\details{
+We use \pkg{pdftools} under the hood to do pdf text
+extraction
 }
 \examples{
 \dontrun{
 path <- system.file("examples", "MairChamberlain2014RJournal.pdf",
    package = "crminer")
-(res_xpdf <- crm_extract(path))
-res_xpdf$meta
-res_xpdf$data
+(res <- crm_extract(path))
+res$info
+res$text
+# with newlines, pretty print
+cat(res$text)
+
+# another example
+path <- system.file("examples", "ChamberlainEtal2013Ecosphere.pdf",
+   package = "crminer")
+(res <- crm_extract(path))
+res$info
+cat(res$text)
 }
 }
 
