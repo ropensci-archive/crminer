@@ -82,7 +82,7 @@ links <- lapply(dois, crm_links, type = "pdf")
 
 The get pdf and text is extracted
 
-```{r eval=FALSE}
+```{r}
 (res <- crm_text(url = links[[1]], type = "pdf"))
 ```
 

@@ -131,16 +131,24 @@ The get pdf and text is extracted
 (res <- crm_text(url = links[[1]], type = "pdf"))
 ```
 
+```
+#> <document>/Users/sacmac/Library/Caches/crminer/cs-23.pdf
+#>   Pages: 31
+#>   No. characters: 108260
+#>   Created: 2015-09-30
+```
+
 
 ```r
 cat(substring(res$text[[1]], 1, 300))
 ```
 
 ```
-#> N EWS AND N OTES                                                                                                     178
-#>           Web Technologies Task View
-#>           by Patrick Mair and Scott Chamberlain
-#>           Abstract This article presents the CRAN Task View on Web Technologies. We describe t
+#>                                    Two-dimensional Kolmogorov
+#>                                    complexity and an empirical validation
+#>                                    of the Coding theorem method by
+#>                                    compressibility
+#>                                    Hector Zeni
 ```
 
 ## Extract text from pdf
