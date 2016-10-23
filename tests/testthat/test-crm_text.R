@@ -9,19 +9,19 @@ context("crm_text")
 # xml1 <- cr_ft_text(links, 'xml')
 
 test_that("crm_text works: pdf", {
-  links <- crm_links("10.1155/mbd.1994.183", "all")
+  links <- crm_links("10.7717/peerj.1268", "pdf")
   pdf_read <- crm_text(links, "pdf", read = FALSE, verbose = FALSE)
   pdf <- crm_text(links, "pdf", verbose = FALSE)
 
   #expect_is(xml1, "xml_document")
   expect_is(pdf_read, "character")
-  expect_is(pdf, "xpdf_char")
+  expect_is(pdf, "crm_pdf")
 
   #expect_equal(length(xml1), 2)
   expect_equal(length(pdf_read), 1)
   expect_equal(length(pdf), 2)
-  expect_equal(length(pdf$meta), 14)
-  expect_equal(length(pdf$data), 1)
+  expect_is(pdf$info, "list")
+  expect_equal(length(pdf$text), pdf$info$pages)
 })
 
 # test_that("cr_ft_text gives back right values", {
