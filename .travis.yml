@@ -1,6 +1,10 @@
 language: r
-sudo: false
 cache: packages
+
+addons:
+  apt:
+    packages:
+      - libpoppler-cpp-dev
 
 after_success:
   - Rscript -e 'covr::codecov()'
