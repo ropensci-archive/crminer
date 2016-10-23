@@ -5,7 +5,6 @@ crminer
 knitr::opts_chunk$set(
   warning = FALSE,
   message = FALSE,
-  collapse = TRUE,
   comment = "#>"
 )
 ```
@@ -47,12 +46,18 @@ out <-
 (dois <- out$data$DOI)
 ```
 
+## Get full text links
+
 Then get URLs to full text content
 
 ```{r}
 links <- lapply(dois, crm_links, type = "xml")
 (links <- Filter(Negate(is.null), links))[1:5]
 ```
+
+## Get full text
+
+### XML
 
 Then use those URLs to get full text
 
@@ -63,6 +68,37 @@ crm_text(url = links[[1]])
 #> [1] <front>\n  <journal-meta>\n    <journal-id journal-id-type="publisher-id">peerj-cs</journal-id>\n ...
 #> [2] <body>\n  <sec sec-type="intro">\n    <title>Introduction</title>\n    <p>The question of natural ...
 #> [3] <back>\n  <sec sec-type="additional-information">\n    <title>Additional Information and Declarat ...
+```
+
+### PDF
+
+Sometimes you can only get a pdf, in that case we will extract text from 
+the pdf for you on use of `crm_text()`
+
+```{r}
+links <- lapply(dois, crm_links, type = "pdf")
+(links <- Filter(Negate(is.null), links))[1:5]
+```
+
+The get pdf and text is extracted
+
+```{r eval=FALSE}
+(res <- crm_text(url = links[[1]], type = "pdf"))
+```
+
+```{r}
+cat(substring(res$text[[1]], 1, 300))
+```
+
+## Extract text from pdf
+
+If you already have a path to the pdf, use `crm_extract()`
+
+```{r}
+path <- system.file("examples", "MairChamberlain2014RJournal.pdf", package = "crminer")
+(res <- crm_extract(path))
+res$info
+cat(substring(res$text[[1]], 1, 300))
 ```
 
 

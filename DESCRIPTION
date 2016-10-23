@@ -2,7 +2,7 @@ Package: crminer
 Type: Package
 Title: Crossref Text Mining Client
 Description: Text mining client for Crossref (<http://crossref.org>).
-Version: 0.0.1.9000
+Version: 0.0.2.9000
 Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus@gmail.com"))
 License: MIT + file LICENSE
