@@ -4,7 +4,7 @@
 #' @param url (character) A URL.
 #' @param type (character) One of xml, plain, pdf, or all
 #' @param path (character) Path to store pdfs in. By default we use
-#' \code{paste0(rappdirs::user_cache_dir(), "/crossref")}, but you can
+#' \code{paste0(rappdirs::user_cache_dir(), "/crminer")}, but you can
 #' set this directory to something different. Ignored unless getting
 #' pdf
 #' @param overwrite (logical) Overwrite file if it exists already?
