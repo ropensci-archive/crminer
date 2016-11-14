@@ -314,7 +314,7 @@ getPDF <- function(url, path, auth, overwrite, type, read, verbose,
   }
 
   if (read) {
-    if (verbose) message("Exracting text from pdf...")
+    if (verbose) message("Extracting text from pdf...")
     crm_extract(path = filepath)
   } else {
     filepath
