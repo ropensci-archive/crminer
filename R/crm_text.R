@@ -126,7 +126,7 @@
 #' # for (i in seq_along(dois)) {
 #' #   tmp <- crm_links(dois[i], "all")
 #' #   tmp <- setNames(tmp, "pdf")
-#' #   attr(tmp[[1]], "type") <- "pdf"
+#' #   attr(tmp, "type") <- "pdf"
 #' #   res[[i]] <- crm_text(tmp, type = "pdf", cache=FALSE)
 #' # }
 #' # res
@@ -141,7 +141,7 @@
 #' # for (i in seq_along(dois)) {
 #' #   tmp <- crm_links(dois[i], "all")
 #' #   tmp <- setNames(tmp, "pdf")
-#' #   attr(tmp[[1]], "type") <- "pdf"
+#' #   attr(tmp, "type") <- "pdf"
 #' #   res[[i]] <- crm_text(tmp, type = "pdf", cache=FALSE)
 #' # }
 #' # res
@@ -155,7 +155,7 @@
 #' # for (i in seq_along(dois)) {
 #' #   tmp <- crm_links(dois[i], "all")
 #' #   tmp <- setNames(tmp, "pdf")
-#' #   attr(tmp[[1]], "type") <- "pdf"
+#' #   attr(tmp, "type") <- "pdf"
 #' #   res[[i]] <- crm_text(tmp, type = "pdf", cache=FALSE)
 #' # }
 #' }
