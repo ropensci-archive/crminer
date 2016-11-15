@@ -161,8 +161,9 @@
 #' }
 
 crm_text <- function(url, type='xml', path = cr_cache_path(), overwrite = TRUE,
-                       read=TRUE, verbose=TRUE, cache=TRUE, ...) {
-
+                       read=TRUE, verbose=TRUE, cache=TRUE,
+                       overwriteUnspecified=FALSE, ...) {
+  url <- maybe_overwrite_unspecified(overwriteUnspecified,url,type)
   auth <- cr_auth(url, type)
   switch( pick_type(type, url),
           xml = getTEXT(get_url(url, 'xml'), type, auth, ...),
@@ -186,7 +187,8 @@ get_url <- function(a, b){
 #' @export
 #' @rdname crm_text
 crm_plain <- function(url, path = cr_cache_path(), overwrite = TRUE, read=TRUE,
-                        verbose=TRUE, ...) {
+                        verbose=TRUE, overwriteUnspecified=FALSE, ...) {
+  url <- maybe_overwrite_unspecified(overwriteUnspecified,url,"plain")
   if (is.null(url$plain[[1]])) {
     stop("no plain text link found", call. = FALSE)
   }
@@ -196,7 +198,8 @@ crm_plain <- function(url, path = cr_cache_path(), overwrite = TRUE, read=TRUE,
 #' @export
 #' @rdname crm_text
 crm_xml <- function(url, path = cr_cache_path(), overwrite = TRUE, read=TRUE,
-                      verbose=TRUE, ...) {
+                      verbose=TRUE, overwriteUnspecified=FALSE, ...) {
+  url <- maybe_overwrite_unspecified(overwriteUnspecified,url,"xml")
   if (is.null(url$xml[[1]])) {
     stop("no xml link found", call. = FALSE)
   }
@@ -206,7 +209,8 @@ crm_xml <- function(url, path = cr_cache_path(), overwrite = TRUE, read=TRUE,
 #' @export
 #' @rdname crm_text
 crm_pdf <- function(url, path = cr_cache_path(), overwrite = TRUE, read=TRUE,
-                      cache=FALSE, verbose=TRUE, ...) {
+                      cache=FALSE, verbose=TRUE, overwriteUnspecified=FALSE, ...) {
+  url <- maybe_overwrite_unspecified(overwriteUnspecified,url,"pdf")
   if (is.null(url$pdf[[1]])) {
     stop("no pdf link found", call. = FALSE)
   }
@@ -319,4 +323,11 @@ getPDF <- function(url, path, auth, overwrite, type, read, verbose,
   } else {
     filepath
   }
+}
+maybe_overwrite_unspecified <- function(overwriteUnspecified, url,type) {
+  if(overwriteUnspecified) {
+    url <- setNames(url, type)
+    attr(url, "type") <- type
+  }
+url
 }
