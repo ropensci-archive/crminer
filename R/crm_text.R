@@ -19,6 +19,9 @@
 #' you want to use cached version so that you don't have to download the file
 #' again. The steps of extracting and reading into R still have to be performed
 #' when \code{cache=TRUE}. Default: \code{TRUE}
+#' @param overwriteUnspecified (logical) Sometimes the crossref API returns mime type 'unspecified'
+#' for the full text links (for some Wiley dois for example). This parameter overrides the
+#' mime type to be \emph{'type}.'
 #' @param ... Named parameters passed on to \code{\link[httr]{GET}}
 #' @details Note that \code{\link{crm_text}},
 #' \code{\link{crm_pdf}}, \code{\link{crm_xml}}, \code{\link{crm_plain}}
@@ -124,10 +127,8 @@
 #' dois <- out$data$DOI[1:10]
 #' # res <- list()
 #' # for (i in seq_along(dois)) {
-#' #   tmp <- crm_links(dois[i], "all")
-#' #   tmp <- setNames(tmp, "pdf")
-#' #   attr(tmp, "type") <- "pdf"
-#' #   res[[i]] <- crm_text(tmp, type = "pdf", cache=FALSE)
+#' # tmp <- crm_links(dois[i], "all")
+#' # res[[i]] <- crm_text(tmp, type = "pdf", cache=FALSE, overwriteUnspecified=T)
 #' # }
 #' # res
 #'
@@ -140,9 +141,7 @@
 #' # res <- list()
 #' # for (i in seq_along(dois)) {
 #' #   tmp <- crm_links(dois[i], "all")
-#' #   tmp <- setNames(tmp, "pdf")
-#' #   attr(tmp, "type") <- "pdf"
-#' #   res[[i]] <- crm_text(tmp, type = "pdf", cache=FALSE)
+#' #   res[[i]] <- crm_text(tmp, type = "pdf", cache=FALSE, overwriteUnspecified=T)
 #' # }
 #' # res
 #'
@@ -154,9 +153,7 @@
 #' # res <- list()
 #' # for (i in seq_along(dois)) {
 #' #   tmp <- crm_links(dois[i], "all")
-#' #   tmp <- setNames(tmp, "pdf")
-#' #   attr(tmp, "type") <- "pdf"
-#' #   res[[i]] <- crm_text(tmp, type = "pdf", cache=FALSE)
+#' #   res[[i]] <- crm_text(tmp, type = "pdf", cache=FALSE, overwriteUnspecified=T)
 #' # }
 #' }
 
