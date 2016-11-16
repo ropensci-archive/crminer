@@ -37,3 +37,20 @@ test_that("crm_text fails correctly", {
   links <- crm_links("10.1155/mbd.1994.183", "all")
   expect_error(crm_text(links, type = "adfasf"), "'arg' should be one of")
 })
+
+test_that("crm_text with pdf works for 'unspecified'=T",{
+  skip_if_not(Sys.getenv("CROSSREF_TDM")!="",
+              "Needs 'Sys.setenv(CROSSREF_TDM = \"your-key\")' to be set.")
+  links <- crm_links("10.2903/j.efsa.2014.3550",type = "all")
+
+  res <- crm_text(links,type="pdf",overwriteUnspecified = T)
+  expect_equal(res$info$pages,11)
+})
+
+test_that("crm_text with pdf fails for 'unspecified'=F",{
+  links <- crm_links("10.2903/j.efsa.2014.3550",type = "all")
+
+  expect_error(crm_text(links,type="pdf",overwriteUnspecified = F),
+              "Chosen type not available in links")
+})
+

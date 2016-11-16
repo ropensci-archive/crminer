@@ -8,16 +8,17 @@
 \title{Get full text from a DOI}
 \usage{
 crm_text(url, type = "xml", path = cr_cache_path(), overwrite = TRUE,
-  read = TRUE, verbose = TRUE, cache = TRUE, ...)
+  read = TRUE, verbose = TRUE, cache = TRUE,
+  overwriteUnspecified = FALSE, ...)
 
 crm_plain(url, path = cr_cache_path(), overwrite = TRUE, read = TRUE,
-  verbose = TRUE, ...)
+  verbose = TRUE, overwriteUnspecified = FALSE, ...)
 
 crm_xml(url, path = cr_cache_path(), overwrite = TRUE, read = TRUE,
-  verbose = TRUE, ...)
+  verbose = TRUE, overwriteUnspecified = FALSE, ...)
 
 crm_pdf(url, path = cr_cache_path(), overwrite = TRUE, read = TRUE,
-  cache = FALSE, verbose = TRUE, ...)
+  cache = FALSE, verbose = TRUE, overwriteUnspecified = FALSE, ...)
 }
 \arguments{
 \item{url}{(character) A URL.}
@@ -25,7 +26,7 @@ crm_pdf(url, path = cr_cache_path(), overwrite = TRUE, read = TRUE,
 \item{type}{(character) One of xml, plain, pdf, or all}
 
 \item{path}{(character) Path to store pdfs in. By default we use
-\code{paste0(rappdirs::user_cache_dir(), "/crossref")}, but you can
+\code{paste0(rappdirs::user_cache_dir(), "/crminer")}, but you can
 set this directory to something different. Ignored unless getting
 pdf}
 
@@ -44,6 +45,10 @@ your machine locally, so this doesn't affect that. This only states whether
 you want to use cached version so that you don't have to download the file
 again. The steps of extracting and reading into R still have to be performed
 when \code{cache=TRUE}. Default: \code{TRUE}}
+
+\item{overwriteUnspecified}{(logical) Sometimes the crossref API returns mime type
+'unspecified' for the full text links (for some Wiley dois for example).
+This parameter overrides the mime type to be \code{type}.}
 
 \item{...}{Named parameters passed on to \code{\link[httr]{GET}}}
 }
@@ -157,10 +162,8 @@ out <- cr_members(311, filter=c(has_full_text = TRUE,
 dois <- out$data$DOI[1:10]
 # res <- list()
 # for (i in seq_along(dois)) {
-#   tmp <- crm_links(dois[i], "all")
-#   tmp <- setNames(tmp, "pdf")
-#   attr(tmp[[1]], "type") <- "pdf"
-#   res[[i]] <- crm_text(tmp, type = "pdf", cache=FALSE)
+# tmp <- crm_links(dois[i], "all")
+# res[[i]] <- crm_text(tmp, type = "pdf", cache=F, overwriteUnspecified=T)
 # }
 # res
 
@@ -173,9 +176,7 @@ dois <- out$data$DOI[1:10]
 # res <- list()
 # for (i in seq_along(dois)) {
 #   tmp <- crm_links(dois[i], "all")
-#   tmp <- setNames(tmp, "pdf")
-#   attr(tmp[[1]], "type") <- "pdf"
-#   res[[i]] <- crm_text(tmp, type = "pdf", cache=FALSE)
+#   res[[i]] <- crm_text(tmp, type = "pdf", cache=FALSE, overwriteUnspecified=T)
 # }
 # res
 
@@ -187,9 +188,7 @@ dois <- out$data$DOI[1:10]
 # res <- list()
 # for (i in seq_along(dois)) {
 #   tmp <- crm_links(dois[i], "all")
-#   tmp <- setNames(tmp, "pdf")
-#   attr(tmp[[1]], "type") <- "pdf"
-#   res[[i]] <- crm_text(tmp, type = "pdf", cache=FALSE)
+#   res[[i]] <- crm_text(tmp, type = "pdf", cache=F, overwriteUnspecified=T)
 # }
 }
 }
