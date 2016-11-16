@@ -46,9 +46,9 @@ you want to use cached version so that you don't have to download the file
 again. The steps of extracting and reading into R still have to be performed
 when \code{cache=TRUE}. Default: \code{TRUE}}
 
-\item{overwriteUnspecified}{(logical) Sometimes the crossref API returns mime type 'unspecified'
-for the full text links (for some Wiley dois for example). This parameter overrides the
-mime type to be \emph{'type}.'}
+\item{overwriteUnspecified}{(logical) Sometimes the crossref API returns mime type
+'unspecified' for the full text links (for some Wiley dois for example).
+This parameter overrides the mime type to be \code{type}.}
 
 \item{...}{Named parameters passed on to \code{\link[httr]{GET}}}
 }
@@ -163,7 +163,7 @@ dois <- out$data$DOI[1:10]
 # res <- list()
 # for (i in seq_along(dois)) {
 # tmp <- crm_links(dois[i], "all")
-# res[[i]] <- crm_text(tmp, type = "pdf", cache=FALSE, overwriteUnspecified=T)
+# res[[i]] <- crm_text(tmp, type = "pdf", cache=F, overwriteUnspecified=T)
 # }
 # res
 
@@ -188,7 +188,7 @@ dois <- out$data$DOI[1:10]
 # res <- list()
 # for (i in seq_along(dois)) {
 #   tmp <- crm_links(dois[i], "all")
-#   res[[i]] <- crm_text(tmp, type = "pdf", cache=FALSE, overwriteUnspecified=T)
+#   res[[i]] <- crm_text(tmp, type = "pdf", cache=F, overwriteUnspecified=T)
 # }
 }
 }
