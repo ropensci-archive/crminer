@@ -3,8 +3,8 @@ crminer
 
 
 
-[![Build Status](https://travis-ci.org/ropenscilabs/crminer.svg?branch=master)](https://travis-ci.org/ropenscilabs/crminer)
-[![codecov.io](https://codecov.io/github/ropenscilabs/crminer/coverage.svg?branch=master)](https://codecov.io/github/ropenscilabs/crminer?branch=master)
+[![Build Status](https://travis-ci.org/ropensci/crminer.svg?branch=master)](https://travis-ci.org/ropensci/crminer)
+[![codecov.io](https://codecov.io/github/ropensci/crminer/coverage.svg?branch=master)](https://codecov.io/github/ropensci/crminer?branch=master)
 
 Publishers can optionally provide links in the metadata they provide to Crossref for full text of the work, but that data is often missing. Find out more about it at [http://tdmsupport.crossref.org/](http://tdmsupport.crossref.org/).
 
@@ -18,7 +18,7 @@ Development version
 
 
 ```r
-devtools::install_github("ropenscilabs/crminer")
+devtools::install_github("ropensci/crminer")
 ```
 
 
@@ -44,12 +44,12 @@ out <-
 ```
 
 ```
-#>  [1] "10.7717/peerj-cs.23" "10.7717/peerj.1229"  "10.7717/peerj.1256" 
-#>  [4] "10.7717/peerj.1257"  "10.7717/peerj.1259"  "10.7717/peerj.1261" 
-#>  [7] "10.7717/peerj.1263"  "10.7717/peerj.1265"  "10.7717/peerj.1268" 
+#>  [1] "10.7717/peerj-cs.23" "10.7717/peerj.1229"  "10.7717/peerj.1256"
+#>  [4] "10.7717/peerj.1257"  "10.7717/peerj.1259"  "10.7717/peerj.1261"
+#>  [7] "10.7717/peerj.1263"  "10.7717/peerj.1265"  "10.7717/peerj.1268"
 #> [10] "10.7717/peerj.1269"  "10.7717/peerj.1258"  "10.7717/peerj-cs.32"
-#> [13] "10.7717/peerj.1287"  "10.7717/peerj.1286"  "10.7717/peerj.1285" 
-#> [16] "10.7717/peerj.1282"  "10.7717/peerj.1279"  "10.7717/peerj.1278" 
+#> [13] "10.7717/peerj.1287"  "10.7717/peerj.1286"  "10.7717/peerj.1285"
+#> [16] "10.7717/peerj.1282"  "10.7717/peerj.1279"  "10.7717/peerj.1278"
 #> [19] "10.7717/peerj.1275"  "10.7717/peerj.1241"
 ```
 
@@ -66,16 +66,16 @@ links <- lapply(dois, crm_links, type = "xml")
 ```
 #> [[1]]
 #> <url> https://peerj.com/articles/cs-23.xml
-#> 
+#>
 #> [[2]]
 #> <url> https://peerj.com/articles/1229.xml
-#> 
+#>
 #> [[3]]
 #> <url> https://peerj.com/articles/1256.xml
-#> 
+#>
 #> [[4]]
 #> <url> https://peerj.com/articles/1257.xml
-#> 
+#>
 #> [[5]]
 #> <url> https://peerj.com/articles/1259.xml
 ```
@@ -98,7 +98,7 @@ crm_text(url = links[[1]])
 
 ### PDF
 
-Sometimes you can only get a pdf, in that case we will extract text from 
+Sometimes you can only get a pdf, in that case we will extract text from
 the pdf for you on use of `crm_text()`
 
 
@@ -110,16 +110,16 @@ links <- lapply(dois, crm_links, type = "pdf")
 ```
 #> [[1]]
 #> <url> https://peerj.com/articles/cs-23.pdf
-#> 
+#>
 #> [[2]]
 #> <url> https://peerj.com/articles/1229.pdf
-#> 
+#>
 #> [[3]]
 #> <url> https://peerj.com/articles/1256.pdf
-#> 
+#>
 #> [[4]]
 #> <url> https://peerj.com/articles/1257.pdf
-#> 
+#>
 #> [[5]]
 #> <url> https://peerj.com/articles/1259.pdf
 ```
@@ -175,39 +175,39 @@ res$info
 ```
 #> $version
 #> [1] "1.5"
-#> 
+#>
 #> $pages
 #> [1] 4
-#> 
+#>
 #> $encrypted
 #> [1] FALSE
-#> 
+#>
 #> $linearized
 #> [1] FALSE
-#> 
+#>
 #> $keys
 #> $keys$Creator
 #> [1] "pdftk 2.02 - www.pdftk.com"
-#> 
+#>
 #> $keys$Producer
 #> [1] "itext-paulo-155 (itextpdf.sf.net-lowagie.com)"
-#> 
-#> 
+#>
+#>
 #> $created
 #> [1] "2014-07-29 00:14:10 PDT"
-#> 
+#>
 #> $modified
 #> [1] "2014-07-29 00:14:10 PDT"
-#> 
+#>
 #> $metadata
 #> [1] ""
-#> 
+#>
 #> $locked
 #> [1] FALSE
-#> 
+#>
 #> $attachments
 #> [1] FALSE
-#> 
+#>
 #> $layout
 #> [1] "no_layout"
 ```
@@ -226,7 +226,7 @@ cat(substring(res$text[[1]], 1, 300))
 
 ## Meta
 
-* Please [report any issues or bugs](https://github.com/ropenscilabs/crminer/issues).
+* Please [report any issues or bugs](https://github.com/ropensci/crminer/issues).
 * License: MIT
 * Get citation information for `crminer` in R doing `citation(package = 'crminer')`
 * Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.

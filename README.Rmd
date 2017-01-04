@@ -5,14 +5,15 @@ crminer
 knitr::opts_chunk$set(
   warning = FALSE,
   message = FALSE,
-  comment = "#>"
+  comment = "#>",
+  cache.path = "inst/cache/"
 )
 ```
 
-[![Build Status](https://travis-ci.org/ropenscilabs/crminer.svg?branch=master)](https://travis-ci.org/ropenscilabs/crminer)
-[![codecov.io](https://codecov.io/github/ropenscilabs/crminer/coverage.svg?branch=master)](https://codecov.io/github/ropenscilabs/crminer?branch=master)
+[![Build Status](https://travis-ci.org/ropensci/crminer.svg?branch=master)](https://travis-ci.org/ropensci/crminer)
+[![codecov.io](https://codecov.io/github/ropensci/crminer/coverage.svg?branch=master)](https://codecov.io/github/ropensci/crminer?branch=master)
 
-Publishers can optionally provide links in the metadata they provide to Crossref for full text of the work, but that data is often missing. Find out more about it at [http://tdmsupport.crossref.org/](http://tdmsupport.crossref.org/).
+Publishers can optionally provide links in the metadata they provide to Crossref for full text of the work, but that data is often missing. Find out more about it at <http://tdmsupport.crossref.org/>
 
 ## Authentication
 
@@ -23,7 +24,7 @@ coming soon ...
 Development version
 
 ```{r eval=FALSE}
-devtools::install_github("ropenscilabs/crminer")
+devtools::install_github("ropensci/crminer")
 ```
 
 ```{r}
@@ -37,7 +38,7 @@ Get some DOIs for articles that provide full text, and that have
 `CC-BY 4.0` licenses (i.e., more likely to actually be open), and from
 PeerJ
 
-```{r}
+```{r cache=TRUE}
 out <-
   cr_members(4443, works = TRUE, filter = list(
     has_full_text = TRUE,
@@ -104,9 +105,9 @@ cat(substring(res$text[[1]], 1, 300))
 
 ## Meta
 
-* Please [report any issues or bugs](https://github.com/ropenscilabs/crminer/issues).
+* Please [report any issues or bugs](https://github.com/ropensci/crminer/issues).
 * License: MIT
 * Get citation information for `crminer` in R doing `citation(package = 'crminer')`
 * Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
 
-[![rofooter](http://ropensci.org/public_images/github_footer.png)](http://ropensci.org)
+[![rofooter](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)
