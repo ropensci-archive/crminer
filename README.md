@@ -6,7 +6,7 @@ crminer
 [![Build Status](https://travis-ci.org/ropensci/crminer.svg?branch=master)](https://travis-ci.org/ropensci/crminer)
 [![codecov.io](https://codecov.io/github/ropensci/crminer/coverage.svg?branch=master)](https://codecov.io/github/ropensci/crminer?branch=master)
 
-Publishers can optionally provide links in the metadata they provide to Crossref for full text of the work, but that data is often missing. Find out more about it at [http://tdmsupport.crossref.org/](http://tdmsupport.crossref.org/).
+Publishers can optionally provide links in the metadata they provide to Crossref for full text of the work, but that data is often missing. Find out more about it at <http://tdmsupport.crossref.org/>
 
 ## Authentication
 
@@ -44,13 +44,13 @@ out <-
 ```
 
 ```
-#>  [1] "10.7717/peerj-cs.23" "10.7717/peerj.1229"  "10.7717/peerj.1256"
-#>  [4] "10.7717/peerj.1257"  "10.7717/peerj.1259"  "10.7717/peerj.1261"
-#>  [7] "10.7717/peerj.1263"  "10.7717/peerj.1265"  "10.7717/peerj.1268"
-#> [10] "10.7717/peerj.1269"  "10.7717/peerj.1258"  "10.7717/peerj-cs.32"
-#> [13] "10.7717/peerj.1287"  "10.7717/peerj.1286"  "10.7717/peerj.1285"
-#> [16] "10.7717/peerj.1282"  "10.7717/peerj.1279"  "10.7717/peerj.1278"
-#> [19] "10.7717/peerj.1275"  "10.7717/peerj.1241"
+#>  [1] "10.7717/peerj.1714"  "10.7717/peerj.2306"  "10.7717/peerj-cs.43"
+#>  [4] "10.7717/peerj.2135"  "10.7717/peerj.1609"  "10.7717/peerj.1361" 
+#>  [7] "10.7717/peerj.1729"  "10.7717/peerj.2752"  "10.7717/peerj.1402" 
+#> [10] "10.7717/peerj.1900"  "10.7717/peerj.1509"  "10.7717/peerj.1596" 
+#> [13] "10.7717/peerj.1716"  "10.7717/peerj.2328"  "10.7717/peerj.1309" 
+#> [16] "10.7717/peerj.2647"  "10.7717/peerj.2044"  "10.7717/peerj.1707" 
+#> [19] "10.7717/peerj.2322"  "10.7717/peerj.1591"
 ```
 
 ## Get full text links
@@ -65,19 +65,19 @@ links <- lapply(dois, crm_links, type = "xml")
 
 ```
 #> [[1]]
-#> <url> https://peerj.com/articles/cs-23.xml
-#>
+#> <url> https://peerj.com/articles/1714.xml
+#> 
 #> [[2]]
-#> <url> https://peerj.com/articles/1229.xml
-#>
+#> <url> https://peerj.com/articles/2306.xml
+#> 
 #> [[3]]
-#> <url> https://peerj.com/articles/1256.xml
-#>
+#> <url> https://peerj.com/articles/cs-43.xml
+#> 
 #> [[4]]
-#> <url> https://peerj.com/articles/1257.xml
-#>
+#> <url> https://peerj.com/articles/2135.xml
+#> 
 #> [[5]]
-#> <url> https://peerj.com/articles/1259.xml
+#> <url> https://peerj.com/articles/1609.xml
 ```
 
 ## Get full text
@@ -98,7 +98,7 @@ crm_text(url = links[[1]])
 
 ### PDF
 
-Sometimes you can only get a pdf, in that case we will extract text from
+Sometimes you can only get a pdf, in that case we will extract text from 
 the pdf for you on use of `crm_text()`
 
 
@@ -109,19 +109,19 @@ links <- lapply(dois, crm_links, type = "pdf")
 
 ```
 #> [[1]]
-#> <url> https://peerj.com/articles/cs-23.pdf
-#>
+#> <url> https://peerj.com/articles/1714.pdf
+#> 
 #> [[2]]
-#> <url> https://peerj.com/articles/1229.pdf
-#>
+#> <url> https://peerj.com/articles/2306.pdf
+#> 
 #> [[3]]
-#> <url> https://peerj.com/articles/1256.pdf
-#>
+#> <url> https://peerj.com/articles/cs-43.pdf
+#> 
 #> [[4]]
-#> <url> https://peerj.com/articles/1257.pdf
-#>
+#> <url> https://peerj.com/articles/2135.pdf
+#> 
 #> [[5]]
-#> <url> https://peerj.com/articles/1259.pdf
+#> <url> https://peerj.com/articles/1609.pdf
 ```
 
 The get pdf and text is extracted
@@ -132,10 +132,10 @@ The get pdf and text is extracted
 ```
 
 ```
-#> <document>/Users/sacmac/Library/Caches/crminer/cs-23.pdf
-#>   Pages: 31
-#>   No. characters: 108260
-#>   Created: 2015-09-30
+#> <document>/Users/sacmac/Library/Caches/crminer/1714.pdf
+#>   Pages: 13
+#>   No. characters: 52789
+#>   Created: 2016-02-25
 ```
 
 
@@ -144,11 +144,11 @@ cat(substring(res$text[[1]], 1, 300))
 ```
 
 ```
-#>                                    Two-dimensional Kolmogorov
-#>                                    complexity and an empirical validation
-#>                                    of the Coding theorem method by
-#>                                    compressibility
-#>                                    Hector Zeni
+#>                              Head capsule stacking by caterpillars:
+#>                              morphology complements behaviour to
+#>                              provide a novel defence
+#>                              Petah A. Low, Clare McArthur and Dieter F. Hochuli
+#>                              Schoo
 ```
 
 ## Extract text from pdf
@@ -175,39 +175,39 @@ res$info
 ```
 #> $version
 #> [1] "1.5"
-#>
+#> 
 #> $pages
 #> [1] 4
-#>
+#> 
 #> $encrypted
 #> [1] FALSE
-#>
+#> 
 #> $linearized
 #> [1] FALSE
-#>
+#> 
 #> $keys
 #> $keys$Creator
 #> [1] "pdftk 2.02 - www.pdftk.com"
-#>
+#> 
 #> $keys$Producer
 #> [1] "itext-paulo-155 (itextpdf.sf.net-lowagie.com)"
-#>
-#>
+#> 
+#> 
 #> $created
 #> [1] "2014-07-29 00:14:10 PDT"
-#>
+#> 
 #> $modified
 #> [1] "2014-07-29 00:14:10 PDT"
-#>
+#> 
 #> $metadata
 #> [1] ""
-#>
+#> 
 #> $locked
 #> [1] FALSE
-#>
+#> 
 #> $attachments
 #> [1] FALSE
-#>
+#> 
 #> $layout
 #> [1] "no_layout"
 ```
@@ -231,4 +231,4 @@ cat(substring(res$text[[1]], 1, 300))
 * Get citation information for `crminer` in R doing `citation(package = 'crminer')`
 * Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
 
-[![rofooter](http://ropensci.org/public_images/github_footer.png)](http://ropensci.org)
+[![rofooter](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)
