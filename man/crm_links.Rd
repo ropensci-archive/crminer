@@ -7,11 +7,11 @@
 crm_links(doi, type = "xml", ...)
 }
 \arguments{
-\item{doi}{A DOI}
+\item{doi}{(character) A DOI}
 
-\item{type}{One of xml, plain, pdf, or all}
+\item{type}{(character) One of 'xml' (default), 'plain', 'pdf', or 'all'}
 
-\item{...}{Named parameters passed on to \code{\link[httr]{GET}}}
+\item{...}{Named parameters passed on to \code{\link[crul]{HttpClient}}}
 }
 \value{
 \code{NULL} if no full text links given; a list of tdmurl objects if
@@ -21,9 +21,9 @@ links found.
 Get full text links from a DOI
 }
 \details{
-Note that \code{\link{crm_links}} is not vectorized.
+Note that this function is not vectorized.
 
-Note that some links returned will not in fact lead you to full text
+Some links returned will not in fact lead you to full text
 content as you would understandbly think and expect. That is, if you
 use the \code{filter} parameter with e.g., \code{\link[rcrossref]{cr_works}}
 and filter to only full text content, some links may actually give back
@@ -43,21 +43,23 @@ PDF to get that type. Anyway, expect changes...
 \dontrun{
 # pdf link
 crm_links(doi = "10.5555/515151", "pdf")
-crm_links(doi = "10.5555/515151", "pdf")
+crm_links(doi = "10.3897/phytokeys.52.5250", "pdf")
 
 # all links
 crm_links(doi = "10.3897/phytokeys.52.5250", type = "all")
 
 # Get doi first from other fxn, then pass here
-out <- cr_works(filter=c(has_full_text = TRUE), limit = 50)
-dois <- out$data$DOI
-crm_links(dois[2], "xml")
-crm_links(dois[1], "plain")
-crm_links(dois[1], "all")
+if (requireNamespace('rcrossref')) {
+  out <- cr_works(filter=c(has_full_text = TRUE), limit = 50)
+  dois <- out$data$DOI
+  crm_links(dois[2], "xml")
+  crm_links(dois[1], "plain")
+  crm_links(dois[1], "all")
 
-# (most likely) No links
-crm_links(cr_r(1))
-crm_links(doi="10.3389/fnagi.2014.00130")
+  # (most likely) No links
+  crm_links(cr_r(1))
+  crm_links(doi="10.3389/fnagi.2014.00130")
+}
 }
 }
 

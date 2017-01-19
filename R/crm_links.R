@@ -1,12 +1,13 @@
 #' Get full text links from a DOI
 #'
 #' @export
-#' @param doi A DOI
-#' @param type One of xml, plain, pdf, or all
-#' @param ... Named parameters passed on to \code{\link[httr]{GET}}
-#' @details Note that \code{\link{crm_links}} is not vectorized.
+#' @param doi (character) A DOI
+#' @param type (character) One of 'xml' (default), 'plain', 'pdf', or 'all'
+#' @param ... Named parameters passed on to \code{\link[crul]{HttpClient}}
 #'
-#' Note that some links returned will not in fact lead you to full text
+#' @details Note that this function is not vectorized.
+#'
+#' Some links returned will not in fact lead you to full text
 #' content as you would understandbly think and expect. That is, if you
 #' use the \code{filter} parameter with e.g., \code{\link[rcrossref]{cr_works}}
 #' and filter to only full text content, some links may actually give back
@@ -28,23 +29,25 @@
 #' @examples \dontrun{
 #' # pdf link
 #' crm_links(doi = "10.5555/515151", "pdf")
-#' crm_links(doi = "10.5555/515151", "pdf")
+#' crm_links(doi = "10.3897/phytokeys.52.5250", "pdf")
 #'
 #' # all links
 #' crm_links(doi = "10.3897/phytokeys.52.5250", type = "all")
 #'
 #' # Get doi first from other fxn, then pass here
-#' out <- cr_works(filter=c(has_full_text = TRUE), limit = 50)
-#' dois <- out$data$DOI
-#' crm_links(dois[2], "xml")
-#' crm_links(dois[1], "plain")
-#' crm_links(dois[1], "all")
+#' if (requireNamespace('rcrossref')) {
+#'   out <- cr_works(filter=c(has_full_text = TRUE), limit = 50)
+#'   dois <- out$data$DOI
+#'   crm_links(dois[2], "xml")
+#'   crm_links(dois[1], "plain")
+#'   crm_links(dois[1], "all")
 #'
-#' # (most likely) No links
-#' crm_links(cr_r(1))
-#' crm_links(doi="10.3389/fnagi.2014.00130")
+#'   # (most likely) No links
+#'   crm_links(cr_r(1))
+#'   crm_links(doi="10.3389/fnagi.2014.00130")
 #' }
-crm_links <- function(doi, type='xml', ...) {
+#' }
+crm_links <- function(doi, type = 'xml', ...) {
   res <- crm_works_links(dois = doi, ...)[[1]]
   if (is.null(unlist(res$links))) {
     NULL
@@ -80,8 +83,8 @@ crm_links <- function(doi, type='xml', ...) {
       }
 
       if (type == "all") {
-        out <- lapply(
-          withtype, function(b) makeurl(b$URL, st(b$`content-type`), doi)
+        out <- lapply(withtype,
+                      function(b) makeurl(b$URL, st(b$`content-type`), doi)
         )
       } else {
         y <- match.arg(type, c('xml','plain','pdf','unspecified'))

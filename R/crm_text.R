@@ -19,10 +19,10 @@
 #' you want to use cached version so that you don't have to download the file
 #' again. The steps of extracting and reading into R still have to be performed
 #' when \code{cache=TRUE}. Default: \code{TRUE}
-#' @param overwriteUnspecified (logical) Sometimes the crossref API returns mime type
-#' 'unspecified' for the full text links (for some Wiley dois for example).
-#' This parameter overrides the mime type to be \code{type}.
-#' @param ... Named parameters passed on to \code{\link[httr]{GET}}
+#' @param overwrite_unspecified (logical) Sometimes the crossref API returns
+#' mime type 'unspecified' for the full text links (for some Wiley dois
+#' for example). This parameter overrides the mime type to be \code{type}.
+#' @param ... Named parameters passed on to \code{\link[crul]{HttpClient}}
 #' @details Note that \code{\link{crm_text}},
 #' \code{\link{crm_pdf}}, \code{\link{crm_xml}}, \code{\link{crm_plain}}
 #' are not vectorized.
@@ -35,64 +35,49 @@
 #' for one because they have a lot of entries in Crossref TDM, but most
 #' of the links that are apparently full text are not in facct full text,
 #' but only metadata.
+#'
 #' @examples \dontrun{
-#' library("rcrossref")
+#' data(dois_crminer)
 #'
 #' # pdf link
 #' crm_links(doi = "10.5555/515151", "pdf")
 #'
 #' # xml and plain text links
-#' out <- cr_works(filter=c(has_full_text = TRUE))
-#' dois <- out$data$DOI
-#' crm_links(dois[1], "pdf")
-#' crm_links(dois[2], "xml")
-#' crm_links(dois[1], "plain")
-#' crm_links(dois[1], "all")
+#' crm_links(crminer_dois[1], "pdf")
+#' crm_links(crminer_dois[6], "xml")
+#' crm_links(crminer_dois[7], "plain")
+#' crm_links(crminer_dois[1], "all")
 #'
 #' # No links
-#' crm_links(cr_r(1), "xml")
+#' crm_links(crminer_dois[4], "xml")
 #'
 #' # get full text
 #' ## pensoft
-#' out <- cr_members(2258, filter=c(has_full_text = TRUE), works = TRUE)
-#' (links <- crm_links(out$data$DOI[1], "all"))
+#' data(dois_pensoft)
+#' (links <- crm_links(dois_pensoft[1], "all"))
 #' ### xml
 #' crm_text(links, 'xml')
 #' ### pdf
-#' crm_text(links, "pdf", read=FALSE)
+#' crm_text(links, "pdf", read = FALSE)
 #' crm_text(links, "pdf")
-#'
-#' ### another pensoft e.g.
-#' links <- crm_links("10.3897/phytokeys.42.7604", "all")
-#' pdf_read <- crm_text(url = links, type = "pdf", read=FALSE,
-#'   verbose = FALSE)
-#' pdf <- crm_text(links, "pdf", verbose = FALSE)
 #'
 #' ## hindawi
-#' out <- cr_members(98, filter=c(has_full_text = TRUE), works = TRUE)
-#' (links <- crm_links(out$data$DOI[1], "all"))
+#' data(dois_pensoft)
+#' (links <- crm_links(dois_pensoft[1], "all"))
 #' ### xml
 #' crm_text(links, 'xml')
 #' ### pdf
 #' crm_text(links, "pdf", read=FALSE)
 #' crm_text(links, "pdf")
 #'
-#' ## search for works with full text, and with CC-BY 3.0 license
-#' ### you can see available licenses with cr_licenses() function
-#' out <-
-#'  cr_works(filter = list(has_full_text = TRUE,
-#'    license_url="http://creativecommons.org/licenses/by/3.0/"),
-#'    limit = 100)
-#' (links <- crm_links(out$data$DOI[40], "all"))
+#' ## DOIs w/ full text, and with CC-BY 3.0 license
+#' data(dois_crminer_ccby3)
+#' (links <- crm_links(dois_crminer_ccby3[40], "all"))
 #' # crm_text(links, 'xml')
 #'
 #' ## You can use crm_xml, crm_plain, and crm_pdf to go directly to
 #' ## that format
-#' licenseurl <- "http://creativecommons.org/licenses/by/3.0/"
-#' out <- cr_works(
-#'   filter = list(has_full_text = TRUE, license_url = licenseurl),
-#'   limit = 100)
-#' (links <- crm_links(out$data$DOI[50], "all"))
+#' (links <- crm_links(dois_crminer_ccby3[5], "all"))
 #' crm_xml(links)
 #' #crm_pdf(links)
 #'
@@ -108,60 +93,56 @@
 #'
 #' ## elsevier
 #' ## requires extra authentication
-#' out <- cr_members(78, filter=c(has_full_text = TRUE), works = TRUE)
+#' data(dois_elsevier)
+#'
 #' ## set key first
 #' # Sys.setenv(CROSSREF_TDM_ELSEVIER = "your-key")
 #' ## XML
-#' link <- crm_links(out$data$DOI[1], "xml")
+#' link <- crm_links(dois_elsevier[1], "xml")
 #' # res <- crm_text(url = link, type = "xml")
 #' ## plain text
-#' link <- crm_links(out$data$DOI[1], "plain")
+#' link <- crm_links(dois_elsevier[1], "plain")
 #' # res <- crm_text(url = link, "plain")
 #'
 #' ## Wiley
 #' Sys.setenv(CROSSREF_TDM = "your-key")
 #'
 #' ### all wiley
-#' out <- cr_members(311, filter=c(has_full_text = TRUE,
-#'    type = 'journal-article'), works = TRUE)
-#' dois <- out$data$DOI[1:10]
+#' data(dois_wiley)
+#'
 #' # res <- list()
-#' # for (i in seq_along(dois)) {
-#' # tmp <- crm_links(dois[i], "all")
-#' # res[[i]] <- crm_text(tmp, type = "pdf", cache=F, overwriteUnspecified=T)
+#' # for (i in seq_along(dois_wiley$set1)) {
+#'   # tmp <- crm_links(dois_wiley$set1[i], "all")
+#'   # res[[i]] <- crm_text(tmp, type = "pdf", cache=FALSE,
+#'   #     overwrite_unspecified = TRUE)
 #' # }
 #' # res
 #'
 #' #### older dates
-#' out <- cr_members(311, filter=c(has_full_text = TRUE,
-#'       type = 'journal-article', until_created_date = "2013-12-31"),
-#'       works = TRUE)
-#'
-#' dois <- out$data$DOI[1:10]
 #' # res <- list()
-#' # for (i in seq_along(dois)) {
-#' #   tmp <- crm_links(dois[i], "all")
-#' #   res[[i]] <- crm_text(tmp, type = "pdf", cache=FALSE, overwriteUnspecified=T)
+#' # for (i in seq_along(dois_wiley$set2)) {
+#' #   tmp <- crm_links(dois_wiley$set2[i], "all")
+#' #   res[[i]] <- crm_text(tmp, type = "pdf", cache=FALSE,
+#' #         overwrite_unspecified=TRUE)
 #' # }
 #' # res
 #'
 #' ### wiley subset with CC By 4.0 license
-#' lic <- "http://creativecommons.org/licenses/by/4.0/"
-#' out <- cr_members(311, filter=c(has_full_text = TRUE, license.url = lic),
-#'    works = TRUE)
-#' dois <- out$data$DOI[1:10]
 #' # res <- list()
-#' # for (i in seq_along(dois)) {
-#' #   tmp <- crm_links(dois[i], "all")
-#' #   res[[i]] <- crm_text(tmp, type = "pdf", cache=F, overwriteUnspecified=T)
+#' # for (i in seq_along(dois_wiley$set3)) {
+#' #   tmp <- crm_links(dois_wiley$set3[i], "all")
+#' #   res[[i]] <- crm_text(tmp, type = "pdf", cache=F,
+#'         overwrite_unspecified=TRUE)
 #' # }
 #' }
 
 crm_text <- function(url, type='xml', path = cr_cache_path(), overwrite = TRUE,
                        read=TRUE, verbose=TRUE, cache=TRUE,
-                       overwriteUnspecified=FALSE, ...) {
-  url <- maybe_overwrite_unspecified(overwriteUnspecified,url,type)
-  auth <- cr_auth(url, type)
+                     overwrite_unspecified=FALSE, ...) {
+
+  url <- maybe_overwrite_unspecified(overwrite_unspecified, url, type)
+  #auth <- cr_auth(url, type)
+  auth <- list()
   switch( pick_type(type, url),
           xml = getTEXT(get_url(url, 'xml'), type, auth, ...),
           plain = getTEXT(get_url(url, 'xml'), type, auth, ...),
@@ -184,8 +165,8 @@ get_url <- function(a, b){
 #' @export
 #' @rdname crm_text
 crm_plain <- function(url, path = cr_cache_path(), overwrite = TRUE, read=TRUE,
-                        verbose=TRUE, overwriteUnspecified=FALSE, ...) {
-  url <- maybe_overwrite_unspecified(overwriteUnspecified,url,"plain")
+                        verbose=TRUE, overwrite_unspecified=FALSE, ...) {
+  url <- maybe_overwrite_unspecified(overwrite_unspecified, url, "plain")
   if (is.null(url$plain[[1]])) {
     stop("no plain text link found", call. = FALSE)
   }
@@ -195,8 +176,8 @@ crm_plain <- function(url, path = cr_cache_path(), overwrite = TRUE, read=TRUE,
 #' @export
 #' @rdname crm_text
 crm_xml <- function(url, path = cr_cache_path(), overwrite = TRUE, read=TRUE,
-                      verbose=TRUE, overwriteUnspecified=FALSE, ...) {
-  url <- maybe_overwrite_unspecified(overwriteUnspecified,url,"xml")
+                      verbose=TRUE, overwrite_unspecified = FALSE, ...) {
+  url <- maybe_overwrite_unspecified(overwrite_unspecified, url, "xml")
   if (is.null(url$xml[[1]])) {
     stop("no xml link found", call. = FALSE)
   }
@@ -205,9 +186,11 @@ crm_xml <- function(url, path = cr_cache_path(), overwrite = TRUE, read=TRUE,
 
 #' @export
 #' @rdname crm_text
-crm_pdf <- function(url, path = cr_cache_path(), overwrite = TRUE, read=TRUE,
-                      cache=FALSE, verbose=TRUE, overwriteUnspecified=FALSE, ...) {
-  url <- maybe_overwrite_unspecified(overwriteUnspecified,url,"pdf")
+crm_pdf <- function(url, path = cr_cache_path(), overwrite = TRUE, read = TRUE,
+                    cache = FALSE, verbose = TRUE,
+                    overwrite_unspecified = FALSE, ...) {
+
+  url <- maybe_overwrite_unspecified(overwrite_unspecified, url, "pdf")
   if (is.null(url$pdf[[1]])) {
     stop("no pdf link found", call. = FALSE)
   }
@@ -254,8 +237,6 @@ cr_auth <- function(url, type) {
           Accept = type)
       }
     )
-    # add_headers(`CR-TDM-Client_Token` = key, Accept = type)
-    # add_headers(`CR-Clickthrough-Client-Token` = key, Accept = type)
   } else {
     NULL
   }
@@ -321,10 +302,11 @@ getPDF <- function(url, path, auth, overwrite, type, read, verbose,
     filepath
   }
 }
-maybe_overwrite_unspecified <- function(overwriteUnspecified, url,type) {
-  if(overwriteUnspecified) {
-    url <- setNames(url, type)
+
+maybe_overwrite_unspecified <- function(overwrite_unspecified, url, type) {
+  if (overwrite_unspecified) {
+    url <- stats::setNames(url, type)
     attr(url, "type") <- type
   }
-url
+  return(url)
 }

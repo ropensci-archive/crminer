@@ -9,16 +9,16 @@
 \usage{
 crm_text(url, type = "xml", path = cr_cache_path(), overwrite = TRUE,
   read = TRUE, verbose = TRUE, cache = TRUE,
-  overwriteUnspecified = FALSE, ...)
+  overwrite_unspecified = FALSE, ...)
 
 crm_plain(url, path = cr_cache_path(), overwrite = TRUE, read = TRUE,
-  verbose = TRUE, overwriteUnspecified = FALSE, ...)
+  verbose = TRUE, overwrite_unspecified = FALSE, ...)
 
 crm_xml(url, path = cr_cache_path(), overwrite = TRUE, read = TRUE,
-  verbose = TRUE, overwriteUnspecified = FALSE, ...)
+  verbose = TRUE, overwrite_unspecified = FALSE, ...)
 
 crm_pdf(url, path = cr_cache_path(), overwrite = TRUE, read = TRUE,
-  cache = FALSE, verbose = TRUE, overwriteUnspecified = FALSE, ...)
+  cache = FALSE, verbose = TRUE, overwrite_unspecified = FALSE, ...)
 }
 \arguments{
 \item{url}{(character) A URL.}
@@ -46,11 +46,11 @@ you want to use cached version so that you don't have to download the file
 again. The steps of extracting and reading into R still have to be performed
 when \code{cache=TRUE}. Default: \code{TRUE}}
 
-\item{overwriteUnspecified}{(logical) Sometimes the crossref API returns mime type
-'unspecified' for the full text links (for some Wiley dois for example).
-This parameter overrides the mime type to be \code{type}.}
+\item{overwrite_unspecified}{(logical) Sometimes the crossref API returns
+mime type 'unspecified' for the full text links (for some Wiley dois
+for example). This parameter overrides the mime type to be \code{type}.}
 
-\item{...}{Named parameters passed on to \code{\link[httr]{GET}}}
+\item{...}{Named parameters passed on to \code{\link[crul]{HttpClient}}}
 }
 \description{
 Get full text from a DOI
@@ -71,63 +71,47 @@ but only metadata.
 }
 \examples{
 \dontrun{
-library("rcrossref")
+data(dois_crminer)
 
 # pdf link
 crm_links(doi = "10.5555/515151", "pdf")
 
 # xml and plain text links
-out <- cr_works(filter=c(has_full_text = TRUE))
-dois <- out$data$DOI
-crm_links(dois[1], "pdf")
-crm_links(dois[2], "xml")
-crm_links(dois[1], "plain")
-crm_links(dois[1], "all")
+crm_links(crminer_dois[1], "pdf")
+crm_links(crminer_dois[6], "xml")
+crm_links(crminer_dois[7], "plain")
+crm_links(crminer_dois[1], "all")
 
 # No links
-crm_links(cr_r(1), "xml")
+crm_links(crminer_dois[4], "xml")
 
 # get full text
 ## pensoft
-out <- cr_members(2258, filter=c(has_full_text = TRUE), works = TRUE)
-(links <- crm_links(out$data$DOI[1], "all"))
+data(dois_pensoft)
+(links <- crm_links(dois_pensoft[1], "all"))
 ### xml
 crm_text(links, 'xml')
 ### pdf
-crm_text(links, "pdf", read=FALSE)
+crm_text(links, "pdf", read = FALSE)
 crm_text(links, "pdf")
-
-### another pensoft e.g.
-links <- crm_links("10.3897/phytokeys.42.7604", "all")
-pdf_read <- crm_text(url = links, type = "pdf", read=FALSE,
-  verbose = FALSE)
-pdf <- crm_text(links, "pdf", verbose = FALSE)
 
 ## hindawi
-out <- cr_members(98, filter=c(has_full_text = TRUE), works = TRUE)
-(links <- crm_links(out$data$DOI[1], "all"))
+data(dois_pensoft)
+(links <- crm_links(dois_pensoft[1], "all"))
 ### xml
 crm_text(links, 'xml')
 ### pdf
 crm_text(links, "pdf", read=FALSE)
 crm_text(links, "pdf")
 
-## search for works with full text, and with CC-BY 3.0 license
-### you can see available licenses with cr_licenses() function
-out <-
- cr_works(filter = list(has_full_text = TRUE,
-   license_url="http://creativecommons.org/licenses/by/3.0/"),
-   limit = 100)
-(links <- crm_links(out$data$DOI[40], "all"))
+## DOIs w/ full text, and with CC-BY 3.0 license
+data(dois_crminer_ccby3)
+(links <- crm_links(dois_crminer_ccby3[40], "all"))
 # crm_text(links, 'xml')
 
 ## You can use crm_xml, crm_plain, and crm_pdf to go directly to
 ## that format
-licenseurl <- "http://creativecommons.org/licenses/by/3.0/"
-out <- cr_works(
-  filter = list(has_full_text = TRUE, license_url = licenseurl),
-  limit = 100)
-(links <- crm_links(out$data$DOI[50], "all"))
+(links <- crm_links(dois_crminer_ccby3[5], "all"))
 crm_xml(links)
 #crm_pdf(links)
 
@@ -143,52 +127,46 @@ crm_xml(links)
 
 ## elsevier
 ## requires extra authentication
-out <- cr_members(78, filter=c(has_full_text = TRUE), works = TRUE)
+data(dois_elsevier)
+
 ## set key first
 # Sys.setenv(CROSSREF_TDM_ELSEVIER = "your-key")
 ## XML
-link <- crm_links(out$data$DOI[1], "xml")
+link <- crm_links(dois_elsevier[1], "xml")
 # res <- crm_text(url = link, type = "xml")
 ## plain text
-link <- crm_links(out$data$DOI[1], "plain")
+link <- crm_links(dois_elsevier[1], "plain")
 # res <- crm_text(url = link, "plain")
 
 ## Wiley
 Sys.setenv(CROSSREF_TDM = "your-key")
 
 ### all wiley
-out <- cr_members(311, filter=c(has_full_text = TRUE,
-   type = 'journal-article'), works = TRUE)
-dois <- out$data$DOI[1:10]
+data(dois_wiley)
+
 # res <- list()
-# for (i in seq_along(dois)) {
-# tmp <- crm_links(dois[i], "all")
-# res[[i]] <- crm_text(tmp, type = "pdf", cache=F, overwriteUnspecified=T)
+# for (i in seq_along(dois_wiley$set1)) {
+  # tmp <- crm_links(dois_wiley$set1[i], "all")
+  # res[[i]] <- crm_text(tmp, type = "pdf", cache=FALSE,
+  #     overwrite_unspecified = TRUE)
 # }
 # res
 
 #### older dates
-out <- cr_members(311, filter=c(has_full_text = TRUE,
-      type = 'journal-article', until_created_date = "2013-12-31"),
-      works = TRUE)
-
-dois <- out$data$DOI[1:10]
 # res <- list()
-# for (i in seq_along(dois)) {
-#   tmp <- crm_links(dois[i], "all")
-#   res[[i]] <- crm_text(tmp, type = "pdf", cache=FALSE, overwriteUnspecified=T)
+# for (i in seq_along(dois_wiley$set2)) {
+#   tmp <- crm_links(dois_wiley$set2[i], "all")
+#   res[[i]] <- crm_text(tmp, type = "pdf", cache=FALSE,
+#         overwrite_unspecified=TRUE)
 # }
 # res
 
 ### wiley subset with CC By 4.0 license
-lic <- "http://creativecommons.org/licenses/by/4.0/"
-out <- cr_members(311, filter=c(has_full_text = TRUE, license.url = lic),
-   works = TRUE)
-dois <- out$data$DOI[1:10]
 # res <- list()
-# for (i in seq_along(dois)) {
-#   tmp <- crm_links(dois[i], "all")
-#   res[[i]] <- crm_text(tmp, type = "pdf", cache=F, overwriteUnspecified=T)
+# for (i in seq_along(dois_wiley$set3)) {
+#   tmp <- crm_links(dois_wiley$set3[i], "all")
+#   res[[i]] <- crm_text(tmp, type = "pdf", cache=F,
+        overwrite_unspecified=TRUE)
 # }
 }
 }
