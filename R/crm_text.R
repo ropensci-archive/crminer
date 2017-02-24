@@ -2,7 +2,8 @@
 #'
 #' @export
 #' @param url (character) A URL.
-#' @param type (character) One of xml, plain, pdf, or all
+#' @param type (character) One of 'xml' (default), 'html', 'plain', 'pdf',
+#' 'unspecified', or 'all'
 #' @param path (character) Path to store pdfs in. By default we use
 #' \code{paste0(rappdirs::user_cache_dir(), "/crminer")}, but you can
 #' set this directory to something different. Ignored unless getting
@@ -13,7 +14,6 @@
 #' text from the pdf or simply download. If \code{TRUE}, you get the text from
 #' the pdf back. If \code{FALSE}, you only get back the metadata.
 #' Default: \code{TRUE}
-#' @param verbose (logical) Print progress messages. Default: \code{TRUE}
 #' @param cache (logical) Use cached files or not. All files are written to
 #' your machine locally, so this doesn't affect that. This only states whether
 #' you want to use cached version so that you don't have to download the file
@@ -23,6 +23,7 @@
 #' mime type 'unspecified' for the full text links (for some Wiley dois
 #' for example). This parameter overrides the mime type to be \code{type}.
 #' @param ... Named parameters passed on to \code{\link[crul]{HttpClient}}
+#'
 #' @details Note that \code{\link{crm_text}},
 #' \code{\link{crm_pdf}}, \code{\link{crm_xml}}, \code{\link{crm_plain}}
 #' are not vectorized.
@@ -36,29 +37,16 @@
 #' of the links that are apparently full text are not in facct full text,
 #' but only metadata.
 #'
+#' Check out \code{\link{auth}} for details on authentication.
+#'
 #' @examples \dontrun{
-#' data(dois_crminer)
-#'
-#' # pdf link
-#' crm_links(doi = "10.5555/515151", "pdf")
-#'
-#' # xml and plain text links
-#' crm_links(crminer_dois[1], "pdf")
-#' crm_links(crminer_dois[6], "xml")
-#' crm_links(crminer_dois[7], "plain")
-#' crm_links(crminer_dois[1], "all")
-#'
-#' # No links
-#' crm_links(crminer_dois[4], "xml")
-#'
-#' # get full text
 #' ## pensoft
 #' data(dois_pensoft)
 #' (links <- crm_links(dois_pensoft[1], "all"))
 #' ### xml
-#' crm_text(links, 'xml')
+#' crm_text(url=links, type='xml')
 #' ### pdf
-#' crm_text(links, "pdf", read = FALSE)
+#' crm_text(url=links, type="pdf", read = FALSE)
 #' crm_text(links, "pdf")
 #'
 #' ## hindawi
@@ -98,10 +86,10 @@
 #' ## set key first
 #' # Sys.setenv(CROSSREF_TDM_ELSEVIER = "your-key")
 #' ## XML
-#' link <- crm_links(dois_elsevier[1], "xml")
+#' link <- crm_links("10.1016/j.funeco.2010.11.003", "xml")
 #' # res <- crm_text(url = link, type = "xml")
 #' ## plain text
-#' link <- crm_links(dois_elsevier[1], "plain")
+#' link <- crm_links("10.1016/j.funeco.2010.11.003", "plain")
 #' # res <- crm_text(url = link, "plain")
 #'
 #' ## Wiley
@@ -110,13 +98,14 @@
 #' ### all wiley
 #' data(dois_wiley)
 #'
-#' # res <- list()
-#' # for (i in seq_along(dois_wiley$set1)) {
-#'   # tmp <- crm_links(dois_wiley$set1[i], "all")
-#'   # res[[i]] <- crm_text(tmp, type = "pdf", cache=FALSE,
-#'   #     overwrite_unspecified = TRUE)
-#' # }
-#' # res
+#' res <- list()
+#' dois <- dois_wiley$set1[1:10]
+#' for (i in seq_along(dois)) {
+#'   tmp <- crm_links(dois[i], "all")
+#'   res[[i]] <- crm_text(url = tmp, type = "pdf", cache=FALSE,
+#'       overwrite_unspecified = TRUE)
+#' }
+#' res
 #'
 #' #### older dates
 #' # res <- list()
@@ -136,18 +125,18 @@
 #' # }
 #' }
 
-crm_text <- function(url, type='xml', path = cr_cache_path(), overwrite = TRUE,
-                       read=TRUE, verbose=TRUE, cache=TRUE,
-                     overwrite_unspecified=FALSE, ...) {
+crm_text <- function(url, type = 'xml', path = cr_cache_path(), overwrite = TRUE,
+                     read = TRUE, cache = TRUE,
+                     overwrite_unspecified = FALSE, ...) {
 
   url <- maybe_overwrite_unspecified(overwrite_unspecified, url, type)
-  #auth <- cr_auth(url, type)
-  auth <- list()
-  switch( pick_type(type, url),
-          xml = getTEXT(get_url(url, 'xml'), type, auth, ...),
-          plain = getTEXT(get_url(url, 'xml'), type, auth, ...),
-          pdf = getPDF(url = get_url(url, 'pdf'), path, auth, overwrite, type,
-                       read, verbose, cache, ...)
+  auth <- cr_auth(url, type)
+  switch(
+    pick_type(type, url),
+    xml = getTEXT(get_url(url, 'xml'), type, auth, ...),
+    plain = getTEXT(get_url(url, 'xml'), type, auth, ...),
+    pdf = getPDF(url = get_url(url, 'pdf'), path, auth, overwrite, type,
+                 read, cache, ...)
   )
 }
 
@@ -165,7 +154,8 @@ get_url <- function(a, b){
 #' @export
 #' @rdname crm_text
 crm_plain <- function(url, path = cr_cache_path(), overwrite = TRUE, read=TRUE,
-                        verbose=TRUE, overwrite_unspecified=FALSE, ...) {
+                        overwrite_unspecified=FALSE, ...) {
+
   url <- maybe_overwrite_unspecified(overwrite_unspecified, url, "plain")
   if (is.null(url$plain[[1]])) {
     stop("no plain text link found", call. = FALSE)
@@ -176,7 +166,8 @@ crm_plain <- function(url, path = cr_cache_path(), overwrite = TRUE, read=TRUE,
 #' @export
 #' @rdname crm_text
 crm_xml <- function(url, path = cr_cache_path(), overwrite = TRUE, read=TRUE,
-                      verbose=TRUE, overwrite_unspecified = FALSE, ...) {
+                      overwrite_unspecified = FALSE, ...) {
+
   url <- maybe_overwrite_unspecified(overwrite_unspecified, url, "xml")
   if (is.null(url$xml[[1]])) {
     stop("no xml link found", call. = FALSE)
@@ -187,15 +178,14 @@ crm_xml <- function(url, path = cr_cache_path(), overwrite = TRUE, read=TRUE,
 #' @export
 #' @rdname crm_text
 crm_pdf <- function(url, path = cr_cache_path(), overwrite = TRUE, read = TRUE,
-                    cache = FALSE, verbose = TRUE,
-                    overwrite_unspecified = FALSE, ...) {
+                    cache = FALSE, overwrite_unspecified = FALSE, ...) {
 
   url <- maybe_overwrite_unspecified(overwrite_unspecified, url, "pdf")
   if (is.null(url$pdf[[1]])) {
     stop("no pdf link found", call. = FALSE)
   }
   getPDF(url$pdf[[1]], path, cr_auth(url, 'pdf'), overwrite, "pdf",
-         read, verbose, cache, ...)
+         read, cache, ...)
 }
 
 pick_type <- function(x, z) {
@@ -222,19 +212,20 @@ cr_auth <- function(url, type) {
     switch(
       mem_num,
       `78` = {
-        key <- Sys.getenv("CROSSREF_TDM_ELSEVIER")
+        key <- Sys.getenv("CROSSREF_TDM")
         #add_headers(`X-ELS-APIKey` = key, Accept = type)
-        httr::add_headers(`CR-Clickthrough-Client-Token` = key, Accept = type)
+        list(`CR-Clickthrough-Client-Token` = key, Accept = type)
       },
       `263` = {
         key <- Sys.getenv("CROSSREF_TDM")
-        httr::add_headers(`CR-TDM-Client_Token` = key, Accept = type)
+        list(`CR-TDM-Client_Token` = key, Accept = type)
         # add_headers(`CR-Clickthrough-Client-Token` = key, Accept = type)
       },
       `311` = {
-        httr::add_headers(
+        list(
           `CR-Clickthrough-Client-Token` = Sys.getenv("CROSSREF_TDM"),
-          Accept = type)
+          Accept = type
+        )
       }
     )
   } else {
@@ -243,20 +234,27 @@ cr_auth <- function(url, type) {
 }
 
 getTEXT <- function(x, type, auth, ...){
-  res <- httr::GET(x, auth, ...)
-  switch(type,
-         xml = xml2::read_xml(ct_utf8(res)),
-         plain = ct_utf8(res))
+  cli <- crul::HttpClient$new(
+    url = x,
+    headers = auth
+  )
+  res <- cli$get(verbose = TRUE, ...)
+  switch(
+    type,
+    xml = xml2::read_xml(res$parse("UTF-8")),
+    plain = res$parse("UTF-8"),
+    stop("only 'xml' and 'plain' supported")
+  )
 }
 
-getPDF <- function(url, path, auth, overwrite, type, read, verbose,
+getPDF <- function(url, path, auth, overwrite, type, read,
                    cache=FALSE, ...) {
   if (!file.exists(path)) {
     dir.create(path, showWarnings = FALSE, recursive = TRUE)
   }
 
   # pensoft special handling
-  if ( grepl("pensoft", url[[1]]) ) {
+  if (grepl("pensoft", url[[1]])) {
     doi <- attr(url, "doi")
     if (is.null(doi)) {
       tmp <- strsplit(url, "=")[[1]]
@@ -278,16 +276,23 @@ getPDF <- function(url, path, auth, overwrite, type, read, verbose,
       stop( sprintf("%s not found", filepath), call. = FALSE)
     }
   } else {
-    if (verbose) message("Downloading pdf...")
-    res <- httr::GET(
-      url,
-      httr::accept("application/pdf"),
-      httr::write_disk(path = filepath, overwrite = overwrite),
-      auth,
-      httr::config(followlocation = TRUE), ...)
-    httr::warn_for_status(res)
+    message("Downloading pdf...")
+    cli <- crul::HttpClient$new(
+      url = url,
+      opts = list(followlocation = TRUE),
+      headers = c(auth, list(Accept = "application/pdf"))
+    )
+    res <- cli$get(disk = filepath, ...)
+
+    # res <- httr::GET(
+    #   url,
+    #   httr::accept("application/pdf"),
+    #   httr::write_disk(path = filepath, overwrite = overwrite),
+    #   auth,
+    #   httr::config(followlocation = TRUE), ...)
+    res$raise_for_status()
     if (res$status_code < 202) {
-      filepath <- res$request$output$path
+      filepath <- res$content
     } else {
       unlink(filepath)
       filepath <- res$status_code
@@ -296,7 +301,7 @@ getPDF <- function(url, path, auth, overwrite, type, read, verbose,
   }
 
   if (read) {
-    if (verbose) message("Extracting text from pdf...")
+    message("Extracting text from pdf...")
     crm_extract(path = filepath)
   } else {
     filepath

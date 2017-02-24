@@ -4,13 +4,20 @@
 \alias{crm_extract}
 \title{Extract text from a single pdf document}
 \usage{
-crm_extract(path)
+crm_extract(path, ...)
 }
 \arguments{
-\item{path}{Path to a file. required}
+\item{path}{(character) Path to a file. required}
+
+\item{...}{args passed on to \code{\link[pdftools]{pdf_info}}
+and \code{\link[pdftools]{pdf_text}} - any args are passed to
+both of those function calls, which makes sense}
 }
 \value{
-An object of class crm_pdf
+An object of class \code{crm_pdf} with a slot for
+\code{info} (pdf metadata essentially), and \code{text} (the extracted
+text) - with an attribute (\code{path}) with the path to the pdf
+on disk
 }
 \description{
 Extract text from a single pdf document
@@ -37,4 +44,3 @@ res$info
 cat(res$text)
 }
 }
-

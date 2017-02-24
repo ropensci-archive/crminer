@@ -1,5 +1,22 @@
 #' crminer - Crossref text miner
 #'
+#' @section Package API (functions):
+#' \itemize{
+#'  \item \code{\link{crm_links}} - get full text links from DOIs
+#'  \item \code{\link{as_tdmurl}} - coerce a URL to a tdmurl
+#'  \item \code{\link{crm_text}} - general purpose interface to request
+#'  full text
+#'  \item \code{\link{crm_pdf}} - request pdf full text
+#'  \item \code{\link{crm_plain}} - request plain text full text
+#'  \item \code{\link{crm_xml}} - request xml full text
+#'  \item \code{\link{crm_extract}} - extract text from a pdf
+#' }
+#'
+#' @section Authentication:
+#' You should first start reading up on authentication (\code{\link{auth}})
+#' since you are probably here to do text mining, and most of the full text
+#' links available via Crossref are behind authentication.
+#'
 #' @name crminer-package
 #' @aliases crminer
 #' @docType package

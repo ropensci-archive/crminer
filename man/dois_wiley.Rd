@@ -22,4 +22,3 @@ length 100, \code{set2} with a character vector of length 100, and
 }
 }
 \keyword{datasets}
-

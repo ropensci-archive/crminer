@@ -10,4 +10,3 @@ Obtained via
 \code{rcrossref::cr_works(filter = c(has_full_text = TRUE), limit = 500)}
 }
 \keyword{datasets}
-

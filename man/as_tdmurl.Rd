@@ -2,8 +2,8 @@
 % Please edit documentation in R/as_tdmurl.R
 \name{as_tdmurl}
 \alias{as_tdmurl}
-\alias{as_tdmurl.character}
 \alias{as_tdmurl.tdmurl}
+\alias{as_tdmurl.character}
 \title{Coerce a url to a tdmurl with a specific type}
 \usage{
 as_tdmurl(url, type, doi)
@@ -15,13 +15,14 @@ as_tdmurl(url, type, doi)
 \arguments{
 \item{url}{(character) A URL.}
 
-\item{type}{(character) A document type, one of xml, html, pdf, plain,
-unspecified, or all}
+\item{type}{(character) One of 'xml' (default), 'html', 'plain', 'pdf',
+'unspecified', or 'all'}
 
 \item{doi}{(character) A DOI, optional, default: \code{NULL}}
 }
 \description{
-Coerce a url to a tdmurl with a specific type
+A tmd url is just a URL with some attributes to make it easier
+to handle within other functions in this package.
 }
 \examples{
 as_tdmurl("http://downloads.hindawi.com/journals/bmri/2014/201717.xml",
@@ -33,4 +34,3 @@ out <- as_tdmurl("http://downloads.hindawi.com/journals/bmri/2014/201717.pdf",
 attributes(out)
 identical(attr(out, "type"), "pdf")
 }
-

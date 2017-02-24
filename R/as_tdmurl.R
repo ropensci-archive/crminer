@@ -1,9 +1,12 @@
 #' Coerce a url to a tdmurl with a specific type
 #'
+#' A tmd url is just a URL with some attributes to make it easier
+#' to handle within other functions in this package.
+#'
 #' @export
 #' @param url (character) A URL.
-#' @param type (character) A document type, one of xml, html, pdf, plain,
-#' unspecified, or all
+#' @param type (character) One of 'xml' (default), 'html', 'plain', 'pdf',
+#' 'unspecified', or 'all'
 #' @param doi (character) A DOI, optional, default: \code{NULL}
 #' @examples
 #' as_tdmurl("http://downloads.hindawi.com/journals/bmri/2014/201717.xml",

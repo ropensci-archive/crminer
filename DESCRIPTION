@@ -5,7 +5,7 @@ Description: Text mining client for Crossref (<http://crossref.org>). Includes
     functions for getting getting links to full text of articles, fetching full
     text articles from those links or Digital Object Identifiers (DOIs), 
     and text extraction from PDFs.
-Version: 0.0.6.9200
+Version: 0.0.7.9100
 Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus@gmail.com"))
 License: MIT + file LICENSE
@@ -23,4 +23,4 @@ Suggests:
     rcrossref,
     testthat,
     covr
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1

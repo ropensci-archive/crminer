@@ -1,8 +1,9 @@
 #' Get full text links from a DOI
 #'
 #' @export
-#' @param doi (character) A DOI
-#' @param type (character) One of 'xml' (default), 'plain', 'pdf', or 'all'
+#' @param doi (character) A DOI. required.
+#' @param type (character) One of 'xml' (default), 'html', 'plain', 'pdf',
+#' 'unspecified', or 'all'. required.
 #' @param ... Named parameters passed on to \code{\link[crul]{HttpClient}}
 #'
 #' @details Note that this function is not vectorized.
@@ -21,12 +22,30 @@
 #' For example, for the publisher eLife, they return a single URL with
 #' content-type application/pdf, but the URL is not for a PDF, but for both
 #' XML and PDF, and content-type can be set with that URL as either XML or
-#' PDF to get that type. Anyway, expect changes...
+#' PDF to get that type.
+#'
+#' In another example, all Elsevier URLs at time of writing are have
+#' \code{http} scheme, while those don't actually work, so we have a
+#' custom fix in this function for that publisher. Anyway, expect changes...
 #'
 #' @return \code{NULL} if no full text links given; a list of tdmurl objects if
 #' links found.
 #'
 #' @examples \dontrun{
+#' data(dois_crminer)
+#'
+#' # pdf link
+#' crm_links(doi = "10.5555/515151", "pdf")
+#'
+#' # xml and plain text links
+#' crm_links(dois_crminer[1], "pdf")
+#' crm_links(dois_crminer[6], "xml")
+#' crm_links(dois_crminer[7], "plain")
+#' crm_links(dois_crminer[1], "all")
+#'
+#' # No links - returns NULL
+#' crm_links(dois_crminer[4], "xml")
+#'
 #' # pdf link
 #' crm_links(doi = "10.5555/515151", "pdf")
 #' crm_links(doi = "10.3897/phytokeys.52.5250", "pdf")
@@ -46,6 +65,9 @@
 #'   crm_links(cr_r(1))
 #'   crm_links(doi="10.3389/fnagi.2014.00130")
 #' }
+#'
+#' # many calls, use e.g., lapply
+#' lapply(dois_crminer[1:3], crm_links, type = "all")
 #' }
 crm_links <- function(doi, type = 'xml', ...) {
   res <- crm_works_links(dois = doi, ...)[[1]]
@@ -80,6 +102,13 @@ crm_links <- function(doi, type = 'xml', ...) {
               ),
             "xml")
           )
+      }
+
+      if (basename(res$member) == "78") {
+        withtype <- lapply(withtype, function(z) {
+          z$URL <- sub("http", "https", z$URL)
+          z
+        })
       }
 
       if (type == "all") {
