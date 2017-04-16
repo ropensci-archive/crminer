@@ -6,11 +6,11 @@ test_that("crm_links works", {
 
   expect_is(l1, "tdmurl")
   expect_equal(attr(l1, "type"), "pdf")
-  expect_equal(attr(l1, "member"), "http://id.crossref.org/member/4443")
+  expect_equal(attr(l1, "member"), "4443")
 
   expect_is(l2, "tdmurl")
   expect_equal(attr(l2, "type"), "pdf")
-  expect_equal(attr(l2, "member"), "http://id.crossref.org/member/7822")
+  expect_equal(attr(l2, "member"), "7822")
 })
 
 test_that("crm_links fails correctly", {
