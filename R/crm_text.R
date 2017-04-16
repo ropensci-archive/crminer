@@ -5,39 +5,38 @@
 #' @param type (character) One of 'xml' (default), 'html', 'plain', 'pdf',
 #' 'unspecified', or 'all'
 #' @param path (character) Path to store pdfs in. By default we use
-#' \code{paste0(rappdirs::user_cache_dir(), "/crminer")}, but you can
+#' `paste0(rappdirs::user_cache_dir(), "/crminer")`, but you can
 #' set this directory to something different. Ignored unless getting
 #' pdf
 #' @param overwrite (logical) Overwrite file if it exists already?
-#' Default: \code{TRUE}
+#' Default: `TRUE`
 #' @param read (logical) If reading a pdf, this toggles whether we extract
-#' text from the pdf or simply download. If \code{TRUE}, you get the text from
-#' the pdf back. If \code{FALSE}, you only get back the metadata.
-#' Default: \code{TRUE}
+#' text from the pdf or simply download. If `TRUE`, you get the text from
+#' the pdf back. If `FALSE`, you only get back the metadata.
+#' Default: `TRUE`
 #' @param cache (logical) Use cached files or not. All files are written to
 #' your machine locally, so this doesn't affect that. This only states whether
 #' you want to use cached version so that you don't have to download the file
 #' again. The steps of extracting and reading into R still have to be performed
-#' when \code{cache=TRUE}. Default: \code{TRUE}
+#' when `cache=TRUE`. Default: `TRUE`
 #' @param overwrite_unspecified (logical) Sometimes the crossref API returns
 #' mime type 'unspecified' for the full text links (for some Wiley dois
-#' for example). This parameter overrides the mime type to be \code{type}.
-#' @param ... Named parameters passed on to \code{\link[crul]{HttpClient}}
+#' for example). This parameter overrides the mime type to be `type`.
+#' @param ... Named parameters passed on to [crul::HttpClient()]
 #'
-#' @details Note that \code{\link{crm_text}},
-#' \code{\link{crm_pdf}}, \code{\link{crm_xml}}, \code{\link{crm_plain}}
+#' @details Note that [crm_text()], [crm_pdf()], [crm_xml()], [crm_plain()]
 #' are not vectorized.
 #'
 #' Note that some links returned will not in fact lead you to full text
 #' content as you would understandbly think and expect. That is, if you
-#' use the \code{filter} parameter with e.g., \code{\link[rcrossref]{cr_works}}
+#' use the `filter` parameter with e.g., [rcrossref::cr_works()]
 #' and filter to only full text content, some links may actually give back
 #' only metadata for an article. Elsevier is perhaps the worst offender,
 #' for one because they have a lot of entries in Crossref TDM, but most
 #' of the links that are apparently full text are not in facct full text,
 #' but only metadata.
 #'
-#' Check out \code{\link{auth}} for details on authentication.
+#' Check out [auth()] for details on authentication.
 #'
 #' @examples \dontrun{
 #' ## pensoft

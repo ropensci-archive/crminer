@@ -9,8 +9,8 @@ crm_extract(path, ...)
 \arguments{
 \item{path}{(character) Path to a file. required}
 
-\item{...}{args passed on to \code{\link[pdftools]{pdf_info}}
-and \code{\link[pdftools]{pdf_text}} - any args are passed to
+\item{...}{args passed on to \code{\link[pdftools:pdf_info]{pdftools::pdf_info()}}
+and \code{\link[pdftools:pdf_text]{pdftools::pdf_text()}} - any args are passed to
 both of those function calls, which makes sense}
 }
 \value{

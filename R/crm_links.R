@@ -4,13 +4,13 @@
 #' @param doi (character) A DOI. required.
 #' @param type (character) One of 'xml' (default), 'html', 'plain', 'pdf',
 #' 'unspecified', or 'all'. required.
-#' @param ... Named parameters passed on to \code{\link[crul]{HttpClient}}
+#' @param ... Named parameters passed on to [crul::HttpClient()]
 #'
 #' @details Note that this function is not vectorized.
 #'
 #' Some links returned will not in fact lead you to full text
 #' content as you would understandbly think and expect. That is, if you
-#' use the \code{filter} parameter with e.g., \code{\link[rcrossref]{cr_works}}
+#' use the `filter` parameter with e.g., [rcrossref::cr_works()]
 #' and filter to only full text content, some links may actually give back
 #' only metadata for an article. Elsevier is perhaps the worst offender,
 #' for one because they have a lot of entries in Crossref TDM, but most
@@ -25,10 +25,10 @@
 #' PDF to get that type.
 #'
 #' In another example, all Elsevier URLs at time of writing are have
-#' \code{http} scheme, while those don't actually work, so we have a
+#' `http` scheme, while those don't actually work, so we have a
 #' custom fix in this function for that publisher. Anyway, expect changes...
 #'
-#' @return \code{NULL} if no full text links given; a list of tdmurl objects if
+#' @return `NULL` if no full text links given; a list of tdmurl objects if
 #' links found.
 #'
 #' @examples \dontrun{

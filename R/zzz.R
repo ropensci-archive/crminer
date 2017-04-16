@@ -39,7 +39,8 @@ crm_GET <- function(endpoint, args = list(), todf = TRUE, on_error = warning,
              call. = FALSE)
     list(message = NULL)
   } else {
-    stopifnot(res$response_headers$`content-type` == "application/json;charset=UTF-8")
+    stopifnot(res$response_headers$`content-type` ==
+                "application/json;charset=UTF-8")
     res <- res$parse("UTF-8")
     if (parse) jsonlite::fromJSON(res, todf) else res
   }
@@ -63,7 +64,7 @@ get_err <- function(x) {
     tmp$message[[1]]$message
   } else {
     if (any(class(tmp) %in% c("HTMLInternalDocument", "xml_document"))) {
-      "Server error - check query - or api.crossref.org may be experiencing problems"
+      "Server error - check query - or api.crossref.org may have problems"
     } else {
       tmp
     }

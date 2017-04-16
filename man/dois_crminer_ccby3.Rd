@@ -7,7 +7,6 @@
 \format{A character vector of length 100}
 \description{
 Obtained via
-\code{rcrossref::cr_works(filter = list(has_full_text = TRUE,
-license_url="http://creativecommons.org/licenses/by/3.0/"), limit = 100)}
+\code{rcrossref::cr_works(filter = list(has_full_text = TRUE, license_url="http://creativecommons.org/licenses/by/3.0/"), limit = 100)}
 }
 \keyword{datasets}

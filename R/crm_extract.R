@@ -2,12 +2,12 @@
 #'
 #' @export
 #' @param path (character) Path to a file. required
-#' @param ... args passed on to \code{\link[pdftools]{pdf_info}}
-#' and \code{\link[pdftools]{pdf_text}} - any args are passed to
+#' @param ... args passed on to [pdftools::pdf_info()]
+#' and [pdftools::pdf_text()] - any args are passed to
 #' both of those function calls, which makes sense
-#' @return An object of class \code{crm_pdf} with a slot for
-#' \code{info} (pdf metadata essentially), and \code{text} (the extracted
-#' text) - with an attribute (\code{path}) with the path to the pdf
+#' @return An object of class `crm_pdf` with a slot for
+#' `info` (pdf metadata essentially), and `text` (the extracted
+#' text) - with an attribute (`path`) with the path to the pdf
 #' on disk
 #' @details We use \pkg{pdftools} under the hood to do pdf text
 #' extraction

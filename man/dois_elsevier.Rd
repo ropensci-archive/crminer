@@ -6,7 +6,6 @@
 \title{A character vector of 100 Elsevier DOIs from Crossref}
 \format{A character vector of length 100}
 \description{
-Obtained via \code{rcrossref::cr_members(78,
-filter = c(has_full_text = TRUE), works = TRUE, limit = 100)}
+Obtained via \code{rcrossref::cr_members(78, filter = c(has_full_text = TRUE), works = TRUE, limit = 100)}
 }
 \keyword{datasets}

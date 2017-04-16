@@ -12,7 +12,7 @@ crm_links(doi, type = "xml", ...)
 \item{type}{(character) One of 'xml' (default), 'html', 'plain', 'pdf',
 'unspecified', or 'all'. required.}
 
-\item{...}{Named parameters passed on to \code{\link[crul]{HttpClient}}}
+\item{...}{Named parameters passed on to \code{\link[crul:HttpClient]{crul::HttpClient()}}}
 }
 \value{
 \code{NULL} if no full text links given; a list of tdmurl objects if
@@ -26,7 +26,7 @@ Note that this function is not vectorized.
 
 Some links returned will not in fact lead you to full text
 content as you would understandbly think and expect. That is, if you
-use the \code{filter} parameter with e.g., \code{\link[rcrossref]{cr_works}}
+use the \code{filter} parameter with e.g., \code{\link[rcrossref:cr_works]{rcrossref::cr_works()}}
 and filter to only full text content, some links may actually give back
 only metadata for an article. Elsevier is perhaps the worst offender,
 for one because they have a lot of entries in Crossref TDM, but most

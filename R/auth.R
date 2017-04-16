@@ -3,7 +3,7 @@
 #' @name auth
 #' @section Authentication:
 #' There's a set of publishers that are involved in the Crossref
-#' Text and Data Mining (TDM) program (\url{http://tdmsupport.crossref.org/}),
+#' Text and Data Mining (TDM) program (<http://tdmsupport.crossref.org/>),
 #' which means essentially the publishers
 #' deposit URLs for fulltext in Crossref metadata.
 #'
@@ -18,17 +18,17 @@
 #' authentication scheme are really only Elsevier and Wiley.
 #'
 #' There's a how to guide for Crossref TDM at
-#' \url{http://tdmsupport.crossref.org/researchers/}.
+#' <http://tdmsupport.crossref.org/researchers/>.
 #' Get your Crossref TDM token by registering at
-#' \url{https://apps.crossref.org/clickthrough/researchers}.
-#' Save the token in your \code{.Renviron} file with a new row like
-#' \code{CROSSREF_TDM=your key}. We will read that key in for you - it's best
+#' <https://apps.crossref.org/clickthrough/researchers>.
+#' Save the token in your `.Renviron` file with a new row like
+#' `CROSSREF_TDM=your key`. We will read that key in for you - it's best
 #' this way rather than passing in a key via a parameter - since you might
 #' put that code up on the web somewhere and someone could use your key.
 #'
 #' @section IP addresses:
 #' If you don't know what IP addresses are, check out
-#' \url{https://en.wikipedia.org/wiki/IP_address}. At least Elsevier and
+#' <https://en.wikipedia.org/wiki/IP_address>. At least Elsevier and
 #' I think Wiley also check your IP address in addition to requiring the
 #' authentication token. Usually your're good if you're physically at the
 #' institution that has access to the publishers content OR on a VPN

@@ -48,26 +48,25 @@ when \code{cache=TRUE}. Default: \code{TRUE}}
 mime type 'unspecified' for the full text links (for some Wiley dois
 for example). This parameter overrides the mime type to be \code{type}.}
 
-\item{...}{Named parameters passed on to \code{\link[crul]{HttpClient}}}
+\item{...}{Named parameters passed on to \code{\link[crul:HttpClient]{crul::HttpClient()}}}
 }
 \description{
 Get full text from a DOI
 }
 \details{
-Note that \code{\link{crm_text}},
-\code{\link{crm_pdf}}, \code{\link{crm_xml}}, \code{\link{crm_plain}}
+Note that \code{\link[=crm_text]{crm_text()}}, \code{\link[=crm_pdf]{crm_pdf()}}, \code{\link[=crm_xml]{crm_xml()}}, \code{\link[=crm_plain]{crm_plain()}}
 are not vectorized.
 
 Note that some links returned will not in fact lead you to full text
 content as you would understandbly think and expect. That is, if you
-use the \code{filter} parameter with e.g., \code{\link[rcrossref]{cr_works}}
+use the \code{filter} parameter with e.g., \code{\link[rcrossref:cr_works]{rcrossref::cr_works()}}
 and filter to only full text content, some links may actually give back
 only metadata for an article. Elsevier is perhaps the worst offender,
 for one because they have a lot of entries in Crossref TDM, but most
 of the links that are apparently full text are not in facct full text,
 but only metadata.
 
-Check out \code{\link{auth}} for details on authentication.
+Check out \code{\link[=auth]{auth()}} for details on authentication.
 }
 \examples{
 \dontrun{
