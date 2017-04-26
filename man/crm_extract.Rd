@@ -27,7 +27,6 @@ We use \pkg{pdftools} under the hood to do pdf text
 extraction
 }
 \examples{
-\dontrun{
 path <- system.file("examples", "MairChamberlain2014RJournal.pdf",
    package = "crminer")
 (res <- crm_extract(path))
@@ -42,5 +41,4 @@ path <- system.file("examples", "ChamberlainEtal2013Ecosphere.pdf",
 (res <- crm_extract(path))
 res$info
 cat(res$text)
-}
 }

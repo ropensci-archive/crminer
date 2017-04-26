@@ -7,7 +7,7 @@
 crm_links(doi, type = "all", ...)
 }
 \arguments{
-\item{doi}{(character) A digital object identifier (DOI). required.}
+\item{doi}{(character) A Digital Object Identifier (DOI). required.}
 
 \item{type}{(character) One of 'xml', 'html', 'plain', 'pdf',
 'unspecified', or 'all' (default). required.}

@@ -11,7 +11,7 @@
 #' on disk
 #' @details We use \pkg{pdftools} under the hood to do pdf text
 #' extraction
-#' @examples \dontrun{
+#' @examples
 #' path <- system.file("examples", "MairChamberlain2014RJournal.pdf",
 #'    package = "crminer")
 #' (res <- crm_extract(path))
@@ -26,7 +26,6 @@
 #' (res <- crm_extract(path))
 #' res$info
 #' cat(res$text)
-#' }
 crm_extract <- function(path, ...) {
   path <- path.expand(path)
   if (!file.exists(path)) stop("path does not exist", call. = FALSE)
