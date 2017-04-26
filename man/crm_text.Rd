@@ -91,7 +91,7 @@ crm_text(links, "pdf")
 ## DOIs w/ full text, and with CC-BY 3.0 license
 data(dois_crminer_ccby3)
 (links <- crm_links(dois_crminer_ccby3[40], "all"))
-# crm_text(links, 'xml')
+# crm_text(links, 'pdf')
 
 ## You can use crm_xml, crm_plain, and crm_pdf to go directly to
 ## that format
@@ -128,14 +128,14 @@ Sys.setenv(CROSSREF_TDM = "your-key")
 ### all wiley
 data(dois_wiley)
 
-res <- list()
-dois <- dois_wiley$set1[1:10]
-for (i in seq_along(dois)) {
-  tmp <- crm_links(dois[i], "all")
-  res[[i]] <- crm_text(url = tmp, type = "pdf", cache=FALSE,
-      overwrite_unspecified = TRUE)
-}
-res
+# res <- list()
+# dois <- dois_wiley$set1[1:10]
+# for (i in seq_along(dois)) {
+#    tmp <- crm_links(dois[i], "all")
+# res[[i]] <- crm_text(url = tmp, type = "pdf", cache=FALSE,
+#        overwrite_unspecified = TRUE)
+# }
+# res
 
 #### older dates
 # res <- list()
@@ -151,7 +151,7 @@ res
 # for (i in seq_along(dois_wiley$set3)) {
 #   tmp <- crm_links(dois_wiley$set3[i], "all")
 #   res[[i]] <- crm_text(tmp, type = "pdf", cache=F,
-        overwrite_unspecified=TRUE)
+#         overwrite_unspecified=TRUE)
 # }
 }
 }

@@ -97,14 +97,14 @@
 #' ### all wiley
 #' data(dois_wiley)
 #'
-#' res <- list()
-#' dois <- dois_wiley$set1[1:10]
-#' for (i in seq_along(dois)) {
-#'   tmp <- crm_links(dois[i], "all")
-#'   res[[i]] <- crm_text(url = tmp, type = "pdf", cache=FALSE,
-#'       overwrite_unspecified = TRUE)
-#' }
-#' res
+#' # res <- list()
+#' # dois <- dois_wiley$set1[1:10]
+#' # for (i in seq_along(dois)) {
+#' #    tmp <- crm_links(dois[i], "all")
+#' # res[[i]] <- crm_text(url = tmp, type = "pdf", cache=FALSE,
+#' #        overwrite_unspecified = TRUE)
+#' # }
+#' # res
 #'
 #' #### older dates
 #' # res <- list()
@@ -120,12 +120,12 @@
 #' # for (i in seq_along(dois_wiley$set3)) {
 #' #   tmp <- crm_links(dois_wiley$set3[i], "all")
 #' #   res[[i]] <- crm_text(tmp, type = "pdf", cache=F,
-#'         overwrite_unspecified=TRUE)
+#' #         overwrite_unspecified=TRUE)
 #' # }
 #' }
 
-crm_text <- function(url, type = 'xml', path = cr_cache_path(), overwrite = TRUE,
-                     read = TRUE, cache = TRUE,
+crm_text <- function(url, type = 'xml', path = cr_cache_path(),
+                     overwrite = TRUE, read = TRUE, cache = TRUE,
                      overwrite_unspecified = FALSE, ...) {
 
   url <- maybe_overwrite_unspecified(overwrite_unspecified, url, type)
@@ -276,7 +276,7 @@ getPDF <- function(url, path, auth, overwrite, type, read,
     cli <- crul::HttpClient$new(
       url = url,
       opts = list(followlocation = TRUE, ...),
-      headers = c(auth, list(Accept = "application/pdf")),
+      headers = c(auth, list(Accept = "application/pdf"))
     )
     res <- cli$get(disk = filepath)
     res$raise_for_status()

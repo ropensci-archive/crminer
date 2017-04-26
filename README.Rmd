@@ -21,6 +21,12 @@ coming soon ...
 
 ## Install
 
+CRAN version
+
+```{r eval=FALSE}
+install.packages("crminer")
+```
+
 Development version
 
 ```{r eval=FALSE}
@@ -34,16 +40,11 @@ library("rcrossref")
 
 ## Search
 
-Get some DOIs for articles that provide full text, and that have
-`CC-BY 4.0` licenses (i.e., more likely to actually be open), and from
-PeerJ
+Get some DOIs for articles that provide full text, and are from
+PeerJ (Crossref member 4443)
 
 ```{r cache=TRUE}
-out <-
-  cr_members(4443, works = TRUE, filter = list(
-    has_full_text = TRUE,
-    license_url = "http://creativecommons.org/licenses/by/4.0/")
-  )
+out <- cr_members(4443, works = TRUE, filter = list(has_full_text = TRUE))
 (dois <- out$data$DOI)
 ```
 

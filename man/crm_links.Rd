@@ -4,13 +4,13 @@
 \alias{crm_links}
 \title{Get full text links from a DOI}
 \usage{
-crm_links(doi, type = "xml", ...)
+crm_links(doi, type = "all", ...)
 }
 \arguments{
-\item{doi}{(character) A DOI. required.}
+\item{doi}{(character) A digital object identifier (DOI). required.}
 
-\item{type}{(character) One of 'xml' (default), 'html', 'plain', 'pdf',
-'unspecified', or 'all'. required.}
+\item{type}{(character) One of 'xml', 'html', 'plain', 'pdf',
+'unspecified', or 'all' (default). required.}
 
 \item{...}{Named parameters passed on to \code{\link[crul:HttpClient]{crul::HttpClient()}}}
 }
@@ -55,32 +55,13 @@ crm_links(doi = "10.5555/515151", "pdf")
 crm_links(dois_crminer[1], "pdf")
 crm_links(dois_crminer[6], "xml")
 crm_links(dois_crminer[7], "plain")
-crm_links(dois_crminer[1], "all")
-
-# No links - returns NULL
-crm_links(dois_crminer[4], "xml")
+crm_links(dois_crminer[1]) # all is the default
 
 # pdf link
 crm_links(doi = "10.5555/515151", "pdf")
 crm_links(doi = "10.3897/phytokeys.52.5250", "pdf")
 
-# all links
-crm_links(doi = "10.3897/phytokeys.52.5250", type = "all")
-
-# Get doi first from other fxn, then pass here
-if (requireNamespace('rcrossref')) {
-  out <- cr_works(filter=c(has_full_text = TRUE), limit = 50)
-  dois <- out$data$DOI
-  crm_links(dois[2], "xml")
-  crm_links(dois[1], "plain")
-  crm_links(dois[1], "all")
-
-  # (most likely) No links
-  crm_links(cr_r(1))
-  crm_links(doi="10.3389/fnagi.2014.00130")
-}
-
 # many calls, use e.g., lapply
-lapply(dois_crminer[1:3], crm_links, type = "all")
+lapply(dois_crminer[1:3], crm_links)
 }
 }

@@ -14,6 +14,13 @@ coming soon ...
 
 ## Install
 
+CRAN version
+
+
+```r
+install.packages("crminer")
+```
+
 Development version
 
 
@@ -44,13 +51,7 @@ out <-
 ```
 
 ```
-#>  [1] "10.7717/peerj.1714"  "10.7717/peerj.2306"  "10.7717/peerj-cs.43"
-#>  [4] "10.7717/peerj.2135"  "10.7717/peerj.1609"  "10.7717/peerj.1361" 
-#>  [7] "10.7717/peerj.1729"  "10.7717/peerj.2752"  "10.7717/peerj.1402" 
-#> [10] "10.7717/peerj.1900"  "10.7717/peerj.1509"  "10.7717/peerj.1596" 
-#> [13] "10.7717/peerj.1716"  "10.7717/peerj.2328"  "10.7717/peerj.1309" 
-#> [16] "10.7717/peerj.2647"  "10.7717/peerj.2044"  "10.7717/peerj.1707" 
-#> [19] "10.7717/peerj.2322"  "10.7717/peerj.1591"
+#> NULL
 ```
 
 ## Get full text links
@@ -65,19 +66,19 @@ links <- lapply(dois, crm_links, type = "xml")
 
 ```
 #> [[1]]
-#> <url> https://peerj.com/articles/1714.xml
+#> NULL
 #> 
 #> [[2]]
-#> <url> https://peerj.com/articles/2306.xml
+#> NULL
 #> 
 #> [[3]]
-#> <url> https://peerj.com/articles/cs-43.xml
+#> NULL
 #> 
 #> [[4]]
-#> <url> https://peerj.com/articles/2135.xml
+#> NULL
 #> 
 #> [[5]]
-#> <url> https://peerj.com/articles/1609.xml
+#> NULL
 ```
 
 ## Get full text
@@ -109,19 +110,19 @@ links <- lapply(dois, crm_links, type = "pdf")
 
 ```
 #> [[1]]
-#> <url> https://peerj.com/articles/1714.pdf
+#> NULL
 #> 
 #> [[2]]
-#> <url> https://peerj.com/articles/2306.pdf
+#> NULL
 #> 
 #> [[3]]
-#> <url> https://peerj.com/articles/cs-43.pdf
+#> NULL
 #> 
 #> [[4]]
-#> <url> https://peerj.com/articles/2135.pdf
+#> NULL
 #> 
 #> [[5]]
-#> <url> https://peerj.com/articles/1609.pdf
+#> NULL
 ```
 
 The get pdf and text is extracted
@@ -132,10 +133,7 @@ The get pdf and text is extracted
 ```
 
 ```
-#> <document>/Users/sacmac/Library/Caches/crminer/1714.pdf
-#>   Pages: 13
-#>   No. characters: 52789
-#>   Created: 2016-02-25
+#> Error in links[[1]]: subscript out of bounds
 ```
 
 
@@ -144,11 +142,10 @@ cat(substring(res$text[[1]], 1, 300))
 ```
 
 ```
-#>                              Head capsule stacking by caterpillars:
-#>                              morphology complements behaviour to
-#>                              provide a novel defence
-#>                              Petah A. Low, Clare McArthur and Dieter F. Hochuli
-#>                              Schoo
+#> N EWS AND N OTES                                                                                                     178
+#>           Web Technologies Task View
+#>           by Patrick Mair and Scott Chamberlain
+#>           Abstract This article presents the CRAN Task View on Web Technologies. We describe t
 ```
 
 ## Extract text from pdf
@@ -162,7 +159,7 @@ path <- system.file("examples", "MairChamberlain2014RJournal.pdf", package = "cr
 ```
 
 ```
-#> <document>/Library/Frameworks/R.framework/Versions/3.3/Resources/library/crminer/examples/MairChamberlain2014RJournal.pdf
+#> <document>/Users/sacmac/github/ropensci/crminer/inst/examples/MairChamberlain2014RJournal.pdf
 #>   Pages: 4
 #>   No. characters: 17358
 #>   Created: 2014-07-29
