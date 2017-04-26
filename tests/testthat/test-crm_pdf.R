@@ -52,6 +52,7 @@ test_that("crm_pdf fails well",{
 
   expect_error(crm_pdf("adfdf"), "Not a proper url")
 
+  skip_on_cran()
   expect_error(crm_pdf(url1, path = 5), "path must be of class character")
   expect_error(crm_pdf(url1, overwrite = "adfdf"),
                "overwrite must be of class logical")

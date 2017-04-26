@@ -28,6 +28,7 @@ test_that("crm_html fails well",{
 
   expect_error(crm_html("adfdf"), "Not a proper url")
 
+  skip_on_cran()
   expect_error(crm_html(url1, overwrite_unspecified = 5),
                "overwrite_unspecified must be of class logical")
 })
