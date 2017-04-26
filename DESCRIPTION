@@ -1,11 +1,11 @@
 Package: crminer
 Type: Package
-Title: Crossref Text Mining Client
-Description: Text mining client for Crossref (<http://crossref.org>). Includes
+Title: Fetch Scholary Full Text from Crossref
+Description: Text mining client for Crossref (<https://crossref.org>). Includes
     functions for getting getting links to full text of articles, fetching full
     text articles from those links or Digital Object Identifiers ('DOIs'),
     and text extraction from 'PDFs'.
-Version: 0.0.9.9110
+Version: 0.1.0
 Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus@gmail.com"))
 License: MIT + file LICENSE
