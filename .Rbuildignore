@@ -9,4 +9,3 @@ man-roxygen
 ^cran-comments\.md$
 inst/cache
 .github
-

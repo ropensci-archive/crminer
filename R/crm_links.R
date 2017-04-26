@@ -1,7 +1,7 @@
 #' Get full text links from a DOI
 #'
 #' @export
-#' @param doi (character) A digital object identifier (DOI). required.
+#' @param doi (character) A Digital Object Identifier (DOI). required.
 #' @param type (character) One of 'xml', 'html', 'plain', 'pdf',
 #' 'unspecified', or 'all' (default). required.
 #' @param ... Named parameters passed on to [crul::HttpClient()]

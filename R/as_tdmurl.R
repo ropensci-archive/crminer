@@ -13,7 +13,8 @@
 #'    "xml")
 #' as_tdmurl("http://downloads.hindawi.com/journals/bmri/2014/201717.pdf",
 #'    "pdf")
-#' out <- as_tdmurl("http://downloads.hindawi.com/journals/bmri/2014/201717.pdf",
+#' out <-
+#'  as_tdmurl("http://downloads.hindawi.com/journals/bmri/2014/201717.pdf",
 #'    "pdf", "10.1155/2014/201717")
 #' attributes(out)
 #' identical(attr(out, "type"), "pdf")
