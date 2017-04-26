@@ -53,7 +53,7 @@
 crm_links <- function(doi, type = 'all', ...) {
   res <- crm_works_links(dois = doi, ...)[[1]]
   if (is.null(unlist(res$links))) {
-    NULL
+    return(list())
   } else {
     elife <- if (grepl("elife", res$links[[1]]$URL)) TRUE else FALSE
     withtype <- if (type == 'all') {
@@ -61,8 +61,9 @@ crm_links <- function(doi, type = 'all', ...) {
     } else {
       Filter(function(x) grepl(type, x$`content-type`), res$links)
     }
+
     if (is.null(withtype) || length(withtype) == 0) {
-      NULL
+      return(list())
     } else {
       withtype <- stats::setNames(withtype, sapply(withtype, function(x){
         if (x$`content-type` == "unspecified") {
@@ -71,6 +72,7 @@ crm_links <- function(doi, type = 'all', ...) {
           strsplit(x$`content-type`, "/")[[1]][[2]]
         }
       }))
+
       if (elife) {
         withtype <-
           c(
@@ -93,15 +95,14 @@ crm_links <- function(doi, type = 'all', ...) {
       }
 
       if (type == "all") {
-        out <- lapply(withtype,
-                      function(b) makeurl(b$URL, st(b$`content-type`), doi)
-        )
+        lapply(withtype, function(b) {
+          makeurl(b$URL, st(b$`content-type`), doi, res$member)
+        })
       } else {
-        y <- match.arg(type, c('xml','plain','pdf','unspecified'))
-        out <- makeurl(x = withtype[[y]]$URL, y = y, z = doi)
+        y <- match.arg(type, c('xml', 'plain', 'html', 'pdf', 'unspecified'))
+        makeurl(x = withtype[[y]]$URL, y = y, z = doi, res$member)
       }
-
-      structure(out, member = res$member)
+      #structure(out, member = res$member)
     }
   }
 }

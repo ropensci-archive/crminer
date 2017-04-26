@@ -18,13 +18,13 @@ test_that("as_tdmurl - ", {
   expect_equal(attr(cc, "type"), "pdf")
 
   expect_equal(
-    unclass(aa)[1],
+    unclass(aa)[1]$xml,
     "http://downloads.hindawi.com/journals/bmri/2014/201717.xml")
   expect_equal(
-    unclass(bb)[1],
+    unclass(bb)[1]$pdf,
     "http://downloads.hindawi.com/journals/bmri/2014/201717.pdf")
   expect_equal(
-    unclass(cc)[1],
+    unclass(cc)[1]$pdf,
     "http://downloads.hindawi.com/journals/bmri/2014/201717.pdf")
 })
 

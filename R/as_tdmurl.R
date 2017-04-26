@@ -27,7 +27,7 @@ as_tdmurl.tdmurl <- function(url, type, doi) url
 #' @export
 #' @rdname as_tdmurl
 as_tdmurl.character <- function(url, type, doi=NULL) {
-  makeurl(check_url(url), type, doi)
+  makeurl(check_url(url), type, doi, NULL)
 }
 
 #' @export
@@ -35,12 +35,16 @@ print.tdmurl <- function(x, ...) {
   cat("<url> ", x[[1]], "\n", sep = "")
 }
 
-makeurl <- function(x, y, z) {
-  structure(x, class = "tdmurl", type = match_type(y), doi = z)
+makeurl <- function(x, y, z, member) {
+  # x <- structure(x, class = "tdmurl", type = match_type(y), doi = z)
+  # stats::setNames(list(x), match_type(y))
+  structure(stats::setNames(list(x), match_type(y)),
+            class = "tdmurl", type = match_type(y), doi = z,
+            member = member)
 }
 
 check_url <- function(x) {
-  if (!grepl("http://", x)) stop("Not a proper url") else x
+  if (!grepl("https?://", x)) stop("Not a proper url") else x
 }
 
 match_type <- function(x) {
