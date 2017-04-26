@@ -14,7 +14,7 @@ BugReports: https://github.com/ropensci/crminer/issues
 LazyData: true
 Roxygen: list(markdown = TRUE)
 Imports:
-    crul (>= 0.2.0),
+    crul (>= 0.3.4),
     jsonlite (>= 1.2),
     xml2 (>= 1.1.0),
     pdftools (>= 1.0),

@@ -55,9 +55,10 @@
 #'
 #' # Get doi first from other fxn, then pass here
 #' if (requireNamespace('rcrossref')) {
+#'   library(rcrossref)
 #'   out <- cr_works(filter=c(has_full_text = TRUE), limit = 50)
 #'   dois <- out$data$DOI
-#'   crm_links(dois[2], "xml")
+#'   crm_links(dois[3], "xml")
 #'   crm_links(dois[1], "plain")
 #'   crm_links(dois[1], "all")
 #'
@@ -126,8 +127,8 @@ crm_links <- function(doi, type = 'xml', ...) {
 }
 
 crm_works_links <- function(dois = NULL, ...) {
-  get_links <- function(x) {
-    tmp <- crm_GET(sprintf("works/%s", x), NULL, FALSE)
+  get_links <- function(x, ...) {
+    tmp <- crm_GET(sprintf("works/%s", x), NULL, FALSE, ...)
     trylinks <- tryCatch(tmp$message$link, error = function(e) e)
     if (inherits(trylinks, "error")) {
       NULL

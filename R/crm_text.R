@@ -60,7 +60,7 @@
 #' ## DOIs w/ full text, and with CC-BY 3.0 license
 #' data(dois_crminer_ccby3)
 #' (links <- crm_links(dois_crminer_ccby3[40], "all"))
-#' # crm_text(links, 'xml')
+#' # crm_text(links, 'pdf')
 #'
 #' ## You can use crm_xml, crm_plain, and crm_pdf to go directly to
 #' ## that format
@@ -233,11 +233,8 @@ cr_auth <- function(url, type) {
 }
 
 getTEXT <- function(x, type, auth, ...){
-  cli <- crul::HttpClient$new(
-    url = x,
-    headers = auth
-  )
-  res <- cli$get(verbose = TRUE, ...)
+  cli <- crul::HttpClient$new(url = x, headers = auth, opts = list(...))
+  res <- cli$get()
   switch(
     type,
     xml = xml2::read_xml(res$parse("UTF-8")),
@@ -278,17 +275,10 @@ getPDF <- function(url, path, auth, overwrite, type, read,
     message("Downloading pdf...")
     cli <- crul::HttpClient$new(
       url = url,
-      opts = list(followlocation = TRUE),
-      headers = c(auth, list(Accept = "application/pdf"))
+      opts = list(followlocation = TRUE, ...),
+      headers = c(auth, list(Accept = "application/pdf")),
     )
-    res <- cli$get(disk = filepath, ...)
-
-    # res <- httr::GET(
-    #   url,
-    #   httr::accept("application/pdf"),
-    #   httr::write_disk(path = filepath, overwrite = overwrite),
-    #   auth,
-    #   httr::config(followlocation = TRUE), ...)
+    res <- cli$get(disk = filepath)
     res$raise_for_status()
     if (res$status_code < 202) {
       filepath <- res$content

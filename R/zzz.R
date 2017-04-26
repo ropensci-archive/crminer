@@ -30,7 +30,8 @@ crm_GET <- function(endpoint, args = list(), todf = TRUE, on_error = warning,
     headers = list(
       useragent = crminer_ua(),
       'X-USER-AGENT' = crminer_ua()
-    )
+    ),
+    opts = list(...)
   )
   res <- cli$get(query = args)
   doi <- gsub("works/|/agency|funders/", "", endpoint)
