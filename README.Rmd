@@ -10,8 +10,11 @@ knitr::opts_chunk$set(
 )
 ```
 
+[![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![Build Status](https://travis-ci.org/ropensci/crminer.svg?branch=master)](https://travis-ci.org/ropensci/crminer)
 [![codecov.io](https://codecov.io/github/ropensci/crminer/coverage.svg?branch=master)](https://codecov.io/github/ropensci/crminer?branch=master)
+[![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/crminer)](https://github.com/metacran/cranlogs.app)
+[![cran version](http://www.r-pkg.org/badges/version/crminer)](https://cran.r-project.org/package=crminer)
 
 [Crossref](https://www.crossref.org/) is a not-for-profit membership organization for
 scholarly publishing. For our purposes here, they provide a nice
@@ -32,11 +35,11 @@ by publishers in the Crossref search API. Clearly `crminer` will
 become more useful as a higher percentage of scholarly works have full text
 links in the API.
 
-For our purposes there's two types of scholarly works you want to get full 
-text for via this package. First, those that require no authentication. 
-`crminer` should work easily for these. Second, those that require 
-authentication. These scholarly works will require some extra work to 
-get to, and you have to be fortunate enough to have an institution that 
+For our purposes there's two types of scholarly works you want to get full
+text for via this package. First, those that require no authentication.
+`crminer` should work easily for these. Second, those that require
+authentication. These scholarly works will require some extra work to
+get to, and you have to be fortunate enough to have an institution that
 gets access to the content. More discussion next:
 
 
@@ -46,14 +49,14 @@ Authentication is applicable only when the publisher you want to get
 fulltext from requires it. OA publishers shouldn't need it as you'd
 expect, and there's some papers from typically closed publishers
 that are open (a good way to check this is the license on the paper [
-see `rcrossref`]). There's many publishers that don't share links at all, 
+see `rcrossref`]). There's many publishers that don't share links at all,
 so they are irrelevant here.
 
 For publishers that required authentication, the Crossref TDM
 program allows for a single token to authenticate across publishers
 (to make it easier for text miners). The publishers involved with the
-authentication scheme are really only Elsevier and Wiley - these two 
-publishers make up a lot of the papers out there and a lot of the 
+authentication scheme are really only Elsevier and Wiley - these two
+publishers make up a lot of the papers out there and a lot of the
 links on the Crossref API.
 
 There's a how to guide for Crossref TDM at
