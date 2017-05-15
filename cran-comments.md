@@ -17,12 +17,12 @@ File 'LICENSE':
 
 ## Reverse dependencies
 
-This is a new package, so there are no reverse dependencies.
+This package has no reverse dependencies.
 
 ---
 
-This is a new release. I have read and agree to the the CRAN
-policies at https://cran.r-project.org/web/packages/policies.html
+This version includes fixes so that examples and tests are run using a temp
+directory. Some minor changes.
 
 Thanks!
 Scott Chamberlain
