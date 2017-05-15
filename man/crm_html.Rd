@@ -30,23 +30,15 @@ use a for/while loop or lapply family calls, or similar.
 
 Note that some links returned will not in fact lead you to full text
 content as you would understandbly think and expect. That is, if you
-use the `filter` parameter with e.g., [rcrossref::cr_works()]
+use the \code{filter} parameter with e.g., \code{\link[rcrossref:cr_works]{rcrossref::cr_works()}}
 and filter to only full text content, some links may actually give back
 only metadata for an article. Elsevier is perhaps the worst offender,
 for one because they have a lot of entries in Crossref TDM, but most
 of the links that are apparently full text are not in facct full text,
 but only metadata.
 
-Check out [auth()] for details on authentication.
+Check out \code{\link[=auth]{auth()}} for details on authentication.
 }
-\section{Caching}{
-
-By default we use
-`paste0(rappdirs::user_cache_dir(), "/crminer")`, but you can
-set this directory to something different. Ignored unless getting
-pdf. See [crm_cache] for caching details.
-}
-
 \examples{
 \dontrun{
 link <- crm_links("10.7717/peerj.1545", "html")
