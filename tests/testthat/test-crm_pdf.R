@@ -1,5 +1,7 @@
 context("crm_pdf")
 
+crm_cache$cache_path_set(path = "crminer", type = "tempdir")
+
 data(dois_pensoft)
 doi1 <- sample(dois_pensoft, size = 1)
 
@@ -53,7 +55,6 @@ test_that("crm_pdf fails well",{
   expect_error(crm_pdf("adfdf"), "Not a proper url")
 
   skip_on_cran()
-  expect_error(crm_pdf(url1, path = 5), "path must be of class character")
   expect_error(crm_pdf(url1, overwrite = "adfdf"),
                "overwrite must be of class logical")
   expect_error(crm_pdf(url1, read = 5), "read must be of class logical")

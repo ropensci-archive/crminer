@@ -4,8 +4,8 @@
 \alias{crm_pdf}
 \title{Get full text PDFs}
 \usage{
-crm_pdf(url, path = cr_cache_path(), overwrite = TRUE, read = TRUE,
-  cache = FALSE, overwrite_unspecified = FALSE, ...)
+crm_pdf(url, overwrite = TRUE, read = TRUE, cache = FALSE,
+  overwrite_unspecified = FALSE, ...)
 }
 \arguments{
 \item{url}{A URL (character) or an object of class \code{tdmurl} from a call
@@ -14,11 +14,6 @@ Crossref TDM (which requires authentication), we strongly recommend
 using \code{\link[=crm_links]{crm_links()}} first and passing output of that here, as \code{\link[=crm_links]{crm_links()}}
 grabs the publisher Crossref member ID, which we use to do authentication
 and other publisher specific fixes to URLs}
-
-\item{path}{(character) Path to store pdfs in. By default we use
-\code{paste0(rappdirs::user_cache_dir(), "/crminer")}, but you can
-set this directory to something different. Ignored unless getting
-pdf}
 
 \item{overwrite}{(logical) Overwrite file if it exists already?
 Default: \code{TRUE}}
@@ -61,6 +56,9 @@ Check out [auth()] for details on authentication.
 }
 \examples{
 \dontrun{
+# set a temp dir. cache path
+crm_cache$cache_path_set(path = "crminer", type = "tempdir")
+
 ## peerj
 x <- crm_pdf("https://peerj.com/articles/2356.pdf")
 

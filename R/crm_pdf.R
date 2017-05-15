@@ -4,6 +4,9 @@
 #' @inheritParams crm_text
 #' @template deets
 #' @examples \dontrun{
+#' # set a temp dir. cache path
+#' crm_cache$cache_path_set(path = "crminer", type = "tempdir")
+#'
 #' ## peerj
 #' x <- crm_pdf("https://peerj.com/articles/2356.pdf")
 #'
@@ -31,24 +34,21 @@
 #' # system.time( cacheno <- crm_text(links, type = "pdf", cache=FALSE) )
 #' # identical(cacheyes, cacheno)
 #' }
-crm_pdf <- function(url, path = cr_cache_path(), overwrite = TRUE, read = TRUE,
+crm_pdf <- function(url, overwrite = TRUE, read = TRUE,
                     cache = FALSE, overwrite_unspecified = FALSE, ...) {
   UseMethod("crm_pdf")
 }
 
 #' @export
-crm_pdf.default <- function(url, path = cr_cache_path(), overwrite = TRUE,
-                            read = TRUE, cache = FALSE,
+crm_pdf.default <- function(url, overwrite = TRUE, read = TRUE, cache = FALSE,
                             overwrite_unspecified = FALSE, ...) {
   stop("no 'crm_pdf' method for ", class(url), call. = FALSE)
 }
 
 #' @export
-crm_pdf.tdmurl <- function(url, path = cr_cache_path(), overwrite = TRUE,
-                           read = TRUE, cache = FALSE,
+crm_pdf.tdmurl <- function(url, overwrite = TRUE, read = TRUE, cache = FALSE,
                            overwrite_unspecified = FALSE, ...) {
 
-  assert(path, "character")
   assert(overwrite, "logical")
   assert(read, "logical")
   assert(cache, "logical")
@@ -58,28 +58,25 @@ crm_pdf.tdmurl <- function(url, path = cr_cache_path(), overwrite = TRUE,
   if (is.null(url$pdf[[1]])) {
     stop("no pdf link found", call. = FALSE)
   }
-  getPDF(url$pdf[[1]], path, cr_auth(url, 'pdf'), overwrite, "pdf",
+  getPDF(url$pdf[[1]], cr_auth(url, 'pdf'), overwrite, "pdf",
          read, cache, ...)
 }
 
 #' @export
-crm_pdf.list <- function(url, path = cr_cache_path(), overwrite = TRUE,
-                         read = TRUE, cache = FALSE,
+crm_pdf.list <- function(url, overwrite = TRUE, read = TRUE, cache = FALSE,
                          overwrite_unspecified = FALSE, ...) {
   if (!all(vapply(url, class, "", USE.NAMES = FALSE) == "tdmurl")) {
     stop("list input to 'crm_pdf' must be a list of tdmurl objects",
          call. = FALSE)
   }
   url <- maybe_overwrite_unspecified(overwrite_unspecified, url, "pdf")
-  crm_pdf(url$pdf, path = path, overwrite = overwrite, read = read,
+  crm_pdf(url$pdf, overwrite = overwrite, read = read,
           cache = cache, overwrite_unspecified = overwrite_unspecified, ...)
 }
 
 #' @export
-crm_pdf.character <- function(url, path = cr_cache_path(), overwrite = TRUE,
-                              read = TRUE, cache = FALSE,
+crm_pdf.character <- function(url, overwrite = TRUE, read = TRUE, cache = FALSE,
                               overwrite_unspecified = FALSE, ...) {
-  crm_pdf(as_tdmurl(url, "pdf"), path = path, overwrite = overwrite,
-          read = read, cache = cache,
-          overwrite_unspecified = overwrite_unspecified, ...)
+  crm_pdf(as_tdmurl(url, "pdf"), overwrite = overwrite, read = read,
+          cache = cache, overwrite_unspecified = overwrite_unspecified, ...)
 }

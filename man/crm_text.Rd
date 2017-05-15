@@ -4,8 +4,8 @@
 \alias{crm_text}
 \title{Get full text}
 \usage{
-crm_text(url, type = "xml", path = cr_cache_path(), overwrite = TRUE,
-  read = TRUE, cache = FALSE, overwrite_unspecified = FALSE, ...)
+crm_text(url, type = "xml", overwrite = TRUE, read = TRUE,
+  cache = FALSE, overwrite_unspecified = FALSE, ...)
 }
 \arguments{
 \item{url}{A URL (character) or an object of class \code{tdmurl} from a call
@@ -17,11 +17,6 @@ and other publisher specific fixes to URLs}
 
 \item{type}{(character) One of 'xml' (default), 'html', 'plain', 'pdf',
 'unspecified'}
-
-\item{path}{(character) Path to store pdfs in. By default we use
-\code{paste0(rappdirs::user_cache_dir(), "/crminer")}, but you can
-set this directory to something different. Ignored unless getting
-pdf}
 
 \item{overwrite}{(logical) Overwrite file if it exists already?
 Default: \code{TRUE}}
@@ -61,9 +56,17 @@ of the links that are apparently full text are not in facct full text,
 but only metadata.
 
 Check out [auth()] for details on authentication.
+
+By default we use
+\code{paste0(rappdirs::user_cache_dir(), "/crminer")}, but you can
+set this directory to something different. Ignored unless getting
+pdf
 }
 \examples{
 \dontrun{
+# set a temp dir. cache path
+crm_cache$cache_path_set(path = "crminer", type = "tempdir")
+
 ## pensoft
 data(dois_pensoft)
 (links <- crm_links(dois_pensoft[1], "all"))

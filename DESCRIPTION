@@ -5,7 +5,7 @@ Description: Text mining client for 'Crossref' (<https://crossref.org>). Include
     functions for getting getting links to full text of articles, fetching full
     text articles from those links or Digital Object Identifiers ('DOIs'),
     and text extraction from 'PDFs'.
-Version: 0.1.0.9100
+Version: 0.1.1.9200
 Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus+r@gmail.com"))
 License: MIT + file LICENSE
@@ -15,10 +15,10 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 Imports:
     crul (>= 0.3.4),
-    jsonlite (>= 1.2),
+    jsonlite (>= 1.4),
     xml2 (>= 1.1.0),
-    pdftools (>= 1.0),
-    rappdirs
+    pdftools (>= 1.2),
+    hoardr (>= 0.2.0)
 Suggests:
     roxygen2 (>= 6.0.1),
     rcrossref,

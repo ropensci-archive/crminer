@@ -1,12 +1,6 @@
 context("crm_text")
 
-# out <- cr_works(
-#   filter = list(has_full_text = TRUE, license_url = "http://creativecommons.org/licenses/by/4.0/"),
-#   limit = 100
-# )
-
-# links <- crm_links("10.7717/peerj.1282")
-# xml1 <- cr_ft_text(links, 'xml')
+crm_cache$cache_path_set(path = "crminer", type = "tempdir")
 
 test_that("crm_text works: pdf", {
   links <- crm_links("10.7717/peerj.1268", "pdf")

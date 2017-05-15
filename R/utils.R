@@ -1,4 +1,4 @@
-cr_cache_path <- function() paste0(rappdirs::user_cache_dir(), "/crminer")
+#cr_cache_path <- function() paste0(rappdirs::user_cache_dir(), "/crminer")
 
 get_url <- function(a, b){
   url <- if (inherits(a, "tdmurl")) a[[1]] else a[[b]]
@@ -67,11 +67,11 @@ getTEXT <- function(x, type, auth, ...){
   )
 }
 
-getPDF <- function(url, path, auth, overwrite, type, read,
-                   cache=FALSE, ...) {
-  if (!file.exists(path)) {
-    dir.create(path, showWarnings = FALSE, recursive = TRUE)
-  }
+getPDF <- function(url, auth, overwrite, type, read, cache = FALSE, ...) {
+  crm_cache$mkdir()
+  # if (!file.exists(path)) {
+  #   dir.create(path, showWarnings = FALSE, recursive = TRUE)
+  # }
 
   # pensoft special handling
   if (grepl("pensoft", url[[1]])) {
@@ -80,14 +80,15 @@ getPDF <- function(url, path, auth, overwrite, type, read,
       tmp <- strsplit(url, "=")[[1]]
       doi <- tmp[length(tmp)]
     }
-    filepath <- file.path(path, paste0(sub("/", ".", doi), ".pdf"))
+    filepath <- file.path(crm_cache$cache_path_get(),
+                          paste0(sub("/", ".", doi), ".pdf"))
   } else {
     ff <- if (!grepl(type, basename(url))) {
       paste0(basename(url), ".", type)
     } else {
       basename(url)
     }
-    filepath <- file.path(path, ff)
+    filepath <- file.path(crm_cache$cache_path_get(), ff)
   }
 
   filepath <- path.expand(filepath)
