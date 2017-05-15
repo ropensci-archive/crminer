@@ -20,7 +20,7 @@
 #' @name crminer-package
 #' @aliases crminer
 #' @docType package
-#' @author Scott Chamberlain \email{myrmecocystus@@gmail.com}
+#' @author Scott Chamberlain \email{myrmecocystus+r@@gmail.com}
 #' @keywords package
 NULL
 

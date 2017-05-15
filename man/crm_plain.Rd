@@ -19,7 +19,7 @@ mime type 'unspecified' for the full text links (for some Wiley dois
 for example). This parameter overrides the mime type to be \code{type}.}
 
 \item{...}{Named curl parameters passed on to \code{\link[crul:HttpClient]{crul::HttpClient()}}, see
-\code{?curl::curl_options} for available curl options}
+\code{\link[curl:curl_options]{curl::curl_options()}} for available curl options}
 }
 \description{
 Get full plain text
@@ -39,6 +39,14 @@ but only metadata.
 
 Check out [auth()] for details on authentication.
 }
+\section{Caching}{
+
+By default we use
+`paste0(rappdirs::user_cache_dir(), "/crminer")`, but you can
+set this directory to something different. Ignored unless getting
+pdf. See [crm_cache] for caching details.
+}
+
 \examples{
 \dontrun{
 link <- crm_links("10.1016/j.physletb.2010.10.049", "plain")

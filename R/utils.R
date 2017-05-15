@@ -1,5 +1,3 @@
-#cr_cache_path <- function() paste0(rappdirs::user_cache_dir(), "/crminer")
-
 get_url <- function(a, b){
   url <- if (inherits(a, "tdmurl")) a[[1]] else a[[b]]
   if (grepl("pensoft", url)) {

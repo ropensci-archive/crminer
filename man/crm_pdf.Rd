@@ -34,7 +34,7 @@ mime type 'unspecified' for the full text links (for some Wiley dois
 for example). This parameter overrides the mime type to be \code{type}.}
 
 \item{...}{Named curl parameters passed on to \code{\link[crul:HttpClient]{crul::HttpClient()}}, see
-\code{?curl::curl_options} for available curl options}
+\code{\link[curl:curl_options]{curl::curl_options()}} for available curl options}
 }
 \description{
 Get full text PDFs
@@ -45,15 +45,23 @@ use a for/while loop or lapply family calls, or similar.
 
 Note that some links returned will not in fact lead you to full text
 content as you would understandbly think and expect. That is, if you
-use the `filter` parameter with e.g., [rcrossref::cr_works()]
+use the \code{filter} parameter with e.g., \code{\link[rcrossref:cr_works]{rcrossref::cr_works()}}
 and filter to only full text content, some links may actually give back
 only metadata for an article. Elsevier is perhaps the worst offender,
 for one because they have a lot of entries in Crossref TDM, but most
 of the links that are apparently full text are not in facct full text,
 but only metadata.
 
-Check out [auth()] for details on authentication.
+Check out \code{\link[=auth]{auth()}} for details on authentication.
 }
+\section{Caching}{
+
+By default we use
+\code{paste0(rappdirs::user_cache_dir(), "/crminer")}, but you can
+set this directory to something different. Ignored unless getting
+pdf. See \link{crm_cache} for caching details.
+}
+
 \examples{
 \dontrun{
 # set a temp dir. cache path

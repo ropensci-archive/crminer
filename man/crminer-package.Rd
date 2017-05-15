@@ -30,6 +30,6 @@ links available via Crossref are behind authentication.
 }
 
 \author{
-Scott Chamberlain \email{myrmecocystus@gmail.com}
+Scott Chamberlain \email{myrmecocystus+r@gmail.com}
 }
 \keyword{package}
