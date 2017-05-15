@@ -2,12 +2,12 @@ crminer
 =======
 
 
+
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![Build Status](https://travis-ci.org/ropensci/crminer.svg?branch=master)](https://travis-ci.org/ropensci/crminer)
 [![codecov.io](https://codecov.io/github/ropensci/crminer/coverage.svg?branch=master)](https://codecov.io/github/ropensci/crminer?branch=master)
 [![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/crminer)](https://github.com/metacran/cranlogs.app)
 [![cran version](http://www.r-pkg.org/badges/version/crminer)](https://cran.r-project.org/package=crminer)
-
 
 [Crossref](https://www.crossref.org/) is a not-for-profit membership organization for
 scholarly publishing. For our purposes here, they provide a nice
@@ -175,7 +175,7 @@ Then get pdf and text is extracted
 ```
 
 ```
-#> <document>/Users/sacmac/Library/Caches/crminer/10445.pdf
+#> <document>/Users/sacmac/Library/Caches/R/crminer/10445.pdf
 #>   Pages: 28
 #>   No. characters: 73844
 #>   Created: 2106-02-07
@@ -220,39 +220,39 @@ res$info
 ```
 #> $version
 #> [1] "1.5"
-#>
+#> 
 #> $pages
 #> [1] 4
-#>
+#> 
 #> $encrypted
 #> [1] FALSE
-#>
+#> 
 #> $linearized
 #> [1] FALSE
-#>
+#> 
 #> $keys
 #> $keys$Creator
 #> [1] "pdftk 2.02 - www.pdftk.com"
-#>
+#> 
 #> $keys$Producer
 #> [1] "itext-paulo-155 (itextpdf.sf.net-lowagie.com)"
-#>
-#>
+#> 
+#> 
 #> $created
 #> [1] "2014-07-29 00:14:10 PDT"
-#>
+#> 
 #> $modified
 #> [1] "2014-07-29 00:14:10 PDT"
-#>
+#> 
 #> $metadata
 #> [1] ""
-#>
+#> 
 #> $locked
 #> [1] FALSE
-#>
+#> 
 #> $attachments
 #> [1] FALSE
-#>
+#> 
 #> $layout
 #> [1] "no_layout"
 ```
