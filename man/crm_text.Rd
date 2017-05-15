@@ -55,7 +55,7 @@ for one because they have a lot of entries in Crossref TDM, but most
 of the links that are apparently full text are not in facct full text,
 but only metadata.
 
-Check out \code{\link[=auth]{auth()}} for details on authentication.
+Check out \link{auth} for details on authentication.
 }
 \section{Caching}{
 

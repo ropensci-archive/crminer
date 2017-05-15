@@ -14,7 +14,7 @@
 #' of the links that are apparently full text are not in facct full text,
 #' but only metadata.
 #'
-#' Check out [auth()] for details on authentication.
+#' Check out [auth] for details on authentication.
 #' @examples \dontrun{
 #' link <- crm_links("10.7717/peerj.1545", "html")
 #' crm_html(link)
