@@ -1,9 +1,18 @@
+crminer 0.1.4
+=============
+
+### BUG FIXES
+
+* Fixed failing tests due to Crossref changing what they give
+back for links - made tests robust to those changes (#21)
+
+
 crminer 0.1.2
 =============
 
 ### NEW FEATURES
 
-* New object `crm_cache` for managing cached files, see `?crm_cache` 
+* New object `crm_cache` for managing cached files, see `?crm_cache`
 after installation (#19)
 
 ### MINOR IMPROVEMENTS

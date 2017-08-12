@@ -1,7 +1,7 @@
 ## Test environments
 
-* local OS X install, R 3.4.0 patched
-* ubuntu 12.04 (on travis-ci), R 3.4.0
+* local OS X install, R 3.4.1 patched
+* ubuntu 12.04 (on travis-ci), R 3.4.1
 * win-builder (devel and release)
 
 ## R CMD check results
@@ -21,8 +21,7 @@ This package has no reverse dependencies.
 
 ---
 
-This version includes fixes so that examples and tests are run using a temp
-directory. Some minor changes.
+This version includes fixes for tests that were failing.
 
 Thanks!
 Scott Chamberlain
