@@ -29,14 +29,14 @@ test_that("crm_links works", {
   expect_named(l4, "html")
 
   expect_is(l5, "list")
-  expect_equal(length(l5), 3)
+  expect_gt(length(l5), 2)
   expect_equal(attr(l5$pdf, "type"), "pdf")
   expect_equal(attr(l5$xml, "type"), "xml")
   expect_equal(attr(l5$html, "type"), "html")
   expect_equal(attr(l5$pdf, "member"), "4443")
   expect_equal(attr(l5$xml, "member"), "4443")
   expect_equal(attr(l5$html, "member"), "4443")
-  expect_named(l5, c('pdf', 'xml', 'html'))
+  expect_true('pdf' %in% names(l5))
 
   expect_identical(l5, l6)
 })
