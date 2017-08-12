@@ -207,7 +207,7 @@ path <- system.file("examples", "MairChamberlain2014RJournal.pdf", package = "cr
 ```
 
 ```
-#> <document>/Library/Frameworks/R.framework/Versions/3.4/Resources/library/crminer/examples/MairChamberlain2014RJournal.pdf
+#> <document>/Users/sacmac/github/ropensci/crminer/inst/examples/MairChamberlain2014RJournal.pdf
 #>   Pages: 4
 #>   No. characters: 17358
 #>   Created: 2014-07-29
