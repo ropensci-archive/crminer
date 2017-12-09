@@ -21,7 +21,7 @@ test_that("crm_plain works with character URL input", {
 
   res <- suppressMessages(crm_plain(url))
   expect_is(res, "character")
-  expect_gt(nchar(res), 100000L)
+  expect_gt(nchar(res), 100L)
   expect_match(res, title)
 })
 

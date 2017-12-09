@@ -4,10 +4,12 @@
 \alias{crm_extract}
 \title{Extract text from a single pdf document}
 \usage{
-crm_extract(path, ...)
+crm_extract(path = NULL, raw = NULL, ...)
 }
 \arguments{
-\item{path}{(character) Path to a file. required}
+\item{path}{(character) path to a file, file must exist}
+
+\item{raw}{(raw) raw bytes}
 
 \item{...}{args passed on to \code{\link[pdftools:pdf_info]{pdftools::pdf_info()}}
 and \code{\link[pdftools:pdf_text]{pdftools::pdf_text()}} - any args are passed to
@@ -24,7 +26,9 @@ Extract text from a single pdf document
 }
 \details{
 We use \pkg{pdftools} under the hood to do pdf text
-extraction
+extraction.
+
+You have to supply either \code{path} or \code{raw} - not both.
 }
 \examples{
 path <- system.file("examples", "MairChamberlain2014RJournal.pdf",
@@ -41,4 +45,10 @@ path <- system.file("examples", "ChamberlainEtal2013Ecosphere.pdf",
 (res <- crm_extract(path))
 res$info
 cat(res$text)
+
+# with raw pdf bytes
+path <- system.file("examples", "raw-example.rds", package = "crminer")
+rds <- readRDS(path)
+class(rds)
+crm_extract(raw = rds)
 }
