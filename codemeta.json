@@ -31,7 +31,7 @@
       "givenName": "Scott",
       "familyName": "Chamberlain",
       "email": "myrmecocystus+r@gmail.com",
-      "@id": "orcid.org/0000-0003-1444-9135"
+      "@id": "http://orcid.org/0000-0003-1444-9135"
     }
   ],
   "maintainer": {
@@ -39,7 +39,7 @@
     "givenName": "Scott",
     "familyName": "Chamberlain",
     "email": "myrmecocystus+r@gmail.com",
-    "@id": "orcid.org/0000-0003-1444-9135"
+    "@id": "http://orcid.org/0000-0003-1444-9135"
   },
   "softwareSuggestions": [
     {
@@ -153,5 +153,5 @@
   "developmentStatus": "active",
   "releaseNotes": "https://github.com/ropensci/crminer/blob/master/NEWS.md",
   "readme": "https://github.com/ropensci/crminer/blob/master/README.md",
-  "fileSize": "2917.001KB"
+  "fileSize": "2917.007KB"
 }
