@@ -6,8 +6,10 @@ Description: Text mining client for 'Crossref' (<https://crossref.org>). Include
     text articles from those links or Digital Object Identifiers ('DOIs'),
     and text extraction from 'PDFs'.
 Version: 0.1.5.9110
-Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
-    email = "myrmecocystus+r@gmail.com"))
+Authors@R: c(person("Scott", "Chamberlain",
+    role = c("aut", "cre"),
+    email = "myrmecocystus+r@gmail.com",
+    comment = c(ORCID = "0000-0003-1444-9135")))
 License: MIT + file LICENSE
 URL: https://github.com/ropensci/crminer
 BugReports: https://github.com/ropensci/crminer/issues
@@ -24,3 +26,6 @@ Suggests:
     rcrossref,
     testthat
 RoxygenNote: 6.0.1
+X-schema.org-applicationCategory: Literature
+X-schema.org-keywords: text-mining, literature, publications, crossref, pdf, xml
+X-schema.org-isPartOf: https://ropensci.org
