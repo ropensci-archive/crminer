@@ -18,16 +18,26 @@
 #'    "pdf", "10.1155/2014/201717")
 #' attributes(out)
 #' identical(attr(out, "type"), "pdf")
-as_tdmurl <- function(url, type, doi) UseMethod("as_tdmurl")
+as_tdmurl <- function(url, type, doi = NULL, member = NULL, 
+  intended_application = NULL) {
+  
+  UseMethod("as_tdmurl")
+}
 
 #' @export
 #' @rdname as_tdmurl
-as_tdmurl.tdmurl <- function(url, type, doi) url
+as_tdmurl.tdmurl <- function(url, type, doi = NULL, member = NULL, 
+  intended_application = NULL) {
+  
+  return(url)
+}
 
 #' @export
 #' @rdname as_tdmurl
-as_tdmurl.character <- function(url, type, doi=NULL) {
-  makeurl(check_url(url), type, doi, NULL)
+as_tdmurl.character <- function(url, type, doi = NULL, 
+  member = NULL, intended_application = NULL) {
+
+  makeurl(check_url(url), type, doi, member, intended_application)
 }
 
 #' @export
@@ -35,12 +45,12 @@ print.tdmurl <- function(x, ...) {
   cat("<url> ", x[[1]], "\n", sep = "")
 }
 
-makeurl <- function(x, y, z, member) {
-  # x <- structure(x, class = "tdmurl", type = match_type(y), doi = z)
-  # stats::setNames(list(x), match_type(y))
+
+# helpers --------
+makeurl <- function(x, y, z, member, intended_application) {
   structure(stats::setNames(list(x), match_type(y)),
             class = "tdmurl", type = match_type(y), doi = z,
-            member = member)
+            member = member, intended_application = intended_application)
 }
 
 check_url <- function(x) {

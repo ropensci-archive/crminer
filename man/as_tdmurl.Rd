@@ -6,11 +6,14 @@
 \alias{as_tdmurl.character}
 \title{Coerce a url to a tdmurl with a specific type}
 \usage{
-as_tdmurl(url, type, doi)
+as_tdmurl(url, type, doi = NULL, member = NULL,
+  intended_application = NULL)
 
-\method{as_tdmurl}{tdmurl}(url, type, doi)
+\method{as_tdmurl}{tdmurl}(url, type, doi = NULL, member = NULL,
+  intended_application = NULL)
 
-\method{as_tdmurl}{character}(url, type, doi = NULL)
+\method{as_tdmurl}{character}(url, type, doi = NULL, member = NULL,
+  intended_application = NULL)
 }
 \arguments{
 \item{url}{(character) A URL.}

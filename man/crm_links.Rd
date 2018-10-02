@@ -16,7 +16,14 @@ crm_links(doi, type = "all", ...)
 }
 \value{
 \code{NULL} if no full text links given; a list of tdmurl objects if
-links found.
+links found. a tdmurl object is an S3 class wrapped around a simple list,
+with attributes for:
+\itemize{
+\item type: type, matchin type passed to the function
+\item doi: DOI
+\item member: Crossref member ID
+\item intended_application: intended application, e.g., text-mining
+}
 }
 \description{
 Get full text links from a DOI
