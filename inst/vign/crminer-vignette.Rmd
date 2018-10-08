@@ -1,0 +1,15 @@
+<!--
+%\VignetteEngine{knitr::knitr}
+%\VignetteIndexEntry{crminer vignette}
+%\VignetteEncoding{UTF-8}
+-->
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(
+  comment = "#>",
+  warning = FALSE,
+  message = FALSE,
+  cache = FALSE
+)
+```
+
