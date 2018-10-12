@@ -274,6 +274,6 @@ cat(substring(res$text[[1]], 1, 300))
 * Please [report any issues or bugs](https://github.com/ropensci/crminer/issues).
 * License: MIT
 * Get citation information for `crminer` in R doing `citation(package = 'crminer')`
-* Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
+* Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
 
 [![rofooter](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)
