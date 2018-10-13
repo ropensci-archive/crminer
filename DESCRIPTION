@@ -5,7 +5,7 @@ Description: Text mining client for 'Crossref' (<https://crossref.org>). Include
     functions for getting getting links to full text of articles, fetching full
     text articles from those links or Digital Object Identifiers ('DOIs'),
     and text extraction from 'PDFs'.
-Version: 0.1.6.9100
+Version: 0.1.7.9100
 Authors@R: c(person("Scott", "Chamberlain",
     role = c("aut", "cre"),
     email = "myrmecocystus+r@gmail.com",
@@ -20,12 +20,13 @@ Imports:
     jsonlite (>= 1.4),
     xml2 (>= 1.1.0),
     pdftools (>= 1.2),
-    hoardr (>= 0.2.0)
+    hoardr (>= 0.5.0)
 Suggests:
     roxygen2 (>= 6.0.1),
     rcrossref,
     testthat
 RoxygenNote: 6.1.0
+Remotes: ropensci/hoardr
 X-schema.org-applicationCategory: Literature
 X-schema.org-keywords: text-mining, literature, publications, crossref, pdf, xml
 X-schema.org-isPartOf: https://ropensci.org
