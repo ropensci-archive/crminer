@@ -8,6 +8,9 @@
 #' @param type (character) One of 'xml' (default), 'html', 'plain', 'pdf',
 #' 'unspecified', or 'all'
 #' @param doi (character) A DOI, optional, default: \code{NULL}
+#' @param member (character) Crossref member id. optional
+#' @param intended_application (character) intended application string, 
+#' optional
 #' @examples
 #' as_tdmurl("http://downloads.hindawi.com/journals/bmri/2014/201717.xml",
 #'    "xml")

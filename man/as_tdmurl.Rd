@@ -22,6 +22,11 @@ as_tdmurl(url, type, doi = NULL, member = NULL,
 'unspecified', or 'all'}
 
 \item{doi}{(character) A DOI, optional, default: \code{NULL}}
+
+\item{member}{(character) Crossref member id. optional}
+
+\item{intended_application}{(character) intended application string,
+optional}
 }
 \description{
 A tmd url is just a URL with some attributes to make it easier
