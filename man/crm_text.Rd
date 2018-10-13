@@ -69,6 +69,8 @@ pdf. See \link{crm_cache} for caching details.
 \dontrun{
 # set a temp dir. cache path
 crm_cache$cache_path_set(path = "crminer", type = "tempdir")
+## you can set the entire path directly via the `full_path` arg
+## like crm_cache$cache_path_set(full_path = "your/path")
 
 ## pensoft
 data(dois_pensoft)

@@ -15,16 +15,17 @@
 #' type call
 #'
 #' @section Useful user functions:
-#' \itemize{
-#'  \item `crm_cache$cache_path_get()` get cache path
-#'  \item `crm_cache$cache_path_set()` set cache path
-#'  \item `crm_cache$list()` returns a character vector of full
-#'  path file names
-#'  \item `crm_cache$files()` returns file objects with metadata
-#'  \item `crm_cache$details()` returns files with details
-#'  \item `crm_cache$delete()` delete specific files
-#'  \item `crm_cache$delete_all()` delete all files, returns nothing
-#' }
+#'
+#' - `crm_cache$cache_path_get()` get cache path
+#' - `crm_cache$cache_path_set()` set cache path. You can set the 
+#'    entire path directly via the `full_path` arg like 
+#'   `crm_cache$cache_path_set(full_path = "your/path")`
+#' - `crm_cache$list()` returns a character vector of full
+#'    path file names
+#' - `crm_cache$files()` returns file objects with metadata
+#' - `crm_cache$details()` returns files with details
+#' - `crm_cache$delete()` delete specific files
+#' - `crm_cache$delete_all()` delete all files, returns nothing
 #'
 #' @examples \dontrun{
 #' crm_cache
@@ -39,7 +40,5 @@
 #' # delete all files in cache
 #' # crm_cache$delete_all()
 #' # crm_cache$list()
-#'
-#' # set a different cache path from the default
 #' }
 NULL

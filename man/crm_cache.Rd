@@ -20,7 +20,9 @@ type call
 
 \itemize{
 \item \code{crm_cache$cache_path_get()} get cache path
-\item \code{crm_cache$cache_path_set()} set cache path
+\item \code{crm_cache$cache_path_set()} set cache path. You can set the
+entire path directly via the \code{full_path} arg like
+\code{crm_cache$cache_path_set(full_path = "your/path")}
 \item \code{crm_cache$list()} returns a character vector of full
 path file names
 \item \code{crm_cache$files()} returns file objects with metadata
@@ -44,7 +46,5 @@ crm_cache$list()
 # delete all files in cache
 # crm_cache$delete_all()
 # crm_cache$list()
-
-# set a different cache path from the default
 }
 }

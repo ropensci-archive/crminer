@@ -49,6 +49,8 @@
 #' @examples \dontrun{
 #' # set a temp dir. cache path
 #' crm_cache$cache_path_set(path = "crminer", type = "tempdir")
+#' ## you can set the entire path directly via the `full_path` arg
+#' ## like crm_cache$cache_path_set(full_path = "your/path")
 #'
 #' ## pensoft
 #' data(dois_pensoft)
@@ -148,7 +150,7 @@ crm_text.tdmurl <- function(url, type = 'xml',
   auth <- cr_auth(url, type)
   switch(
     pick_type(type, url),
-    xml = getTEXT(get_url(url, 'xml'), type, auth),
+    xml = getTEXT(get_url(url, 'xml'), type, auth, ...),
     plain = getTEXT(get_url(url, 'xml'), type, auth, ...),
     html = getTEXT(get_url(url, 'html'), type, auth, ...),
     pdf = getPDF(url = get_url(url, 'pdf'), auth, overwrite, type,
