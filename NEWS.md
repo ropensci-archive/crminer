@@ -1,3 +1,16 @@
+crminer 0.2.0
+=============
+
+### NEW FEATURES
+
+* `crm_cache$cache_path_set()` gains ability to set the full cache path directly via its `full_path` parameter via an update to package `hoardr`   (#27)
+
+### MINOR IMPROVEMENTS
+
+* add `raw` as another parameter in `crm_extract()` to allow raw byte extraction from a pdf (#24)
+* add intended application (from crossref) to output of `crm_links()` to allow filtering on the intended application (#28)
+
+
 crminer 0.1.4
 =============
 

@@ -17,7 +17,9 @@ File 'LICENSE':
 
 ## Reverse dependencies
 
-This package has no reverse dependencies.
+* I have run R CMD check on the 1 downstream dependency
+(<https://github.com/ropensci/crminer/blob/master/revdep/README.md>).
+No problems were found.
 
 ---
 
