@@ -27,7 +27,6 @@ Suggests:
     rcrossref,
     testthat
 RoxygenNote: 6.1.0
-Remotes: ropensci/hoardr
 X-schema.org-applicationCategory: Literature
 X-schema.org-keywords: text-mining, literature, publications, crossref, pdf, xml
 X-schema.org-isPartOf: https://ropensci.org

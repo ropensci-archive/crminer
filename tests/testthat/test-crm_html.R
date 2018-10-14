@@ -22,13 +22,14 @@ test_that("crm_html works with character URL input", {
 
 
 test_that("crm_html fails well",{
+  skip_on_cran()
+  
   expect_error(crm_html(5), "no 'crm_html' method for numeric")
   expect_error(crm_html(mtcars), "no 'crm_html' method for data.frame")
   expect_error(crm_html(matrix(1:5)), "no 'crm_html' method for matrix")
 
   expect_error(crm_html("adfdf"), "Not a proper url")
 
-  skip_on_cran()
   expect_error(crm_html(url1, overwrite_unspecified = 5),
                "overwrite_unspecified must be of class logical")
 })
