@@ -23,7 +23,7 @@ No problems were found.
 
 ---
 
-This version includes fixes for tests that were failing.
+This version includes a new parameter for a function and a few minor fixes.
 
 Thanks!
 Scott Chamberlain
