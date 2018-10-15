@@ -2,6 +2,7 @@ crminer
 =======
 
 
+
 [![cran checks](https://cranchecks.info/badges/worst/crminer)](https://cranchecks.info/pkgs/crminer)
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![Build Status](https://travis-ci.org/ropensci/crminer.svg?branch=master)](https://travis-ci.org/ropensci/crminer)
@@ -175,7 +176,7 @@ Then get pdf and text is extracted
 ```
 
 ```
-#> <document>/Users/sacmac/Library/Caches/R/crminer/10445.pdf
+#> <document>/Users/sckott/Library/Caches/R/crminer/10445.pdf
 #>   Pages: 28
 #>   No. characters: 73844
 #>   Created: 2106-02-07
@@ -207,7 +208,7 @@ path <- system.file("examples", "MairChamberlain2014RJournal.pdf", package = "cr
 ```
 
 ```
-#> <document>/Users/sacmac/github/ropensci/crminer/inst/examples/MairChamberlain2014RJournal.pdf
+#> <document>/Library/Frameworks/R.framework/Versions/3.5/Resources/library/crminer/examples/MairChamberlain2014RJournal.pdf
 #>   Pages: 4
 #>   No. characters: 17358
 #>   Created: 2014-07-29
