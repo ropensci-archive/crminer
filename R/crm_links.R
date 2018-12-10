@@ -29,9 +29,9 @@
 #' custom fix in this function for that publisher. Anyway, expect changes...
 #'
 #' @return `NULL` if no full text links given; a list of tdmurl objects if
-#' links found. a tdmurl object is an S3 class wrapped around a simple list, 
+#' links found. a tdmurl object is an S3 class wrapped around a simple list,
 #' with attributes for:
-#' 
+#'
 #' - type: type, matchin type passed to the function
 #' - doi: DOI
 #' - member: Crossref member ID
@@ -95,7 +95,7 @@ crm_links <- function(doi, type = 'all', ...) {
 
       if (basename(res$member) == "78") {
         withtype <- lapply(withtype, function(z) {
-          z$URL <- sub("http", "https", z$URL)
+          z$URL <- sub("http://", "https://", z$URL)
           z
         })
       }
@@ -106,7 +106,7 @@ crm_links <- function(doi, type = 'all', ...) {
         })
       } else {
         y <- match.arg(type, c('xml', 'plain', 'html', 'pdf', 'unspecified'))
-        makeurl(x = withtype[[y]]$URL, y = y, z = doi, res$member, 
+        makeurl(x = withtype[[y]]$URL, y = y, z = doi, res$member,
           withtype[[y]]$`intended-application`)
       }
     }
