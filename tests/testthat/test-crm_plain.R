@@ -38,6 +38,7 @@ test_that("crm_plain works with character URL input", {
 
 test_that("crm_plain fails well",{
   skip_on_cran()
+
   expect_error(crm_plain(5), "no 'crm_plain' method for numeric")
   expect_error(crm_plain(mtcars), "no 'crm_plain' method for data.frame")
   expect_error(crm_plain(matrix(1:5)), "no 'crm_plain' method for matrix")
