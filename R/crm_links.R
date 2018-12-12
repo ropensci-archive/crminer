@@ -106,7 +106,7 @@ crm_links <- function(doi, type = 'all', ...) {
         })
       } else {
         y <- match.arg(type, c('xml', 'plain', 'html', 'pdf', 'unspecified'))
-        makeurl(x = withtype[[y]]$URL, y = y, z = doi, res$member,
+        makeurl(x = withtype[[y]]$URL, y = y, z = doi, res$member, 
           withtype[[y]]$`intended-application`)
       }
     }
