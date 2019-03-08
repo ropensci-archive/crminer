@@ -51,6 +51,26 @@ In another example, all Elsevier URLs at time of writing are have
 \code{http} scheme, while those don't actually work, so we have a
 custom fix in this function for that publisher. Anyway, expect changes...
 }
+\section{Register for the Polite Pool}{
+
+The \code{crm_links()} uses the
+\href{https://github.com/CrossRef/rest-api-doc}{Crossref API}
+You should send your email address with your \code{crm_links()} requests. This
+has the advantage that queries are placed in the polite pool of servers.
+In addition, even if the non-polite pool is having server problems,
+the polite pool is often okay. Including your email address is good practice
+as described in the Crossref documentation under
+\href{https://github.com/CrossRef/rest-api-doc}{Good manners}.
+To pass your email address to Crossref, simply store it as an environment
+variable in .Renviron file like \code{crossref_email=name@example.com}, or
+\code{CROSSREF_EMAIL=name@example.com}.
+Save the file and restart your R session. To stop sharing your email when
+using rcrossref simply delete it from your \code{.Renviron} file OR to temporarily
+not use your email unset it for the session
+like \code{Sys.unsetenv('crossref_email')}. To be sure your in the polite pool
+use curl verbose by e.g., \code{crm_links(doi = "10.5555/515151", verbose = TRUE)}
+}
+
 \examples{
 \dontrun{
 data(dois_crminer)

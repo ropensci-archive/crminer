@@ -9,7 +9,6 @@ if (identical(Sys.getenv("NOT_CRAN"), "true")) {
   url1 <- crm_links(doi1, type = "pdf")
 }
 
-
 test_that("crm_pdf works with links input",{
   skip_on_cran()
 

@@ -16,20 +16,48 @@ crminer_ua <- function() {
   versions <- c(
     paste0("r-curl/", utils::packageVersion("curl")),
     paste0("rOpenSci(crul/%s)", utils::packageVersion("crul")),
-    sprintf("rOpenSci(rcrossref/%s)", utils::packageVersion("rcrossref"))
+    sprintf("rOpenSci(rcrossref/%s)", utils::packageVersion("rcrossref")),
+    email_get()
   )
   paste0(versions, collapse = " ")
 }
 
+#' Share email with Crossref in `.Renviron`
+#' @noRd
+email_get <- function() {
+  email <- Sys.getenv("crossref_email")
+  if (identical(email, "")) email <- Sys.getenv("CROSSREF_EMAIL")
+  if (identical(email, "")) {
+    NULL
+  } else {
+    paste0("(mailto:", val_email(email), ")")
+  }
+}
+#' Email checker
+#' @param email email address (character string)
+#' @noRd
+val_email <- function(email) {
+  if (!grepl(email_regex(), email))
+    stop(sprintf("Email address (%s) not properly formed - Check your .Renviron!",
+         email), call. = FALSE)
+  return(email)
+}
+#' Email regex
+#' From \url{http://stackoverflow.com/a/25077140}
+#' @noRd
+email_regex <-
+  function()
+    "^[_a-z0-9-]+(\\.[_a-z0-9-]+)*@[a-z0-9-]+(\\.[a-z0-9-]+)*(\\.[a-z]{2,4})$"
+
 crm_GET <- function(endpoint, args = list(), todf = TRUE, on_error = warning,
                     parse = TRUE, ...) {
 
-  url <- sprintf("http://api.crossref.org/%s", endpoint)
+  url <- sprintf("https://api.crossref.org/%s", endpoint)
   cli <- crul::HttpClient$new(
     url = url,
     headers = list(
-      useragent = crminer_ua(),
-      'X-USER-AGENT' = crminer_ua()
+      `User-Agent` = crminer_ua(),
+      `X-USER-AGENT` = crminer_ua()
     ),
     opts = list(...)
   )
@@ -53,7 +81,7 @@ get_err <- function(x) {
     tmp <- xx
   } else if (x$response_headers$`content-type` == "text/html") {
     html <- xml2::read_html(xx)
-    tmp <- xml2::xml_text(xml2::xml_find_one(html, '//h3[@class="info"]'))
+    tmp <- xml2::xml_text(xml2::xml_find_first(html, '//h3[@class="info"]'))
   } else if (
     x$response_headers$`content-type` == "application/json;charset=UTF-8"
   ) {
