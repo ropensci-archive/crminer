@@ -2,16 +2,15 @@
 #' @description Crossref text miner
 #'
 #' @section Package API (functions):
-#' \itemize{
-#'  \item [crm_links()] - get full text links from DOIs
-#'  \item [as_tdmurl()] - coerce a URL to a tdmurl
-#'  \item [crm_text()] - general purpose interface to request
+#' 
+#' - [crm_links()] - get full text links from DOIs
+#' - [as_tdmurl()] - coerce a URL to a tdmurl
+#' - [crm_text()] - general purpose interface to request
 #'  full text
-#'  \item [crm_pdf()] - request pdf full text
-#'  \item [crm_plain()] - request plain text full text
-#'  \item [crm_xml()] - request xml full text
-#'  \item [crm_extract()] - extract text from a pdf
-#' }
+#' - [crm_pdf()] - request pdf full text
+#' - [crm_plain()] - request plain text full text
+#' - [crm_xml()] - request xml full text
+#' - [crm_extract()] - extract text from a pdf
 #'
 #' @section Authentication:
 #' You should first start reading up on authentication ([auth()])
@@ -83,18 +82,16 @@ NULL
 
 #' A list of 3 character vectors totaling 250 Wiley DOIs from Crossref
 #'
-#' \itemize{
-#'  \item set1: Obtained via `rcrossref::cr_members(311,
+#' - set1: Obtained via `rcrossref::cr_members(311,
 #'  filter = c(has_full_text = TRUE), works = TRUE, limit = 100)`
-#'  \item set2 (a set with older dates): Obtained via
+#' - set2 (a set with older dates): Obtained via
 #'  `rcrossref::cr_members(311, filter=c(has_full_text = TRUE,
 #'  type = 'journal-article', until_created_date = "2013-12-31"),
 #'  works = TRUE, limit = 100)`
-#'  \item set3 (with CC By 4.0 license): Obtained via
+#' - set3 (with CC By 4.0 license): Obtained via
 #'  `rcrossref::cr_members(311, filter=c(has_full_text = TRUE,
 #'  license.url = "http://creativecommons.org/licenses/by/4.0/"),
 #'  works = TRUE, limit = 100)`
-#' }
 #'
 #' @docType data
 #' @keywords datasets

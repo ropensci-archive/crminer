@@ -11,11 +11,11 @@ length 100, \code{set2} with a character vector of length 100, and
 }
 \description{
 \itemize{
-\item set1: Obtained via \code{rcrossref::cr_members(311, filter = c(has_full_text = TRUE), works = TRUE, limit = 100)}
+\item set1: Obtained via \code{rcrossref::cr_members(311,  filter = c(has_full_text = TRUE), works = TRUE, limit = 100)}
 \item set2 (a set with older dates): Obtained via
-\code{rcrossref::cr_members(311, filter=c(has_full_text = TRUE, type = 'journal-article', until_created_date = "2013-12-31"), works = TRUE, limit = 100)}
+\code{rcrossref::cr_members(311, filter=c(has_full_text = TRUE,  type = 'journal-article', until_created_date = "2013-12-31"),  works = TRUE, limit = 100)}
 \item set3 (with CC By 4.0 license): Obtained via
-\code{rcrossref::cr_members(311, filter=c(has_full_text = TRUE, license.url = "http://creativecommons.org/licenses/by/4.0/"), works = TRUE, limit = 100)}
+\code{rcrossref::cr_members(311, filter=c(has_full_text = TRUE,  license.url = "http://creativecommons.org/licenses/by/4.0/"),  works = TRUE, limit = 100)}
 }
 }
 \keyword{datasets}

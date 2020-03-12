@@ -7,7 +7,7 @@
 #' @param url (character) A URL.
 #' @param type (character) One of 'xml' (default), 'html', 'plain', 'pdf',
 #' 'unspecified', or 'all'
-#' @param doi (character) A DOI, optional, default: \code{NULL}
+#' @param doi (character) A DOI, optional, default: `NULL`
 #' @param member (character) Crossref member id. optional
 #' @param intended_application (character) intended application string, 
 #' optional

@@ -3,7 +3,7 @@
 #' @name auth
 #' @section Authentication:
 #' There's a set of publishers that are involved in the Crossref
-#' Text and Data Mining (TDM) program (<http://tdmsupport.crossref.org/>),
+#' Text and Data Mining (TDM) program (http://tdmsupport.crossref.org/),
 #' which means essentially the publishers
 #' deposit URLs for fulltext in Crossref metadata.
 #'
