@@ -4,8 +4,15 @@
 \alias{crm_text}
 \title{Get full text}
 \usage{
-crm_text(url, type = "xml", overwrite = TRUE, read = TRUE,
-  cache = FALSE, overwrite_unspecified = FALSE, ...)
+crm_text(
+  url,
+  type = "xml",
+  overwrite = TRUE,
+  read = TRUE,
+  cache = FALSE,
+  overwrite_unspecified = FALSE,
+  ...
+)
 }
 \arguments{
 \item{url}{A URL (character) or an object of class \code{tdmurl} from a call

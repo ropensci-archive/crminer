@@ -28,7 +28,7 @@ There's a how to guide for Crossref TDM at
 Get your Crossref TDM token by registering at
 \url{https://apps.crossref.org/clickthrough/researchers}.
 Save the token in your \code{.Renviron} file with a new row like
-\code{CROSSREF_TDM=your key}. We will read that key in for you - it's best
+\verb{CROSSREF_TDM=your key}. We will read that key in for you - it's best
 this way rather than passing in a key via a parameter - since you might
 put that code up on the web somewhere and someone could use your key.
 }

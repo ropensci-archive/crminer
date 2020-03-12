@@ -4,7 +4,9 @@
 \name{dois_crminer}
 \alias{dois_crminer}
 \title{A character vector of 500 DOIs from Crossref}
-\format{A character vector of length 500}
+\format{
+A character vector of length 500
+}
 \description{
 Obtained via
 \code{rcrossref::cr_works(filter = c(has_full_text = TRUE), limit = 500)}

@@ -4,7 +4,9 @@
 \name{dois_hindawi}
 \alias{dois_hindawi}
 \title{A character vector of 50 Hindawi DOIs from Crossref}
-\format{A character vector of length 50}
+\format{
+A character vector of length 50
+}
 \description{
 Obtained via \code{rcrossref::cr_members(98, filter = c(has_full_text = TRUE), works = TRUE, limit = 50)}
 }

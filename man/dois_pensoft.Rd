@@ -4,7 +4,9 @@
 \name{dois_pensoft}
 \alias{dois_pensoft}
 \title{A character vector of 100 Pensoft DOIs from Crossref}
-\format{A character vector of length 100}
+\format{
+A character vector of length 100
+}
 \description{
 Obtained via \code{rcrossref::cr_members(2258, filter = c(has_full_text = TRUE), works = TRUE, limit = 100)}
 }

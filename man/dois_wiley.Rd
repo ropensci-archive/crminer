@@ -4,9 +4,11 @@
 \name{dois_wiley}
 \alias{dois_wiley}
 \title{A list of 3 character vectors totaling 250 Wiley DOIs from Crossref}
-\format{A list of length 3, \code{set1} with a character vector of
+\format{
+A list of length 3, \code{set1} with a character vector of
 length 100, \code{set2} with a character vector of length 100, and
-\code{set3} with a character vector of length 50.}
+\code{set3} with a character vector of length 50.
+}
 \description{
 \itemize{
 \item set1: Obtained via \code{rcrossref::cr_members(311, filter = c(has_full_text = TRUE), works = TRUE, limit = 100)}

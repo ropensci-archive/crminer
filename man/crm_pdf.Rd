@@ -4,8 +4,14 @@
 \alias{crm_pdf}
 \title{Get full text PDFs}
 \usage{
-crm_pdf(url, overwrite = TRUE, read = TRUE, cache = FALSE,
-  overwrite_unspecified = FALSE, ...)
+crm_pdf(
+  url,
+  overwrite = TRUE,
+  read = TRUE,
+  cache = FALSE,
+  overwrite_unspecified = FALSE,
+  ...
+)
 }
 \arguments{
 \item{url}{A URL (character) or an object of class \code{tdmurl} from a call

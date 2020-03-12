@@ -4,7 +4,9 @@
 \name{dois_crminer_ccby3}
 \alias{dois_crminer_ccby3}
 \title{A character vector of 100 DOIs from Crossref with license CC-BY 3.0}
-\format{A character vector of length 100}
+\format{
+A character vector of length 100
+}
 \description{
 Obtained via
 \code{rcrossref::cr_works(filter = list(has_full_text = TRUE, license_url="http://creativecommons.org/licenses/by/3.0/"), limit = 100)}
