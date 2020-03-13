@@ -1,4 +1,9 @@
 context("crm_pdf")
+  
+# FIXME: when vcr fixed to use relative paths to files on disk,
+# only skip on cran
+skip_on_cran()
+skip_on_travis()
 
 crm_cache$cache_path_set(path = "crminer", type = "tempdir")
 
@@ -14,8 +19,6 @@ if (identical(Sys.getenv("NOT_CRAN"), "true")) {
 }
 
 test_that("crm_pdf works with links input",{
-  skip_on_cran()
-
   vcr::use_cassette("crm_pdf_links_in", {
     links <- crm_links("10.3897/compcytogen.v10i4.9536", type = "all")
     res <- suppressMessages(crm_pdf(links))
@@ -25,8 +28,6 @@ test_that("crm_pdf works with links input",{
 })
 
 test_that("crm_pdf works with character URL input", {
-  skip_on_cran()
-
   vcr::use_cassette("crm_pdf_character_in", {
     res <- suppressMessages(crm_pdf(url1$pdf))
   })
@@ -35,8 +36,6 @@ test_that("crm_pdf works with character URL input", {
 })
 
 test_that("crm_pdf works for 'unspecified' = TRUE",{
-  skip_on_cran()
-
   skip_if_not(Sys.getenv("CROSSREF_TDM") != "",
               "Needs 'Sys.setenv(CROSSREF_TDM = \"your-key\")' to be set.")
   vcr::use_cassette("crm_pdf_unspecified_true", {
@@ -47,8 +46,6 @@ test_that("crm_pdf works for 'unspecified' = TRUE",{
 })
 
 test_that("crm_pdf fails for 'unspecified' = FALSE",{
-  skip_on_cran()
-
   vcr::use_cassette("crm_pdf_unspecified_false", {
     links <- crm_links("10.2903/j.efsa.2014.3550", type = "all")
   })
