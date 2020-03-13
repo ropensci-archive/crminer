@@ -1,0 +1,923 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://api.elsevier.com/content/article/PII:S0370269310012608?httpAccept=text/plain
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: libcurl/7.64.1 r-curl/4.3 crul/0.9.0
+      Accept-Encoding: gzip, deflate
+      CR-Clickthrough-Client-Token: 86c9b5e5-e7ed333b-b1c3352a-0db0d2a2
+      Accept: text/plain
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      allow: GET
+      content-encoding: gzip
+      content-type: text/plain;charset=UTF-8
+      cr-clickthrough-client-token: 86c9b5e5-e7ed333b-b1c3352a-0db0d2a2
+      date: Fri, 13 Mar 2020 15:50:49 GMT
+      last-modified: Tue, 27 Sep 2016 21:30:03 GMT
+      server: Apache-Coyote/1.1
+      vary: Origin
+      x-els-apikey: c67c17d621d3d9452f4fb28f12b3cc82
+      x-els-reqid: 10be93b5-d205-44af-931c-6fed31428c51
+      x-els-resourceversion: default
+      x-els-status: OK
+      x-els-transid: 8ea12680-20f4-4666-8e6e-bd063184ee9c
+      transfer-encoding: chunked
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: "https://api.elsevier.com/content/article/pii/S0370269310012608 doi:10.1016/j.physletb.2010.10.049
+        1-s2.0-S0370269310012608 10.1016/j.physletb.2010.10.049 S0370-2693(10)01260-8
+        On the unitarity of linearized General Relativity coupled to matter  Physics
+        Letters B Journal 03702693 695 1-4 298 302 298-302 1-4 text/plain 2011-01-10
+        10 January 2011 Copyright © 2010 Elsevier B.V. Elsevier B.V. Atkins, Michael
+        Calmet, Xavier \n               Abstract\n               \n                  We
+        consider the unitarity of the S-matrix for linearized General Relativity coupled
+        to particle physics models. Taking renormalization group effects of the Planck
+        mass into account, we find that the scale at which unitarity is violated is
+        strongly dependent on the particle content of the theory. We find that the
+        requirement that the S-matrix be unitary up to the scale at which quantum
+        gravitational effects become strong implies a bound on the particle content
+        of the model.\n               \n             1 true Full false SCOAP³ - Sponsoring
+        Consortium for Open Access Publishing in Particle Physics FundingBody http://creativecommons.org/licenses/by/4.0/
+        Linearized General Relativity Perturbative unitarity Renormalization group
+        \   https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si99.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si98.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si97.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si96.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si95.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si94.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si93.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si92.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si91.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si90.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si9.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si89.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si88.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si87.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si86.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si85.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si84.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si83.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si82.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si81.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si80.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si8.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si79.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si78.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si77.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si76.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si75.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si74.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si73.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si72.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si71.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si70.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si7.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si69.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si68.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si67.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si66.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si65.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si64.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si63.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si62.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si61.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si60.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si6.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si59.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si58.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si57.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si56.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si55.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si54.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si53.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si52.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si51.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si50.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si5.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si49.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si48.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si47.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si46.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si45.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si44.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si43.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si42.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si41.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si40.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si4.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si39.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si38.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si37.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si36.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si35.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si34.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si33.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si32.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si31.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si30.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si3.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si29.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si28.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si27.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si26.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si25.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si24.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si23.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si22.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si21.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si20.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si2.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si19.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si18.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si17.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si16.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si155.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si154.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si153.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si152.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si151.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si150.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si15.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si149.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si148.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si147.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si146.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si145.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si144.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si143.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si142.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si141.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si140.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si14.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si139.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si138.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si137.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si136.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si135.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si134.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si133.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si132.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si131.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si130.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si13.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si129.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si128.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si127.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si126.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si125.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si124.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si123.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si122.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si121.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si120.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si12.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si119.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si118.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si117.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si116.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si115.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si114.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si113.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si112.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si111.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si110.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si11.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si109.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si108.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si107.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si106.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si105.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si104.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si103.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si102.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si101.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si100.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si10.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-si1.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-gr001_lrg.jpg?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-gr001.jpg?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0370269310012608-gr001.sml?httpAccept=%2A%2F%2A
+        \ 78650303982 2-s2.0-78650303982  serial JL 271623 291210 291829 31 90  Physics
+        Letters B PHYSICSLETTERSB 2010-10-27 2010-10-27 2014-09-30T22:39:49 1-s2.0-S0370269310012608
+        S0370-2693(10)01260-8 S0370269310012608 10.1016/j.physletb.2010.10.049 S300
+        S300.2 FULL-TEXT 1-s2.0-S0370269310X00454 2016-09-27T21:30:03.636322-04:00
+        0 0 20110110 2011 2010-10-27T00:00:00Z articleinfo articletitlenorm authfirstinitialnorm
+        authfirstsurnamenorm cid cids contenttype copyright crossmark dateloaded dateloadedtxt
+        datesearch datesort dateupdated dco docsubtype doctype doi eid ewtransactionid
+        hubeid indexeddate issfirst issn issnnorm issuelist itemstage itemtransactionid
+        itemweight oauserlicense openaccess openarchive pg pgfirst pglast pii piinorm
+        pubdatestart pubdatetxt pubyr sectiontitle sortorder srctitle srctitlenorm
+        srctype ssids alllist content oa subj subheadings tomb volfirst volissue volumelist
+        webpdf webpdfpagecount yearnav figure table body mmlmath acknowledge affil
+        articletitle auth authfirstini authfull authkeywords authlast doctopic grantnumber
+        grantsponsor misctext primabst ref 0370-2693 03702693  false 695 695  1 4
+        1 2 3 4  Volume 695, Issues 1–4 56 298 302 298 302  20110110  10 January 2011
+        2011-01-10 2011 Theory  article sco Copyright © 2010 Elsevier B.V. UNITARITYLINEARIZEDGENERALRELATIVITYCOUPLEDMATTER
+        ATKINS M Acknowledgements  References   WILL 2006 3 C  CALMET X  CALMET 2010
+        446 X  CALMET 2008 20 X  DONOGHUE 1994 2996 J  DONOGHUE 1994 3874 J  HAN 2005
+        215 T  AMSLER 2008 1 C  BEZRUKOV 2008 703 F  BURGESS 2009 103 C  BARBON 2009
+        081302 J  LEE 1977 1519 B  CALMET 2008 125015 X  CALMET 2008 171802 X  CALMET
+        2009 432 X  CALMET 2010 035007 X  LARSEN 1996 249 F  KABAT 1995 281 D  VASSILEVICH
+        1995 999 D  BJERRUMBOHR 2003 084005 N  BJERRUMBOHR 2005 069904 N  STELLE 1977
+        953 K  DURAND 1990 1215 L  WEINBERG 1977 S UNDERSTANDINGFUNDAMENTALCONSTITUENTSMATTER
+        \ WEINBERG 1979 700 S GENERALRELATIVITY  ANTONIADIS 2001 055 I  CALMET 2008
+        95 X  ATKINS M  EBOLI 2000 094007 O   ATKINSX2011X298 ATKINSX2011X298X302
+        ATKINSX2011X298XM ATKINSX2011X298X302XM  Full 2016-09-28T00:43:27Z OA-Window
+        FundingBody SCOAP³ - Sponsoring Consortium for Open Access Publishing in Particle
+        Physics  http://creativecommons.org/licenses/by/4.0/  item S0370-2693(10)01260-8
+        S0370269310012608 1-s2.0-S0370269310012608 10.1016/j.physletb.2010.10.049
+        271623 2014-10-01T00:33:17.239792-04:00 2011-01-10 1-s2.0-S0370269310012608-main.pdf
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/MAIN/application/pdf/eaabd7798b61e79b3261531b9167fe53/main.pdf
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/MAIN/application/pdf/eaabd7798b61e79b3261531b9167fe53/main.pdf
+        main.pdf pdf true 354977 MAIN 5 1-s2.0-S0370269310012608-main_1.png https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/PREVIEW/image/png/0bf501411fa7734db5d8e46175d7b978/main_1.png
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/PREVIEW/image/png/0bf501411fa7734db5d8e46175d7b978/main_1.png
+        main_1.png png 49348 849 656 IMAGE-WEB-PDF 1    1-s2.0-S0370269310012608-si99.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/1923870100b4b1c55773609afe33d6d2/si99.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/1923870100b4b1c55773609afe33d6d2/si99.gif
+        si99 si99.gif gif 189 13 35 ALTIMG  1-s2.0-S0370269310012608-si98.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/0012cbd273f2d6a6f157b359845f9961/si98.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/0012cbd273f2d6a6f157b359845f9961/si98.gif
+        si98 si98.gif gif 321 13 72 ALTIMG  1-s2.0-S0370269310012608-si97.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/4a248ff20e2d614a777c206da4023352/si86.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/4a248ff20e2d614a777c206da4023352/si86.gif
+        si97 si97.gif gif 192 13 36 ALTIMG  1-s2.0-S0370269310012608-si96.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/11d24accd731968a428bae672c9e18b8/si148.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/11d24accd731968a428bae672c9e18b8/si148.gif
+        si96 si96.gif gif 190 14 36 ALTIMG  1-s2.0-S0370269310012608-si95.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/d446053933639a53601468ac07f98bf4/si95.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/d446053933639a53601468ac07f98bf4/si95.gif
+        si95 si95.gif gif 418 16 105 ALTIMG  1-s2.0-S0370269310012608-si94.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/39751d7db8dd177251cf21d800108d3b/si83.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/39751d7db8dd177251cf21d800108d3b/si83.gif
+        si94 si94.gif gif 164 12 15 ALTIMG  1-s2.0-S0370269310012608-si93.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/2538b732c4485bedb604bd8d2aa72c77/si93.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/2538b732c4485bedb604bd8d2aa72c77/si93.gif
+        si93 si93.gif gif 331 16 79 ALTIMG  1-s2.0-S0370269310012608-si92.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/82cc619cd556e0dd72f214269dcfcc56/si118.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/82cc619cd556e0dd72f214269dcfcc56/si118.gif
+        si92 si92.gif gif 171 13 18 ALTIMG  1-s2.0-S0370269310012608-si91.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/82cc619cd556e0dd72f214269dcfcc56/si118.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/82cc619cd556e0dd72f214269dcfcc56/si118.gif
+        si91 si91.gif gif 171 13 18 ALTIMG  1-s2.0-S0370269310012608-si90.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/82cc619cd556e0dd72f214269dcfcc56/si118.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/82cc619cd556e0dd72f214269dcfcc56/si118.gif
+        si90 si90.gif gif 171 13 18 ALTIMG  1-s2.0-S0370269310012608-si9.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/94460a44a765702188deebfae56be05f/si9.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/94460a44a765702188deebfae56be05f/si9.gif
+        si9 si9.gif gif 241 18 41 ALTIMG  1-s2.0-S0370269310012608-si89.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/d99c2644ee6e33828751c5bd88da4368/si87.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/d99c2644ee6e33828751c5bd88da4368/si87.gif
+        si89 si89.gif gif 140 13 9 ALTIMG  1-s2.0-S0370269310012608-si88.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/d99c2644ee6e33828751c5bd88da4368/si87.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/d99c2644ee6e33828751c5bd88da4368/si87.gif
+        si88 si88.gif gif 140 13 9 ALTIMG  1-s2.0-S0370269310012608-si87.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/d99c2644ee6e33828751c5bd88da4368/si87.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/d99c2644ee6e33828751c5bd88da4368/si87.gif
+        si87 si87.gif gif 140 13 9 ALTIMG  1-s2.0-S0370269310012608-si86.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/4a248ff20e2d614a777c206da4023352/si86.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/4a248ff20e2d614a777c206da4023352/si86.gif
+        si86 si86.gif gif 192 13 36 ALTIMG  1-s2.0-S0370269310012608-si85.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/11d24accd731968a428bae672c9e18b8/si148.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/11d24accd731968a428bae672c9e18b8/si148.gif
+        si85 si85.gif gif 190 14 36 ALTIMG  1-s2.0-S0370269310012608-si84.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/f05a22793fab2531753cff6aa18faef8/si84.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/f05a22793fab2531753cff6aa18faef8/si84.gif
+        si84 si84.gif gif 171 12 19 ALTIMG  1-s2.0-S0370269310012608-si83.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/39751d7db8dd177251cf21d800108d3b/si83.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/39751d7db8dd177251cf21d800108d3b/si83.gif
+        si83 si83.gif gif 164 12 15 ALTIMG  1-s2.0-S0370269310012608-si82.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/e105babf9693a9f1527651b4af7a8729/si82.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/e105babf9693a9f1527651b4af7a8729/si82.gif
+        si82 si82.gif gif 293 12 64 ALTIMG  1-s2.0-S0370269310012608-si81.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/ad53c961c9a952bf205891982c7e3ed0/si81.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/ad53c961c9a952bf205891982c7e3ed0/si81.gif
+        si81 si81.gif gif 612 19 194 ALTIMG  1-s2.0-S0370269310012608-si80.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/f08413ba727bf977c6573c8a40ed2dec/si80.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/f08413ba727bf977c6573c8a40ed2dec/si80.gif
+        si80 si80.gif gif 173 12 20 ALTIMG  1-s2.0-S0370269310012608-si8.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/96ff6644bc84e4b160ecfe3f343fb955/si8.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/96ff6644bc84e4b160ecfe3f343fb955/si8.gif
+        si8 si8.gif gif 239 18 40 ALTIMG  1-s2.0-S0370269310012608-si79.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/cea2913886a796b64e43f7087eac61db/si79.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/cea2913886a796b64e43f7087eac61db/si79.gif
+        si79 si79.gif gif 180 14 21 ALTIMG  1-s2.0-S0370269310012608-si78.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/f05a22793fab2531753cff6aa18faef8/si84.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/f05a22793fab2531753cff6aa18faef8/si84.gif
+        si78 si78.gif gif 171 12 19 ALTIMG  1-s2.0-S0370269310012608-si77.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/41a57fd0d018fa37d379d29dbf87892a/si77.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/41a57fd0d018fa37d379d29dbf87892a/si77.gif
+        si77 si77.gif gif 760 33 211 ALTIMG  1-s2.0-S0370269310012608-si76.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/599daf7eeea458844f3e064f793c1197/si128.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/599daf7eeea458844f3e064f793c1197/si128.gif
+        si76 si76.gif gif 158 10 18 ALTIMG  1-s2.0-S0370269310012608-si75.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/80f0af043d86bfe3b96341121e22086e/si75.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/80f0af043d86bfe3b96341121e22086e/si75.gif
+        si75 si75.gif gif 292 16 61 ALTIMG  1-s2.0-S0370269310012608-si74.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/cf8f1e1dc531c5fe3aad24064c7eab69/si74.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/cf8f1e1dc531c5fe3aad24064c7eab69/si74.gif
+        si74 si74.gif gif 286 16 61 ALTIMG  1-s2.0-S0370269310012608-si73.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/21a42f681a88b26ca6b8feb23e3f3508/si73.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/21a42f681a88b26ca6b8feb23e3f3508/si73.gif
+        si73 si73.gif gif 819 39 164 ALTIMG  1-s2.0-S0370269310012608-si72.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/89341e50237ed37794f160000c3d5504/si72.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/89341e50237ed37794f160000c3d5504/si72.gif
+        si72 si72.gif gif 309 16 70 ALTIMG  1-s2.0-S0370269310012608-si71.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/64bdac98244ac6e85296980acd74e64f/si71.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/64bdac98244ac6e85296980acd74e64f/si71.gif
+        si71 si71.gif gif 633 47 105 ALTIMG  1-s2.0-S0370269310012608-si70.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/31d3d492240b82cbf21abaaf1f60b615/si70.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/31d3d492240b82cbf21abaaf1f60b615/si70.gif
+        si70 si70.gif gif 185 17 26 ALTIMG  1-s2.0-S0370269310012608-si7.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/1813acb73ef8ef552ef0dfa99fccaf48/si7.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/1813acb73ef8ef552ef0dfa99fccaf48/si7.gif
+        si7 si7.gif gif 176 11 21 ALTIMG  1-s2.0-S0370269310012608-si69.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/51de9cdcd29a8f5753e4f1e1a1b55b82/si69.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/51de9cdcd29a8f5753e4f1e1a1b55b82/si69.gif
+        si69 si69.gif gif 427 19 97 ALTIMG  1-s2.0-S0370269310012608-si68.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/a3d02e88518c0f15a55436959f66a512/si68.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/a3d02e88518c0f15a55436959f66a512/si68.gif
+        si68 si68.gif gif 157 10 18 ALTIMG  1-s2.0-S0370269310012608-si67.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/6f20fc92df27dd96cd779e168916a050/si67.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/6f20fc92df27dd96cd779e168916a050/si67.gif
+        si67 si67.gif gif 425 15 133 ALTIMG  1-s2.0-S0370269310012608-si66.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/f163660be7b5e67ba59ae92b20ef9cc6/si66.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/f163660be7b5e67ba59ae92b20ef9cc6/si66.gif
+        si66 si66.gif gif 839 33 215 ALTIMG  1-s2.0-S0370269310012608-si65.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/6c6f11b696be14eecce01a43797d6603/si65.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/6c6f11b696be14eecce01a43797d6603/si65.gif
+        si65 si65.gif gif 517 17 132 ALTIMG  1-s2.0-S0370269310012608-si64.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/aaf358d285b88c09b0791c408acff007/si64.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/aaf358d285b88c09b0791c408acff007/si64.gif
+        si64 si64.gif gif 349 14 82 ALTIMG  1-s2.0-S0370269310012608-si63.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/f08413ba727bf977c6573c8a40ed2dec/si80.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/f08413ba727bf977c6573c8a40ed2dec/si80.gif
+        si63 si63.gif gif 173 12 20 ALTIMG  1-s2.0-S0370269310012608-si62.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/cea2913886a796b64e43f7087eac61db/si79.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/cea2913886a796b64e43f7087eac61db/si79.gif
+        si62 si62.gif gif 180 14 21 ALTIMG  1-s2.0-S0370269310012608-si61.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/f05a22793fab2531753cff6aa18faef8/si84.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/f05a22793fab2531753cff6aa18faef8/si84.gif
+        si61 si61.gif gif 171 12 19 ALTIMG  1-s2.0-S0370269310012608-si60.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/8148d04d7f49ef9a5a4c45a25031be9d/si60.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/8148d04d7f49ef9a5a4c45a25031be9d/si60.gif
+        si60 si60.gif gif 496 16 153 ALTIMG  1-s2.0-S0370269310012608-si6.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/ea00560715cf0e4c23bd38fd1ecafbc9/si6.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/ea00560715cf0e4c23bd38fd1ecafbc9/si6.gif
+        si6 si6.gif gif 261 18 51 ALTIMG  1-s2.0-S0370269310012608-si59.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/6526a73026fe3f279560bf85217ca595/si59.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/6526a73026fe3f279560bf85217ca595/si59.gif
+        si59 si59.gif gif 577 40 127 ALTIMG  1-s2.0-S0370269310012608-si58.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/638c7fd60860c2c3373928a6b0d23d35/si58.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/638c7fd60860c2c3373928a6b0d23d35/si58.gif
+        si58 si58.gif gif 694 17 219 ALTIMG  1-s2.0-S0370269310012608-si57.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/11d24accd731968a428bae672c9e18b8/si148.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/11d24accd731968a428bae672c9e18b8/si148.gif
+        si57 si57.gif gif 190 14 36 ALTIMG  1-s2.0-S0370269310012608-si56.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/11d24accd731968a428bae672c9e18b8/si148.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/11d24accd731968a428bae672c9e18b8/si148.gif
+        si56 si56.gif gif 190 14 36 ALTIMG  1-s2.0-S0370269310012608-si55.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/77851fd0d62536cb9b2f61d49cb59338/si55.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/77851fd0d62536cb9b2f61d49cb59338/si55.gif
+        si55 si55.gif gif 244 13 57 ALTIMG  1-s2.0-S0370269310012608-si54.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/e0cd999a67154e9bd8710e14100edef6/si54.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/e0cd999a67154e9bd8710e14100edef6/si54.gif
+        si54 si54.gif gif 405 14 133 ALTIMG  1-s2.0-S0370269310012608-si53.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/773dac58d4b66fe78f0be7f337baf8cc/si53.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/773dac58d4b66fe78f0be7f337baf8cc/si53.gif
+        si53 si53.gif gif 399 13 111 ALTIMG  1-s2.0-S0370269310012608-si52.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/b8aabceee81e7df527a29a1e9330068a/si101.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/b8aabceee81e7df527a29a1e9330068a/si101.gif
+        si52 si52.gif gif 217 13 46 ALTIMG  1-s2.0-S0370269310012608-si51.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/b1ecbb360a58e9ea6b4cc22019133373/si51.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/b1ecbb360a58e9ea6b4cc22019133373/si51.gif
+        si51 si51.gif gif 1105 37 268 ALTIMG  1-s2.0-S0370269310012608-si50.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/8a5490687327ad8a58ff20971784ae64/si50.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/8a5490687327ad8a58ff20971784ae64/si50.gif
+        si50 si50.gif gif 278 17 58 ALTIMG  1-s2.0-S0370269310012608-si5.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/ee95394bf4a9716860e2a68a80b21a20/si5.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/ee95394bf4a9716860e2a68a80b21a20/si5.gif
+        si5 si5.gif gif 331 18 74 ALTIMG  1-s2.0-S0370269310012608-si49.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/4a248ff20e2d614a777c206da4023352/si86.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/4a248ff20e2d614a777c206da4023352/si86.gif
+        si49 si49.gif gif 192 13 36 ALTIMG  1-s2.0-S0370269310012608-si48.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/804f1f91362428266627fe2fa16556d0/si48.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/804f1f91362428266627fe2fa16556d0/si48.gif
+        si48 si48.gif gif 355 16 83 ALTIMG  1-s2.0-S0370269310012608-si47.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/968c1f3f3309ce0d3dd35ea891eb3709/si47.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/968c1f3f3309ce0d3dd35ea891eb3709/si47.gif
+        si47 si47.gif gif 644 23 182 ALTIMG  1-s2.0-S0370269310012608-si46.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/f61f41645dd9dc7c0642dbf2fef437a8/si46.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/f61f41645dd9dc7c0642dbf2fef437a8/si46.gif
+        si46 si46.gif gif 157 12 15 ALTIMG  1-s2.0-S0370269310012608-si45.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/21a95af88608a35eb6904d75ddf3e4d3/si45.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/21a95af88608a35eb6904d75ddf3e4d3/si45.gif
+        si45 si45.gif gif 499 15 145 ALTIMG  1-s2.0-S0370269310012608-si44.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/7c15645ee41d17c7f6fafe09c96132a0/si44.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/7c15645ee41d17c7f6fafe09c96132a0/si44.gif
+        si44 si44.gif gif 185 11 26 ALTIMG  1-s2.0-S0370269310012608-si43.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/275972ee81dd9a5c063b3727eadd5c73/si43.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/275972ee81dd9a5c063b3727eadd5c73/si43.gif
+        si43 si43.gif gif 1947 81 376 ALTIMG  1-s2.0-S0370269310012608-si42.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/26b7913e69710375017f37890ea5beb7/si42.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/26b7913e69710375017f37890ea5beb7/si42.gif
+        si42 si42.gif gif 759 19 228 ALTIMG  1-s2.0-S0370269310012608-si41.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/f35a5a3dec3778603c8132a15640ff60/si41.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/f35a5a3dec3778603c8132a15640ff60/si41.gif
+        si41 si41.gif gif 387 20 98 ALTIMG  1-s2.0-S0370269310012608-si40.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/3e7e341a46f8a982ccd234c563f4204f/si40.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/3e7e341a46f8a982ccd234c563f4204f/si40.gif
+        si40 si40.gif gif 382 20 89 ALTIMG  1-s2.0-S0370269310012608-si4.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/c8d6ddc06624210eb13126420ba4c724/si4.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/c8d6ddc06624210eb13126420ba4c724/si4.gif
+        si4 si4.gif gif 222 20 25 ALTIMG  1-s2.0-S0370269310012608-si39.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/62cc4ed8740db1275c86c991b58d6ad2/si39.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/62cc4ed8740db1275c86c991b58d6ad2/si39.gif
+        si39 si39.gif gif 378 20 97 ALTIMG  1-s2.0-S0370269310012608-si38.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/aa7a9ad921266e1d6532827d87e475da/si38.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/aa7a9ad921266e1d6532827d87e475da/si38.gif
+        si38 si38.gif gif 372 20 88 ALTIMG  1-s2.0-S0370269310012608-si37.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/176a0a996704ffc658788b40c64dcf54/si37.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/176a0a996704ffc658788b40c64dcf54/si37.gif
+        si37 si37.gif gif 495 20 124 ALTIMG  1-s2.0-S0370269310012608-si36.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/81051471b317535adcc5fd93672b634e/si36.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/81051471b317535adcc5fd93672b634e/si36.gif
+        si36 si36.gif gif 199 13 41 ALTIMG  1-s2.0-S0370269310012608-si35.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/3b3c561ccf8af12c7d16ff700034590d/si35.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/3b3c561ccf8af12c7d16ff700034590d/si35.gif
+        si35 si35.gif gif 379 20 89 ALTIMG  1-s2.0-S0370269310012608-si34.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/d07568e50dd89f86dde6efbd2446806a/si34.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/d07568e50dd89f86dde6efbd2446806a/si34.gif
+        si34 si34.gif gif 368 20 81 ALTIMG  1-s2.0-S0370269310012608-si33.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/4a518d197d6dbd2d2084fd2222983553/si33.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/4a518d197d6dbd2d2084fd2222983553/si33.gif
+        si33 si33.gif gif 370 20 88 ALTIMG  1-s2.0-S0370269310012608-si32.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/e75bb8f73134a2920db6d14bb34d9fbd/si32.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/e75bb8f73134a2920db6d14bb34d9fbd/si32.gif
+        si32 si32.gif gif 359 20 79 ALTIMG  1-s2.0-S0370269310012608-si31.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/2d0572a34b9f1d1080bcba3c578be1d7/si31.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/2d0572a34b9f1d1080bcba3c578be1d7/si31.gif
+        si31 si31.gif gif 479 20 116 ALTIMG  1-s2.0-S0370269310012608-si30.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/dcedea38d32070db786bf605650e6e2c/si30.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/dcedea38d32070db786bf605650e6e2c/si30.gif
+        si30 si30.gif gif 197 13 40 ALTIMG  1-s2.0-S0370269310012608-si3.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/a1c8c987a5d536424afb1ec7d374a067/si3.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/a1c8c987a5d536424afb1ec7d374a067/si3.gif
+        si3 si3.gif gif 512 20 133 ALTIMG  1-s2.0-S0370269310012608-si29.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/4bc7ebc7ef0a9da9810f6ae38cd31ce4/si29.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/4bc7ebc7ef0a9da9810f6ae38cd31ce4/si29.gif
+        si29 si29.gif gif 402 20 106 ALTIMG  1-s2.0-S0370269310012608-si28.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/41d719de9ed2c3a23322af27c46cd798/si28.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/41d719de9ed2c3a23322af27c46cd798/si28.gif
+        si28 si28.gif gif 396 20 97 ALTIMG  1-s2.0-S0370269310012608-si27.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/6515f2421f98c097c97b6ee99ecab294/si27.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/6515f2421f98c097c97b6ee99ecab294/si27.gif
+        si27 si27.gif gif 375 20 97 ALTIMG  1-s2.0-S0370269310012608-si26.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/353e9f9f7c366d73b0f3c45951dfda64/si26.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/353e9f9f7c366d73b0f3c45951dfda64/si26.gif
+        si26 si26.gif gif 371 20 88 ALTIMG  1-s2.0-S0370269310012608-si25.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/7b982b4cbdd9a49ea876d2d3e6e1b18a/si25.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/7b982b4cbdd9a49ea876d2d3e6e1b18a/si25.gif
+        si25 si25.gif gif 492 20 124 ALTIMG  1-s2.0-S0370269310012608-si24.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/f470cde4438b5bd7c62de33177332d9b/si24.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/f470cde4438b5bd7c62de33177332d9b/si24.gif
+        si24 si24.gif gif 221 16 41 ALTIMG  1-s2.0-S0370269310012608-si23.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/d1145c09f38aef27a08db85d307074eb/si23.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/d1145c09f38aef27a08db85d307074eb/si23.gif
+        si23 si23.gif gif 369 20 89 ALTIMG  1-s2.0-S0370269310012608-si22.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/70966b092cb8427b159528b08a34e0e6/si22.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/70966b092cb8427b159528b08a34e0e6/si22.gif
+        si22 si22.gif gif 363 20 81 ALTIMG  1-s2.0-S0370269310012608-si21.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/72c6a7acc50e84152d97811d58c60cd3/si21.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/72c6a7acc50e84152d97811d58c60cd3/si21.gif
+        si21 si21.gif gif 368 20 88 ALTIMG  1-s2.0-S0370269310012608-si20.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/2170437ec5874aa2d9e0241f68436254/si20.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/2170437ec5874aa2d9e0241f68436254/si20.gif
+        si20 si20.gif gif 360 20 79 ALTIMG  1-s2.0-S0370269310012608-si2.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/7aecf896c6b67e786055437a9150e8e1/si2.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/7aecf896c6b67e786055437a9150e8e1/si2.gif
+        si2 si2.gif gif 2514 126 368 ALTIMG  1-s2.0-S0370269310012608-si19.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/2818379ee7bb869327439c8efd5a4670/si19.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/2818379ee7bb869327439c8efd5a4670/si19.gif
+        si19 si19.gif gif 479 20 116 ALTIMG  1-s2.0-S0370269310012608-si18.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/5078dc80bc85f353418fe3d851624e13/si18.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/5078dc80bc85f353418fe3d851624e13/si18.gif
+        si18 si18.gif gif 219 16 40 ALTIMG  1-s2.0-S0370269310012608-si17.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/9faba87474f6a6f9fab29a82ae7488f7/si17.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/9faba87474f6a6f9fab29a82ae7488f7/si17.gif
+        si17 si17.gif gif 494 20 124 ALTIMG  1-s2.0-S0370269310012608-si16.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/82413369179cd820619f0a1d453a3122/si16.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/82413369179cd820619f0a1d453a3122/si16.gif
+        si16 si16.gif gif 480 20 116 ALTIMG  1-s2.0-S0370269310012608-si155.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/8d79c63a39b10a08ed5569c690107bdb/si155.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/8d79c63a39b10a08ed5569c690107bdb/si155.gif
+        si155 si155.gif gif 245 11 66 ALTIMG  1-s2.0-S0370269310012608-si154.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/7c5406828540a45cac64120c367c25b4/si154.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/7c5406828540a45cac64120c367c25b4/si154.gif
+        si154 si154.gif gif 395 16 98 ALTIMG  1-s2.0-S0370269310012608-si153.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/90e2913345e0518d1e294bb8d5eef153/si153.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/90e2913345e0518d1e294bb8d5eef153/si153.gif
+        si153 si153.gif gif 267 13 60 ALTIMG  1-s2.0-S0370269310012608-si152.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/8f981d4f6d09b2368409f82d7c86abba/si152.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/8f981d4f6d09b2368409f82d7c86abba/si152.gif
+        si152 si152.gif gif 296 16 73 ALTIMG  1-s2.0-S0370269310012608-si151.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/91017cbb0df76e13260fe3c3345884d4/si151.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/91017cbb0df76e13260fe3c3345884d4/si151.gif
+        si151 si151.gif gif 719 40 156 ALTIMG  1-s2.0-S0370269310012608-si150.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/11d24accd731968a428bae672c9e18b8/si148.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/11d24accd731968a428bae672c9e18b8/si148.gif
+        si150 si150.gif gif 190 14 36 ALTIMG  1-s2.0-S0370269310012608-si15.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/52d560949a9d5d2505e44591d91b112c/si15.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/52d560949a9d5d2505e44591d91b112c/si15.gif
+        si15 si15.gif gif 489 20 123 ALTIMG  1-s2.0-S0370269310012608-si149.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/e59bf5bf5ed845b3ab59a3a66788bee4/si149.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/e59bf5bf5ed845b3ab59a3a66788bee4/si149.gif
+        si149 si149.gif gif 201 12 29 ALTIMG  1-s2.0-S0370269310012608-si148.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/11d24accd731968a428bae672c9e18b8/si148.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/11d24accd731968a428bae672c9e18b8/si148.gif
+        si148 si148.gif gif 190 14 36 ALTIMG  1-s2.0-S0370269310012608-si147.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/8308be6f4fdba215c6bff82ebb64f0ed/si147.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/8308be6f4fdba215c6bff82ebb64f0ed/si147.gif
+        si147 si147.gif gif 312 16 76 ALTIMG  1-s2.0-S0370269310012608-si146.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/56cd366cbb331286ad70967c1a1df1f5/si146.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/56cd366cbb331286ad70967c1a1df1f5/si146.gif
+        si146 si146.gif gif 193 15 23 ALTIMG  1-s2.0-S0370269310012608-si145.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/599daf7eeea458844f3e064f793c1197/si128.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/599daf7eeea458844f3e064f793c1197/si128.gif
+        si145 si145.gif gif 158 10 18 ALTIMG  1-s2.0-S0370269310012608-si144.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/c6ea9f41a7405a61c72d4f24a17fdc0c/si144.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/c6ea9f41a7405a61c72d4f24a17fdc0c/si144.gif
+        si144 si144.gif gif 282 16 70 ALTIMG  1-s2.0-S0370269310012608-si143.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/0f43c6d496103776887e00fc37e49b60/si143.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/0f43c6d496103776887e00fc37e49b60/si143.gif
+        si143 si143.gif gif 160 11 15 ALTIMG  1-s2.0-S0370269310012608-si142.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/42acb56b7718b71a51fed8725fefdb38/si142.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/42acb56b7718b71a51fed8725fefdb38/si142.gif
+        si142 si142.gif gif 479 18 108 ALTIMG  1-s2.0-S0370269310012608-si141.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/c2080b681abe62479ac2e1aa570b0f54/si141.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/c2080b681abe62479ac2e1aa570b0f54/si141.gif
+        si141 si141.gif gif 167 12 18 ALTIMG  1-s2.0-S0370269310012608-si140.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/ed8504195032287945746d7e0a720156/si140.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/ed8504195032287945746d7e0a720156/si140.gif
+        si140 si140.gif gif 179 12 20 ALTIMG  1-s2.0-S0370269310012608-si14.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/21c49219682bb1540faf92a78bd4e81d/si14.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/21c49219682bb1540faf92a78bd4e81d/si14.gif
+        si14 si14.gif gif 483 20 114 ALTIMG  1-s2.0-S0370269310012608-si139.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/ab018446de292fc9c38f87e90c49907a/si139.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/ab018446de292fc9c38f87e90c49907a/si139.gif
+        si139 si139.gif gif 256 14 44 ALTIMG  1-s2.0-S0370269310012608-si138.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/abd72469efddf3a070649b79a1766e98/si138.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/abd72469efddf3a070649b79a1766e98/si138.gif
+        si138 si138.gif gif 214 13 35 ALTIMG  1-s2.0-S0370269310012608-si137.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/be2051529011baa5dc2cca87435c1ae6/si137.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/be2051529011baa5dc2cca87435c1ae6/si137.gif
+        si137 si137.gif gif 2646 113 326 ALTIMG  1-s2.0-S0370269310012608-si136.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/9d5ecca099740d8705d15b22ee0c0abd/si136.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/9d5ecca099740d8705d15b22ee0c0abd/si136.gif
+        si136 si136.gif gif 180 10 33 ALTIMG  1-s2.0-S0370269310012608-si135.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/599daf7eeea458844f3e064f793c1197/si128.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/599daf7eeea458844f3e064f793c1197/si128.gif
+        si135 si135.gif gif 158 10 18 ALTIMG  1-s2.0-S0370269310012608-si134.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/af4f77f41e0bbdbd953c72c233405a04/si134.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/af4f77f41e0bbdbd953c72c233405a04/si134.gif
+        si134 si134.gif gif 337 16 83 ALTIMG  1-s2.0-S0370269310012608-si133.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/8b48bb21d921449acd378de9a849d8a4/si133.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/8b48bb21d921449acd378de9a849d8a4/si133.gif
+        si133 si133.gif gif 370 16 86 ALTIMG  1-s2.0-S0370269310012608-si132.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/804f1f91362428266627fe2fa16556d0/si48.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/804f1f91362428266627fe2fa16556d0/si48.gif
+        si132 si132.gif gif 355 16 83 ALTIMG  1-s2.0-S0370269310012608-si131.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/15ce348d7df1929b1a490017d38d39c8/si129.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/15ce348d7df1929b1a490017d38d39c8/si129.gif
+        si131 si131.gif gif 210 16 26 ALTIMG  1-s2.0-S0370269310012608-si130.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/599daf7eeea458844f3e064f793c1197/si128.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/599daf7eeea458844f3e064f793c1197/si128.gif
+        si130 si130.gif gif 158 10 18 ALTIMG  1-s2.0-S0370269310012608-si13.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/8e47a507dc0c260e27073304623825a4/si13.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/8e47a507dc0c260e27073304623825a4/si13.gif
+        si13 si13.gif gif 845 21 244 ALTIMG  1-s2.0-S0370269310012608-si129.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/15ce348d7df1929b1a490017d38d39c8/si129.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/15ce348d7df1929b1a490017d38d39c8/si129.gif
+        si129 si129.gif gif 210 16 26 ALTIMG  1-s2.0-S0370269310012608-si128.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/599daf7eeea458844f3e064f793c1197/si128.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/599daf7eeea458844f3e064f793c1197/si128.gif
+        si128 si128.gif gif 158 10 18 ALTIMG  1-s2.0-S0370269310012608-si127.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/d4d43dc1bf687f246f0bd207557712a6/si127.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/d4d43dc1bf687f246f0bd207557712a6/si127.gif
+        si127 si127.gif gif 166 13 17 ALTIMG  1-s2.0-S0370269310012608-si126.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/901373cb67403ba67d014308c190dd03/si126.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/901373cb67403ba67d014308c190dd03/si126.gif
+        si126 si126.gif gif 167 13 17 ALTIMG  1-s2.0-S0370269310012608-si125.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/39bfce1d2de2a2b1a09cdcb6dfd6a10d/si125.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/39bfce1d2de2a2b1a09cdcb6dfd6a10d/si125.gif
+        si125 si125.gif gif 247 16 43 ALTIMG  1-s2.0-S0370269310012608-si124.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/61e81b9f740ba159cfc6a87a5778b14c/si124.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/61e81b9f740ba159cfc6a87a5778b14c/si124.gif
+        si124 si124.gif gif 201 13 29 ALTIMG  1-s2.0-S0370269310012608-si123.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/a94fd4c55bb23d66c8fa55ad2365ad47/si123.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/a94fd4c55bb23d66c8fa55ad2365ad47/si123.gif
+        si123 si123.gif gif 426 16 104 ALTIMG  1-s2.0-S0370269310012608-si122.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/5eae47846f5da4bfe5c35bcb02011bfd/si122.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/5eae47846f5da4bfe5c35bcb02011bfd/si122.gif
+        si122 si122.gif gif 464 18 112 ALTIMG  1-s2.0-S0370269310012608-si121.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/2010ede953362b115f1a01503728222f/si121.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/2010ede953362b115f1a01503728222f/si121.gif
+        si121 si121.gif gif 289 14 65 ALTIMG  1-s2.0-S0370269310012608-si120.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/eb4193e138970eea91eca8c9d60d9439/si120.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/eb4193e138970eea91eca8c9d60d9439/si120.gif
+        si120 si120.gif gif 294 14 69 ALTIMG  1-s2.0-S0370269310012608-si12.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/a20c4b072f7edf5b1b4938af6a4ec0bb/si12.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/a20c4b072f7edf5b1b4938af6a4ec0bb/si12.gif
+        si12 si12.gif gif 155 10 14 ALTIMG  1-s2.0-S0370269310012608-si119.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/3b7f66bf8926baa4d64592bd9243a1c4/si119.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/3b7f66bf8926baa4d64592bd9243a1c4/si119.gif
+        si119 si119.gif gif 326 14 76 ALTIMG  1-s2.0-S0370269310012608-si118.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/82cc619cd556e0dd72f214269dcfcc56/si118.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/82cc619cd556e0dd72f214269dcfcc56/si118.gif
+        si118 si118.gif gif 171 13 18 ALTIMG  1-s2.0-S0370269310012608-si117.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/94b3977d31642ca4ff321a7ade5bb698/si117.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/94b3977d31642ca4ff321a7ade5bb698/si117.gif
+        si117 si117.gif gif 251 14 61 ALTIMG  1-s2.0-S0370269310012608-si116.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/5221e1ecbe30cde3f9fe5088533e5ac3/si116.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/5221e1ecbe30cde3f9fe5088533e5ac3/si116.gif
+        si116 si116.gif gif 248 13 52 ALTIMG  1-s2.0-S0370269310012608-si115.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/7553c59b673e5d36735069ae8a6de178/si115.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/7553c59b673e5d36735069ae8a6de178/si115.gif
+        si115 si115.gif gif 290 14 68 ALTIMG  1-s2.0-S0370269310012608-si114.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/140c27834c6109556f5907c42c889bcb/si114.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/140c27834c6109556f5907c42c889bcb/si114.gif
+        si114 si114.gif gif 431 16 104 ALTIMG  1-s2.0-S0370269310012608-si113.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/bfcbae6e81dd44f6ac235251393802ff/si113.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/bfcbae6e81dd44f6ac235251393802ff/si113.gif
+        si113 si113.gif gif 440 18 104 ALTIMG  1-s2.0-S0370269310012608-si112.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/0cb0c24e8cfe02a87be31342da5434f9/si112.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/0cb0c24e8cfe02a87be31342da5434f9/si112.gif
+        si112 si112.gif gif 237 13 56 ALTIMG  1-s2.0-S0370269310012608-si111.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/3dfa2f99a5fdd2be7cdc6c14fe8746d9/si111.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/3dfa2f99a5fdd2be7cdc6c14fe8746d9/si111.gif
+        si111 si111.gif gif 294 14 68 ALTIMG  1-s2.0-S0370269310012608-si110.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/8e2bc7d3db31846745128c2974b34c84/si103.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/8e2bc7d3db31846745128c2974b34c84/si103.gif
+        si110 si110.gif gif 243 14 55 ALTIMG  1-s2.0-S0370269310012608-si11.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/d3abac8aef558906c805eab69555de9a/si11.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/d3abac8aef558906c805eab69555de9a/si11.gif
+        si11 si11.gif gif 220 16 41 ALTIMG  1-s2.0-S0370269310012608-si109.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/7ec3bad67a06d99a48d11e08f8aa4d71/si109.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/7ec3bad67a06d99a48d11e08f8aa4d71/si109.gif
+        si109 si109.gif gif 255 15 54 ALTIMG  1-s2.0-S0370269310012608-si108.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/257369fbb1762f01c004f9bfe4315774/si108.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/257369fbb1762f01c004f9bfe4315774/si108.gif
+        si108 si108.gif gif 253 13 53 ALTIMG  1-s2.0-S0370269310012608-si107.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/1ff7082bf251a71d03e78592d52040d5/si107.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/1ff7082bf251a71d03e78592d52040d5/si107.gif
+        si107 si107.gif gif 336 16 76 ALTIMG  1-s2.0-S0370269310012608-si106.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/3d97b0ab1563fc8381b36f51d703d377/si106.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/3d97b0ab1563fc8381b36f51d703d377/si106.gif
+        si106 si106.gif gif 449 18 104 ALTIMG  1-s2.0-S0370269310012608-si105.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/8c6526292e2b046443212c5660840a6f/si105.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/8c6526292e2b046443212c5660840a6f/si105.gif
+        si105 si105.gif gif 204 13 40 ALTIMG  1-s2.0-S0370269310012608-si104.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/ffa3fe18b6afcc619a5b01d02074ebca/si104.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/ffa3fe18b6afcc619a5b01d02074ebca/si104.gif
+        si104 si104.gif gif 303 14 68 ALTIMG  1-s2.0-S0370269310012608-si103.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/8e2bc7d3db31846745128c2974b34c84/si103.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/8e2bc7d3db31846745128c2974b34c84/si103.gif
+        si103 si103.gif gif 243 14 55 ALTIMG  1-s2.0-S0370269310012608-si102.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/7c773494333445e5231f12a637486d82/si102.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/7c773494333445e5231f12a637486d82/si102.gif
+        si102 si102.gif gif 260 15 55 ALTIMG  1-s2.0-S0370269310012608-si101.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/b8aabceee81e7df527a29a1e9330068a/si101.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/b8aabceee81e7df527a29a1e9330068a/si101.gif
+        si101 si101.gif gif 217 13 46 ALTIMG  1-s2.0-S0370269310012608-si100.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/11d24accd731968a428bae672c9e18b8/si148.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/11d24accd731968a428bae672c9e18b8/si148.gif
+        si100 si100.gif gif 190 14 36 ALTIMG  1-s2.0-S0370269310012608-si10.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/b05f8c3b69f62f31d241944c167bd375/si10.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/b05f8c3b69f62f31d241944c167bd375/si10.gif
+        si10 si10.gif gif 216 16 40 ALTIMG  1-s2.0-S0370269310012608-si1.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/STRIPIN/image/gif/4d6c30650ce6b5eb3193d30ac8e13f22/si1.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/STRIPIN/image/gif/4d6c30650ce6b5eb3193d30ac8e13f22/si1.gif
+        si1 si1.gif gif 283 13 59 ALTIMG  1-s2.0-S0370269310012608-gr001_lrg.jpg https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/gr001/HIGHRES/image/jpeg/92696d6a94773d3bc700f5fb7b9e504c/gr001_lrg.jpg
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/gr001/HIGHRES/image/jpeg/92696d6a94773d3bc700f5fb7b9e504c/gr001_lrg.jpg
+        gr001 gr001_lrg.jpg jpg 378138 1636 1728 IMAGE-HIGH-RES  1-s2.0-S0370269310012608-gr001.jpg
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/gr001/DOWNSAMPLED/image/jpeg/ca54a7d07f2e92880af6d69b2b875f89/gr001.jpg
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/gr001/DOWNSAMPLED/image/jpeg/ca54a7d07f2e92880af6d69b2b875f89/gr001.jpg
+        gr001 gr001.jpg jpg 32518 369 390 IMAGE-DOWNSAMPLED  1-s2.0-S0370269310012608-gr001.sml
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0370269310012608/gr001/THUMBNAIL/image/gif/c6feecdf1fa7fe80d730f1044cfc6e14/gr001.sml
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0370269310012608/gr001/THUMBNAIL/image/gif/c6feecdf1fa7fe80d730f1044cfc6e14/gr001.sml
+        gr001 gr001.sml sml 5635 164 173 IMAGE-THUMBNAIL     PLB 27153 S0370-2693(10)01260-8
+        10.1016/j.physletb.2010.10.049 Elsevier B.V. Theory    Fig. 1 N S    is plotted
+        on the x -axis while N ψ    is plotted on the y -axis and N V    is plotted
+        on the z -axis. The parameter space that is compatible with unitarity of the
+        S-matrix up to the true scale at which quantum gravity becomes strong is the
+        colored region.    Table 1 Scattering amplitudes for real scalars, fermions,
+        and vector bosons via s-channel graviton exchange in terms of the Wigner d
+        \ functions [5] . G N  = 1 / M P 2    is Newton's constant and s = E CM 2
+        \   is the center of mass energy squared. We have used the helicity basis
+        as in [4] .        → s ′  s ¯  ′    ψ + ′  ψ ¯  − ′    ψ − ′  ψ ¯  + ′    V
+        + ′  V − ′    V − ′  V + ′      s s ¯    − 2 π G N  s ( 1 / 3 d 0 , 0  2  −
+        1 / 3 ( 1 + 12 ξ )  2  d 0 , 0  0  )   − 2 π G N  s 1 / 3   d 0 , 1  2    −
+        2 π G N  s 1 / 3   d 0 , − 1  2    − 4 π G N  s 1 / 3   d 0 , 2  2    − 4
+        π G N  s 1 / 3   d 0 , − 2  2     ψ +  ψ ¯  −    − 2 π G N  s 1 / 3   d 1
+        , 0  2    − 2 π G N  s d 1 , 1  2    − 2 π G N  s d 1 , − 1  2    − 4 π G
+        N  s d 1 , 2  2    − 4 π G N  s d 1 , − 2  2     ψ −  ψ ¯  +    − 2 π G N
+        \ s 1 / 3   d − 1 , 0  2    − 2 π G N  s d − 1 , 1  2    − 2 π G N  s d −
+        1 , − 1  2    − 4 π G N  s 2 d − 1 , 2  2    − 4 π G N  s 2 d − 1 , − 2  2
+        \    V +  V −    − 4 π G N  s 1 / 3   d 2 , 0  2    − 4 π G N  s d 2 , 1  2
+        \   − 4 π G N  s d 2 , − 1  2    − 8 π G N  s d 2 , 2  2    − 8 π G N  s d
+        2 , − 2  2     V −  V +    − 4 π G N  s 1 / 3   d − 2 , 0  2    − 4 π G N
+        \ s d − 2 , 1  2    − 4 π G N  s d − 2 , − 1  2    − 8 π G N  s d − 2 , 2
+        \ 2    − 8 π G N  s d − 2 , − 2  2        Table 2 We consider different unification
+        models which have been considered in the literature. Clearly models with large
+        representations lead to unitarity problems. The last two columns are describing
+        whether a given model passes the unitarity bound of the J  = 2 (N = 1 3  N
+        S  + N ψ  + 4 N V  ⩽ 160 π  ) and J  = 0 (N S  ⩽ 96 π  ) partial waves.        Particle
+        physics model N l    N  N S    J = 2   bound J = 0   bound   Standard model
+        1 283/3 4 yes yes  MSSM 111 425/3 98 yes yes     SU(5) w/ 5 , 24  −17 457/3
+        34 yes yes  SU(5) w/ 5 , 200  159 211 210 yes yes  SU(5) w/ 5 , 24 , 75  58
+        532/3 109 yes yes  SU(5) w/ 5 , 24 , 75 , 200  258 244 309 yes no  SO(10)
+        w/ 10 , 16 , 45  −35 781/3 97 yes yes  SO(10) w/ 10 , 16 , 210  130 946/3
+        262 yes yes  SO(10) w/ 10 , 16 , 770  690 502 822 yes no     SUSY-SU(5) w/
+        5 , 5 ¯   , 24  165 755/3 158 yes yes  SUSY-SU(5) w/ 5 , 5 ¯   , 24 , 75  390
+        1130/3 308 yes no  SUSY-SU(5) w/ 5 , 5 ¯   , 200  693 545 510 no no  SUSY-SO(10)
+        w/ 10 , 16 , 16 ¯   , 45 , 54  432 540 378 no no  SUSY-SO(10) w/ 10 , 16 ,
+        16 ¯   , 210  765 725 600 no no  SUSY-SO(10) w/ 10 , 16 , 16 ¯   , 770  2445
+        4975/3 1720 no no      On the unitarity of linearized General Relativity coupled
+        to matter Michael Atkins m.atkins@sussex.ac.uk  Xavier Calmet ⁎  x.calmet@sussex.ac.uk
+        \ Physics and Astronomy, University of Sussex, Falmer, Brighton, BN1 9QH,
+        UK  ⁎ Corresponding author.      Editor: A. Ringwald Abstract We consider
+        the unitarity of the S-matrix for linearized General Relativity coupled to
+        particle physics models. Taking renormalization group effects of the Planck
+        mass into account, we find that the scale at which unitarity is violated is
+        strongly dependent on the particle content of the theory. We find that the
+        requirement that the S-matrix be unitary up to the scale at which quantum
+        gravitational effects become strong implies a bound on the particle content
+        of the model.   Keywords Linearized General Relativity  Perturbative unitarity
+        \ Renormalization group    General Relativity is remarkably successful on
+        macroscopic scales and it describes all observations and experiments performed
+        on distances from cosmological scales to distances of 10 μm, see e.g. [1]
+        \ for a review. More experiments are planned to probe General Relativity on
+        yet shorter scales studying deviations of Newton's potential while the Large
+        Hadron Collider will probe gravity in the TeV region [2] . Within conventional
+        physics, one does not expect deviations of General Relativity before one reaches
+        energy scales close to the Planck scale or some 10 19   GeV  . One expects
+        that at this energy scale, quantum gravitational effects will become relevant.
+        However, it is notoriously difficult to make sense of General Relativity once
+        second quantization effects are taken into account. In particular the quantum
+        field theory obtained by linearizing the Einstein–Hilbert action is not renormalizable,
+        at least in a perturbative manner. Nevertheless, General Relativity at the
+        quantum level can be treated as an effective field theory (see e.g. [3] ).
+        In this Letter we shall focus on the coupling of gravity to matter and we
+        will investigate whether the corresponding linearized theory leads to a unitary
+        S-matrix. A similar study has already been performed by Han and Willenbrock
+        [4] . Although we agree with their calculations for the tree level amplitudes,
+        we shall push the discussion further taking the renormalization group evolution
+        of Newton's constant into account which turns out to be crucial in order to
+        interpret the results correctly. We point out that it is important to compare
+        the scale at which unitarity is violated to the scale at which quantum gravity
+        effects become strong. The true scale for strong quantum gravitational effects
+        can be determined dynamically using the renormalization group equation of
+        Newton's constant. This enables us to derive a bound on the particle content
+        of the particle physics model coupled to linearized General Relativity. The
+        consequences for these models are discussed. We shall start from the usual
+        four-dimensional Einstein–Hilbert action coupled to real scalar fields, Weyl
+        fermions and vector fields treating them as massless particles(1) S [ g ,
+        ϕ , ψ , A μ  ] = − ∫ d 4  x  − det ( g )   ( 1 16 π G N    R + 1 2  g μ ν
+        \  ∂ μ  ϕ ∂ ν  ϕ + ξ R ϕ 2  + e ψ ¯  i γ μ  D μ  ψ + 1 4  F μ ν   F μ ν   )
+        \     where e  is the tetrad, D μ  = ∂ μ  + w μ a b   σ a b   / 2   and w
+        μ a b     is the spin connection which can be expressed in terms of the tetrad.
+        This action can be linearized using g μ ν   = η μ ν   + 2  h μ ν   / M ¯  P
+        \ + O ( M ¯  P − 2   )  , where the scale, i.e the reduced Planck mass, appearing
+        in this expansion is fixed by the requirement that the kinetic term of the
+        graviton be canonically normalized. One obtains the following Lagrangian(2)
+        L = − 1 4  h μ ν   □ h μ ν   + 1 4  h □ h − 1 2  h μ ν   ∂ μ  ∂ ν  h + 1 2
+        \ h μ ν   ∂ μ  ∂ α  h ν α  − 2  M ¯  P   h μ ν   T μ ν   + O ( M ¯  P − 2
+        \  )      where T μ ν     is the energy–momentum tensor corresponding to the
+        matter content of the theory. This action can be regarded as an effective
+        action valid up to M ¯  P  ∼ 2.43 × 10 18   GeV  . Traditionally one expects
+        that gravitational interactions become strong above this energy scale and
+        the metric should not be linearizable at higher energies. In that sense we
+        can consider that linearized General Relativity is an effective theory valid
+        up to an energy scale corresponding to the reduced Planck mass. One of the
+        key consistency checks for an effective theory is that its S-matrix be unitary
+        up to the scale where its description is assumed to hold. As in [4] , we study
+        the gravitational scattering at tree level of the real scalars s , Weyl fermions
+        ψ  and vector bosons V  included in the particle physics model under consideration.
+        As they have done we restrict ourselves to the case where initial and final
+        states consist of different particles. This simplifies the calculations tremendously
+        since only s-channels need to be considered. We have calculated the amplitudes
+        for the different processes. Our results can be found in Table 1   and agree
+        with those obtained in [4] . The partial wave amplitudes a J    can be determined
+        using A = 16 π ∑ J  ( 2 J + 1 ) a J  d μ , μ ′   J   . As is well known, the
+        S-matrix is unitary if | Re  a J  | ⩽ 1 / 2  . Looking at the J = 0   amplitude
+        we can deduce the first new result. If we request that the effective action
+        remains valid up to the reduced Planck mass, i.e. we set s  = M ¯  P   , we
+        obtain the following bound on the non-minimal coupling of the scalar field
+        to the Ricci scalar:(3) − 4 6 π N S    + N S   12 N S    ⩽ ξ ⩽ 4 6 π N S    −
+        N S   12 N S    .     In the standard model there is one Higgs doublet and
+        hence four real scalars. Thus N S  = 4   and we find − 0.81 ⩽ ξ ⩽ 0.64   numerically.
+        Note that the conformal value, ξ = − 1 / 12 = − 0.083  , is within this range
+        and that in the limit N S  → ∞  , ξ  is forced to take the conformal value.
+        If the model under consideration is to be valid up to the reduced Planck mass,
+        the parameter ξ  needs to be rather small and is theoretically very tightly
+        constrained. Clearly this casts some serious doubts on the validity of certain
+        inflationary models such as, for example, the model proposed in [6]  where
+        the Higgs boson plays the role of the inflaton, see also [7]  where a similar
+        observation was made. The model [6] , although beautiful and minimalistic,
+        requires some new physics below the reduced Planck mass to fix the unitarity
+        problem. Let us now look at the J = 2   partial wave. Using the standard trick,
+        as done in [4,8] , we can apply the unitarity bound to the scattering of a
+        superposition of states. The J = 2   partial wave amplitude for the gravitational
+        scattering of a state | 1 / 3   ∑ s s + ∑ ψ −  ψ ¯  +  + 2 ∑ V V 〉   is given
+        by(4) a 2  = − 1 320 π   s M ¯  P 2   N     with N = 1 / 3 N S  + N ψ  + 4
+        N V   , where N S   , N ψ    and N V    are respectively the number of real
+        scalar fields, Weyl fermions and vector bosons in the model under consideration.
+        The unitarity bound | Re  a 2  | ⩽ 1 / 2   implies a violation of unitarity
+        of the S-matrix for center of mass energies E CM  > M ¯  P  160 π / N    .
+        Naively, it seems that in particle physics models with a large number of fields
+        the unitarity of the S-matrix could be violated at energies below the reduced
+        Planck mass. However, there is a physical effect which has not been included
+        in [4]  which has deep consequences for this study. It has been pointed out
+        [9,10]  that a large number of fields in a particle physics model can lead
+        to a sizable running of the Planck mass. The N  fields introduced in the theory
+        will renormalize the graviton propagator. The renormalization group equation
+        for the reduced Planck mass reads [9,11–13] :(5) M ¯  P  ( μ )  2  = M ¯  P
+        \ ( 0 )  2  − 1 96 π 2    μ 2  N l      with N l  = N S  + N ψ  − 4 N V    and
+        where μ  is the renormalization scale. The true energy scale μ ⁎    at which
+        quantum gravity effects are large is one at which(6) M ¯  P 2  ( μ ⁎  ) ∼
+        μ ⁎ 2  .     This condition implies that fluctuations in spacetime geometry
+        at length scales μ ⁎ − 1     will be unsuppressed. One finds(7) μ ⁎ 2  = M
+        ¯  P  ( 0 )  2   1 + N l  96 π 2      .     We can now trivially recalculate
+        the amplitudes using our renormalization group improvement and find that the
+        energy scale E CM ⋆  = s ⋆     at which unitarity is violated is given by(8)
+        E CM ⋆  = M ¯  P  ( E CM ⋆  )  160 π  N       where we have evaluated the
+        Planck mass at the energy scale corresponding to the center of mass energy.
+        The new criteria for the consistency of the linearized theory is the following:
+        If the scale at which gravity effects become strong is larger than the energy
+        at which unitarity is violated, i.e. μ ⋆  > E CM ⋆    then linearized General
+        Relativity coupled to the particle physics model under consideration is inconsistent,
+        on the other hand for μ ⋆  ⩽ E CM ⋆   , the theory is well-behaved up to energies
+        μ ⋆    and the effective theory is consistent. This is our central result.
+        In terms of particle content, the criteria for the unitarity of the S-matrix
+        up to the scale of strong gravity becomes(9) N = 1 3  N S  + N ψ  + 4 N V
+        \ ⩽ 160 π .     Note that the bound on N  is the same as the one obtained
+        at tree level. However, the requirement for a model to be consistent is different
+        in this new derivation. The two bounds coincide because we require that the
+        true reduced Planck mass is the scale at which quantum gravitational effects
+        become strong and not the Planck mass itself. Indeed, the reduced Planck mass
+        appears in Eq. (6)  and not the Planck mass. This is consistent with our previous
+        observation that the expansion parameter for the metric is the reduced Planck
+        mass and not the Planck mass. The true reduced Planck mass itself depends
+        on radiative corrections which turn out to be the same as those of the tree
+        level scattering cross-sections. The requirement of having a solution to Eq.
+        (6)  which fixes dynamically the true Planck mass leads to the bound N l  ⩾
+        − 96 π 2    which is weaker than the bound (9) . Models with a more negative
+        N l    do not lead to strong gravitational effects in which case gravity remains
+        weak at all scales. Note that when we estimate the energy scale at which strong
+        gravitational physics becomes relevant we are being as generous as possible
+        with the model. Indeed, if one studies graviton loop corrections, one finds
+        that perturbation theory breaks down at a scale μ ⋆  ⩾ 4 π M ¯  P  ( μ ⋆  )
+        \ , if we used that criteria, the bound would even be tighter. Using the same
+        criteria as for the J = 2   partial wave bound, one can obtain a second bound
+        from the J = 0   partial wave. This leads to a bound on the numbers of scalars:(10)
+        N S  ⩽ 96 π .     We assumed that ξ = 0  , i.e., that the scalar fields are
+        minimally coupled to gravity. As we shall see, this second bound turns out,
+        in most cases, to be more restrictive than the J = 2   bound for grand unified
+        theories. The solution to the two inequalities (9) and (10)  is plotted in
+        Fig. 1  . In the standard model one has N S  = 4  , N ψ  = 45   and N V  =
+        12   and one finds N = 283 / 3  , N l  = 1   which implies E CM ⋆  = 2.3 M
+        ¯  P  ( 0 )   and μ ⋆  ∼ M ¯  P  ( 0 )  . Linearized General Relativity coupled
+        to the standard model is thus a valid effective theory up to the reduced Planck
+        mass. In the minimal supersymmetric Standard Model one has N S  = 98  , N
+        ψ  = 61   and N V  = 12   and one finds N = 425 / 3  , N l  = 111   and thus
+        E CM ⋆  = 1.6 M ¯  P  ( 0 )   and μ ⋆  ∼ 0.95 M ¯  P  ( 0 )  . One could be
+        worried that in models with a larger particle content the theory could become
+        inconsistent below the reduced Planck mass. This strongly depends on the particle
+        content. For example SO(10) with a 10 , 16  and 45  representations for the
+        Higgs bosons leads to N = 781 / 3  , N S  = 97   and N l  = − 35  . Our criteria
+        implies that the corresponding effective theory is consistent. On the other
+        hand in grand unified SUSY SO(10) with Higgs bosons in the 10 , 16 , 16 ¯
+        \   and 770  representations one finds N = 4975 / 3  , N S  = 1720  , N l
+        \ = 2445   and E CM ⋆  = 0.41 M ¯  P  ( 0 )   and μ ⋆  ∼ 0.53 M ¯  P  ( 0
+        )   which implies that the linearized effective theory is inconsistent. The
+        same holds for the model proposed in [9]  where a hidden sector with 1032
+        \ particles of spin 0 and/or 1/2 leads to a reduced Planck mass at 1 TeV,
+        we find that unitarity is violated below this energy scale since both bounds
+        are not fulfilled. Table 2   gives several more examples of models that pass
+        or do not pass the tests. Note that supersymmetric models typically have more
+        scalars and thus often face difficulties with unitarity below the scale at
+        which quantum gravitational effects become strong. Another extreme case of
+        a model which suffers from a unitarity problem is the following. Consider
+        a large hidden sector of particles of spin 1 coupled to the standard model
+        only gravitationally. The renormalization of the reduced Planck mass (5)  implies
+        that the Planck mass increases with energy in that model while the scale at
+        which unitarity is violated decreases with the number of spin 1 fields in
+        the theory leading to a collapse of the effective theory description. A caveat
+        is that the renormalization of Newton's constant due to the graviton has not
+        been included in our calculation. It is known that the graviton's contribution
+        has the same sign as that of the spin 1 particle [14] . It is however likely
+        to be a small effect. In particular, in models with a large number of fields,
+        the graviton contribution to the renormalization of the Planck mass is a 1
+        / N l    effect. In order to stress the importance of the consistency requirement
+        introduced above, we would like to point out that the situation with gravity
+        is rather different than in the more familiar case of the weak interactions
+        and the bound on the energy scale at which unitarity is violated in the weak
+        interactions without a Higgs boson. First of all, as emphasized previously,
+        the expansion parameter in linearized General Relativity is clearly defined
+        by the requirement of having a canonically normalized graviton kinetic term.
+        All gravitational operators coming from − g   R   are calculable without any
+        ambiguity to any order in the reduced Planck mass. In the spirit of effective
+        field theory, one could consider operators of the type R 2   , R 3    etc.
+        However, the corresponding Feynman diagrams are suppressed by at least four
+        powers of the Planck mass and they are thus higher order corrections to our
+        results. Also, these operators contain new degrees of freedom which themselves
+        violate unitarity [15]  and could hardly fix the problem with perturbative
+        unitarity. In linearized General Relativity, we can dynamically determine
+        the scale at which gravity becomes strong. This is not possible in the weak
+        interactions case. We compare this scale, μ ⋆   , to the scale E CM ⋆    at
+        which unitarity is violated. Note that μ ⋆    scales differently than E CM
+        ⋆    with the number of scalars, fermions and vector bosons. Any mismatch
+        is relevant even if small, since both scales can be calculated from first
+        principles. Furthermore, the bound | Re  a J  | ⩽ 1 / 2   is very conservative,
+        see e.g. [16] , where it is argued that one could request that one even impose
+        | Re  a J  | ≪ 1 / 2  . Note that our bound is derived from the requirement
+        | Re  a J  | = 1 / 2   which is as conservative as can be. In the case of
+        General Relativity we have a theoretical control on the scale at which quantum
+        gravity effects become large and the mismatch between the two scales is physical.
+        The situation is different to that of the weak interactions without a Higgs
+        where one assumes that the weak interactions have to become strongly coupled
+        at the scale of unitarity violation. Here we know that gravity is still weak
+        at that scale and that no mechanism could make it strong below μ ⋆   . Our
+        results have interesting consequences for models of unification of General
+        Relativity. For example in asymptotically safe gravity [17] , the expansion
+        parameter for the higher dimensional operators needs to be the reduced Planck
+        mass ∼ μ ⋆    and not the Planck mass:(11) S [ g ] = − ∫ d 4  x  − det ( g
+        )   ( − Λ ( μ )  4  + M ¯  P  ( μ )  2   32 π   R + a ( μ ) R μ ν   R μ ν
+        \  + b ( μ ) R 2  + c ( μ )  μ ⋆ 2   R 3  + d ( μ )  μ ⋆ 2   R R μ ν   R μ
+        ν   + ⋯ )      where Λ ( μ )   is the running cosmological constant. This
+        action reduces to (2)  once linearized. As we have seen the standard model
+        would not lead to a consistent effective theory if one expanded into the Planck
+        mass instead of the reduced Planck mass, as unitarity would be violated at
+        about 1 / 2 M P   . Furthermore, this scenario is only viable for particle
+        physics models with a particle content that fulfills the bound (9) , since
+        in that case linearized General Relativity is a valid effective theory up
+        to the energy scale at which quantum gravity effects become relevant. In models
+        that do not satisfy the bound (9) , there is, as we have seen, a violation
+        of unitarity below the reduced Planck mass. A solution could come from embedding
+        these models into string theory where the string scale appears as a new parameter.
+        In these models, the Planck mass is related to the string scale M s    and
+        the extra dimensional volume V 6    via the relation M P 2  = 1 / g s 2  M
+        s 8  V 6    where g s    is the string coupling constant. In this framework
+        it is possible to decouple the gravitational scale from the string scale by
+        adjusting the string coupling. An extreme example is that of little string
+        theory in the TeV region [18,19]  which requires g s  ∼ 10 − 16    . If the
+        string scale is lower than the Planck mass, non-local effects associated with
+        the stringy nature of the particles could solve the unitarity problem. Finally
+        note that the effect of the renormalization of the Planck mass also affects
+        the bound we have obtained earlier for the coefficient of the non-minimal
+        coupling of a scalar field to the Ricci scalar. Unitarity should hold up to
+        μ ⋆    and not just M ¯  P   . We thus find again that the unitarity limit
+        is very sensitive to the particle content of the particle physics model. In
+        a sequel paper [20]  we will show that models with large extra dimensions
+        also suffer from unitarity issues. In these models, the fundamental Planck
+        scale is in the TeV region and because the volume is large there are approximately
+        N K K   = 10 32    Kaluza Klein (KK) gravitons with masses below 1 TeV. Scattering
+        between the matter content of the model can now take place via exchange of
+        any one of this very large number of KK modes and it is found [20]  that the
+        J = 2   partial wave, in the massless limit, is unaltered to that found for
+        massless gravitons. We can therefore sum up all the amplitudes for scattering
+        via exchange of all of these modes and we acquire a global factor of N K K
+        \    in front of all the amplitudes given in Table 1 . We find that the J
+        = 2   partial wave amplitude is given by:(12) | a 2  | = 1 320 π   s M ¯  P
+        2   N K K   N .     For the case of the standard model coupled to 1032  KK
+        gravitons we find that at s  = 1  TeV  , | a 2  | ∼ 1.6   and unitarity is
+        violated at E CM ⋆  = 561  GeV   which is clearly below the scale at which
+        gravity is supposed to become strongly coupled. We note that the perturbative
+        unitarity of the S-matrix has been studied previously in e.g. [21] . The reason
+        why our bound is stronger is that we are summing over the N  possible amplitudes
+        in the standard model and not just considering one specific process such as
+        e.g. γ γ → γ γ   as done in [21] . Conclusions : We have reconsidered the
+        unitarity of the S-matrix for linearized General Relativity coupled to models
+        of particle physics taking into account for the first time the renormalization
+        of the Planck mass. We derive a bound on the particle content of the particle
+        physics models coupled to General Relativity. Our results have significant
+        implications for models trying to unify General Relativity with models of
+        particle physics. In the case of the standard model and the minimal supersymmetric
+        standard model and more generically in models satisfying our bound, linearized
+        General Relativity offers a theoretically consistent effective theory since
+        there is no violation of unitarity below the reduced Planck mass which is
+        the expansion parameter of the effective theory. If nature is described by
+        one of these particle physics models, the fundamental theory of quantum gravity
+        could be General Relativity itself which could be renormalizable at the non-perturbative
+        level, i.e. asymptotically safe gravity, as proposed by Weinberg some thirty
+        years ago [17] . In particle physics models which do not satisfy the bound
+        (9) , one finds that the unitarity of the S-matrix is violated at an energy
+        scale below the reduced Planck mass. An extreme case example would be that
+        of asymptotically free gravity. Our results imply that asymptotically free
+        gravity is inconsistent. In less extreme cases, the cure could come from embedding
+        models that do not satisfy the bound into a non-local theory of quantum gravity.
+        \ Acknowledgements We would like to thank Stephen Hsu and David Reeb for helpful
+        discussions and valuable suggestions. This work in supported in part by the
+        European Cooperation in Science and Technology (COST)  action MP0905  “Black
+        Holes in a Violent Universe”. The work of M.A. was supported in part by the
+        Science and Technology Facilities Council  [grant number ST/1506029/1 ].   References
+        [1] Clifford M. Will    Living Rev. Relativity  9  2006  3   http://www.livingreviews.org/lrr-2006-3
+        \    [2] X. Calmet  P. de Aquino    arXiv:0906.0363 [hep-ph]    X. Calmet
+        \ P. de Aquino  T.G. Rizzo    Phys. Lett. B  682  2010  446   arXiv:0910.1535
+        [hep-ph]    X. Calmet  W. Gong  S.D.H. Hsu    Phys. Lett. B  668  2008  20
+        \  arXiv:0806.4605 [hep-ph]     [3] J.F. Donoghue    Phys. Rev. Lett.  72
+        \ 1994  2996   arXiv:gr-qc/9310024    J.F. Donoghue    Phys. Rev. D  50  1994
+        \ 3874   arXiv:gr-qc/9405057     [4] T. Han  S. Willenbrock    Phys. Lett.
+        B  616  2005  215   arXiv:hep-ph/0404182     [5] C. Amsler   Particle Data
+        Group   Phys. Lett. B  667  2008  1     [6] F.L. Bezrukov  M. Shaposhnikov
+        \   Phys. Lett. B  659  2008  703   arXiv:0710.3755 [hep-th]     [7] C.P.
+        Burgess  H.M. Lee  M. Trott    JHEP  0909  2009  103   arXiv:0902.4465 [hep-ph]
+        \   J.L.F. Barbon  J.R. Espinosa    Phys. Rev. D  79  2009  081302   arXiv:0903.0355
+        [hep-ph]     [8] B.W. Lee  C. Quigg  H.B. Thacker    Phys. Rev. D  16  1977
+        \ 1519     [9] X. Calmet  S.D.H. Hsu  D. Reeb    Phys. Rev. D  77  2008  125015
+        \  arXiv:0803.1836 [hep-th]     [10] X. Calmet  S.D.H. Hsu  D. Reeb    Phys.
+        Rev. Lett.  101  2008  171802   arXiv:0805.0145 [hep-ph]    X. Calmet  S.D.H.
+        Hsu  D. Reeb    AIP Conf. Proc.  1078  2009  432   arXiv:0809.3953 [hep-ph]
+        \   X. Calmet  S.D.H. Hsu  D. Reeb    Phys. Rev. D  81  2010  035007   arXiv:0911.0415
+        [hep-ph]     [11] F. Larsen  F. Wilczek    Nucl. Phys. B  458  1996  249   arXiv:hep-th/9506066
+        \    [12] D.N. Kabat    Nucl. Phys. B  453  1995  281   arXiv:hep-th/9503016
+        \    [13] D.V. Vassilevich    Phys. Rev. D  52  1995  999   arXiv:gr-qc/9411036
+        \    [14] N.E.J. Bjerrum-Bohr  J.F. Donoghue  B.R. Holstein    Phys. Rev.
+        D  68  2003  084005   arXiv:hep-th/0211071    N.E.J. Bjerrum-Bohr  J.F. Donoghue
+        \ B.R. Holstein    Phys. Rev. D  71  2005  069904   Erratum   [15] K.S. Stelle
+        \   Phys. Rev. D  16  1977  953     [16] L. Durand  J.M. Johnson  J.L. Lopez
+        \   Phys. Rev. Lett.  64  1990  1215     [17] S. Weinberg    A. Zichichi   Understanding
+        the Fundamental Constituents of Matter  1977 Plenum Press New York     S.
+        Weinberg    S.W. Hawking  W. Israel   General Relativity  1979 Cambridge University
+        Press   700     [18] I. Antoniadis  S. Dimopoulos  A. Giveon    JHEP  0105
+        \ 2001  055   arXiv:hep-th/0103033     [19] X. Calmet  S.D.H. Hsu    Phys.
+        Lett. B  663  2008  95   arXiv:0711.2306 [hep-ph]     [20] M. Atkins  X. Calmet
+        \   arXiv:1005.1075 [hep-ph]   Eur. Phys. J. C, in press   [21] O.J.P. Eboli
+        \ T. Han  M.B. Magro  P.G. Mercadante    Phys. Rev. D  61  2000  094007   arXiv:hep-ph/9908358
+        \            "
+  recorded_at: 2020-03-13 15:50:49 GMT
+  recorded_with: vcr/0.5.0, webmockr/0.6.0

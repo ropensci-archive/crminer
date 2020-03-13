@@ -1,13 +1,17 @@
 context("crm_html")
 
 if (identical(Sys.getenv("NOT_CRAN"), "true")) {
-  url1 <- crm_links("10.7717/peerj.1545", type = "html")
+  vcr::use_cassette("crm_html_prep", {
+    url1 <- crm_links("10.7717/peerj.1545", type = "html")
+  })
 }
 
 test_that("crm_html works with links input",{
   skip_on_cran()
 
-  res <- suppressMessages(crm_html(url1))
+  vcr::use_cassette("crm_html_links_in", {
+    res <- suppressMessages(crm_html(url1))
+  })
   expect_is(res, "xml_document")
   expect_equal(xml2::xml_name(res), "html")
 })
@@ -15,11 +19,12 @@ test_that("crm_html works with links input",{
 test_that("crm_html works with character URL input", {
   skip_on_cran()
 
-  res <- suppressMessages(crm_html(url1$html))
+  vcr::use_cassette("crm_html_character_in", {
+    res <- suppressMessages(crm_html(url1$html))
+  })
   expect_is(res, "xml_document")
   expect_equal(xml2::xml_name(res), "html")
 })
-
 
 test_that("crm_html fails well",{
   skip_on_cran()

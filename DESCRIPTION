@@ -5,7 +5,7 @@ Description: Text mining client for 'Crossref' (<https://crossref.org>). Include
     functions for getting getting links to full text of articles, fetching full
     text articles from those links or Digital Object Identifiers ('DOIs'),
     and text extraction from 'PDFs'.
-Version: 0.3.0.91
+Version: 0.3.1.91
 Authors@R: c(person("Scott", "Chamberlain",
     role = c("aut", "cre"),
     email = "myrmecocystus+r@gmail.com",
@@ -27,7 +27,8 @@ Imports:
 Suggests:
     roxygen2 (>= 7.1.0),
     rcrossref,
-    testthat
+    testthat,
+    vcr
 RoxygenNote: 7.1.0
 X-schema.org-applicationCategory: Literature
 X-schema.org-keywords: text-mining, literature, publications, crossref, pdf, xml

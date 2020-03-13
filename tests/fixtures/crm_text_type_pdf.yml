@@ -1,0 +1,357 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://api.crossref.org/works/10.7717/peerj.1268
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: r-curl/4.3 rOpenSci(crul/%s)0.9.0 rOpenSci(rcrossref/0.9.2.9610)
+        (mailto:myrmecocystus@gmail.com)
+      X-USER-AGENT: r-curl/4.3 rOpenSci(crul/%s)0.9.0 rOpenSci(rcrossref/0.9.2.9610)
+        (mailto:myrmecocystus@gmail.com)
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      content-type: application/json;charset=UTF-8
+      vary: Accept
+      access-control-allow-origin: '*'
+      access-control-allow-headers: X-Requested-With
+      content-length: '30129'
+      server: http-kit
+      date: Fri, 13 Mar 2020 15:51:41 GMT
+      x-rate-limit-limit: '50'
+      x-rate-limit-interval: 1s
+      connection: close
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2019,11,26]],"date-time":"2019-11-26T00:53:29Z","timestamp":1574729609930},"reference-count":83,"publisher":"PeerJ","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/","start":{"date-parts":[[2015,9,22]],"date-time":"2015-09-22T00:00:00Z","timestamp":1442880000000},"delay-in-days":0,"content-version":"unspecified"}],"funder":[{"DOI":"10.13039\/100000001","name":"National
+        Science Foundation","doi-asserted-by":"crossref","award":["DEB-0717220"]},{"name":"NSF
+        GRFP","award":[]}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"abstract":"<jats:p>Many
+        animals with complex life cycles can cope with environmental uncertainty by
+        altering the timing of life history switch points through plasticity. Pond
+        hydroperiod has important consequences for the fitness of aquatic organisms
+        and many taxa alter the timing of life history switch points in response to
+        habitat desiccation. For example, larval amphibians can metamorphose early
+        to escape drying ponds. Such plasticity may induce variation in size and morphology
+        of juveniles which can result in carry-over effects on jumping performance.
+        To investigate the carry-over effects of metamorphic plasticity to pond drying,
+        we studied the T\u00fangara frog,<jats:italic>Physalaemus pustulosus<\/jats:italic>,
+        a tropical anuran that breeds in highly ephemeral habitats. We conducted an
+        outdoor field mesocosm experiment in which we manipulated water depth and
+        desiccation and measured time and size at metamorphosis, tibiofibula length
+        and jumping performance. We also conducted a complimentary laboratory experiment
+        in which we manipulated resources, water depth and desiccation. In the field
+        experiment, metamorphs from dry-down treatments emerged earlier, but at a
+        similar size to metamorphs from constant depth treatments. In the laboratory
+        experiment, metamorphs from the low depth and dry-down treatments emerged
+        earlier and smaller. In both experiments, frogs from dry-down treatments had
+        relatively shorter legs, which negatively impacted their absolute jumping
+        performance. In contrast, reductions in resources delayed and reduced size
+        at metamorphosis, but had no negative effect on jumping performance. To place
+        these results in a broader context, we review past studies on carry-over effects
+        of the larval environment on jumping performance. Reductions in mass and limb
+        length generally resulted in lower jumping performance across juvenile anurans
+        tested to date. Understanding the consequences of plasticity on size, morphology
+        and performance can elucidate the linkages between life stages.<\/jats:p>","DOI":"10.7717\/peerj.1268","type":"journal-article","created":{"date-parts":[[2015,9,22]],"date-time":"2015-09-22T08:23:41Z","timestamp":1442910221000},"page":"e1268","source":"Crossref","is-referenced-by-count":5,"title":["Consequences
+        of life history switch point plasticity for juvenile morphology and locomotion
+        in theT\u00fangara frog"],"prefix":"10.7717","volume":"3","author":[{"given":"Julie
+        F.","family":"Charbonnier","sequence":"first","affiliation":[{"name":"Department
+        of Biology, Virginia Commonwealth University, Richmond, VA, USA"}]},{"given":"James
+        R.","family":"Vonesh","sequence":"additional","affiliation":[{"name":"Department
+        of Biology, Virginia Commonwealth University, Richmond, VA, USA"}]}],"member":"4443","published-online":{"date-parts":[[2015,9,22]]},"reference":[{"key":"10.7717\/peerj.1268\/ref-1","doi-asserted-by":"publisher","first-page":"186","DOI":"10.1007\/s00442-002-0876-x","article-title":"Effects
+        of induced variation in anuran larval development on postmetamorphic energy
+        reserves and locomotion","volume":"131","author":"\u00c1lvarez","year":"2002","journal-title":"Oecologia"},{"key":"10.7717\/peerj.1268\/ref-2","doi-asserted-by":"crossref","first-page":"347","DOI":"10.1093\/icb\/23.2.347","article-title":"Morphology,
+        performance and fitness","volume":"23","author":"Arnold","year":"1983","journal-title":"American
+        Zoologist"},{"key":"10.7717\/peerj.1268\/ref-3","doi-asserted-by":"publisher","first-page":"651","DOI":"10.1146\/annurev.ecolsys.35.021004.112426","article-title":"Predator-induced
+        phentypic plasticity in organisms with complex life histories","volume":"35","author":"Benard","year":"2004","journal-title":"Annual
+        Review of Ecology, Evolution, and Systematics"},{"key":"10.7717\/peerj.1268\/ref-4","doi-asserted-by":"publisher","first-page":"1599","DOI":"10.2307\/1938295","article-title":"Factors
+        affecting population fluctuations in larval and adult stages of the wood frog
+        (Rana sylvatica)","volume":"71","author":"Berven","year":"1990","journal-title":"Ecology"},{"key":"10.7717\/peerj.1268\/ref-5","doi-asserted-by":"publisher","first-page":"305","DOI":"10.1002\/jmor.1052090306","article-title":"Proximate
+        developmental causes of limb length variation between Hyla cinerea and Hyla
+        gratiosa (Anura: Hylidae)","volume":"209","author":"Blouin","year":"1991","journal-title":"Journal
+        of Morphology"},{"key":"10.7717\/peerj.1268\/ref-6","doi-asserted-by":"publisher","first-page":"717","DOI":"10.1086\/285245","article-title":"Effects
+        of environmentally induced development-rate variation on head and limb morphology
+        in the Green Tree Frog, Hyla cinerea","volume":"138","author":"Blouin","year":"1991","journal-title":"The
+        American Naturalist"},{"key":"10.7717\/peerj.1268\/ref-7","doi-asserted-by":"publisher","first-page":"717","DOI":"10.1643\/CE-12-091","article-title":"Carry-over
+        effects in nature: effects of canopy cover and individual pond on size, shape,
+        and locomotor performance of metamorphosing Wood Frogs","volume":"13","author":"Boes","year":"2013","journal-title":"Copeia"},{"key":"10.7717\/peerj.1268\/ref-8","doi-asserted-by":"publisher","first-page":"67","DOI":"10.1111\/j.0269-8463.2005.00931.x","article-title":"Early
+        hatching decreases jumping performance in a direct-developing frog, Eleutherodactylus
+        coqui","volume":"19","author":"Buckley","year":"2005","journal-title":"Functional
+        Ecology"},{"key":"10.7717\/peerj.1268\/ref-9","doi-asserted-by":"publisher","first-page":"e70121","DOI":"10.1371\/journal.pone.0070121","article-title":"Larger
+        body size at metamorphosis enhances survival, growth and performance of young
+        cane toads (Rhinella marina)","volume":"8","author":"Cabrera-Guzm\u00e1n","year":"2013","journal-title":"PLoS
+        ONE"},{"key":"10.7717\/peerj.1268\/ref-10","doi-asserted-by":"publisher","first-page":"445","DOI":"10.1007\/s10682-006-9133-9","article-title":"Trade-offs
+        across life stages: does predator\u2013induced hatching plasticity reduce
+        anuran post-metamorphic performance?","volume":"21","author":"Capell\u00e1n","year":"2007","journal-title":"Evolutionary
+        Ecology"},{"key":"10.7717\/peerj.1268\/ref-11","doi-asserted-by":"crossref","first-page":"467","DOI":"10.1086\/physzool.69.3.30164211","article-title":"Ontogenetic
+        limits on locomotor performance","volume":"69","author":"Carrier","year":"1996","journal-title":"Physiological
+        Zoology"},{"key":"10.7717\/peerj.1268\/ref-12","doi-asserted-by":"publisher","first-page":"1233","DOI":"10.1111\/j.1365-2656.2012.02009.x","article-title":"Time
+        constraints and flexibility of growth strategies: geographic variation in
+        catch-up growth responses in amphibian larvae","volume":"81","author":"Dahl","year":"2012","journal-title":"The
+        Journal of Animal Ecology"},{"key":"10.7717\/peerj.1268\/ref-13","doi-asserted-by":"publisher","first-page":"169","DOI":"10.1006\/hbeh.1997.1383","article-title":"Environmental
+        stress as a developmental cue: corticotropin-releasing hormone is a proximate
+        mediator of adaptive phenotypic plasticity in amphibian metamorphosis","volume":"31","author":"Denver","year":"1997","journal-title":"Hormones
+        and Behavior"},{"key":"10.7717\/peerj.1268\/ref-14","doi-asserted-by":"publisher","first-page":"195","DOI":"10.1016\/B978-0-12-385979-2.00007-1","article-title":"Neuroendocrinology
+        of amphibian metamorphosis","volume":"103","author":"Denver","year":"2013","journal-title":"Current
+        Topics in Developmental Biology"},{"key":"10.7717\/peerj.1268\/ref-15","doi-asserted-by":"publisher","first-page":"1859","DOI":"10.1890\/0012-9658(1998)079%5B1859:APIAMR%5D2.0.CO;2","article-title":"Adaptive
+        plasticity in amphibian metamorphosis: response of Scaphiopus hammondii tadpoles
+        to habitat desiccation","volume":"79","author":"Denver","year":"1998","journal-title":"Ecology"},{"key":"10.7717\/peerj.1268\/ref-16","doi-asserted-by":"publisher","first-page":"990","DOI":"10.1086\/285370","article-title":"Evolution
+        in organisms that change their niches during the life cycle","volume":"139","author":"Ebenman","year":"1992","journal-title":"The
+        American Naturalist"},{"key":"10.7717\/peerj.1268\/ref-17","doi-asserted-by":"publisher","first-page":"551","DOI":"10.2307\/2407721","article-title":"Allometry
+        and jumping in frogs: helping the twain to meet","volume":"32","author":"Emerson","year":"1978","journal-title":"Evolution"},{"key":"10.7717\/peerj.1268\/ref-18","doi-asserted-by":"publisher","first-page":"68","DOI":"10.2307\/2409116","article-title":"Evaluating
+        a hypothesis about heterochrony: larval life-history traits and juvenile hind-limb
+        morphology in Hyla crucifer","volume":"42","author":"Emerson","year":"1988","journal-title":"Evolution"},{"key":"10.7717\/peerj.1268\/ref-19","doi-asserted-by":"publisher","first-page":"117","DOI":"10.1007\/s00442-013-2596-9","article-title":"Food
+        availability determines the response to pond desiccation in anuran tadpoles","volume":"173","author":"Enriquez-Urzelai","year":"2013","journal-title":"Oecologia"},{"key":"10.7717\/peerj.1268\/ref-20","first-page":"124","article-title":"Effects
+        of hydroperiod duration on developmental plasticity in tiger frog (Hoplobatrachus
+        chinensis) tadpoles","volume":"35","author":"Fan","year":"2014","journal-title":"Zoological
+        Research"},{"key":"10.7717\/peerj.1268\/ref-21","doi-asserted-by":"publisher","first-page":"143","DOI":"10.1007\/s10682-005-5508-6","article-title":"Trade-off
+        between larval development rate and post-metamorphic traits in the frog Rana
+        latastei","volume":"20","author":"Ficetola","year":"2006","journal-title":"Evolutionary
+        Ecology"},{"key":"10.7717\/peerj.1268\/ref-22","author":"Fox","year":"1997","volume-title":"Applied
+        regression analysis, linear models, and related methods"},{"key":"10.7717\/peerj.1268\/ref-23","doi-asserted-by":"publisher","first-page":"100","DOI":"10.1111\/j.1365-2435.2007.01340.x","article-title":"Costs
+        of plasticity: responses to desiccation decrease post-metamorphic immune function
+        in a pond-breeding amphibian","volume":"22","author":"Gervasi","year":"2007","journal-title":"Functional
+        Ecology"},{"key":"10.7717\/peerj.1268\/ref-24","doi-asserted-by":"publisher","first-page":"831","DOI":"10.1007\/s00442-012-2443-4","article-title":"Clutch
+        identity and predator-induced hatching affect behavior and development in
+        a leaf-breeding treefrog","volume":"171","author":"Gibbons","year":"2013","journal-title":"Oecologia"},{"key":"10.7717\/peerj.1268\/ref-25","doi-asserted-by":"publisher","first-page":"129","DOI":"10.2307\/3545205","article-title":"Effects
+        of body size and parasite infection on the locomotory performance of juvenile
+        toads, Bufo bufo","volume":"66","author":"Goater","year":"1993","journal-title":"Oikos"},{"key":"10.7717\/peerj.1268\/ref-26","doi-asserted-by":"publisher","first-page":"e84266","DOI":"10.1371\/journal.pone.0084266","article-title":"Mechanisms
+        and consequences of developmental acceleration in tadpoles responding to pond
+        drying","volume":"8","author":"Gomez-Mestre","year":"2013","journal-title":"PLoS
+        ONE"},{"key":"10.7717\/peerj.1268\/ref-27","doi-asserted-by":"publisher","first-page":"1364","DOI":"10.1111\/j.1420-9101.2010.02016.x","article-title":"The
+        shape of things to come: linking developmental plasticity to post-metamorphic
+        morphology in anurans","volume":"23","author":"Gomez-Mestre","year":"2010","journal-title":"Journal
+        of Evolutionary Biology"},{"key":"10.7717\/peerj.1268\/ref-28","first-page":"183","article-title":"A
+        simplified table for staging anuran embryos larvae with notes on identification","volume":"16","author":"Gosner","year":"1960","journal-title":"Herpetologica"},{"key":"10.7717\/peerj.1268\/ref-29","doi-asserted-by":"publisher","first-page":"539","DOI":"10.1086\/285428","article-title":"A
+        meta-analysis of competition in field experiments","volume":"140","author":"Gurevitch","year":"1992","journal-title":"The
+        American Naturalist"},{"key":"10.7717\/peerj.1268\/ref-30","doi-asserted-by":"publisher","first-page":"93","DOI":"10.1111\/j.1469-7998.2011.00850.x","article-title":"Consequences
+        of compensatory growth in an amphibian","volume":"286","author":"Hector","year":"2012","journal-title":"Journal
+        of Zoology"},{"key":"10.7717\/peerj.1268\/ref-31","doi-asserted-by":"publisher","first-page":"1150","DOI":"10.1890\/0012-9658(1999)080[1150:TMAORR]2.0.CO;2","article-title":"The
+        meta-analysis of response ratios in expermental ecology","volume":"80","author":"Hedges","year":"1999","journal-title":"Ecology"},{"key":"10.7717\/peerj.1268\/ref-32","doi-asserted-by":"publisher","first-page":"136","DOI":"10.2307\/2426762","article-title":"Antipredator
+        behaviors of newly metamorphosed green frogs (Rana clamitans) and leopard
+        frogs (R. pipiens) in encounters with eastern garter snakes (Thamnophis s.
+        sirtalis)","volume":"137","author":"Heinen","year":"1997","journal-title":"American
+        Midland Naturalist"},{"key":"10.7717\/peerj.1268\/ref-33","doi-asserted-by":"publisher","first-page":"17","DOI":"10.1080\/00031305.1978.10479237","article-title":"The
+        hat matrix in regression and ANOVA","volume":"32","author":"Hoaglin","year":"1978","journal-title":"The
+        American Statistician"},{"key":"10.7717\/peerj.1268\/ref-34","doi-asserted-by":"publisher","first-page":"367","DOI":"10.1146\/annurev.ecolsys.32.081501.114048","article-title":"Integrating
+        function and ecology in studies of adaptation: investigations of locomotor
+        capacity as a model system","volume":"32","author":"Irschick","year":"2001","journal-title":"Annual
+        Review of Ecology and Systematics"},{"key":"10.7717\/peerj.1268\/ref-35","doi-asserted-by":"publisher","first-page":"e11680","DOI":"10.1371\/journal.pone.0011680","article-title":"Trait
+        performance correlations across life stages under environmental stress conditions
+        in the common frog, Rana temporaria","volume":"5","author":"Johansson","year":"2010","journal-title":"PLoS
+        ONE"},{"key":"10.7717\/peerj.1268\/ref-36","doi-asserted-by":"publisher","first-page":"856","DOI":"10.2307\/1446453","article-title":"Effects
+        of larval density on jumping ability and stamina in newly metamorphosed Bufo
+        woodhousii fowleri","volume":"1990","author":"John-Alder","year":"1990","journal-title":"Copeia"},{"key":"10.7717\/peerj.1268\/ref-37","doi-asserted-by":"publisher","first-page":"1123","DOI":"10.1046\/j.1365-2656.1999.00354.x","article-title":"Habitat
+        duration, predation risk and phenotypic plasticity in common frog (Rana temporaria)
+        tadpoles","volume":"68","author":"Laurila","year":"1999","journal-title":"Journal
+        of Animal Ecology"},{"key":"10.7717\/peerj.1268\/ref-38","doi-asserted-by":"publisher","first-page":"1345","DOI":"10.2307\/1937459","article-title":"Metamorphic
+        responses to changing food levels in two species of Hylid frogs","volume":"75","author":"Leips","year":"1994","journal-title":"Ecology"},{"key":"10.7717\/peerj.1268\/ref-39","doi-asserted-by":"publisher","first-page":"343","DOI":"10.1007\/s00442-009-1471-1","article-title":"Locomotor
+        performance in an invasive species: cane toads from the invasion front have
+        greater endurance, but not speed, compared to conspecifics from a long-colonised
+        area","volume":"162","author":"Llewelyn","year":"2010","journal-title":"Oecologia"},{"key":"10.7717\/peerj.1268\/ref-40","first-page":"21","article-title":"When
+        crowed tadpoles (Rana arvalis and R. temporaria) fail to metamorphose early
+        and thus fail to escape drying ponds","volume":"12","author":"Loman","year":"2002","journal-title":"Herpetological
+        Journal"},{"key":"10.7717\/peerj.1268\/ref-41","doi-asserted-by":"publisher","first-page":"804","DOI":"10.1046\/j.1365-2656.1999.00332.x","article-title":"Effects
+        of breeding pond isolation on the spatial and temporal dynamics of pond use
+        by the T\u00fangara frog, Physalaemus pustulosus","volume":"68","author":"Marsh","year":"1999","journal-title":"Journal
+        of Animal Ecology"},{"key":"10.7717\/peerj.1268\/ref-42","doi-asserted-by":"publisher","first-page":"R718","DOI":"10.1016\/j.cub.2011.08.022","article-title":"Ecological
+        and evolutionary consequences of linked life-history stages in the sea","volume":"21","author":"Marshall","year":"2011","journal-title":"Current
+        Biology"},{"key":"10.7717\/peerj.1268\/ref-43","doi-asserted-by":"publisher","first-page":"1331","DOI":"10.1111\/j.1420-9101.2012.02523.x","article-title":"Correlated
+        evolution of phenotypic plasticity in metamorphic timing","volume":"25","author":"Michimae","year":"2012","journal-title":"Journal
+        of Evolutionary Biology"},{"key":"10.7717\/peerj.1268\/ref-44","doi-asserted-by":"publisher","first-page":"573","DOI":"10.1146\/annurev.es.25.110194.003041","article-title":"Adaptation
+        and constraint in the complex life cycles of animals","volume":"25","author":"Moran","year":"1994","journal-title":"Annual
+        Review of Ecology and Systematics"},{"key":"10.7717\/peerj.1268\/ref-45","doi-asserted-by":"publisher","first-page":"172","DOI":"10.1111\/j.0030-1299.2004.12623.x","article-title":"The
+        relationship between habitat permanence and larval development in California
+        spadefoot toads: field and laboratory comparisons of developmental plasticity","volume":"104","author":"Morey","year":"2004","journal-title":"Oikos"},{"key":"10.7717\/peerj.1268\/ref-46","doi-asserted-by":"publisher","first-page":"403","DOI":"10.1016\/S0169-5347(98)01472-4","article-title":"The
+        adaptive signficance of maternal effects","volume":"13","author":"Mousseau","year":"1998","journal-title":"Trends
+        in Ecology & Evolution"},{"key":"10.7717\/peerj.1268\/ref-47","doi-asserted-by":"publisher","first-page":"1775","DOI":"10.2307\/1938111","article-title":"Developmental
+        plasticity of Scaphiopus couchii tadpoles in an unpredictable environment","volume":"70","author":"Newman","year":"1989","journal-title":"Ecology"},{"key":"10.7717\/peerj.1268\/ref-48","doi-asserted-by":"publisher","first-page":"671","DOI":"10.2307\/1312173","article-title":"Adaptive
+        plasticity in amphibian metamorphosis","volume":"42","author":"Newman","year":"1992","journal-title":"BioScience"},{"key":"10.7717\/peerj.1268\/ref-49","doi-asserted-by":"publisher","first-page":"1085","DOI":"10.2307\/1939432","article-title":"Effects
+        of changing density and food level on metamorphosis of a desert amphibian,
+        Scaphiopus couchii","volume":"75","author":"Newman","year":"1994","journal-title":"Ecology"},{"key":"10.7717\/peerj.1268\/ref-50","doi-asserted-by":"publisher","first-page":"686","DOI":"10.1111\/j.1365-2656.2006.01089.x","article-title":"Short-
+        and long-term consequences of thermal variation in the larval environment
+        of anurans","volume":"75","author":"Niehaus","year":"2006","journal-title":"The
+        Journal of Animal Ecology"},{"key":"10.7717\/peerj.1268\/ref-51","doi-asserted-by":"publisher","first-page":"2563","DOI":"10.1890\/07-0906.1","article-title":"Terrestrial
+        habitat selection and strong density-dependent mortality in recently metamorphosed
+        amphibians","volume":"89","author":"Patrick","year":"2008","journal-title":"Ecology"},{"key":"10.7717\/peerj.1268\/ref-52","doi-asserted-by":"publisher","first-page":"323","DOI":"10.1093\/icb\/icj028","article-title":"Larval
+        experience and latent effects\u2014metamorphosis is not a new beginning","volume":"46","author":"Pechenik","year":"2006","journal-title":"Integrative
+        and Comparative Biology"},{"key":"10.7717\/peerj.1268\/ref-53","doi-asserted-by":"publisher","first-page":"803","DOI":"10.1038\/439803a","article-title":"Invasion
+        and the evolution of speed in toads","volume":"439","author":"Phillips","year":"2006","journal-title":"Nature"},{"key":"10.7717\/peerj.1268\/ref-54","doi-asserted-by":"publisher","first-page":"577","DOI":"10.1093\/icb\/icl026","article-title":"Integrating
+        function across marine life cycles","volume":"46","author":"Podolsky","year":"2006","journal-title":"Integrative
+        and Comparative Biology"},{"key":"10.7717\/peerj.1268\/ref-55","author":"R
+        Core Team","year":"2015","volume-title":"R: a language and environment for
+        statistical computing"},{"key":"10.7717\/peerj.1268\/ref-56","doi-asserted-by":"publisher","first-page":"15","DOI":"10.2307\/1437615","article-title":"Jumping
+        ability of certain anurans, with notes on endurance","volume":"1952","author":"Rand","year":"1952","journal-title":"Copeia"},{"key":"10.7717\/peerj.1268\/ref-57","doi-asserted-by":"publisher","first-page":"596","DOI":"10.1007\/s00442-002-1161-8","article-title":"The
+        impact of larval predators and competitors on the morphology and fitness of
+        juvenile treefrogs","volume":"134","author":"Relyea","year":"2003","journal-title":"Oecologia"},{"key":"10.7717\/peerj.1268\/ref-58","first-page":"309","article-title":"Effects
+        of phenotypic plasticity on post-metamorphic traits during pre-metamorphic
+        stages in the anuran Pelodytes punctatus","volume":"8","author":"Richter-Boix","year":"2006","journal-title":"Evolutionary
+        Ecology"},{"key":"10.7717\/peerj.1268\/ref-59","first-page":"1139","article-title":"A
+        comparative analysis of the adaptive developmental plasticity hypothesis in
+        six Mediterranean anuran species along a pond permanency gradient","volume":"8","author":"Richter-Boix","year":"2006","journal-title":"Evolutionary
+        Ecology Research"},{"key":"10.7717\/peerj.1268\/ref-60","doi-asserted-by":"publisher","first-page":"15","DOI":"10.1002\/ece3.2","article-title":"Evolution
+        and plasticity of anuran larval development in response to desiccation: a
+        comparative analysis","volume":"1","author":"Richter-Boix","year":"2011","journal-title":"Ecology
+        and Evolution"},{"key":"10.7717\/peerj.1268\/ref-61","author":"Ryan","year":"1985","volume-title":"The
+        T\u00fangara frog, a study in sexual selection and communication"},{"key":"10.7717\/peerj.1268\/ref-62","doi-asserted-by":"publisher","first-page":"671","DOI":"10.1038\/nmeth.2089","article-title":"NIH
+        image to ImageJ: 25 years of image analysis","volume":"9","author":"Schneider","year":"2012","journal-title":"Nature
+        Methods"},{"key":"10.7717\/peerj.1268\/ref-63","doi-asserted-by":"publisher","first-page":"1383","DOI":"10.2307\/1937462","article-title":"The
+        effect of larval density on adult demographic traits in Ambystoma opacum","volume":"75","author":"Scott","year":"1994","journal-title":"Ecology"},{"key":"10.7717\/peerj.1268\/ref-64","doi-asserted-by":"publisher","first-page":"2097","DOI":"10.1890\/0012-9658(2002)083[2097:EVAEOI]2.0.CO;2","article-title":"Experimental
+        venue and estimation of interaction strength","volume":"83","author":"Skelly","year":"2002","journal-title":"Ecology"},{"key":"10.7717\/peerj.1268\/ref-65","doi-asserted-by":"publisher","first-page":"344","DOI":"10.2307\/1939265","article-title":"Adult
+        recruitment in chorus frogs: effects of size and date at metamorphosis","volume":"68","author":"Smith","year":"1987","journal-title":"Ecology"},{"key":"10.7717\/peerj.1268\/ref-66","doi-asserted-by":"publisher","first-page":"563","DOI":"10.1086\/283413","article-title":"Predicting
+        amphibian metamorphosis","volume":"113","author":"Smith-Gill","year":"1979","journal-title":"The
+        American Naturalist"},{"key":"10.7717\/peerj.1268\/ref-67","doi-asserted-by":"publisher","first-page":"557","DOI":"10.1086\/283297","article-title":"Curvilinearities
+        in the competition equations: an experiment with Ranid tadpoles","volume":"112","author":"Smith-Gill","year":"1978","journal-title":"The
+        American Naturalist"},{"key":"10.7717\/peerj.1268\/ref-68","first-page":"109","article-title":"Developmental
+        plasticity and behavioural adaptations of two West African anurans living
+        in an unpredictable environment (Amphibia, Anura)","volume":"46","author":"Spieler","year":"2000","journal-title":"Bonner
+        Zoologische Monographien"},{"key":"10.7717\/peerj.1268\/ref-69","doi-asserted-by":"publisher","first-page":"425","DOI":"10.1163\/156853810791769536","article-title":"Effect
+        of habitat drying on the development of the Eastern spadefoot toad (Pelobates
+        syriacus) tadpoles","volume":"31","author":"Sz\u00e9kely","year":"2010","journal-title":"Amphibia-Reptilia"},{"key":"10.7717\/peerj.1268\/ref-70","doi-asserted-by":"publisher","first-page":"31","DOI":"10.3354\/cr00878","article-title":"Contrasting
+        effects of environmental factors during larval stage on morphological plasticity
+        in post-metamorphic frogs","volume":"43","author":"Tejedo","year":"2010","journal-title":"Climate
+        Research"},{"key":"10.7717\/peerj.1268\/ref-71","doi-asserted-by":"publisher","first-page":"295","DOI":"10.2307\/3546278","article-title":"Plasticity
+        in metamorphic traits of natterjack tadpoles: the interactive effects of density
+        and pond duration","volume":"71","author":"Tejedo","year":"1994","journal-title":"Oikos"},{"key":"10.7717\/peerj.1268\/ref-72","doi-asserted-by":"publisher","first-page":"448","DOI":"10.1643\/0045-8511(2000)000[0448:COMAJP]2.0.CO;2","article-title":"Covariation
+        of morphology and jumping performance in newly metamorphosed Water Frogs:
+        effects of larval growth history","volume":"2000","author":"Tejedo","year":"2000","journal-title":"Copeia"},{"key":"10.7717\/peerj.1268\/ref-73","doi-asserted-by":"publisher","first-page":"201","DOI":"10.2307\/1565416","article-title":"Differential
+        morphology and jumping performance of newly metamorphosed frogs of the hybridogenetic
+        Rana esculenta complex","volume":"34","author":"Tejedo","year":"2000","journal-title":"Journal
+        of Herpetology"},{"key":"10.7717\/peerj.1268\/ref-74","doi-asserted-by":"publisher","first-page":"87","DOI":"10.1007\/s10646-011-0768-0","article-title":"Do
+        effects of mercury in larval amphibians persist after metamorphosis?","volume":"21","author":"Todd","year":"2012","journal-title":"Ecotoxicology"},{"key":"10.7717\/peerj.1268\/ref-75","doi-asserted-by":"publisher","first-page":"1155","DOI":"10.2307\/1938323","article-title":"Anuran
+        size at metamorphosis: experimental test of a model based on intraspecific
+        competition","volume":"65","author":"Travis","year":"1984","journal-title":"Ecology"},{"key":"10.7717\/peerj.1268\/ref-76","doi-asserted-by":"crossref","first-page":"107","DOI":"10.1086\/physzool.61.2.30156141","article-title":"Relationships
+        among metabolic, locomotory, and field measures of organismal performance
+        in the Fowler\u2019s Toad (Bufo woodhousei fowleri)","volume":"61","author":"Walton","year":"1988","journal-title":"Physiological
+        Zoology"},{"key":"10.7717\/peerj.1268\/ref-77","doi-asserted-by":"publisher","first-page":"738","DOI":"10.1111\/j.1095-8312.2010.01395.x","article-title":"Factors
+        affecting the vulnerability of cane toads (Bufo marinus) to predation by ants","volume":"99","author":"Ward-Fear","year":"2010","journal-title":"Biological
+        Journal of the Linnean Society"},{"key":"10.7717\/peerj.1268\/ref-78","doi-asserted-by":"publisher","first-page":"830","DOI":"10.2307\/1936218","article-title":"The
+        relationships of locomotion to differential predation on Pseudacris triseriata
+        (Anura: Hylidae)","volume":"58","author":"Wassersug","year":"1977","journal-title":"Ecology"},{"key":"10.7717\/peerj.1268\/ref-79","doi-asserted-by":"publisher","first-page":"1668","DOI":"10.1111\/j.0014-3820.2001.tb00686.x","article-title":"A
+        quantitative genetic test of adaptive decoupling across metamorphosis for
+        locomotor and life-history traits in the pacific tree frog, Hyla regilla","volume":"55","author":"Watkins","year":"2001","journal-title":"Evolution"},{"key":"10.7717\/peerj.1268\/ref-80","doi-asserted-by":"publisher","first-page":"319","DOI":"10.1086\/284565","article-title":"Amphibian
+        metamorphosis: growth rate, predation risk, and the optimal size at transformation","volume":"128","author":"Werner","year":"1986","journal-title":"The
+        American Naturalist"},{"key":"10.7717\/peerj.1268\/ref-81","doi-asserted-by":"publisher","first-page":"67","DOI":"10.1146\/annurev.es.11.110180.000435","article-title":"Complex
+        life cycles","volume":"11","author":"Wilbur","year":"1980","journal-title":"Annual
+        Review of Ecology and Systematics"},{"key":"10.7717\/peerj.1268\/ref-82","doi-asserted-by":"publisher","first-page":"1305","DOI":"10.1126\/science.182.4119.1305","article-title":"Ecological
+        aspects of amphibian metamorphosis","volume":"182","author":"Wilbur","year":"1973","journal-title":"Science"},{"key":"10.7717\/peerj.1268\/ref-83","doi-asserted-by":"publisher","first-page":"613","DOI":"10.2307\/1442720","article-title":"Anuran
+        Locomotion: Structure and Function. I. Preliminary observations on relation
+        between jumping and osteometrics of appendicular and postaxial skeleton","volume":"4","author":"Zug","year":"1972","journal-title":"Copeia"}],"container-title":["PeerJ"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/peerj.com\/articles\/1268.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/peerj.com\/articles\/1268.xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/peerj.com\/articles\/1268.html","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/peerj.com\/articles\/1268.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,23]],"date-time":"2017-06-23T19:58:00Z","timestamp":1498247880000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2015,9,22]]},"references-count":83,"alternative-id":["10.7717\/peerj.1268"],"URL":"http:\/\/dx.doi.org\/10.7717\/peerj.1268","relation":{"cites":[]},"ISSN":["2167-8359"],"issn-type":[{"value":"2167-8359","type":"electronic"}],"article-number":"e1268"}}'
+  recorded_at: 2020-03-13 15:51:44 GMT
+  recorded_with: vcr/0.5.0, webmockr/0.6.0
+- request:
+    method: get
+    uri: https://peerj.com/articles/1268.pdf
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: libcurl/7.64.1 r-curl/4.3 crul/0.9.0
+      Accept-Encoding: gzip, deflate
+      Accept: application/pdf
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      accept-ranges: bytes
+      access-control-allow-origin: '*'
+      age: '156'
+      cache-control: max-age=0, must-revalidate, proxy-revalidate, public, s-maxage=600
+      connection: keep-alive
+      content-disposition: inline; filename="peerj-1268.pdf"
+      content-length: '2225858'
+      content-type: application/pdf
+      date: Fri, 13 Mar 2020 15:51:42 GMT
+      etag: '"2c11ba0469db45b68eec9fbe673ce37c84389b099115c7c16d366ef974a2975f"'
+      last-modified: Tue, 22 Sep 2015 08:23:22 GMT
+      link:
+      - <https://peerj.com/articles/1268.pdf>; rel="self"
+      - <https://peerj.com/articles/1268.html>; rel="alternate"; type="text/html"
+      - <https://peerj.com/articles/1268.xml>; rel="alternate"; type="application/xml"
+      - <https://peerj.com/articles/1268.json>; rel="alternate"; type="application/json"
+      - <https://peerj.com/articles/1268.rdf>; rel="alternate"; type="application/rdf+xml"
+      - <https://peerj.com/articles/1268.ris>; rel="alternate"; type="application/x-research-info-systems"
+      - <https://peerj.com/articles/1268.bib>; rel="alternate"; type="application/x-bibtex"
+      - <https://peerj.com/articles/1268.citeproc>; rel="alternate"; type="application/vnd.citationstyles.csl+json"
+      - <https://peerj.com/articles/1268.bibjson>; rel="alternate"; type="application/bibjson+json"
+      - <https://peerj.com/articles/1268.unixref>; rel="alternate"; type="application/unixref+xml"
+      status: HTTP/1.1 200 OK
+      strict-transport-security: max-age=2592000
+      vary: Accept-Encoding,X-Cache-AnonOnly
+      via: 1.1 varnish
+      x-content-type-options: nosniff
+      x-country-code: US
+      x-ratelimit-limit: ''
+      x-ratelimit-remaining: ''
+      x-ratelimit-reset: ''
+      x-varnish: 808042802 808041858
+    body:
+      encoding: UTF-8
+      file: yes
+      string: /Users/sckott/github/ropensci/crminer/tests/files/1268.pdf
+  recorded_at: 2020-03-13 15:51:44 GMT
+  recorded_with: vcr/0.5.0, webmockr/0.6.0
+- request:
+    method: get
+    uri: https://peerj.com/articles/1268.pdf
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: libcurl/7.64.1 r-curl/4.3 crul/0.9.0
+      Accept-Encoding: gzip, deflate
+      Accept: application/pdf
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      accept-ranges: bytes
+      access-control-allow-origin: '*'
+      age: '158'
+      cache-control: max-age=0, must-revalidate, proxy-revalidate, public, s-maxage=600
+      connection: keep-alive
+      content-disposition: inline; filename="peerj-1268.pdf"
+      content-length: '2225858'
+      content-type: application/pdf
+      date: Fri, 13 Mar 2020 15:51:43 GMT
+      etag: '"2c11ba0469db45b68eec9fbe673ce37c84389b099115c7c16d366ef974a2975f"'
+      last-modified: Tue, 22 Sep 2015 08:23:22 GMT
+      link:
+      - <https://peerj.com/articles/1268.pdf>; rel="self"
+      - <https://peerj.com/articles/1268.html>; rel="alternate"; type="text/html"
+      - <https://peerj.com/articles/1268.xml>; rel="alternate"; type="application/xml"
+      - <https://peerj.com/articles/1268.json>; rel="alternate"; type="application/json"
+      - <https://peerj.com/articles/1268.rdf>; rel="alternate"; type="application/rdf+xml"
+      - <https://peerj.com/articles/1268.ris>; rel="alternate"; type="application/x-research-info-systems"
+      - <https://peerj.com/articles/1268.bib>; rel="alternate"; type="application/x-bibtex"
+      - <https://peerj.com/articles/1268.citeproc>; rel="alternate"; type="application/vnd.citationstyles.csl+json"
+      - <https://peerj.com/articles/1268.bibjson>; rel="alternate"; type="application/bibjson+json"
+      - <https://peerj.com/articles/1268.unixref>; rel="alternate"; type="application/unixref+xml"
+      status: HTTP/1.1 200 OK
+      strict-transport-security: max-age=2592000
+      vary: Accept-Encoding,X-Cache-AnonOnly
+      via: 1.1 varnish
+      x-content-type-options: nosniff
+      x-country-code: US
+      x-ratelimit-limit: ''
+      x-ratelimit-remaining: ''
+      x-ratelimit-reset: ''
+      x-varnish: 808042807 808041858
+    body:
+      encoding: UTF-8
+      file: yes
+      string: /Users/sckott/github/ropensci/crminer/tests/files/1268.pdf
+  recorded_at: 2020-03-13 15:51:44 GMT
+  recorded_with: vcr/0.5.0, webmockr/0.6.0

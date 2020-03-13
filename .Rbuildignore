@@ -11,3 +11,4 @@ inst/cache
 ^codemeta\.json$
 revdep
 ^Makefile$
+tests/files

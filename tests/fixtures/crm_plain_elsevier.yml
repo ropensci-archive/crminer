@@ -1,0 +1,860 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://api.elsevier.com/content/article/PII:S2095927317301925?httpAccept=text/plain
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: libcurl/7.64.1 r-curl/4.3 crul/0.9.0
+      Accept-Encoding: gzip, deflate
+      CR-Clickthrough-Client-Token: 86c9b5e5-e7ed333b-b1c3352a-0db0d2a2
+      Accept: text/plain
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      allow: GET
+      content-encoding: gzip
+      content-type: text/plain;charset=UTF-8
+      cr-clickthrough-client-token: 86c9b5e5-e7ed333b-b1c3352a-0db0d2a2
+      date: Fri, 13 Mar 2020 15:50:50 GMT
+      last-modified: Mon, 22 May 2017 14:51:22 GMT
+      server: Apache-Coyote/1.1
+      vary: Origin
+      x-els-apikey: c67c17d621d3d9452f4fb28f12b3cc82
+      x-els-reqid: 905014af-4856-4508-ae5c-521136898b7f
+      x-els-resourceversion: default
+      x-els-status: OK
+      x-els-transid: e68f7150-46dc-497e-8766-2934eafb0ef0
+      transfer-encoding: chunked
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: "https://api.elsevier.com/content/article/pii/S2095927317301925 doi:10.1016/j.scib.2017.04.011
+        1-s2.0-S2095927317301925 10.1016/j.scib.2017.04.011 S2095-9273(17)30192-5
+        Out-of-time-order correlation for many-body localization  Science Bulletin
+        Journal \n               Article\n             20959273 62 10 707 711 707-711
+        10 text/plain 2017-05-30 30 May 2017 © 2017 Science China Press. Published
+        by Elsevier B.V. and Science China Press. Science China Press. Published by
+        Elsevier B.V. and Science China Press. Fan, Ruihua Zhang, Pengfei Shen, Huitao
+        Zhai, Hui \n               Abstract\n               \n                  In
+        this paper we first compute the out-of-time-order correlators (OTOC) for both
+        a phenomenological model and a random-field XXZ model in the many-body localized
+        phase. We show that the OTOC decreases in power law in a many-body localized
+        system at the scrambling time. We also find that the OTOC can also be used
+        to distinguish a many-body localized phase from an Anderson localized phase,
+        while a normal correlator cannot. Furthermore, we prove an exact theorem that
+        relates the growth of the second Rényi entropy in the quench dynamics to the
+        decay of the OTOC in equilibrium. This theorem works for a generic quantum
+        system. We discuss various implications of this theorem.\n               \n
+        \            1 true Full false  Author http://creativecommons.org/licenses/by/4.0/
+        Out-of-time-order correlation Many-body localization Rényi entropy    https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-gr2.sml?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-gr3.sml?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-fx1.sml?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-gr1.sml?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-gr2.jpg?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-gr3.jpg?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-fx1.jpg?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-gr1.jpg?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-gr2_lrg.jpg?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-gr3_lrg.jpg?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-fx1_lrg.jpg?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-gr1_lrg.jpg?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si68.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si69.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si1.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si10.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si100.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si101.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si102.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si103.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si104.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si105.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si109.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si11.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si110.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si111.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si112.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si115.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si117.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si118.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si119.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si12.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si120.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si121.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si122.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si123.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si125.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si126.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si127.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si128.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si130.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si131.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si18.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si132.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si133.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si139.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si14.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si141.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si145.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si15.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si7.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si2.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si20.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si22.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si23.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si24.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si25.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si44.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si26.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si28.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si3.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si30.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si31.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si32.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si33.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si34.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si35.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si36.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si37.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si38.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si39.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si4.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si40.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si41.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si42.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si70.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si45.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si46.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si47.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si48.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si5.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si51.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si53.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si54.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si58.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si59.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si6.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si60.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si63.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si65.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si66.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si67.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si71.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si74.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si75.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si8.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si80.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si81.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si84.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si85.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si88.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si89.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si9.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si90.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si91.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si92.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si93.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si97.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si98.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si99.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si21.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si29.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si43.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si49.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si50.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si56.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si57.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si79.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si95.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si113.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S2095927317301925-si124.gif?httpAccept=%2A%2F%2A
+        \ 85019838218 2-s2.0-85019838218  serial JL 315713 291210 291802 291806 291848
+        291884 31 90  Science Bulletin SCIENCEBULLETIN 2017-04-20 2017-04-20 2017-05-22
+        2017-05-22 2017-05-22T19:23:15 1-s2.0-S2095927317301925 S2095-9273(17)30192-5
+        S2095927317301925 10.1016/j.scib.2017.04.011 S300 S300.1 FULL-TEXT 1-s2.0-S2095927317X00108
+        2017-05-22T14:51:22.077042-04:00 0 0 20170530 2017 2017-04-20T06:58:12.904255Z
+        absattachment articleinfo articletitlenorm authfirstinitialnorm authfirstsurnamenorm
+        cid cids contenttype copyright crossmark dateloaded dateloadedtxt datesearch
+        datesort dateupdated dco docsubtype doctype doi eid ewtransactionid fundingbodyid
+        hubeid indexeddate issfirst issn issnnorm issuelist itemstage itemtransactionid
+        itemweight oauserlicense openaccess openarchive pg pgfirst pglast pii piinorm
+        pubdatestart pubdatetxt pubyr sectiontitle sortorder sponsoredaccesstype srctitle
+        srctitlenorm srctype ssids alllist content oa subj subheadings tomb volfirst
+        volissue volumelist webpdf webpdfpagecount yearnav figure table body mmlmath
+        acknowledge affil articletitle auth authfirstini authfull authkeywords authlast
+        footnotes grantnumber grantsponsor primabst pubtype ref specialabst 2095-9273
+        20959273  UNLIMITED NONE false 62 62  10 10  Volume 62, Issue 10 9 707 711
+        707 711  20170530  30 May 2017 2017-05-30 2017 ARTICLES  article fla © 2017
+        Science China Press. Published by Elsevier B.V. and Science China Press. OUTOFTIMEORDERCORRELATIONFORMANYBODYLOCALIZATION
+        FAN R 1 Introduction  2 Phenomenological model  3 Random-field XXZ model  4
+        The OTOC-RE theorem  5 An example of the OTOC-RE theorem  6 Final remarks
+        \ Conflict of interest  Acknowledgments  References   SHENKER 2014 067 S  LARKIN
+        1969 1200 1205 A  SHENKER 2014 046 S  SHENKER 2015 132 S  MALDACENA 2016 106
+        J  MALDACENA 2016 12C104 J  JENSEN 2016 111601 K  MALDACENA 2016 106002 J
+        \ HOSUR 2016 004 P  ROBERTS 2015 051 D  ROBERTS 2015 131603 D  ALMHEIRI 2013
+        018 A  GU 2016 129 Y  FU 2016 035135 W  SWINGLE 2016 040302 B  ZHU 2016 062329
+        G   JEVICKI 2016 007 A  SACHDEV 1993 3339 S  ENGELSOY 2016 139 J  ALTMAN 2015
+        383 409 E  NANDKISHORE 2015 15 38 R  SERBYN 2013 127201 M  HUSE 2014 174202
+        D  VOSK 2013 067204 R  BARDARSON 2012 017202 J  SERBYN 2013 260601 M  SERBYN
+        2014 147204 M  SERBYN 2014 174302 M  VASSEUR 2015 140202 R   DECHIARA 2006
+        P03001 G  ZNIDARIC 2008 064426 M  PAL 2010 174411 A  CALABRESE 2005 P04010
+        P  DENG 2017 024202 D  DONG 2016 12472 X  LEWKOWYCZ 2013 090 A  HASTINGS 2010
+        157201 M  FRANCHINI 2007 025302 F  HEADRICK 2010 126010 M  HUNG 2011 047 L
+        \ SCHREIBER 2015 842 M  SMITH 2016 J  BORDIA 2016 140401 P  CHOI 2016 1547
+        J  BORDIA 2017 P  ISLAM 2015 77 83 R  HUANG 2016 Y   FANX2017X707 FANX2017X707X711
+        FANX2017X707XR FANX2017X707X711XR  Full 2017-04-21T04:05:52Z Author  http://creativecommons.org/licenses/by/4.0/
+        \ This is an open access article under the CC BY license.  © 2017 Science
+        China Press. Published by Elsevier B.V. and Science China Press.   item S2095-9273(17)30192-5
+        S2095927317301925 1-s2.0-S2095927317301925 10.1016/j.scib.2017.04.011 315713
+        2017-05-22T14:51:22.077042-04:00 2017-05-30 UNLIMITED NONE 1-s2.0-S2095927317301925-main.pdf
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/MAIN/application/pdf/865f057f59f3443fb90d4ffc443f3e4a/main.pdf
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/MAIN/application/pdf/865f057f59f3443fb90d4ffc443f3e4a/main.pdf
+        main.pdf pdf true 802501 MAIN 5 1-s2.0-S2095927317301925-main_1.png https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/PREVIEW/image/png/14b42a9ab9fbb499dafc2f1158bb041c/main_1.png
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/PREVIEW/image/png/14b42a9ab9fbb499dafc2f1158bb041c/main_1.png
+        main_1.png png 57563 849 656 IMAGE-WEB-PDF 1    1-s2.0-S2095927317301925-gr2.sml
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/gr2/THUMBNAIL/image/gif/bf0efb82c5569330231e37a1dd68d4a9/gr2.sml
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/gr2/THUMBNAIL/image/gif/bf0efb82c5569330231e37a1dd68d4a9/gr2.sml
+        gr2 gr2.sml sml 6422 163 111 IMAGE-THUMBNAIL  1-s2.0-S2095927317301925-gr3.sml
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/gr3/THUMBNAIL/image/gif/276471b692d46780cf0dae0dfe724c40/gr3.sml
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/gr3/THUMBNAIL/image/gif/276471b692d46780cf0dae0dfe724c40/gr3.sml
+        gr3 gr3.sml sml 5400 83 219 IMAGE-THUMBNAIL  1-s2.0-S2095927317301925-fx1.sml
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/fx1/THUMBNAIL/image/gif/f87cb597db3761ae029ac5361bb00f33/fx1.sml
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/fx1/THUMBNAIL/image/gif/f87cb597db3761ae029ac5361bb00f33/fx1.sml
+        fx1 true fx1.sml sml 20670 163 112 IMAGE-THUMBNAIL  1-s2.0-S2095927317301925-gr1.sml
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/gr1/THUMBNAIL/image/gif/4212ce623e1d7c4193df2a717236dbe4/gr1.sml
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/gr1/THUMBNAIL/image/gif/4212ce623e1d7c4193df2a717236dbe4/gr1.sml
+        gr1 gr1.sml sml 15496 150 219 IMAGE-THUMBNAIL  1-s2.0-S2095927317301925-gr2.jpg
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/gr2/DOWNSAMPLED/image/jpeg/4549e9cf5cbdd8e8eeae66566b91e3f3/gr2.jpg
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/gr2/DOWNSAMPLED/image/jpeg/4549e9cf5cbdd8e8eeae66566b91e3f3/gr2.jpg
+        gr2 gr2.jpg jpg 50633 521 355 IMAGE-DOWNSAMPLED  1-s2.0-S2095927317301925-gr3.jpg
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/gr3/DOWNSAMPLED/image/jpeg/8f51d8189d03d8b5fa36d34e35c93566/gr3.jpg
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/gr3/DOWNSAMPLED/image/jpeg/8f51d8189d03d8b5fa36d34e35c93566/gr3.jpg
+        gr3 gr3.jpg jpg 35026 235 623 IMAGE-DOWNSAMPLED  1-s2.0-S2095927317301925-fx1.jpg
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/fx1/DOWNSAMPLED/image/jpeg/f7bde3aa111dc9a0c1105bef1ebfc06b/fx1.jpg
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/fx1/DOWNSAMPLED/image/jpeg/f7bde3aa111dc9a0c1105bef1ebfc06b/fx1.jpg
+        fx1 true fx1.jpg jpg 31021 244 167 IMAGE-DOWNSAMPLED  1-s2.0-S2095927317301925-gr1.jpg
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/gr1/DOWNSAMPLED/image/jpeg/e0dc7a07ea62f8625a268e4b811a6a3f/gr1.jpg
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/gr1/DOWNSAMPLED/image/jpeg/e0dc7a07ea62f8625a268e4b811a6a3f/gr1.jpg
+        gr1 gr1.jpg jpg 57819 365 533 IMAGE-DOWNSAMPLED  1-s2.0-S2095927317301925-gr2_lrg.jpg
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/gr2/HIGHRES/image/jpeg/1166820995eb07d8e0658064f4120438/gr2_lrg.jpg
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/gr2/HIGHRES/image/jpeg/1166820995eb07d8e0658064f4120438/gr2_lrg.jpg
+        gr2 gr2_lrg.jpg jpg 313103 2311 1575 IMAGE-HIGH-RES  1-s2.0-S2095927317301925-gr3_lrg.jpg
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/gr3/HIGHRES/image/jpeg/46d2d234a4e05678d31e3fe0453e3f07/gr3_lrg.jpg
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/gr3/HIGHRES/image/jpeg/46d2d234a4e05678d31e3fe0453e3f07/gr3_lrg.jpg
+        gr3 gr3_lrg.jpg jpg 208251 1040 2757 IMAGE-HIGH-RES  1-s2.0-S2095927317301925-fx1_lrg.jpg
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/fx1/HIGHRES/image/jpeg/679801184512ded47ab29911c30ff0cd/fx1_lrg.jpg
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/fx1/HIGHRES/image/jpeg/679801184512ded47ab29911c30ff0cd/fx1_lrg.jpg
+        fx1 true fx1_lrg.jpg jpg 73203 651 446 IMAGE-HIGH-RES  1-s2.0-S2095927317301925-gr1_lrg.jpg
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/gr1/HIGHRES/image/jpeg/731d2e3d261e3752d9abdcbdc9f977fc/gr1_lrg.jpg
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/gr1/HIGHRES/image/jpeg/731d2e3d261e3752d9abdcbdc9f977fc/gr1_lrg.jpg
+        gr1 gr1_lrg.jpg jpg 297463 1616 2362 IMAGE-HIGH-RES  1-s2.0-S2095927317301925-si68.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/1faf27e82f20cfa4e32a585815c4ed2b/si68.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/1faf27e82f20cfa4e32a585815c4ed2b/si68.gif
+        si68 si68.gif gif 251 17 18 ALTIMG  1-s2.0-S2095927317301925-si69.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/3bccdaa20a08609e2c1790b7645e4f60/si69.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/3bccdaa20a08609e2c1790b7645e4f60/si69.gif
+        si69 si69.gif gif 218 16 14 ALTIMG  1-s2.0-S2095927317301925-si1.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/ee1e05d5159542388146a4a458c62208/si1.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/ee1e05d5159542388146a4a458c62208/si1.gif
+        si1 si1.gif gif 233 16 20 ALTIMG  1-s2.0-S2095927317301925-si10.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/b0a7d335b1b8f7014c7e14a6383e3796/si10.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/b0a7d335b1b8f7014c7e14a6383e3796/si10.gif
+        si10 si10.gif gif 358 23 37 ALTIMG  1-s2.0-S2095927317301925-si100.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/b1ac40f55087bb953ce99c8c42e439fd/si100.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/b1ac40f55087bb953ce99c8c42e439fd/si100.gif
+        si100 si100.gif gif 1132 21 185 ALTIMG  1-s2.0-S2095927317301925-si101.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/d5f50adee95f49c694f2cd2c47c7448e/si101.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/d5f50adee95f49c694f2cd2c47c7448e/si101.gif
+        si101 si101.gif gif 299 22 23 ALTIMG  1-s2.0-S2095927317301925-si102.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/2b3f38885aaa28056665d6e0f482e99c/si102.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/2b3f38885aaa28056665d6e0f482e99c/si102.gif
+        si102 si102.gif gif 308 14 49 ALTIMG  1-s2.0-S2095927317301925-si103.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/b1b4558c5c3bc02904e3e0572cd62adc/si103.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/b1b4558c5c3bc02904e3e0572cd62adc/si103.gif
+        si103 si103.gif gif 525 18 80 ALTIMG  1-s2.0-S2095927317301925-si104.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/ccf77db596194b48b877f6e85a37e54c/si104.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/ccf77db596194b48b877f6e85a37e54c/si104.gif
+        si104 si104.gif gif 1118 25 208 ALTIMG  1-s2.0-S2095927317301925-si105.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/23696ce93b2d76764968f723b82bcd6d/si105.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/23696ce93b2d76764968f723b82bcd6d/si105.gif
+        si105 si105.gif gif 352 20 37 ALTIMG  1-s2.0-S2095927317301925-si109.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/a7d3dbba3c3c00efe1b9224d5539f638/si109.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/a7d3dbba3c3c00efe1b9224d5539f638/si109.gif
+        si109 si109.gif gif 221 16 14 ALTIMG  1-s2.0-S2095927317301925-si11.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/0ad4bae2c2742b422ba687dd4f4dbae6/si11.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/0ad4bae2c2742b422ba687dd4f4dbae6/si11.gif
+        si11 si11.gif gif 290 17 40 ALTIMG  1-s2.0-S2095927317301925-si110.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/b56b60d13bda02030dc2d2e6933912d9/si110.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/b56b60d13bda02030dc2d2e6933912d9/si110.gif
+        si110 si110.gif gif 757 21 127 ALTIMG  1-s2.0-S2095927317301925-si111.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/4e0fcda52015e9630719c98e070783d8/si111.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/4e0fcda52015e9630719c98e070783d8/si111.gif
+        si111 si111.gif gif 252 18 19 ALTIMG  1-s2.0-S2095927317301925-si112.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/71f0084720e00f6fdfa8267f3428cded/si112.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/71f0084720e00f6fdfa8267f3428cded/si112.gif
+        si112 si112.gif gif 539 24 90 ALTIMG  1-s2.0-S2095927317301925-si115.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/eb9d1413f075fce21dc3e04afc6cf8b6/si115.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/eb9d1413f075fce21dc3e04afc6cf8b6/si115.gif
+        si115 si115.gif gif 308 18 28 ALTIMG  1-s2.0-S2095927317301925-si117.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/d5286646d96aa282bad80dc589762364/si117.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/d5286646d96aa282bad80dc589762364/si117.gif
+        si117 si117.gif gif 238 20 15 ALTIMG  1-s2.0-S2095927317301925-si118.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/15f8f743897d0f89034df092b85dd9ba/si118.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/15f8f743897d0f89034df092b85dd9ba/si118.gif
+        si118 si118.gif gif 812 18 148 ALTIMG  1-s2.0-S2095927317301925-si119.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/923df8f21bad794e59f4d4136e729d69/si119.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/923df8f21bad794e59f4d4136e729d69/si119.gif
+        si119 si119.gif gif 964 22 167 ALTIMG  1-s2.0-S2095927317301925-si12.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/d6edcb00bebfcae163c825468fb20bd1/si12.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/d6edcb00bebfcae163c825468fb20bd1/si12.gif
+        si12 si12.gif gif 304 22 23 ALTIMG  1-s2.0-S2095927317301925-si120.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/e8adafe871b4fb1d71f88071d605c1fc/si120.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/e8adafe871b4fb1d71f88071d605c1fc/si120.gif
+        si120 si120.gif gif 996 21 159 ALTIMG  1-s2.0-S2095927317301925-si121.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/50ca2f2e36cdfc12eb5fbdad83748eab/si121.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/50ca2f2e36cdfc12eb5fbdad83748eab/si121.gif
+        si121 si121.gif gif 755 21 152 ALTIMG  1-s2.0-S2095927317301925-si122.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/7144eb126dd75235bf14ef7da8ddd76d/si122.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/7144eb126dd75235bf14ef7da8ddd76d/si122.gif
+        si122 si122.gif gif 867 21 165 ALTIMG  1-s2.0-S2095927317301925-si123.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/91a7f30e481d4a8ef2344fcde9876d3e/si123.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/91a7f30e481d4a8ef2344fcde9876d3e/si123.gif
+        si123 si123.gif gif 279 17 33 ALTIMG  1-s2.0-S2095927317301925-si125.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/1e2ebaad1db35fd622280b317c31dc55/si125.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/1e2ebaad1db35fd622280b317c31dc55/si125.gif
+        si125 si125.gif gif 790 22 166 ALTIMG  1-s2.0-S2095927317301925-si126.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/7848f9601bb48f58749862a80822c08c/si126.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/7848f9601bb48f58749862a80822c08c/si126.gif
+        si126 si126.gif gif 913 23 159 ALTIMG  1-s2.0-S2095927317301925-si127.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/26d1def004bf92b5e37f77e7237867b7/si127.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/26d1def004bf92b5e37f77e7237867b7/si127.gif
+        si127 si127.gif gif 411 23 50 ALTIMG  1-s2.0-S2095927317301925-si128.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/1658f21c30e624b714210a7bf00f7e25/si128.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/1658f21c30e624b714210a7bf00f7e25/si128.gif
+        si128 si128.gif gif 560 25 87 ALTIMG  1-s2.0-S2095927317301925-si130.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/ec7ae6ae2a6f1fc56cc07cee96f51e69/si130.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/ec7ae6ae2a6f1fc56cc07cee96f51e69/si130.gif
+        si130 si130.gif gif 308 20 35 ALTIMG  1-s2.0-S2095927317301925-si131.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/19407215efead55dcd41c1a1ab2702ed/si131.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/19407215efead55dcd41c1a1ab2702ed/si131.gif
+        si131 si131.gif gif 554 25 88 ALTIMG  1-s2.0-S2095927317301925-si18.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/8f9c17e7b2af01e3b4bda7d054ebee45/si18.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/8f9c17e7b2af01e3b4bda7d054ebee45/si18.gif
+        si18 si18.gif gif 319 17 36 ALTIMG  1-s2.0-S2095927317301925-si132.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/e2925f7e0c4db56e17a69e131b10a14c/si132.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/e2925f7e0c4db56e17a69e131b10a14c/si132.gif
+        si132 si132.gif gif 421 23 50 ALTIMG  1-s2.0-S2095927317301925-si133.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/11ef3018f8cf5f69dd60517cd6724b89/si133.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/11ef3018f8cf5f69dd60517cd6724b89/si133.gif
+        si133 si133.gif gif 1018 23 190 ALTIMG  1-s2.0-S2095927317301925-si139.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/114245ea5283a66191892cebe1eef3cc/si139.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/114245ea5283a66191892cebe1eef3cc/si139.gif
+        si139 si139.gif gif 771 23 130 ALTIMG  1-s2.0-S2095927317301925-si14.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/578c2039e7ad704fec83cc0347d05eed/si14.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/578c2039e7ad704fec83cc0347d05eed/si14.gif
+        si14 si14.gif gif 802 22 159 ALTIMG  1-s2.0-S2095927317301925-si141.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/5cea154f4bae56a11e6525afd5f86ff7/si141.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/5cea154f4bae56a11e6525afd5f86ff7/si141.gif
+        si141 si141.gif gif 474 21 81 ALTIMG  1-s2.0-S2095927317301925-si145.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/e5c0adcc0f9c8d30b02af941880ad12b/si145.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/e5c0adcc0f9c8d30b02af941880ad12b/si145.gif
+        si145 si145.gif gif 338 15 37 ALTIMG  1-s2.0-S2095927317301925-si15.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/3a75d5d23c36cb02b2d84830642050b1/si15.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/3a75d5d23c36cb02b2d84830642050b1/si15.gif
+        si15 si15.gif gif 548 21 76 ALTIMG  1-s2.0-S2095927317301925-si7.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/a0b65ef4a4bfedf0d7b8414ea2e7859d/si7.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/a0b65ef4a4bfedf0d7b8414ea2e7859d/si7.gif
+        si7 si7.gif gif 647 22 124 ALTIMG  1-s2.0-S2095927317301925-si2.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/a5aa6374e1e349180cd6e7ea5df72097/si2.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/a5aa6374e1e349180cd6e7ea5df72097/si2.gif
+        si2 si2.gif gif 271 17 26 ALTIMG  1-s2.0-S2095927317301925-si20.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/a29d25ae15f1f521c8755a470962cfb3/si20.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/a29d25ae15f1f521c8755a470962cfb3/si20.gif
+        si20 si20.gif gif 221 18 13 ALTIMG  1-s2.0-S2095927317301925-si22.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/f4d56f845c6980f794ef50dedfe93e04/si22.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/f4d56f845c6980f794ef50dedfe93e04/si22.gif
+        si22 si22.gif gif 718 21 132 ALTIMG  1-s2.0-S2095927317301925-si23.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/a7f7a4f30b8f3a0314c8a5e2658c236f/si23.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/a7f7a4f30b8f3a0314c8a5e2658c236f/si23.gif
+        si23 si23.gif gif 275 20 41 ALTIMG  1-s2.0-S2095927317301925-si24.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/d9f5364644ce9074b168efffa05323e5/si24.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/d9f5364644ce9074b168efffa05323e5/si24.gif
+        si24 si24.gif gif 448 17 75 ALTIMG  1-s2.0-S2095927317301925-si25.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/36b2098ee202be0297eec461fc8e07bd/si25.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/36b2098ee202be0297eec461fc8e07bd/si25.gif
+        si25 si25.gif gif 203 14 16 ALTIMG  1-s2.0-S2095927317301925-si44.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/33828bcda70f8a67ed7a0cc8937bf517/si44.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/33828bcda70f8a67ed7a0cc8937bf517/si44.gif
+        si44 si44.gif gif 381 18 66 ALTIMG  1-s2.0-S2095927317301925-si26.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/30e9011f283c006b0a0a4e8e563b3439/si26.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/30e9011f283c006b0a0a4e8e563b3439/si26.gif
+        si26 si26.gif gif 363 17 39 ALTIMG  1-s2.0-S2095927317301925-si28.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/65f0937f6c49357b83078a70a077d9f4/si28.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/65f0937f6c49357b83078a70a077d9f4/si28.gif
+        si28 si28.gif gif 452 17 75 ALTIMG  1-s2.0-S2095927317301925-si3.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/b85a98b3e2a9e746f2dd2d8942e0d973/si3.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/b85a98b3e2a9e746f2dd2d8942e0d973/si3.gif
+        si3 si3.gif gif 498 17 92 ALTIMG  1-s2.0-S2095927317301925-si30.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/5a7e4ac2d53cb9393971f1d109a32590/si30.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/5a7e4ac2d53cb9393971f1d109a32590/si30.gif
+        si30 si30.gif gif 213 16 14 ALTIMG  1-s2.0-S2095927317301925-si31.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/dc1a140ad5e96d90b78fe072ad3abed9/si31.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/dc1a140ad5e96d90b78fe072ad3abed9/si31.gif
+        si31 si31.gif gif 195 15 9 ALTIMG  1-s2.0-S2095927317301925-si32.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/85c6f1e65a88028d07d33515e48dccdf/si32.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/85c6f1e65a88028d07d33515e48dccdf/si32.gif
+        si32 si32.gif gif 220 16 14 ALTIMG  1-s2.0-S2095927317301925-si33.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/f0432e856d70af1a1c3b948cca31ad3b/si33.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/f0432e856d70af1a1c3b948cca31ad3b/si33.gif
+        si33 si33.gif gif 330 17 45 ALTIMG  1-s2.0-S2095927317301925-si34.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/e6c37e8891e4fa91f7473b42bdf7f85b/si34.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/e6c37e8891e4fa91f7473b42bdf7f85b/si34.gif
+        si34 si34.gif gif 830 24 160 ALTIMG  1-s2.0-S2095927317301925-si35.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/2aa8704bc9bf57566c61af32a27a166f/si35.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/2aa8704bc9bf57566c61af32a27a166f/si35.gif
+        si35 si35.gif gif 252 23 17 ALTIMG  1-s2.0-S2095927317301925-si36.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/ecf58b3bc4be1cba0af1a487e4b12ee4/si36.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/ecf58b3bc4be1cba0af1a487e4b12ee4/si36.gif
+        si36 si36.gif gif 301 17 38 ALTIMG  1-s2.0-S2095927317301925-si37.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/199393567b87ec7a88486c10bac11605/si37.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/199393567b87ec7a88486c10bac11605/si37.gif
+        si37 si37.gif gif 517 18 105 ALTIMG  1-s2.0-S2095927317301925-si38.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/db5bea26b463d108ff197238348b841f/si38.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/db5bea26b463d108ff197238348b841f/si38.gif
+        si38 si38.gif gif 285 17 42 ALTIMG  1-s2.0-S2095927317301925-si39.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/e9ab504c8c39e6dff1af145bf729e642/si39.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/e9ab504c8c39e6dff1af145bf729e642/si39.gif
+        si39 si39.gif gif 175 16 8 ALTIMG  1-s2.0-S2095927317301925-si4.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/c4691ada6f34b868208e776b93d4dd80/si4.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/c4691ada6f34b868208e776b93d4dd80/si4.gif
+        si4 si4.gif gif 310 17 46 ALTIMG  1-s2.0-S2095927317301925-si40.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/8c278f440113352a87a091c104447469/si40.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/8c278f440113352a87a091c104447469/si40.gif
+        si40 si40.gif gif 258 14 38 ALTIMG  1-s2.0-S2095927317301925-si41.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/80cf0346404a2d061e74dfbced89db8b/si41.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/80cf0346404a2d061e74dfbced89db8b/si41.gif
+        si41 si41.gif gif 299 17 28 ALTIMG  1-s2.0-S2095927317301925-si42.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/82f42d9a37ed58b1a6d5f10651cd5293/si42.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/82f42d9a37ed58b1a6d5f10651cd5293/si42.gif
+        si42 si42.gif gif 569 25 112 ALTIMG  1-s2.0-S2095927317301925-si70.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/f9c5071f96c6bf9a79c66ff403f12051/si70.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/f9c5071f96c6bf9a79c66ff403f12051/si70.gif
+        si70 si70.gif gif 250 14 37 ALTIMG  1-s2.0-S2095927317301925-si45.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/c72bc2c876afecdf4973491e813042b4/si45.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/c72bc2c876afecdf4973491e813042b4/si45.gif
+        si45 si45.gif gif 1212 25 226 ALTIMG  1-s2.0-S2095927317301925-si46.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/162af6f26eeef88cc3b7b600976ab660/si46.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/162af6f26eeef88cc3b7b600976ab660/si46.gif
+        si46 si46.gif gif 148 12 13 ALTIMG  1-s2.0-S2095927317301925-si47.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/bc97cfacc19b00e10cd3760f240282ef/si47.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/bc97cfacc19b00e10cd3760f240282ef/si47.gif
+        si47 si47.gif gif 126 2 13 ALTIMG  1-s2.0-S2095927317301925-si48.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/5efe37792e06deae9c40eda769c66cc5/si48.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/5efe37792e06deae9c40eda769c66cc5/si48.gif
+        si48 si48.gif gif 251 17 19 ALTIMG  1-s2.0-S2095927317301925-si5.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/7548f7af8e7e1fc1e87a82c0de134da2/si5.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/7548f7af8e7e1fc1e87a82c0de134da2/si5.gif
+        si5 si5.gif gif 445 17 83 ALTIMG  1-s2.0-S2095927317301925-si51.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/a1eeda87ed76b3218dcc1d31c7a26583/si51.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/a1eeda87ed76b3218dcc1d31c7a26583/si51.gif
+        si51 si51.gif gif 329 17 52 ALTIMG  1-s2.0-S2095927317301925-si53.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/2a94b4904d3db852ebe07e23c3f71bbd/si53.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/2a94b4904d3db852ebe07e23c3f71bbd/si53.gif
+        si53 si53.gif gif 195 10 11 ALTIMG  1-s2.0-S2095927317301925-si54.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/bd85b80450db5ffee89d710ba8b035eb/si54.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/bd85b80450db5ffee89d710ba8b035eb/si54.gif
+        si54 si54.gif gif 279 17 41 ALTIMG  1-s2.0-S2095927317301925-si58.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/ae93764d772496c8977165d6c7faec3f/si58.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/ae93764d772496c8977165d6c7faec3f/si58.gif
+        si58 si58.gif gif 307 19 30 ALTIMG  1-s2.0-S2095927317301925-si59.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/3d6d7d3f3ecfb57f158ba9742d17ea95/si59.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/3d6d7d3f3ecfb57f158ba9742d17ea95/si59.gif
+        si59 si59.gif gif 254 17 27 ALTIMG  1-s2.0-S2095927317301925-si6.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/946a57c4f924a784cf6f7ce0a7bb8f3c/si6.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/946a57c4f924a784cf6f7ce0a7bb8f3c/si6.gif
+        si6 si6.gif gif 301 17 46 ALTIMG  1-s2.0-S2095927317301925-si60.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/a1235c574da3ceaade9e69de232173ea/si60.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/a1235c574da3ceaade9e69de232173ea/si60.gif
+        si60 si60.gif gif 214 16 15 ALTIMG  1-s2.0-S2095927317301925-si63.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/3fd018497b5af5134a60bc7a41a91fa4/si63.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/3fd018497b5af5134a60bc7a41a91fa4/si63.gif
+        si63 si63.gif gif 344 19 39 ALTIMG  1-s2.0-S2095927317301925-si65.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/aff1a7e60d87bdafc8a4bf119115669c/si65.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/aff1a7e60d87bdafc8a4bf119115669c/si65.gif
+        si65 si65.gif gif 713 21 127 ALTIMG  1-s2.0-S2095927317301925-si66.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/ed0f261bc08d0d0a59b99d0c57470d80/si66.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/ed0f261bc08d0d0a59b99d0c57470d80/si66.gif
+        si66 si66.gif gif 417 17 74 ALTIMG  1-s2.0-S2095927317301925-si67.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/cdd873526d453bb0bcc84c8ea55bb513/si67.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/cdd873526d453bb0bcc84c8ea55bb513/si67.gif
+        si67 si67.gif gif 198 15 11 ALTIMG  1-s2.0-S2095927317301925-si71.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/0811688d7e169687a0959278f0130899/si71.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/0811688d7e169687a0959278f0130899/si71.gif
+        si71 si71.gif gif 211 16 13 ALTIMG  1-s2.0-S2095927317301925-si74.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/4d7248fc4648843bb60e4f9c258266e2/si74.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/4d7248fc4648843bb60e4f9c258266e2/si74.gif
+        si74 si74.gif gif 485 17 92 ALTIMG  1-s2.0-S2095927317301925-si75.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/d11891b868ffac8ecdb855f0ae926d1d/si75.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/d11891b868ffac8ecdb855f0ae926d1d/si75.gif
+        si75 si75.gif gif 288 13 49 ALTIMG  1-s2.0-S2095927317301925-si8.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/30fab5c535290b50aad56aa7328455e3/si8.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/30fab5c535290b50aad56aa7328455e3/si8.gif
+        si8 si8.gif gif 230 14 35 ALTIMG  1-s2.0-S2095927317301925-si80.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/cb0c90bdb469b1c5517fa1e16db80d0d/si80.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/cb0c90bdb469b1c5517fa1e16db80d0d/si80.gif
+        si80 si80.gif gif 404 18 60 ALTIMG  1-s2.0-S2095927317301925-si81.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/fb7598d38f147dce592039279cb13a8a/si81.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/fb7598d38f147dce592039279cb13a8a/si81.gif
+        si81 si81.gif gif 254 17 17 ALTIMG  1-s2.0-S2095927317301925-si84.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/c0e15ef73b0b8012d4ec1d7aed3ad50c/si84.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/c0e15ef73b0b8012d4ec1d7aed3ad50c/si84.gif
+        si84 si84.gif gif 1178 23 236 ALTIMG  1-s2.0-S2095927317301925-si85.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/ddccb337a8d28434ffa872c696776d8e/si85.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/ddccb337a8d28434ffa872c696776d8e/si85.gif
+        si85 si85.gif gif 302 17 31 ALTIMG  1-s2.0-S2095927317301925-si88.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/e9b5231fdca09dadd44417b94ea89c12/si88.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/e9b5231fdca09dadd44417b94ea89c12/si88.gif
+        si88 si88.gif gif 243 22 18 ALTIMG  1-s2.0-S2095927317301925-si89.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/43273e4ccd757ab606ddf6756d4309e9/si89.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/43273e4ccd757ab606ddf6756d4309e9/si89.gif
+        si89 si89.gif gif 408 22 49 ALTIMG  1-s2.0-S2095927317301925-si9.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/262c055764e3885d6d528a4e7170be3a/si9.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/262c055764e3885d6d528a4e7170be3a/si9.gif
+        si9 si9.gif gif 892 23 169 ALTIMG  1-s2.0-S2095927317301925-si90.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/7ff662f9965d2922fc56333af98bf50b/si90.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/7ff662f9965d2922fc56333af98bf50b/si90.gif
+        si90 si90.gif gif 326 20 40 ALTIMG  1-s2.0-S2095927317301925-si91.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/67b9bb95b97e336ce7e545118a9c7d31/si91.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/67b9bb95b97e336ce7e545118a9c7d31/si91.gif
+        si91 si91.gif gif 448 21 60 ALTIMG  1-s2.0-S2095927317301925-si92.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/fc5d5cae7ffe00df077e957bc564ebbd/si92.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/fc5d5cae7ffe00df077e957bc564ebbd/si92.gif
+        si92 si92.gif gif 429 21 65 ALTIMG  1-s2.0-S2095927317301925-si93.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/8cf36bc9ee14ef4deca11d807bac2c01/si93.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/8cf36bc9ee14ef4deca11d807bac2c01/si93.gif
+        si93 si93.gif gif 596 21 91 ALTIMG  1-s2.0-S2095927317301925-si97.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/8f110239ee70a736c07ff45ae60141b0/si97.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/8f110239ee70a736c07ff45ae60141b0/si97.gif
+        si97 si97.gif gif 538 18 91 ALTIMG  1-s2.0-S2095927317301925-si98.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/072259c7d1623a2b0cfcaf0800a64eb7/si98.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/072259c7d1623a2b0cfcaf0800a64eb7/si98.gif
+        si98 si98.gif gif 211 16 11 ALTIMG  1-s2.0-S2095927317301925-si99.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/d893def8f92914b480d0cf4b42c9e01c/si99.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/d893def8f92914b480d0cf4b42c9e01c/si99.gif
+        si99 si99.gif gif 361 18 55 ALTIMG  1-s2.0-S2095927317301925-si21.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/db5a5e5fdc430926cd9de4a6a138474c/si21.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/db5a5e5fdc430926cd9de4a6a138474c/si21.gif
+        si21 si21.gif gif 1285 24 231 ALTIMG  1-s2.0-S2095927317301925-si29.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/7da1b36ac12c0758cfe2adf90072f313/si29.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/7da1b36ac12c0758cfe2adf90072f313/si29.gif
+        si29 si29.gif gif 1170 39 228 ALTIMG  1-s2.0-S2095927317301925-si43.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/9964f33823efc7081bfa797db8aebe24/si43.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/9964f33823efc7081bfa797db8aebe24/si43.gif
+        si43 si43.gif gif 1663 43 272 ALTIMG  1-s2.0-S2095927317301925-si49.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/e0f2deb86b32eb7daca408e2ec280308/si49.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/e0f2deb86b32eb7daca408e2ec280308/si49.gif
+        si49 si49.gif gif 765 22 129 ALTIMG  1-s2.0-S2095927317301925-si50.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/a9540e70ee8a13b0d2d3cfe7df3ca695/si50.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/a9540e70ee8a13b0d2d3cfe7df3ca695/si50.gif
+        si50 si50.gif gif 1756 43 231 ALTIMG  1-s2.0-S2095927317301925-si56.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/7133426436e4220f05fc25a3d9f97d60/si56.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/7133426436e4220f05fc25a3d9f97d60/si56.gif
+        si56 si56.gif gif 643 38 100 ALTIMG  1-s2.0-S2095927317301925-si57.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/97f2ce40d0be5a2df9a0da65f39c364e/si57.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/97f2ce40d0be5a2df9a0da65f39c364e/si57.gif
+        si57 si57.gif gif 1527 36 314 ALTIMG  1-s2.0-S2095927317301925-si79.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/c1990c840d030b14dd4969c93d1dd5d9/si79.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/c1990c840d030b14dd4969c93d1dd5d9/si79.gif
+        si79 si79.gif gif 1910 40 303 ALTIMG  1-s2.0-S2095927317301925-si95.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/853847176c683ced7a019cb49f6a9ce8/si95.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/853847176c683ced7a019cb49f6a9ce8/si95.gif
+        si95 si95.gif gif 2059 41 346 ALTIMG  1-s2.0-S2095927317301925-si113.gif https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/47e3ea4707367ac0b1f51ece1435fb9d/si113.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/47e3ea4707367ac0b1f51ece1435fb9d/si113.gif
+        si113 si113.gif gif 2522 50 344 ALTIMG  1-s2.0-S2095927317301925-si124.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S2095927317301925/STRIPIN/image/gif/b1e3c2d6e8296c047fc9d26ec3aa82e6/si124.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S2095927317301925/STRIPIN/image/gif/b1e3c2d6e8296c047fc9d26ec3aa82e6/si124.gif
+        si124 si124.gif gif 1513 42 252 ALTIMG     SCIB 113 S2095-9273(17)30192-5
+        10.1016/j.scib.2017.04.011 Science China Press  Fig. 1 (Color online) The
+        calculation of the von Neumann entropy, the second Rényi entropy and the OTOC
+        for the MBL and the AL cases in random-field XXZ model Eq. (7) . The OTOC
+        has been rescaled to drop from unity. The horizontal axis is tJ  ⊥      in
+        the logarithmic scale. The calculation is done for on an 8-site model with
+        open boundary condition, and is averaged over 10  3      disorder configurations.
+        Here J  ⊥   > 0 , h  i   / J  ⊥      is uniformly distributed between [ -
+        5 , 5 ]   . For the MBL case J  z   / J  ⊥   = 0.2    where the system is
+        known to be fully localized [34] . For the AL case J  z   = 0   .    Fig.
+        2 Diagrammatic illustration of how to prove the OTOC-RE theorem. Please see
+        the main text for details.    Fig. 3 (Color online) An example demonstrating
+        the OTOC-RE theorem. (a) All the four OTOCs with V  ̂   = ( 1 + 2 s  ̂    i
+        \ x   ) / 2  D      (i = 1   ) and W = 1 / 2   , 2   s  ̂    j  x   , 2   s
+        \ ̂    j  y      and 2   s  ̂    j  z     (j = 8   ), respectively. And all
+        the OTOCs have been rescaled to drop from unity. (b) The summation of four
+        (unrescaled) OTOCs, the second order Rényi entropy S  A  ( 2 )      (trace
+        out j = 8    site which is the subsystem B ) after quench by operator O  ̂
+        \  = ( 1 + 2 s  ̂    i  x   ) / 2  ( D + 1 ) / 2      and exp ( - S  A  (
+        2 )   )   . Here the calculation is taken on an 8-site chain, all quantities
+        have been averaged over 10  3      disorder configurations. J  z   / J  ⊥
+        \  = 0.2    and h  i   / J  ⊥      is uniformly distributed between [ - 5
+        , 5 ]   .    Table 1 A comparison of the behavior for the growth of the second
+        Rényi entropy (RE) and the decay of the OTOC in the thermalized phase (denoted
+        by “T”), the MBL phase and the AL phase. *: By taking O  ̂      as a local
+        operator, as the example we will discuss explicitly later, our result also
+        implies a logarithmic growth of the entropy after a local quench for a MBL
+        system, which is consistent with a recent study [36] .      RE OTOC   T Linear
+        increase [35]  Exponential decay  MBL Logarithmic increase * Power law decay
+        \ AL Constant Constant      Article  Out-of-time-order correlation for many-body
+        localization Ruihua Fan a  b  1   Pengfei Zhang a  1   Huitao Shen c   Hui
+        Zhai a  d  ⁎  hzhai@tsinghua.edu.cn  a Institute for Advanced Study, Tsinghua
+        University, Beijing 100084, China Institute for Advanced Study Tsinghua University
+        Beijing 100084 China   b Department of Physics, Peking University, Beijing
+        100871, China Department of Physics Peking University Beijing 100871 China
+        \  c Department of Physics, Massachusetts Institute of Technology, Cambridge,
+        MA 02139, USA Department of Physics Massachusetts Institute of Technology
+        Cambridge MA 02139 USA   d Collaborative Innovation Center of Quantum Matter,
+        Beijing 100084, China Collaborative Innovation Center of Quantum Matter Beijing
+        100084 China   ⁎ Corresponding author.  1 They contribute equally to this
+        work.      Graphical abstract       Abstract In this paper we first compute
+        the out-of-time-order correlators (OTOC) for both a phenomenological model
+        and a random-field XXZ model in the many-body localized phase. We show that
+        the OTOC decreases in power law in a many-body localized system at the scrambling
+        time. We also find that the OTOC can also be used to distinguish a many-body
+        localized phase from an Anderson localized phase, while a normal correlator
+        cannot. Furthermore, we prove an exact theorem that relates the growth of
+        the second Rényi entropy in the quench dynamics to the decay of the OTOC in
+        equilibrium. This theorem works for a generic quantum system. We discuss various
+        implications of this theorem.   Keywords Out-of-time-order correlation  Many-body
+        localization  Rényi entropy    1 Introduction Recently, the out-of-time-order
+        correlator (OTOC) has drawn a lot of attention in both the gravity physics,
+        the condensed matter physics and quantum information [1–17] .2 And also see
+        A. Kitaev’s talk given at Fundamental Physics Prize Symposium, Nov.10, 2014.
+        http://online.kitp.ucsb.edu/online/joint98/kitaev/ .  2  , 3 And also see
+        A. Kitaev’s talk given KITP Program: Entanglement in Strongly-Correlated Quantum
+        Matter, 2015. http://online.kitp.ucsb.edu/online/entangled15/kitaev/ http://online.kitp.ucsb.edu/online/entangled15/kitaev2/
+        .  3   This correlator is introduced as(1) F ( t ) = 〈 W  ̂    †   ( t ) V
+        \ ̂    †   ( 0 ) W  ̂   ( t ) V  ̂   ( 0 ) 〉  β   ,     where W  ̂   ( t )
+        = e  i H  ̂   t   W  ̂   e  - i H  ̂   t      and 〈 … 〉  β      denotes averaging
+        over a thermal ensemble at temperature 1 / β = k  B   T   . In the context
+        of condensed matter physics, the OTOC diagnoses the chaotic behavior. The
+        exponential deviation of the OTOC defines the Lyapunov exponent λ  L     [1,2]
+        .2   In the gravity context, for systems that can be described holographically
+        by an Einstein gravity, it is shown that the Lyapunov exponent saturates 2
+        π / β   [1,3,4] . More remarkably, it is shown that the Lyapunov exponent
+        will actually be bounded by 2 π / β   [5] . It is thus conjectured that a
+        quantum mechanical system that saturates the bound has a holographic dual
+        to a black hole [5] . A concrete “Sachdev-Ye-Kitaev” model [18,19] 3   has
+        been shown to display a black hole dual [6,7,20]  and to have a Lyapunov exponent
+        λ  L   = 2 π / β   [8] .3   In this paper, we ask the question that whether
+        the OTOC can be used beyond diagnosing the chaos and for systems that do not
+        have (and are not even close to have) the holographic dual. For this motivation,
+        we consider the OTOC in the many-body localized (MBL) system, which is not
+        chaotic and even does not satisfy the Eigenstate Thermalization Hypothesis
+        due to the existence of many local integrals of motion [21–25] . Instead of
+        an exponential deviation, we analytically show that the OTOC power-law decays
+        in an MBL system. This is a clear distinction between an MBL phase and a thermalized
+        phase. In the discussion of the MBL, it is often asked how to distinguish
+        an MBL state from an Anderson localized (AL) state [26–30] . The later is
+        known as a non-interacting phenomenon. It is known that, after a sudden quench
+        and following a linear growth of the entropy at the initial time, for the
+        AL phase entropy will stay nearly as a constant, while for the MBL phase entropy
+        will continuously grow logarithmically due to the interaction induced dephasing
+        [26,27,31–33] . Here we show that in the MBL phase the OTOC decreases during
+        the time interval when the entropy logarithmically grows; while in the AL
+        phase the OTOC remains as a constant. On the other hand, the normal correlators
+        always remain constant in both the MBL phase and the AL phase. Thus we propose
+        that the behavior of OTOC can be used to distinguish the MBL and the AL, while
+        normal correlators cannot. These calculations reveal a potential connection
+        between the growth of the entropy after a sudden quench and the decay of the
+        OTOC. Motivated by this insight, we prove an exact theorem that builds up
+        a rigorous connection between these two. We should emphasize that, although
+        the insight comes from the explicit calculation in the MBL phase, the theorem
+        holds for any  quantum system. Various implications of this theorem are also
+        discussed.  2 Phenomenological model A one-dimensional model with local two-state
+        degrees of freedom was proposed as a phenomenological model for an MBL phase
+        [24,23,25] (2) H  ̂   = ∑  i    h  i   τ  ̂    i  z   + ∑  ij    J  ij   τ
+        \ ̂    i  z   τ  ̂    j  z   + … ,     where τ  ̂    i      are local Pauli
+        operators for the “l-bit” and denote the local integrals of motion within
+        a localization length ξ   . h  i      are random Zeeman field uniformly distributed
+        between [ - h , h ]   . J  ij   = J  ∼    ij   exp ( - | i - j | / ξ )    describes
+        interaction between different l-bits, and J  ∼    ij      are uniformly distributed
+        between [ - J , J ]   . Each eigenstate of this Hamiltonian can be written
+        as | n 〉 = | τ  1  z   τ  2  z   … 〉   , where τ  i  z   = ↑    or ↓   . Since
+        this model has effectively considered the physics within a localization length
+        by a local integral of motion and the detailed process within a localization
+        length has been ignored, for our analysis below, the initial time t = 0    should
+        be interpreted in a real model as some finite time when the initial process
+        within a localization length is completed. Let us consider the infinite temperature
+        case where we can simply sum over all the states with equal weight in calculating
+        F ( t )   . Here we choose W  ̂   = τ  ̂    i  x   , V  ̂   = τ  ̂    j  x
+        \     so the OTOC is given by(3) F ( t ) = 1  2  D     ∑  n    〈 n | U  ̂
+        \   †   τ  ̂    i  x   U  ̂   τ  ̂    j  x   U  ̂    †   τ  ̂    i  x   U
+        \ ̂   τ  ̂    j  x   | n 〉 ,     where U  ̂   = e  - i H  ̂   t      and D
+        \ is the number of sites. It is straightforward to show that 〈 n | U  ̂    †
+        \  τ  ̂    i  x   U  ̂   τ  ̂    j  x   U  ̂    †   τ  ̂    i  x   U  ̂   τ
+        \ ̂    j  x   | n 〉 = e  ± i 4 J  ij   t     , where +    (-   ) is taken
+        when the spins on i - and j -sites are parallel (anti-parallel). Averaging
+        over | n 〉    leads to(4) F ( t ) = cos 4 J  ij   t    .      Further averaging
+        over all random configurations results in(5) F  ‾   ( t ) = sin ( 4 J exp
+        ( - | i - j | / ξ ) t )  4 J exp ( - | i - j | / ξ ) t   .      Before proceeding,
+        we would like to make a few comments on the result Eq. (5) . (1) Eq. (5)  can
+        be expanded as 1 + α t  2      for the early-time behavior. The absence of
+        linear t  term means that at early time the OTOC deviates from unity in power
+        law instead of exponentially. This shows the difference in the OTOC between
+        an MBL state and a thermalized state. When the distribution function of J
+        \ ∼    ij      changes or higher order terms in the Hamiltonian Eq. (2)  are
+        included, this power law behavior is quite robust while α    is a non-universal
+        value and will change correspondingly. (2) J = 0    describes the AL limit
+        where F ( t )    becomes a constant. This shows that the OTOC can also distinguish
+        the MBL phase from the AL phase. (3) The typical time scale of the decay time
+        is given by(6) t  0   = π  4 J   e  | i - j | / ξ   ,     which increases
+        exponentially as the distance between i - and j -sites increases.  3 Random-field
+        XXZ model We now come to a more microscopic model for MBL, that is the one-dimensional
+        XXZ model in a random magnetic field [26,27,34] (7) H  ̂   = ∑  i    J  ⊥
+        \  ( s  ̂    i  x   s  ̂    i + 1  x   + s  ̂    i  y   s  ̂    i + 1  y   )
+        + J  z   s  ̂    i  z   s  ̂    i + 1  z   + h  i   s  ̂    i  z   .      Here
+        s  ̂    i  x , y , z      are three spin operators at site-i , J  ⊥      and
+        J  z      are both constants, and h  i      are random fields uniformly distributed
+        among [ - h , h ]   . Using a Jordan-Wigner transformation to map this model
+        into a spinless fermion model, s  ̂    i  z   s  ̂    i + 1  z      gives
+        a nearest neighbor interaction between fermions. Thus in this model, J  z
+        \     represents the interaction effect. In Fig. 1  , we show the von Neumann
+        entropy, the second Rényi entropy (RE) and the OTOC for both the MBL case
+        and the AL case. For the entropy calculation, the system is divided into two
+        parts A  and B , where A  (B ) is the left (right) half of this eight-site
+        system. The second Rényi entropy is defined as S  A  ( 2 )   = - log Tr  A
+        \  ρ  ̂    A  2      and ρ  A   = Tr  B   ρ   . The initial state is prepared
+        in a Néel state along z  ̂      direction, and evolves from there under the
+        XXZ Hamiltonian Eq. (7) . This initial state preparation can in fact be viewed
+        as a global quench. For the OTOC calculation, we choose W  ̂      as s  ̂
+        \   x      at site i = 2    and V  ̂      as s  ̂    x      at site j = 8
+        \  . The temperature is also set at infinity and we sum over all configurations
+        with equal weight. We do check other choices of operators and most of the
+        OTOCs all behave similarly. From Fig. 1  one can see that, after a linear
+        increase at the initial time (0 < t ≲ 1 / J  ⊥     ), both two entropys saturate
+        for the AL case, which corresponds to the thermalization process within a
+        localization length. Then the entropy continuously grows logarithmically only
+        for the MBL case. The von Neumann entropy and the second Rényi entropy behave
+        similarly. For the MBL case, at the time scale that entropy starts logarithmic
+        growth, the OTOC also starts to drop. While in the AL case, the OTOC always
+        remains constant. We also calculate the normal correlators in this model and
+        find they always remain as constants in both the MBL phase and the AL phase.
+        These results are consistent with the results from the phenomenological model.
+        \ 4 The OTOC-RE theorem Motivated by the calculation above, here we prove
+        a general theorem as. Theorem.  Consider a system initialized at T = ∞   .
+        After being quenched by an arbitrary operator O  ̂      at t = 0   , we divide
+        it into two subparts A  and B  and considering the second Rényi entropy S
+        \ A  ( 2 )     . The growth of this second Rényi entropy is related to the
+        OTOC of the original equilibrium state via(8) exp ( - S  A  ( 2 )   ) = ∑
+        \ M  ̂   ∈ B    〈 M  ̂   ( t ) V  ̂   ( 0 ) M  ̂   ( t ) V  ̂   ( 0 ) 〉  β
+        = 0   ,     where V  ̂   = O  ̂   O  ̂    †      and the summation is taken
+        over a complete set of operators M  ̂      in the part B . Here we have chosen
+        the normalization condition for M  ̂      and O  ̂      as ∑  M  ̂   ∈ B   M
+        \ ij   M  lm   = δ  im   δ  lj   , Tr [ O  ̂   O  ̂    †   ] = 1   . Before
+        the proof of this theorem, we would like to add a few remarks on this theorem:(1)
+        Let us first explain what quench and quench operators mean here. Suppose |
+        Ψ  n   〉    is one of the eigenstates of the Hamiltonian, here quench means
+        suddenly apply an operator O  ̂      to | Ψ  n   〉   . For instance, for a
+        spin model, one can flip a spin at site-i via a quench operator S  ̂    i
+        \ -     . The wave function after the quench becomes S  ̂    i  -   | Ψ  n
+        \  〉   , which is no longer an eigenstate of the Hamiltonian and it will start
+        to evolve and the entropy will increase. For a mixed state, the quench operator
+        will apply identically to every state, for instance, here at infinite temperature,
+        initially ρ  ̂   ∝ I  ̂     , and after the quench, ρ  ̂   ∝ O  ̂   O  ̂    †
+        \     and the density matrix will also start to evolve and leads to increasing
+        of entropy. For finite temperature case, initially ρ  ̂   ∝ e  - β H  ̂       ,
+        and after quench it becomes ρ  ̂   ∝ O  ̂   e  - β H  ̂     O  ̂    †     .
+        \ (2) This theorem applies to generic quantum systems, no matter whether they
+        are chaotic, thermalized, localized or not. It is independent of how to divide
+        the system into A and B subparts. And the quench operator O  ̂      can be
+        either a global one or a local one.  (3) This theorem builds up a general
+        relation between the OTOC and the Rényi entropy. We summarize this correspondence
+        in different phases in the Table 1  . With this relation, previous results
+        on the second Rényi entropy [37–42]  can now be used to infer the properties
+        of the OTOC. Here we should remark that another relation between the OTOC
+        and the Rényi entropy has been derived in Ref. [9] . The difference is that,
+        in Ref. [9] , the entropy are defined between the input and the output Hilbert
+        space using the operator-state mapping. While in our case, both the OTOC and
+        Rényi entropy are defined in the physical system.  (4) We should note that
+        the L.H.S. of Eq. (8)  is a quantity measured from a quenched non-equilibrium
+        \ system, while the R.H.S. is a correlator for an equilibrium  system. Thus,
+        this theorem establishes a relation between the correlation in the equilibrium
+        and a quantity in the dynamical process. In this sense, it shares the same
+        spirit of the linear response theory for the normal correlators, which says
+        the normal correlations in an equilibrium system can be related to some observables
+        after adding a time-dependent perturbation to the Hamiltonian. Thus, to make
+        a comparison, normal correlator measures the response of the observables to
+        a perturbation; while the OTOC measures the response of the entropy to a quench.
+        \ (5) This theorem can be generalized to the finite temperature as(9) exp
+        ( - S  A  ( 2 )   ) = ∑  M  ̂   ∈ B    Tr [ M  ̂   ( t ) O  ̂   e  - β H  ̂
+        \    O  ̂    †   M  ̂   ( t ) O  ̂   e  - β H  ̂     O  ̂    †   ] .      One
+        can view the R.H.S. of the Eq. (9)  as an OTOC at T = ∞    with V  ̂   = O
+        \ ̂   e  - β H  ̂     O  ̂    †     , or if β    is not too large, each term
+        in the R.H.S. of Eq. (9)  approximates to the OTOC at β  ′   = 2 β    as Tr
+        [ e  - 2 β H  ̂     M  ̂   ( t ) O  ̂   O  ̂    †   M  ̂   ( t ) O  ̂   O
+        \ ̂    †   ]   . This theorem can also be generalized to the higher order
+        Rényi entropy, where S  A  ( n )      will be related to a correlation function
+        with 4 n - 2    operators.    Now we outline how this theorem is proved. For
+        convenience, we first introduce a set of diagrams. For a system divided into
+        subsystems A  and B , denote { | i 〉  A   ⊗ | i 〉  B   }    as a complete
+        set of bases in the Hilbert space, an arbitrary operator Q  ̂   = ∑  ij   Q
+        \ ij   | i 〉  A   ⊗ | i 〉  B   〈 j |  A   ⊗ 〈 j |  B      is presented diagrammatically
+        in Fig. 2  a1. In this representation, Tr  B   Q  ̂      can be described
+        by connecting states in the subpart B , as presented by Fig. 2 a2. Consider
+        a system at T = ∞   , the initial density matrix ρ  ̂   ∝ I  ̂     . After
+        the quench by operator O  ̂      and let the system evolve under the Hamiltonian
+        H  ̂      by time t , the density matrix becomes ρ  ̂   = U  ̂   ( t ) O  ̂
+        \  O  ̂    †   U  ̂    †   ( t )   . Then ρ  ̂    A      will be represented
+        as Fig. 2 b, and straightforwardly, Tr ρ  ̂    A  2   = e  - S  A  ( 2 )        is
+        presented by Fig. 2 c. Now we consider each OTOC on the R.H.S. of Eq. (8)
+        , which is(10) Tr [ M  ̂   ( t ) V  ̂   ( 0 ) M  ̂   ( t ) V  ̂   ( 0 ) ]
+        =  Tr [ U  ̂    †   M  ̂   U  ̂   V  ̂   U  ̂    †   M  ̂   U  ̂   V  ̂   ]
+        \                                                =   Tr [ U  ̂   V  ̂   U
+        \ ̂    †   M  ̂   U  ̂   V  ̂   U  ̂    †   M  ̂   ] .         Note that V
+        \ ̂      is taken as O  ̂   O  ̂    †      and M  ̂      only acts on the
+        Hilbert space of the subsystem B , this is shown by Fig. 2 d. Let us again
+        consider a general operator Q  ̂     , and sum over a complete set of operators
+        in the subsystem B , since ∑  M  ̂   ∈ B   M  ij   M  lm   = δ  im   δ  lj
+        \    , we will have ∑  M  ̂   ∈ B   M  ̂   Q  ̂   M  ̂   = Tr  B   Q  ̂   ⊗
+        I  ̂     , which is shown in Fig. 2 e. Finally, applying this identity to
+        Tr [ M  ̂   ( t ) V  ̂   ( 0 ) M  ̂   ( t ) V  ̂   ( 0 ) ]   , the R.H.S.
+        of Eq. (8)  is presented in Fig. 2 f. It is clear that the result is equivalent
+        to Fig. 2 c. Hence, we prove the OTOC-EE theorem.  5 An example of the OTOC-RE
+        theorem We now give a concrete example of the OTOC-RE theorem and verify it
+        with the models mentioned above. For the phenomenological model, we consider
+        a local quench at i -site by operator O  ̂   = ( 1 + τ  ̂    i  x   ) / 2
+        \ ( D + 1 ) / 2     . Then the density matrix evolves as ρ  ̂   ( t ) = U
+        \ ̂   ( 1 + τ  ̂    i  x   ) U  ̂    †   / 2  D     . For simplicity, we only
+        consider the j -site (i  ≠  j   ) as the B  subsystem. After tracing out this
+        site, the reduced density matrix can be calculated explicitly. Finally, one
+        obtains(11) S  A  ( 2 )   = - log 1  2  D     3 + cos ( 4 J  ij   t )       .
+        \     This is the result before taking a disorder average. If higher order
+        terms in Hamiltonian Eq. (2)  are included, more cosine functions depending
+        on the coefficients of higher order terms will show up as small correction.
+        In this case, it is also straightforward to show that V  ̂   = O  ̂   O  ̂
+        \   †   = ( 1 + τ  ̂    i  x   ) / 2  D      and the complete set of operators
+        in the subsystem B  is τ  ̂    j  0   / 2   , τ  ̂    j  x   / 2   , τ  ̂
+        \   j  y   / 2      and τ  ̂    j  z   / 2     . We can show that for W  ̂
+        \  = τ  ̂    j  0   / 2      and τ  ̂    j  z   / 2     , the OTOC equals
+        to 1 / 2  D     , while for W  ̂   = τ  ̂    j  x   / 2      and τ  ̂    j
+        \ y   / 2     , the OTOC equals ( 1 / 2  D   ) ( 1 / 2 + cos ( 4 J  ij   t
+        ) / 2 )   . Thus, the summation of all four OTOCs equals to exp ( - S  A  (
+        2 )   )   . In the random XXZ model, similarly, we consider a system quenched
+        by operator O  ̂   = ( 1 + 2 s  ̂    i  x   ) / 2  ( D + 1 ) / 2     , and
+        we choose the j -site as the subsystem B . Here in our numerical calculation
+        of eight sites, we take i = 1    and j = 8   . To compute OTOC, we have V
+        \ ̂   = ( 1 + 2 s  ̂    i  x   ) / 2  D     , and the complete set of operators
+        in subsystem B  are 1 / 2   , 2   s  ̂    j  x   , 2   s  ̂    j  y      and
+        2   s  ̂    j  z     . All these four OTOCs are shown in Fig. 3  a. One can
+        see that except for W  ̂   = 1 / 2     , all others decay. The summation of
+        all four OTOCs is shown in Fig. 3 b, and it is compared to the second Rényi
+        entropy S  A  ( 2 )      and exp ( - S  A  ( 2 )   )   . We can see that the
+        summation of OTOC perfectly coincides with exp ( - S  A  ( 2 )   )   .  6
+        Final remarks In summary, our results build up the connection between the
+        OTOC in equilibrium and the growth of entropy after a quench. This OTOC-RE
+        theorem will have many implications in various systems. The MBL system is
+        explicitly discussed here with both the phenomenological model and the random
+        XXZ model. Several MBL systems have now been realized in cold atom and trapped
+        ion systems [43–47] , and the second Rényi entropy has also been recently
+        measured in the cold atom setting [48] . Our proposal can be verified in the
+        cold atom systems.  Conflict of interest The authors declare that they have
+        no conflict of interest.   Acknowledgments This work was supported by the
+        National Key Research and Development Plan  (2016YFA0301600 ), the National
+        Natural Science Foundation of China  (11325418 ) and Tsinghua University Initiative
+        Scientific Research Program . We would like to thank Yingfei Gu, Chaoming
+        Jian, Xiaoliang Qi and Xi Dong for helpful discussions. Note Added  When we
+        complete this work, we become aware that the OTOC of an MBL system has also
+        been studied by Ref. [49] .   References [1] S.H. Shenker  D. Stanford   Black
+        holes and the butterfly effect   J High Energy Phys  03  2014  067     [2]
+        A.I. Larkin  Y.N. Ovchinnikov   Quasiclassical method in the theory of superconductivity
+        \  Sov Phys JETP  28  1969  1200 1205     [3] S.H. Shenker  D. Stanford   Multiple
+        shocks   J High Energy Phys  12  2014  046     [4] S.H. Shenker  D. Stanford
+        \  Stringy effects in scrambling   J High Energy Phys  05  2015  132     [5]
+        J. Maldacena  S.H. Shenker  D. Stanford   A bound on chaos   J High Energy
+        Phys  8  2016  106     [6] J. Maldacena  D. Stanford  Z. Yang   Conformal
+        symmetry and its breaking in two-dimensional nearly anti-de Sitter space   Prog
+        Theor Exp Phys  2016  2016  12C104     [7] K. Jensen   Chaos in AdS  2      holography
+        \  Phys Rev Lett  117  2016  111601     [8] J. Maldacena  D. Stanford   Remarks
+        on the Sachdev-Ye-Kitaev model   Phys Rev D  94  2016  106002     [9] P. Hosur
+        \ X.L. Qi  D.A. Roberts    Chaos in quantum channels   J High Energy Phys
+        \ 02  2016  004     [10] D.A. Roberts  D. Stanford  L. Susskind   Localized
+        shocks   J High Energy Phys  03  2015  051     [11] D.A. Roberts  D. Stanford
+        \  Diagnosing chaos using four-point functions in two-dimensional conformal
+        field theory   Phys Rev Lett  115  2015  131603     [12] A. Almheiri  D. Marolf
+        \ J. Polchinski    An apologia for firewalls   J High Energy Phys  09  2013
+        \ 018     [13] Y. Gu  X.L. Qi   Fractional statistics and the butterfly effect
+        \  J High Energy Phys  08  2016  129     [14] W. Fu  S. Sachdev   Numerical
+        study of fermion and boson models with infinite-range random interactions
+        \  Phys Rev B  94  2016  035135     [15] B. Swingle  G. Bentsen  M. Schleier-Smith
+        \   Measuring the scrambling of quantum information   Phys Rev A  94  2016
+        \ 040302     [16] G. Zhu  M. Hafezi  T. Grover   Measurement of many-body
+        chaos using a quantum clock   Phys Rev A  94  2016  062329     [17] Yao NY,
+        Grusdt F, Swingle B, et al. Interferometric approach to probing fast scrambling.
+        arXiv:1607.01801.   [18] A. Jevicki  K. Suzuki  J. Yoon   Bi-local holography
+        in the SYK model: perturbations   J High Energy Phys  07  2016  007     [19]
+        S. Sachdev  J. Ye   Gapless spin-fluid ground state in a random quantum Heisenberg
+        magnet   Phys Rev Lett  70  1993  3339     [20] J. Engelsöy  T.G. Mertens
+        \ H. Verlinde   An investigation of AdS  2     backreaction and holography
+        \  J High Energy Phys  07  2016  139     [21] E. Altman  R. Vosk   Universal
+        dynamics and renormalization in many-body-localized systems   Annu Rev Condens
+        Matter Phys  6  2015  383 409     [22] R. Nandkishore  D.A. Huse   Many-body
+        localization and thermalization in quantum statistical mechanics   Annu Rev
+        Condens Matter Phys  6  2015  15 38     [23] M. Serbyn  Z. Papić  D.A. Abanin
+        \  Local conservation laws and the structure of the many-body localized states
+        \  Phys Rev Lett  111  2013  127201     [24] D.A. Huse  R. Nandkishore  V.
+        Oganesyan   Phenomenology of fully many-body-localized systems   Phys Rev
+        B  90  2014  174202     [25] R. Vosk  E. Altman   Many-body localization in
+        one dimension as a dynamical renormalization group fixed point   Phys Rev
+        Lett  110  2013  067204     [26] J.H. Bardarson  F. Pollmann  J.E. Moore   Unbounded
+        growth of entanglement in models of many-body localization   Phys Rev Lett
+        \ 109  2012  017202     [27] M. Serbyn  Z. Papić  D.A. Abanin   Universal
+        slow growth of entanglement in interacting strongly disordered systems   Phys
+        Rev Lett  110  2013  260601     [28] M. Serbyn  M. Knap  S. Gopalakrishnan
+        \   Interferometric probes of many-body localization   Phys Rev Lett  113
+        \ 2014  147204     [29] M. Serbyn  Z. Papić  D.A. Abanin   Quantum quenches
+        in the many-body localized phase   Phys Rev B  90  2014  174302     [30] R.
+        Vasseur  S.A. Parameswaran  J.E. Moore   Quantum revivals and many-body localization
+        \  Phys Rev B  91  2015  140202     [31] Kim IH, Chandran A, Abanin DA. Local
+        integrals of motion and the logarithmic lightcone in many-body localized systems.
+        arXiv: 1412.3073.   [32] G. De Chiara  S. Montangero  P. Calabrese    Entanglement
+        entropy dynamics of Heisenberg chains   J Stat Mech  2006  2006  P03001     [33]
+        M. Žnidarič  T. Prosen  P. Prelovšek   Many-body localization in the Heisenberg
+        XXZ magnet in a random field   Phys Rev B  77  2008  064426     [34] A. Pal
+        \ D.A. Huse   Many-body localization phase transition   Phys Rev B  82  2010
+        \ 174411     [35] P. Calabrese  J. Cardy   Evolution of entanglement entropy
+        in one-dimensional systems   J Stat Mech  0504  2005  P04010     [36] D.L.
+        Deng  X. Li  J.H. Pixley    Logarithmic entanglement lightcone in many-body
+        localized systems   Phys Rev B  95  2017  024202     [37] X. Dong   The gravity
+        dual of Renyi entropy   Nat Commun  7  2016  12472     [38] A. Lewkowycz  J.
+        Maldacena   Generalized gravitational entropy   J High Energy Phys  08  2013
+        \ 090     [39] M.B. Hastings  I. González  A.B. Kallin    Measuring Renyi
+        entanglement entropy in quantum Monte Carlo simulations   Phys Rev Lett  104
+        \ 2010  157201     [40] F. Franchini  A.R. Its  V.E. Korepin   Renyi entropy
+        of the XY spin chain   J Phys A Math Theor  41  2007  025302     [41] M. Headrick
+        \  Entanglement Renyi entropies in holographic theories   Phys Rev D  82  2010
+        \ 126010     [42] L.Y. Hung  R.C. Myers  M. Smolkin    Holographic calculations
+        of Renyi entropy   J High Energy Phys  12  2011  047     [43] M. Schreiber
+        \ S.S. Hodgman  P. Bordia    Observation of many-body localization of interacting
+        fermions in a quasirandom optical lattice   Science  349  2015  842     [44]
+        J. Smith  A. Lee  P. Richerme    Many-body localization in a quantum simulator
+        with programmable random disorder   Nat Phys   2016  10.1038/nphys3783    [45]
+        P. Bordia  H.P. Lüschen  S.S. Hodgman    Coupling identical one-dimensional
+        many-body localized systems   Phys Rev Lett  116  2016  140401     [46] J.Y.
+        Choi  S. Hild  J. Zeiher    Exploring the many-body localization transition
+        in two dimensions   Science  352  2016  1547     [47] P. Bordia  H. Lüschen
+        \ U. Schneider    Periodically driving a many-body localized quantum system
+        \  Nat Phys   2017  10.1038/nphys4020    [48] R. Islam  R. Ma  P.M. Preiss
+        \   Measuring entanglement entropy in a quantum many-body system   Nature
+        \ 528  2015  77 83     [49] Y. Huang  Y.L. Zhang  X. Chen   Out-of-time-ordered
+        correlators in many-body localized systems   Ann Phys   2016  10.1002/andp.201600318
+        \           "
+  recorded_at: 2020-03-13 15:50:51 GMT
+  recorded_with: vcr/0.5.0, webmockr/0.6.0

@@ -1,0 +1,88 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://api.crossref.org/works/10.3897/compcytogen.v10i4.9536
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: r-curl/4.3 rOpenSci(crul/%s)0.9.0 rOpenSci(rcrossref/0.9.2.9610)
+        (mailto:myrmecocystus@gmail.com)
+      X-USER-AGENT: r-curl/4.3 rOpenSci(crul/%s)0.9.0 rOpenSci(rcrossref/0.9.2.9610)
+        (mailto:myrmecocystus@gmail.com)
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      content-type: application/json;charset=UTF-8
+      vary: Accept
+      access-control-allow-origin: '*'
+      access-control-allow-headers: X-Requested-With
+      content-length: '7643'
+      server: http-kit
+      date: Fri, 13 Mar 2020 15:46:33 GMT
+      x-rate-limit-limit: '50'
+      x-rate-limit-interval: 1s
+      connection: close
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2019,11,25]],"date-time":"2019-11-25T20:43:08Z","timestamp":1574714588537},"reference-count":52,"publisher":"Pensoft
+        Publishers","issue":"4","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/","start":{"date-parts":[[2016,11,4]],"date-time":"2016-11-04T00:00:00Z","timestamp":1478217600000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["CCG"],"DOI":"10.3897\/compcytogen.v10i4.9536","type":"journal-article","created":{"date-parts":[[2016,11,4]],"date-time":"2016-11-04T13:17:02Z","timestamp":1478265422000},"page":"543-554","source":"Crossref","is-referenced-by-count":11,"title":["Towards
+        a FISH-based karyotype of Rosa L. (Rosaceae)"],"prefix":"10.3897","volume":"10","author":[{"given":"Ilya
+        V.","family":"Kirov","sequence":"first","affiliation":[]},{"given":"Katrijn","family":"Van
+        Laere","sequence":"additional","affiliation":[]},{"given":"Nadine","family":"Van
+        Roy","sequence":"additional","affiliation":[]},{"given":"Ludmila I.","family":"Khrustaleva","sequence":"additional","affiliation":[]}],"member":"2258","published-online":{"date-parts":[[2016,11,4]]},"reference":[{"issue":"1","key":"9536_B1","first-page":"17","article-title":"Karyotype
+        analyses of five wild rose species belonging to septet A by fluorescence in
+        situ hybridization.","volume":"6","author":"Akasaka","year":"2002","journal-title":"Chromosome
+        Science"},{"key":"9536_B2","DOI":"10.1270\/jsbbs.53.177","doi-asserted-by":"publisher"},{"key":"9536_B3","DOI":"10.1007\/s00606-016-1309-3","doi-asserted-by":"publisher"},{"key":"9536_B4","DOI":"10.1101\/gr.194601","doi-asserted-by":"publisher"},{"key":"9536_B5","DOI":"10.1007\/s00122-002-1102-2","doi-asserted-by":"publisher"},{"key":"9536_B6","DOI":"10.1007\/s10577-009-9060-z","doi-asserted-by":"publisher"},{"key":"9536_B7","DOI":"10.1007\/s00122-005-2042-4","doi-asserted-by":"publisher"},{"key":"9536_B8","DOI":"10.1093\/aob\/mcu178","doi-asserted-by":"publisher"},{"key":"9536_B9","DOI":"10.1007\/s001220100709","doi-asserted-by":"publisher"},{"key":"9536_B10","DOI":"10.1534\/genetics.109.113753","doi-asserted-by":"publisher"},{"key":"9536_B11","DOI":"10.1038\/srep10552","doi-asserted-by":"publisher"},{"key":"9536_B12","DOI":"10.1007\/BF00982962","doi-asserted-by":"publisher"},{"key":"9536_B13","DOI":"10.1093\/nar\/7.7.1869","doi-asserted-by":"publisher"},{"key":"9536_B14","DOI":"10.1371\/journal.pone.0057994","doi-asserted-by":"publisher"},{"key":"9536_B15","DOI":"10.1105\/tpc.112.100511","doi-asserted-by":"publisher"},{"key":"9536_B16","DOI":"10.1007\/s00709-014-0681-5","doi-asserted-by":"publisher"},{"key":"9536_B17","DOI":"10.1007\/s10577-012-9332-x","doi-asserted-by":"publisher"},{"key":"9536_B18","first-page":"109","article-title":"In-situ
+        hybridization with automated chromosome denaturation.","volume":"3","author":"Heslop-Harrison","year":"1991","journal-title":"Technique"},{"issue":"4","key":"9536_B19","doi-asserted-by":"crossref","first-page":"1013","DOI":"10.1534\/g3.115.024984","article-title":"Fluorescence
+        In Situ Hybridization (FISH)-Based Karyotyping Reveals Rapid Evolution of
+        Centromeric and Subtelomeric Repeats in Common Bean (Phaseolus vulgaris) and
+        Relatives.","volume":"6","author":"Iwata-Otsubo","year":"2016","journal-title":"G3:
+        Genes, Genomes, Genetics"},{"key":"9536_B20","DOI":"10.1080\/00087114.2010.10589722","doi-asserted-by":"publisher"},{"key":"9536_B21","DOI":"10.17660\/ActaHortic.2013.977.17","doi-asserted-by":"publisher"},{"key":"9536_B22","DOI":"10.1007\/s10722-012-9820-z","doi-asserted-by":"publisher"},{"key":"9536_B23","DOI":"10.1139\/g06-076","doi-asserted-by":"publisher"},{"key":"9536_B24","DOI":"10.1073\/pnas.0403659101","doi-asserted-by":"publisher"},{"key":"9536_B25","DOI":"10.1371\/journal.pone.0095793","doi-asserted-by":"publisher"},{"key":"9536_B26","DOI":"10.1186\/1755-8166-7-21","doi-asserted-by":"publisher"},{"key":"9536_B27","DOI":"10.1186\/s12863-015-0233-9","doi-asserted-by":"publisher"},{"key":"9536_B28","DOI":"10.17660\/ActaHortic.2015.1087.4","doi-asserted-by":"publisher"},{"key":"9536_B29","DOI":"10.1007\/BF00263273","doi-asserted-by":"publisher"},{"key":"9536_B30","DOI":"10.1038\/sj.hdy.6800648","doi-asserted-by":"publisher"},{"key":"9536_B31","first-page":"403","article-title":"A
+        study on karyotypes of some flowers of Rosa in China.","volume":"3","author":"Liu","year":"1985","journal-title":"Journal
+        of Wuhan Botanical Research (Wuhan zhiwuxue Yanjou)"},{"key":"9536_B32","DOI":"10.1093\/oxfordjournals.jhered.a023078","doi-asserted-by":"publisher"},{"key":"9536_B33","DOI":"10.1105\/tpc.110.074526","doi-asserted-by":"publisher"},{"key":"9536_B34","DOI":"10.1007\/s10577-009-9025-2","doi-asserted-by":"publisher"},{"key":"9536_B35","DOI":"10.1007\/s10681-011-0616-6","doi-asserted-by":"publisher"},{"key":"9536_B36","DOI":"10.1101\/gr.109744.110","doi-asserted-by":"publisher"},{"key":"9536_B37","DOI":"10.1139\/g84-067","doi-asserted-by":"publisher"},{"key":"9536_B38","DOI":"10.1080\/00087114.1981.1079687","doi-asserted-by":"publisher"},{"key":"9536_B39","author":"Reeves","year":"2000","journal-title":"MicroMeasure
+        for Windows. Version 3.2"},{"key":"9536_B40","DOI":"10.1007\/s00299-008-0615-9","doi-asserted-by":"publisher"},{"key":"9536_B41","DOI":"10.17660\/ActaHortic.2007.751.42","doi-asserted-by":"publisher"},{"key":"9536_B42","DOI":"10.1093\/aob\/mct302","doi-asserted-by":"publisher"},{"key":"9536_B43","DOI":"10.1111\/boj.12231","doi-asserted-by":"publisher"},{"key":"9536_B44","DOI":"10.1007\/s00122-010-1463-x","doi-asserted-by":"publisher"},{"key":"9536_B45","DOI":"10.1159\/000313502","doi-asserted-by":"publisher"},{"key":"9536_B46","DOI":"10.1007\/s13353-014-0215-z","doi-asserted-by":"publisher"},{"key":"9536_B47","DOI":"10.1007\/s00412-004-0297-1","doi-asserted-by":"publisher"},{"key":"9536_B48","DOI":"10.1007\/s00299-008-0615-9","doi-asserted-by":"publisher"},{"key":"9536_B49","DOI":"10.1086\/499251","doi-asserted-by":"publisher"},{"key":"9536_B50","DOI":"10.1266\/ggs.77.63","doi-asserted-by":"publisher"},{"key":"9536_B51","DOI":"10.1111\/j.1095-8339.2005.00368.x","doi-asserted-by":"publisher"},{"key":"9536_B52","first-page":"555","article-title":"The
+        history of garden roses.","volume":"79","author":"Wylie","year":"1954","journal-title":"Journal
+        of the Royal Horticultural Society (London)"}],"container-title":["Comparative
+        Cytogenetics"],"original-title":[],"link":[{"URL":"http:\/\/compcytogen.pensoft.net\/lib\/ajax_srv\/article_elements_srv.php?action=download_pdf&item_id=9536","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/compcytogen.pensoft.net\/lib\/ajax_srv\/article_elements_srv.php?action=download_xml&item_id=9536","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/compcytogen.pensoft.net\/article_preview.php?id=9536&skip_redirect=1","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,25]],"date-time":"2017-06-25T02:48:54Z","timestamp":1498358934000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2016,11,4]]},"references-count":52,"journal-issue":{"published-online":{"date-parts":[[2016,11,4]]},"issue":"4"},"URL":"http:\/\/dx.doi.org\/10.3897\/compcytogen.v10i4.9536","relation":{"cites":[]},"ISSN":["1993-078X","1993-0771"],"issn-type":[{"value":"1993-0771","type":"print"},{"value":"1993-078X","type":"electronic"}]}}'
+  recorded_at: 2020-03-13 15:46:38 GMT
+  recorded_with: vcr/0.5.0, webmockr/0.6.0
+- request:
+    method: get
+    uri: http://compcytogen.pensoft.net/lib/ajax_srv/article_elements_srv.php?action=download_pdf&item_id=9536
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: libcurl/7.64.1 r-curl/4.3 crul/0.9.0
+      Accept-Encoding: gzip, deflate
+      Accept: application/pdf
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      date: Fri, 13 Mar 2020 15:46:36 GMT
+      server: Apache
+      x-powered-by: PHP/7.2.27-5+0~20200202.35+debian10~1.gbp2925f8
+      expires: Thu, 19 Nov 1981 08:52:00 GMT
+      cache-control: no-store, no-cache, must-revalidate
+      pragma: no-cache
+      content-disposition: attachment;filename="CCG_article_9536_en_1.pdf"
+      transfer-encoding: chunked
+      content-type: application/pdf
+    body:
+      encoding: UTF-8
+      file: yes
+      string: /Users/sckott/github/ropensci/crminer/tests/files/9536.pdf
+  recorded_at: 2020-03-13 15:46:38 GMT
+  recorded_with: vcr/0.5.0, webmockr/0.6.0

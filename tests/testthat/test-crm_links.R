@@ -1,12 +1,16 @@
 context("crm_links")
 
 test_that("crm_links works", {
-  l1 <- crm_links("10.7717/peerj.1268", "pdf")
-  l2 <- crm_links(doi = "10.5555/515151", "pdf")
-  l3 <- crm_links(doi = "10.1016/j.ad.2015.06.020", "xml")
-  l4 <- crm_links(doi = "10.7717/peerj.2363", "html")
-  l5 <- crm_links(doi = "10.7717/peerj.1268", type = "all")
-  l6 <- crm_links(doi = "10.7717/peerj.1268")
+  skip_on_cran()
+
+  vcr::use_cassette("crm_links", {
+    l1 <- crm_links("10.7717/peerj.1268", "pdf")
+    l2 <- crm_links(doi = "10.5555/515151", "pdf")
+    l3 <- crm_links(doi = "10.1016/j.ad.2015.06.020", "xml")
+    l4 <- crm_links(doi = "10.7717/peerj.2363", "html")
+    l5 <- crm_links(doi = "10.7717/peerj.1268", type = "all")
+    l6 <- crm_links(doi = "10.7717/peerj.1268")
+  })
 
   expect_is(l1, "tdmurl")
   expect_equal(attr(l1, "type"), "pdf")
@@ -46,15 +50,21 @@ test_that("crm_links fails correctly", {
   #expect_null(crm_links("10.7717/peerj.1268", type = "adfasf"))
 
   skip_on_cran()
-  expect_warning(crm_links("3434"), "Resource not found")
+  vcr::use_cassette("crm_links_404", {
+    expect_warning(crm_links("3434"), "Resource not found")
+  })
 })
 
 orig_email <- Sys.getenv("crossref_email")
 
 test_that("crm_links - email works", {
+  skip_on_cran()
+  
   Sys.setenv("crossref_email" = "name@example.com")
-  a <- crm_links("10.7717/peerj.2363")
-  expect_is(a, "list")
+  vcr::use_cassette("crm_links_with_email", {
+    a <- crm_links("10.7717/peerj.2363")
+    expect_is(a, "list")
+  })
 })
 
 test_that("crm_links - email utility functions work", {

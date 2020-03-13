@@ -1,0 +1,52 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://api.crossref.org/works/10.3897/phytokeys.74.10380
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: r-curl/4.3 rOpenSci(crul/%s)0.9.0 rOpenSci(rcrossref/0.9.2.9610)
+        (mailto:myrmecocystus@gmail.com)
+      X-USER-AGENT: r-curl/4.3 rOpenSci(crul/%s)0.9.0 rOpenSci(rcrossref/0.9.2.9610)
+        (mailto:myrmecocystus@gmail.com)
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      content-type: application/json;charset=UTF-8
+      vary: Accept
+      access-control-allow-origin: '*'
+      access-control-allow-headers: X-Requested-With
+      content-length: '4637'
+      server: http-kit
+      date: Fri, 13 Mar 2020 15:46:32 GMT
+      x-rate-limit-limit: '50'
+      x-rate-limit-interval: 1s
+      connection: close
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2019,11,25]],"date-time":"2019-11-25T21:03:03Z","timestamp":1574715783560},"reference-count":18,"publisher":"Pensoft
+        Publishers","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/","start":{"date-parts":[[2016,11,8]],"date-time":"2016-11-08T00:00:00Z","timestamp":1478563200000},"delay-in-days":0,"content-version":"vor"}],"funder":[{"DOI":"10.13039\/100009980","name":"Old
+        Dominion University","doi-asserted-by":"publisher","award":[]}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["PK"],"DOI":"10.3897\/phytokeys.74.10380","type":"journal-article","created":{"date-parts":[[2016,11,8]],"date-time":"2016-11-08T15:31:10Z","timestamp":1478619070000},"page":"97-106","source":"Crossref","is-referenced-by-count":2,"title":["Isoetes
+        mississippiensis: A new quillwort from Mississippi, USA"],"prefix":"10.3897","volume":"74","author":[{"given":"Peter
+        W.","family":"Schafran","sequence":"first","affiliation":[]},{"given":"Steven
+        W.","family":"Leonard","sequence":"additional","affiliation":[]},{"given":"Rebecca
+        D.","family":"Bray","sequence":"additional","affiliation":[]},{"given":"W.
+        Carl","family":"Taylor","sequence":"additional","affiliation":[]},{"given":"Lytton
+        J.","family":"Musselman","sequence":"additional","affiliation":[]}],"member":"2258","published-online":{"date-parts":[[2016,11,8]]},"reference":[{"key":"10380_B1","first-page":"38","article-title":"Synopsis
+        of Isoetes in the southeastern United States.","volume":"47","author":"Boom","year":"1982","journal-title":"Castanea"},{"key":"10380_B2","DOI":"10.1640\/amfj-105-02-86-100.1","doi-asserted-by":"publisher"},{"key":"10380_B3","first-page":"358","article-title":"The
+        genus Isoetes in North America.","volume":"4","author":"Engelmann","year":"1882","journal-title":"Transactions
+        of the Academy of Science of St Louis"},{"key":"10380_B4","DOI":"10.2179\/0008-7475(2005)070[0204:TRONAG]2.0.CO;2","doi-asserted-by":"publisher"},{"key":"10380_B5","DOI":"10.1640\/0002-8444(2003)093[0126:AROISF]2.0.CO;2","doi-asserted-by":"publisher"},{"key":"10380_B6","DOI":"10.3732\/ajb.91.6.899","doi-asserted-by":"publisher"},{"key":"10380_B7","DOI":"10.1663\/0006-8101(2002)068[0474:OOIILM]2.0.CO;2","doi-asserted-by":"publisher"},{"key":"10380_B8","DOI":"10.1640\/0002-8444-105.3.226","doi-asserted-by":"publisher"},{"key":"10380_B9","DOI":"10.2307\/2990000","doi-asserted-by":"publisher"},{"key":"10380_B10","DOI":"10.1640\/0002-8444(2001)091[0099:ILEFTD]2.0.CO;2","doi-asserted-by":"publisher"},{"key":"10380_B11","DOI":"10.5962\/bhl.part.10348","doi-asserted-by":"publisher"},{"key":"10380_B12","DOI":"10.1640\/0002-8444-104.1.7","doi-asserted-by":"publisher"},{"key":"10380_B13","first-page":"1","article-title":"Isoetes
+        texana (Isoetaceae): a new species from the Texas Coastal Bend.","volume":"2011\u201322","author":"Singhurst","year":"2011","journal-title":"Phytoneuron"},{"key":"10380_B14","author":"Taylor","volume":"Vol.
+        2","first-page":"64","year":"1993","journal-title":"Flora of North America
+        Editorial Committee \u2013 Flora of North America North of Mexico"},{"key":"10380_B15","DOI":"10.11646\/phytotaxa.277.2.1","doi-asserted-by":"publisher"},{"key":"10380_B16","author":"Weakley","year":"2015","journal-title":"Flora
+        of the southern and mid-Atlantic states"},{"key":"10380_B17","DOI":"10.1038\/srep17783","doi-asserted-by":"publisher"},{"key":"10380_B18","DOI":"10.1007\/s11105-015-0906-6","doi-asserted-by":"publisher"}],"container-title":["PhytoKeys"],"original-title":[],"link":[{"URL":"http:\/\/phytokeys.pensoft.net\/lib\/ajax_srv\/article_elements_srv.php?action=download_pdf&item_id=10380","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/phytokeys.pensoft.net\/lib\/ajax_srv\/article_elements_srv.php?action=download_xml&item_id=10380","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/phytokeys.pensoft.net\/article_preview.php?id=10380&skip_redirect=1","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2018,5,18]],"date-time":"2018-05-18T14:52:46Z","timestamp":1526655166000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2016,11,8]]},"references-count":18,"URL":"http:\/\/dx.doi.org\/10.3897\/phytokeys.74.10380","relation":{"cites":[]},"ISSN":["1314-2003","1314-2011"],"issn-type":[{"value":"1314-2011","type":"print"},{"value":"1314-2003","type":"electronic"}]}}'
+  recorded_at: 2020-03-13 15:46:33 GMT
+  recorded_with: vcr/0.5.0, webmockr/0.6.0

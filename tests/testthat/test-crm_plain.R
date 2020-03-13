@@ -4,15 +4,19 @@ url <- "https://api.elsevier.com/content/article/PII:S0370269310012608?httpAccep
 title <- "On the unitarity of linearized General Relativity coupled to matter"
 
 if (identical(Sys.getenv("NOT_CRAN"), "true")) {
-  link1 <- crm_links("10.1016/j.physletb.2010.10.049", "plain")
-  link2 <- crm_links("10.1016/j.scib.2017.04.011", "plain")
+  vcr::use_cassette("crm_plain_prep", {
+    link1 <- crm_links("10.1016/j.physletb.2010.10.049", "plain")
+    link2 <- crm_links("10.1016/j.scib.2017.04.011", "plain")
+  })
 }
 
 test_that("crm_plain works with links input",{
   skip_on_cran()
   skip_on_travis()
 
-  res <- suppressMessages(crm_plain(link1))
+  vcr::use_cassette("crm_plain_links_in", {
+    res <- suppressMessages(crm_plain(link1))
+  })
   expect_is(res, "character")
   expect_gt(nchar(res), 100000L)
   expect_match(res, title)
@@ -22,7 +26,9 @@ test_that("crm_plain works with Elsevier input",{
   skip_on_cran()
   skip_on_travis()
 
-  res <- suppressMessages(crm_plain(link2))
+  vcr::use_cassette("crm_plain_elsevier", {
+    res <- suppressMessages(crm_plain(link2))
+  })
   expect_is(res, "character")
   expect_gt(nchar(res), 100L)
 })
@@ -42,9 +48,7 @@ test_that("crm_plain fails well",{
   expect_error(crm_plain(5), "no 'crm_plain' method for numeric")
   expect_error(crm_plain(mtcars), "no 'crm_plain' method for data.frame")
   expect_error(crm_plain(matrix(1:5)), "no 'crm_plain' method for matrix")
-
   expect_error(crm_plain("adfdf"), "Not a proper url")
-
   expect_error(crm_plain(link1, overwrite_unspecified = 5),
                "overwrite_unspecified must be of class logical")
 })

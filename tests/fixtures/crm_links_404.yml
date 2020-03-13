@@ -1,0 +1,36 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://api.crossref.org/works/3434
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: r-curl/4.3 rOpenSci(crul/%s)0.9.0 rOpenSci(rcrossref/0.9.2.9610)
+        (mailto:myrmecocystus@gmail.com)
+      X-USER-AGENT: r-curl/4.3 rOpenSci(crul/%s)0.9.0 rOpenSci(rcrossref/0.9.2.9610)
+        (mailto:myrmecocystus@gmail.com)
+  response:
+    status:
+      status_code: '404'
+      message: Not Found
+      explanation: Nothing matches the given URI
+    headers:
+      status: HTTP/1.1 404 Not Found
+      content-type: text/plain
+      access-control-allow-origin: '*'
+      access-control-allow-headers: X-Requested-With
+      content-length: '19'
+      server: http-kit
+      date: Fri, 13 Mar 2020 15:28:29 GMT
+      x-rate-limit-limit: '50'
+      x-rate-limit-interval: 1s
+      connection: close
+    body:
+      encoding: UTF-8
+      file: no
+      string: Resource not found.
+  recorded_at: 2020-03-13 15:28:29 GMT
+  recorded_with: vcr/0.5.0, webmockr/0.6.0
