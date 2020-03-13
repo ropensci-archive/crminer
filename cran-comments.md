@@ -1,19 +1,12 @@
 ## Test environments
 
-* local OS X install, R 3.5.1 patched
-* ubuntu 14.04 (on travis-ci), R 3.5.1
+* local OS X install, R 3.6.3 Patched
+* ubuntu 16.04 (on travis-ci), R 3.6.2
 * win-builder (devel and release)
 
 ## R CMD check results
 
-0 errors | 0 warnings | 1 note
-
-* Note about license:
-License components with restrictions and base license permitting such:
-  MIT + file LICENSE
-File 'LICENSE':
-  YEAR: 2018
-  COPYRIGHT HOLDER: Scott Chamberlain
+0 errors | 0 warnings | 0 notes
 
 ## Reverse dependencies
 
@@ -23,7 +16,7 @@ No problems were found.
 
 ---
 
-This version includes a new parameter for a function and a few minor fixes.
+This version fixes two bugs for the function crm_links, and updates a function from a dependency package.
 
 Thanks!
 Scott Chamberlain

@@ -1,3 +1,16 @@
+crminer 0.3.0
+=============
+
+### MINOR IMPROVEMENTS
+
+* replace all `xml2::xml_find_one` with `xml2::xml_find_first` (#32)
+
+### BUG FIXES
+
+* fix for `crm_links()`: fix full text links from Elsevier that have `httpss` instead of `https`  (#30) thanks @njahn82
+* fix for `crm_links()`: the fuction wasn't using email header for Crossref polite pool - now it does if you provide your email address, see docs (#31)
+
+
 crminer 0.2.0
 =============
 

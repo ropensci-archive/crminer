@@ -17,6 +17,7 @@ BugReports: https://github.com/ropensci/crminer/issues
 LazyData: true
 Roxygen: list(markdown = TRUE)
 Encoding: UTF-8
+Language: en-US
 Imports:
     crul,
     jsonlite,
