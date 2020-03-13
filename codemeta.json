@@ -5,20 +5,19 @@
   ],
   "@type": "SoftwareSourceCode",
   "identifier": "crminer",
-  "description":
-    "Text mining client for 'Crossref' (<https://crossref.org>). Includes\n    functions for getting getting links to full text of articles, fetching full\n    text articles from those links or Digital Object Identifiers ('DOIs'),\n    and text extraction from 'PDFs'.",
+  "description": "Text mining client for 'Crossref' (<https://crossref.org>). Includes\n    functions for getting getting links to full text of articles, fetching full\n    text articles from those links or Digital Object Identifiers ('DOIs'),\n    and text extraction from 'PDFs'.",
   "name": "crminer: Fetch 'Scholary' Full Text from 'Crossref'",
   "codeRepository": "https://github.com/ropensci/crminer",
   "issueTracker": "https://github.com/ropensci/crminer/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.1.5.9110",
+  "version": "0.3.0",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
-    "version": "3.4.2",
+    "version": "3.6.3",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 3.4.2 (2017-09-28)",
+  "runtimePlatform": "R version 3.6.3 Patched (2020-02-29 r77919)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
@@ -31,28 +30,31 @@
       "givenName": "Scott",
       "familyName": "Chamberlain",
       "email": "myrmecocystus+r@gmail.com",
-      "@id": "http://orcid.org/0000-0003-1444-9135"
+      "@id": "https://orcid.org/0000-0003-1444-9135"
     }
   ],
-  "maintainer": {
-    "@type": "Person",
-    "givenName": "Scott",
-    "familyName": "Chamberlain",
-    "email": "myrmecocystus+r@gmail.com",
-    "@id": "http://orcid.org/0000-0003-1444-9135"
-  },
+  "maintainer": [
+    {
+      "@type": "Person",
+      "givenName": "Scott",
+      "familyName": "Chamberlain",
+      "email": "myrmecocystus+r@gmail.com",
+      "@id": "https://orcid.org/0000-0003-1444-9135"
+    }
+  ],
   "softwareSuggestions": [
     {
       "@type": "SoftwareApplication",
       "identifier": "roxygen2",
       "name": "roxygen2",
-      "version": "6.0.1",
+      "version": ">= 7.1.0",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
+        "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
-      }
+      },
+      "sameAs": "https://CRAN.R-project.org/package=roxygen2"
     },
     {
       "@type": "SoftwareApplication",
@@ -61,9 +63,10 @@
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
+        "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
-      }
+      },
+      "sameAs": "https://CRAN.R-project.org/package=rcrossref"
     },
     {
       "@type": "SoftwareApplication",
@@ -72,9 +75,10 @@
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
+        "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
-      }
+      },
+      "sameAs": "https://CRAN.R-project.org/package=testthat"
     }
   ],
   "softwareRequirements": [
@@ -82,76 +86,73 @@
       "@type": "SoftwareApplication",
       "identifier": "crul",
       "name": "crul",
-      "version": "0.3.4",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
+        "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
-      }
+      },
+      "sameAs": "https://CRAN.R-project.org/package=crul"
     },
     {
       "@type": "SoftwareApplication",
       "identifier": "jsonlite",
       "name": "jsonlite",
-      "version": "1.4",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
+        "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
-      }
+      },
+      "sameAs": "https://CRAN.R-project.org/package=jsonlite"
     },
     {
       "@type": "SoftwareApplication",
       "identifier": "xml2",
       "name": "xml2",
-      "version": "1.1.0",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
+        "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
-      }
+      },
+      "sameAs": "https://CRAN.R-project.org/package=xml2"
     },
     {
       "@type": "SoftwareApplication",
       "identifier": "pdftools",
       "name": "pdftools",
-      "version": "1.2",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
+        "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
-      }
+      },
+      "sameAs": "https://CRAN.R-project.org/package=pdftools"
     },
     {
       "@type": "SoftwareApplication",
       "identifier": "hoardr",
       "name": "hoardr",
-      "version": "0.2.0",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
+        "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
-      }
+      },
+      "sameAs": "https://CRAN.R-project.org/package=hoardr"
     }
   ],
   "applicationCategory": "Literature",
   "isPartOf": "https://ropensci.org",
-  "keywords": [
-    "text-mining",
-    "literature",
-    "publications",
-    "crossref",
-    "pdf",
-    "xml"
-  ],
-  "contIntegration": "https://travis-ci.org/ropensci/crminer",
-  "developmentStatus": "active",
+  "keywords": ["text-mining", "literature", "publications", "crossref", "pdf", "xml", "r", "rstats", "r-package"],
+  "contIntegration": ["https://travis-ci.org/ropensci/crminer", "https://codecov.io/github/ropensci/crminer?branch=master"],
+  "developmentStatus": "https://www.repostatus.org/#active",
   "releaseNotes": "https://github.com/ropensci/crminer/blob/master/NEWS.md",
   "readme": "https://github.com/ropensci/crminer/blob/master/README.md",
-  "fileSize": "2917.007KB"
+  "fileSize": "2920.178KB",
+  "relatedLink": "https://docs.ropensci.org/crminer",
+  "contributor": {},
+  "copyrightHolder": {},
+  "funder": {}
 }
