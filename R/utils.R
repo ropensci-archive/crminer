@@ -20,10 +20,16 @@ pick_type <- function(x, z) {
 }
 
 cr_auth <- function(url, type) {
+  wiley_cambridge <- function(type) {
+    list(
+      `CR-Clickthrough-Client-Token` = Sys.getenv("CROSSREF_TDM"),
+      Accept = type
+    )
+  }
   mem <- attr(url, "member")
   if (is.null(mem)) return(list())
   mem_num <- basename(mem)
-  if (mem_num %in% c(78, 263, 311)) {
+  if (mem_num %in% c(78, 263, 311, 286)) {
     type <- switch(
       type,
       xml = "text/xml",
@@ -33,20 +39,16 @@ cr_auth <- function(url, type) {
     )
     switch(
       mem_num,
-      `78` = {
+      `78` = { # elsevier
         key <- Sys.getenv("CROSSREF_TDM")
         list(`CR-Clickthrough-Client-Token` = key, Accept = type)
       },
-      `263` = {
+      `263` = { # IEEE
         key <- Sys.getenv("CROSSREF_TDM")
         list(`CR-TDM-Client_Token` = key, Accept = type)
       },
-      `311` = {
-        list(
-          `CR-Clickthrough-Client-Token` = Sys.getenv("CROSSREF_TDM"),
-          Accept = type
-        )
-      }
+      `311` = wiley_cambridge(type), # wiley
+      `286` = wiley_cambridge(type) # cambridge
     )
   } else {
     return(list())
