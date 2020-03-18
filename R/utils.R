@@ -2,6 +2,8 @@ get_url <- function(a, b){
   url <- if (inherits(a, "tdmurl")) a[[1]] else a[[b]]
   if (grepl("pensoft", url)) {
     url
+  } else if (attr(a, "member") == "78") {
+    url
   } else {
     sub("\\?.+", "", url)
   }
@@ -83,10 +85,11 @@ getPDF <- function(url, auth, overwrite, type, read, cache = FALSE, ...) {
     filepath <- file.path(crm_cache$cache_path_get(),
                           paste0(sub("/", ".", doi), ".pdf"))
   } else {
-    ff <- if (!grepl(type, basename(url))) {
-      paste0(basename(url), ".", type)
+    burl <- sub("\\?.+", "", url)
+    ff <- if (!grepl(type, basename(burl))) {
+      paste0(basename(burl), ".", type)
     } else {
-      basename(url)
+      basename(burl)
     }
     filepath <- file.path(crm_cache$cache_path_get(), ff)
   }

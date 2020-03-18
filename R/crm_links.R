@@ -116,6 +116,14 @@ crm_links <- function(doi, type = 'all', ...) {
           z$URL <- sub("http://", "https://", z$URL)
           z
         })
+        pdf <- list(pdf =
+          utils::modifyList(withtype[[1]],
+            list(
+              URL = sub("text/xml", "application/pdf", withtype[[1]]$URL),
+              `content-type` = "application/pdf"
+            )
+        ))
+        withtype <- c(withtype, pdf)
       }
 
       if (type == "all") {
