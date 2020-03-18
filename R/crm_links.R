@@ -27,19 +27,19 @@
 #' In another example, all Elsevier URLs at time of writing are have
 #' `http` scheme, while those don't actually work, so we have a
 #' custom fix in this function for that publisher. Anyway, expect changes...
-#' 
+#'
 #' @section Register for the Polite Pool:
-#' The `crm_links()` uses the 
+#' The `crm_links()` uses the
 #' [Crossref API](https://github.com/CrossRef/rest-api-doc)
 #' You should send your email address with your `crm_links()` requests. This
 #' has the advantage that queries are placed in the polite pool of servers.
-#' In addition, even if the non-polite pool is having server problems, 
+#' In addition, even if the non-polite pool is having server problems,
 #' the polite pool is often okay. Including your email address is good practice
-#' as described in the Crossref documentation under 
+#' as described in the Crossref documentation under
 #' [Good manners](https://github.com/CrossRef/rest-api-doc).
-#' To pass your email address to Crossref, simply store it as an environment 
-#' variable in .Renviron file like `crossref_email=name@example.com`, or 
-#' `CROSSREF_EMAIL=name@example.com`. 
+#' To pass your email address to Crossref, simply store it as an environment
+#' variable in .Renviron file like `crossref_email=name@example.com`, or
+#' `CROSSREF_EMAIL=name@example.com`.
 #' Save the file and restart your R session. To stop sharing your email when
 #' using rcrossref simply delete it from your `.Renviron` file OR to temporarily
 #' not use your email unset it for the session
@@ -47,9 +47,9 @@
 #' use curl verbose by e.g., `crm_links(doi = "10.5555/515151", verbose = TRUE)`
 #'
 #' @return `NULL` if no full text links given; a list of tdmurl objects if
-#' links found. a tdmurl object is an S3 class wrapped around a simple list, 
+#' links found. a tdmurl object is an S3 class wrapped around a simple list,
 #' with attributes for:
-#' 
+#'
 #' - type: type, matchin type passed to the function
 #' - doi: DOI
 #' - member: Crossref member ID
@@ -73,6 +73,12 @@
 #'
 #' # many calls, use e.g., lapply
 #' lapply(dois_crminer[1:3], crm_links)
+#'
+#' # elsevier
+#' ## DOI that is open acccess
+#' crm_links('10.1016/j.physletb.2010.10.049')
+#' ## DOI that is not open acccess
+#' crm_links('10.1006/jeth.1993.1066')
 #' }
 crm_links <- function(doi, type = 'all', ...) {
   res <- crm_works_links(dois = doi, ...)[[1]]
@@ -132,7 +138,7 @@ crm_links <- function(doi, type = 'all', ...) {
         })
       } else {
         y <- match.arg(type, c('xml', 'plain', 'html', 'pdf', 'unspecified'))
-        makeurl(x = withtype[[y]]$URL, y = y, z = doi, res$member, 
+        makeurl(x = withtype[[y]]$URL, y = y, z = doi, res$member,
           withtype[[y]]$`intended-application`)
       }
     }

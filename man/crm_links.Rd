@@ -90,5 +90,11 @@ crm_links(doi = "10.3897/phytokeys.52.5250", "pdf")
 
 # many calls, use e.g., lapply
 lapply(dois_crminer[1:3], crm_links)
+
+# elsevier
+## DOI that is open acccess
+crm_links('10.1016/j.physletb.2010.10.049')
+## DOI that is not open acccess
+crm_links('10.1006/jeth.1993.1066')
 }
 }
