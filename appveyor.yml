@@ -20,6 +20,7 @@ test_script:
 environment:
   global:
     R_CHECK_ARGS: "--no-build-vignettes --no-manual --as-cran"
+    R_REMOTES_STANDALONE: TRUE
   matrix:
     - R_VERSION: release
       R_ARCH: x64
