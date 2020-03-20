@@ -3,7 +3,6 @@
 ^CODE_OF_CONDUCT\.md$
 README.Rmd
 .travis.yml
-appveyor.yml
 man-roxygen
 ^cran-comments\.md$
 inst/cache
@@ -11,3 +10,4 @@ inst/cache
 ^codemeta\.json$
 revdep
 ^Makefile$
+^appveyor\.yml$
