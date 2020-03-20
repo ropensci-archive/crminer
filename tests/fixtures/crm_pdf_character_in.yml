@@ -16,7 +16,7 @@ http_interactions:
       explanation: Request fulfilled, document follows
     headers:
       status: HTTP/1.1 200 OK
-      date: Fri, 13 Mar 2020 15:46:41 GMT
+      date: Fri, 20 Mar 2020 20:47:43 GMT
       server: Apache
       x-powered-by: PHP/7.2.27-5+0~20200202.35+debian10~1.gbp2925f8
       expires: Thu, 19 Nov 1981 08:52:00 GMT
@@ -28,6 +28,6 @@ http_interactions:
     body:
       encoding: UTF-8
       file: yes
-      string: /Users/sckott/github/ropensci/crminer/tests/files/10380.pdf
-  recorded_at: 2020-03-13 15:46:47 GMT
-  recorded_with: vcr/0.5.0, webmockr/0.6.0
+      string: ../files/10380.pdf
+  recorded_at: 2020-03-20 20:47:46 GMT
+  recorded_with: vcr/0.5.0.92, webmockr/0.6.0.92

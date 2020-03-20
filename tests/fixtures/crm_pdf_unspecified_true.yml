@@ -8,10 +8,8 @@ http_interactions:
     headers:
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
-      User-Agent: r-curl/4.3 rOpenSci(crul/%s)0.9.0 rOpenSci(rcrossref/0.9.2.9610)
-        (mailto:myrmecocystus@gmail.com)
-      X-USER-AGENT: r-curl/4.3 rOpenSci(crul/%s)0.9.0 rOpenSci(rcrossref/0.9.2.9610)
-        (mailto:myrmecocystus@gmail.com)
+      User-Agent: r-curl/4.3 rOpenSci(crul/%s)0.9.0 rOpenSci(rcrossref/1.0.0) (mailto:myrmecocystus@gmail.com)
+      X-USER-AGENT: r-curl/4.3 rOpenSci(crul/%s)0.9.0 rOpenSci(rcrossref/1.0.0) (mailto:myrmecocystus@gmail.com)
   response:
     status:
       status_code: '200'
@@ -25,7 +23,7 @@ http_interactions:
       access-control-allow-headers: X-Requested-With
       content-length: '7826'
       server: http-kit
-      date: Fri, 13 Mar 2020 15:46:48 GMT
+      date: Fri, 20 Mar 2020 20:47:47 GMT
       x-rate-limit-limit: '50'
       x-rate-limit-interval: 1s
       connection: close
@@ -83,8 +81,8 @@ http_interactions:
         (PDMS) microfluidic chip","volume":"114","author":"Weng","year":"2009","journal-title":"Food
         Chemistry"}],"container-title":["EFSA Journal"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.2903%2Fj.efsa.2014.3550","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,24]],"date-time":"2017-06-24T14:26:48Z","timestamp":1498314408000},"score":1.0,"subtitle":["Endogenous
         versus exogenous formaldehyde"],"short-title":[],"issued":{"date-parts":[[2014,2]]},"references-count":19,"journal-issue":{"published-print":{"date-parts":[[2014,2]]},"issue":"2"},"URL":"http:\/\/dx.doi.org\/10.2903\/j.efsa.2014.3550","archive":["Portico"],"relation":{"cites":[]},"ISSN":["1831-4732"],"issn-type":[{"value":"1831-4732","type":"print"}]}}'
-  recorded_at: 2020-03-13 15:46:52 GMT
-  recorded_with: vcr/0.5.0, webmockr/0.6.0
+  recorded_at: 2020-03-20 20:47:51 GMT
+  recorded_with: vcr/0.5.0.92, webmockr/0.6.0.92
 - request:
     method: get
     uri: https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.2903%2Fj.efsa.2014.3550
@@ -107,16 +105,16 @@ http_interactions:
       status: 'HTTP/2 200 '
       content-type: application/pdf
       content-length: '273420'
-      content-disposition: inline; filename=dac33148-a6f5-4d6b-a568-c803d901d3a1.pdf
-      date: Fri, 13 Mar 2020 15:46:51 GMT
+      content-disposition: inline; filename=6acfbca9-5da6-4cb0-9c73-1a9a339c8947.pdf
+      date: Fri, 20 Mar 2020 20:47:50 GMT
       server: Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
       x-cache: Miss from cloudfront
-      via: 1.1 51ff0f115ee456a7012153e8567523be.cloudfront.net (CloudFront)
+      via: 1.1 75b094ecf0bf22429a44bab3eafcbf16.cloudfront.net (CloudFront)
       x-amz-cf-pop: HIO50-C2
-      x-amz-cf-id: MG2tXS55R4qLKXvlA7Do43_jwAN-QAbUKSaWFhE3GoCXwwxzJKF9SA==
+      x-amz-cf-id: xgTIxL7KMQzwC4Vd0d0RrO_xmo_voDEOnS5ye3FsXf6xz49ZjyHq0w==
     body:
       encoding: UTF-8
       file: yes
-      string: /Users/sckott/github/ropensci/crminer/tests/files/10.2903%2Fj.efsa.2014.3550.pdf
-  recorded_at: 2020-03-13 15:46:52 GMT
-  recorded_with: vcr/0.5.0, webmockr/0.6.0
+      string: ../files/10.2903%2Fj.efsa.2014.3550.pdf
+  recorded_at: 2020-03-20 20:47:51 GMT
+  recorded_with: vcr/0.5.0.92, webmockr/0.6.0.92

@@ -28,7 +28,8 @@ Suggests:
     roxygen2 (>= 7.1.0),
     rcrossref,
     testthat,
-    vcr
+    vcr (>= 0.5.0.92)
+Remotes: ropensci/vcr@write-disk-relative-paths
 RoxygenNote: 7.1.0
 X-schema.org-applicationCategory: Literature
 X-schema.org-keywords: text-mining, literature, publications, crossref, pdf, xml

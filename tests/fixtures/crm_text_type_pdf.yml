@@ -8,10 +8,8 @@ http_interactions:
     headers:
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
-      User-Agent: r-curl/4.3 rOpenSci(crul/%s)0.9.0 rOpenSci(rcrossref/0.9.2.9610)
-        (mailto:myrmecocystus@gmail.com)
-      X-USER-AGENT: r-curl/4.3 rOpenSci(crul/%s)0.9.0 rOpenSci(rcrossref/0.9.2.9610)
-        (mailto:myrmecocystus@gmail.com)
+      User-Agent: r-curl/4.3 rOpenSci(crul/%s)0.9.0 rOpenSci(rcrossref/1.0.0) (mailto:myrmecocystus@gmail.com)
+      X-USER-AGENT: r-curl/4.3 rOpenSci(crul/%s)0.9.0 rOpenSci(rcrossref/1.0.0) (mailto:myrmecocystus@gmail.com)
   response:
     status:
       status_code: '200'
@@ -25,7 +23,7 @@ http_interactions:
       access-control-allow-headers: X-Requested-With
       content-length: '30129'
       server: http-kit
-      date: Fri, 13 Mar 2020 15:51:41 GMT
+      date: Fri, 20 Mar 2020 20:47:52 GMT
       x-rate-limit-limit: '50'
       x-rate-limit-interval: 1s
       connection: close
@@ -245,8 +243,8 @@ http_interactions:
         aspects of amphibian metamorphosis","volume":"182","author":"Wilbur","year":"1973","journal-title":"Science"},{"key":"10.7717\/peerj.1268\/ref-83","doi-asserted-by":"publisher","first-page":"613","DOI":"10.2307\/1442720","article-title":"Anuran
         Locomotion: Structure and Function. I. Preliminary observations on relation
         between jumping and osteometrics of appendicular and postaxial skeleton","volume":"4","author":"Zug","year":"1972","journal-title":"Copeia"}],"container-title":["PeerJ"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/peerj.com\/articles\/1268.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/peerj.com\/articles\/1268.xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/peerj.com\/articles\/1268.html","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/peerj.com\/articles\/1268.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,23]],"date-time":"2017-06-23T19:58:00Z","timestamp":1498247880000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2015,9,22]]},"references-count":83,"alternative-id":["10.7717\/peerj.1268"],"URL":"http:\/\/dx.doi.org\/10.7717\/peerj.1268","relation":{"cites":[]},"ISSN":["2167-8359"],"issn-type":[{"value":"2167-8359","type":"electronic"}],"article-number":"e1268"}}'
-  recorded_at: 2020-03-13 15:51:44 GMT
-  recorded_with: vcr/0.5.0, webmockr/0.6.0
+  recorded_at: 2020-03-20 20:47:58 GMT
+  recorded_with: vcr/0.5.0.92, webmockr/0.6.0.92
 - request:
     method: get
     uri: https://peerj.com/articles/1268.pdf
@@ -265,13 +263,13 @@ http_interactions:
     headers:
       accept-ranges: bytes
       access-control-allow-origin: '*'
-      age: '156'
+      age: '0'
       cache-control: max-age=0, must-revalidate, proxy-revalidate, public, s-maxage=600
       connection: keep-alive
       content-disposition: inline; filename="peerj-1268.pdf"
       content-length: '2225858'
       content-type: application/pdf
-      date: Fri, 13 Mar 2020 15:51:42 GMT
+      date: Fri, 20 Mar 2020 20:47:54 GMT
       etag: '"2c11ba0469db45b68eec9fbe673ce37c84389b099115c7c16d366ef974a2975f"'
       last-modified: Tue, 22 Sep 2015 08:23:22 GMT
       link:
@@ -294,13 +292,14 @@ http_interactions:
       x-ratelimit-limit: ''
       x-ratelimit-remaining: ''
       x-ratelimit-reset: ''
-      x-varnish: 808042802 808041858
+      x-request-start: ''
+      x-varnish: '810904800'
     body:
       encoding: UTF-8
       file: yes
-      string: /Users/sckott/github/ropensci/crminer/tests/files/1268.pdf
-  recorded_at: 2020-03-13 15:51:44 GMT
-  recorded_with: vcr/0.5.0, webmockr/0.6.0
+      string: ../files/1268.pdf
+  recorded_at: 2020-03-20 20:47:58 GMT
+  recorded_with: vcr/0.5.0.92, webmockr/0.6.0.92
 - request:
     method: get
     uri: https://peerj.com/articles/1268.pdf
@@ -319,13 +318,13 @@ http_interactions:
     headers:
       accept-ranges: bytes
       access-control-allow-origin: '*'
-      age: '158'
+      age: '0'
       cache-control: max-age=0, must-revalidate, proxy-revalidate, public, s-maxage=600
       connection: keep-alive
       content-disposition: inline; filename="peerj-1268.pdf"
       content-length: '2225858'
       content-type: application/pdf
-      date: Fri, 13 Mar 2020 15:51:43 GMT
+      date: Fri, 20 Mar 2020 20:47:56 GMT
       etag: '"2c11ba0469db45b68eec9fbe673ce37c84389b099115c7c16d366ef974a2975f"'
       last-modified: Tue, 22 Sep 2015 08:23:22 GMT
       link:
@@ -348,10 +347,11 @@ http_interactions:
       x-ratelimit-limit: ''
       x-ratelimit-remaining: ''
       x-ratelimit-reset: ''
-      x-varnish: 808042807 808041858
+      x-request-start: ''
+      x-varnish: '727975612'
     body:
       encoding: UTF-8
       file: yes
-      string: /Users/sckott/github/ropensci/crminer/tests/files/1268.pdf
-  recorded_at: 2020-03-13 15:51:44 GMT
-  recorded_with: vcr/0.5.0, webmockr/0.6.0
+      string: ../files/1268.pdf
+  recorded_at: 2020-03-20 20:47:58 GMT
+  recorded_with: vcr/0.5.0.92, webmockr/0.6.0.92
