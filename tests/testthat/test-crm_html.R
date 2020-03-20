@@ -11,7 +11,7 @@ test_that("crm_html works with links input",{
 
   vcr::use_cassette("crm_html_links_in", {
     res <- suppressMessages(crm_html(url1))
-  })
+  }, preserve_exact_body_bytes = TRUE)
   expect_is(res, "xml_document")
   expect_equal(xml2::xml_name(res), "html")
 })
@@ -21,7 +21,7 @@ test_that("crm_html works with character URL input", {
 
   vcr::use_cassette("crm_html_character_in", {
     res <- suppressMessages(crm_html(url1$html))
-  })
+  }, preserve_exact_body_bytes = TRUE)
   expect_is(res, "xml_document")
   expect_equal(xml2::xml_name(res), "html")
 })

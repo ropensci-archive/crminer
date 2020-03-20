@@ -16,7 +16,7 @@ test_that("crm_plain works with links input",{
 
   vcr::use_cassette("crm_plain_links_in", {
     res <- suppressMessages(crm_plain(link1))
-  })
+  }, preserve_exact_body_bytes = TRUE)
   expect_is(res, "character")
   expect_gt(nchar(res), 100000L)
   expect_match(res, title)
@@ -28,7 +28,7 @@ test_that("crm_plain works with Elsevier input",{
 
   vcr::use_cassette("crm_plain_elsevier", {
     res <- suppressMessages(crm_plain(link2))
-  })
+  }, preserve_exact_body_bytes = TRUE)
   expect_is(res, "character")
   expect_gt(nchar(res), 100L)
 })
