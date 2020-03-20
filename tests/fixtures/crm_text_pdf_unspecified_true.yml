@@ -23,7 +23,7 @@ http_interactions:
       access-control-allow-headers: X-Requested-With
       content-length: '7826'
       server: http-kit
-      date: Fri, 20 Mar 2020 20:47:58 GMT
+      date: Fri, 20 Mar 2020 21:10:17 GMT
       x-rate-limit-limit: '50'
       x-rate-limit-interval: 1s
       connection: close
@@ -81,7 +81,7 @@ http_interactions:
         (PDMS) microfluidic chip","volume":"114","author":"Weng","year":"2009","journal-title":"Food
         Chemistry"}],"container-title":["EFSA Journal"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.2903%2Fj.efsa.2014.3550","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,24]],"date-time":"2017-06-24T14:26:48Z","timestamp":1498314408000},"score":1.0,"subtitle":["Endogenous
         versus exogenous formaldehyde"],"short-title":[],"issued":{"date-parts":[[2014,2]]},"references-count":19,"journal-issue":{"published-print":{"date-parts":[[2014,2]]},"issue":"2"},"URL":"http:\/\/dx.doi.org\/10.2903\/j.efsa.2014.3550","archive":["Portico"],"relation":{"cites":[]},"ISSN":["1831-4732"],"issn-type":[{"value":"1831-4732","type":"print"}]}}'
-  recorded_at: 2020-03-20 20:48:02 GMT
+  recorded_at: 2020-03-20 21:10:21 GMT
   recorded_with: vcr/0.5.0.92, webmockr/0.6.0.92
 - request:
     method: get
@@ -105,16 +105,17 @@ http_interactions:
       status: 'HTTP/2 200 '
       content-type: application/pdf
       content-length: '273420'
-      content-disposition: inline; filename=02b26665-3b4b-4443-8d15-c1193d1be787.pdf
-      date: Fri, 20 Mar 2020 20:48:01 GMT
+      content-disposition: inline; filename=9a113fd0-82e5-438b-98de-46a481a5d6cf.pdf
+      date: Fri, 20 Mar 2020 21:10:20 GMT
       server: Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
+      x-oneagent-js-injection: 'true'
       x-cache: Miss from cloudfront
-      via: 1.1 75b094ecf0bf22429a44bab3eafcbf16.cloudfront.net (CloudFront)
+      via: 1.1 925a9355525ad52853e1025fe231bef9.cloudfront.net (CloudFront)
       x-amz-cf-pop: HIO50-C2
-      x-amz-cf-id: OGPq3Kid8l6ndXtK8dtEvVm26P2X_Qo_w8gzVec_Mv7A5nk2Deloag==
+      x-amz-cf-id: V1Ck44GRlX-rjN8oqADivmF7QE1o57DXBmwlQgB341JOqF40YfEHGg==
     body:
       encoding: UTF-8
       file: yes
-      string: ../files/10.2903%2Fj.efsa.2014.3550.pdf
-  recorded_at: 2020-03-20 20:48:02 GMT
+      string: ../../inst/test_files/10.2903%2Fj.efsa.2014.3550.pdf
+  recorded_at: 2020-03-20 21:10:21 GMT
   recorded_with: vcr/0.5.0.92, webmockr/0.6.0.92
