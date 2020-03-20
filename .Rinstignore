@@ -1,1 +1,1 @@
-inst/test_files/*.pdf
+test_files/.*[.]pdf$
