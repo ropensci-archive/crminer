@@ -3,7 +3,7 @@ context("crm_pdf")
 # FIXME: when vcr fixed to use relative paths to files on disk,
 # only skip on cran
 skip_on_cran()
-skip_on_travis()
+# skip_on_travis()
 
 crm_cache$cache_path_set(path = "crminer", type = "tempdir")
 

@@ -12,7 +12,7 @@ if (identical(Sys.getenv("NOT_CRAN"), "true")) {
 
 test_that("crm_plain works with links input",{
   skip_on_cran()
-  skip_on_travis()
+  # skip_on_travis()
 
   vcr::use_cassette("crm_plain_links_in", {
     res <- suppressMessages(crm_plain(link1))
@@ -24,7 +24,7 @@ test_that("crm_plain works with links input",{
 
 test_that("crm_plain works with Elsevier input",{
   skip_on_cran()
-  skip_on_travis()
+  # skip_on_travis()
 
   vcr::use_cassette("crm_plain_elsevier", {
     res <- suppressMessages(crm_plain(link2))
