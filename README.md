@@ -6,6 +6,7 @@ crminer
 [![cran checks](https://cranchecks.info/badges/worst/crminer)](https://cranchecks.info/pkgs/crminer)
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Build Status](https://travis-ci.org/ropensci/crminer.svg?branch=master)](https://travis-ci.org/ropensci/crminer)
+[![Build status](https://ci.appveyor.com/api/projects/status/l7vx57pjal2s7f0i?svg=true)](https://ci.appveyor.com/project/sckott/crminer)
 [![codecov.io](https://codecov.io/github/ropensci/crminer/coverage.svg?branch=master)](https://codecov.io/github/ropensci/crminer?branch=master)
 [![rstudio mirror downloads](https://cranlogs.r-pkg.org/badges/crminer)](https://github.com/metacran/cranlogs.app)
 [![cran version](https://www.r-pkg.org/badges/version/crminer)](https://cran.r-project.org/package=crminer)
