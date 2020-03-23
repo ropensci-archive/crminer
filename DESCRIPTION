@@ -29,7 +29,7 @@ Suggests:
     rcrossref,
     testthat,
     vcr (>= 0.5.0.92)
-Remotes: ropensci/webmockr@relative-paths, ropensci/vcr@write-disk-relative-paths
+Remotes: ropensci/webmockr, ropensci/vcr
 RoxygenNote: 7.1.0
 X-schema.org-applicationCategory: Literature
 X-schema.org-keywords: text-mining, literature, publications, crossref, pdf, xml
