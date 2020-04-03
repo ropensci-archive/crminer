@@ -1,3 +1,14 @@
+crminer 0.3.2
+=============
+
+### MINOR IMPROVEMENTS
+
+* now using `vcr` for tests that write to disk (#34)
+
+### BUG FIXES
+
+* fix for a case where a DOI's current owner differs from a previous owner  (#36)
+
 crminer 0.3.0
 =============
 

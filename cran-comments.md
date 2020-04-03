@@ -1,7 +1,7 @@
 ## Test environments
 
 * local OS X install, R 3.6.3 Patched
-* ubuntu 16.04 (on travis-ci), R 3.6.2
+* ubuntu 16.04 (on travis-ci), R 3.6.3
 * win-builder (devel and release)
 
 ## R CMD check results
@@ -16,7 +16,7 @@ No problems were found.
 
 ---
 
-This version fixes two bugs for the function crm_links, and updates a function from a dependency package.
+This version fixes a bug and improves tests.
 
 Thanks!
 Scott Chamberlain
