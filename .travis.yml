@@ -10,7 +10,6 @@ addons:
 
 r_github_packages:
   - jimhester/covr
-  - ropensci/vcr
 
 after_success:
   - if [[ "${R_CODECOV}" ]]; then R -e 'covr::codecov()'; fi
