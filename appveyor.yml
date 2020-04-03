@@ -12,7 +12,6 @@ cache:
 
 build_script:
   - travis-tool.sh install_deps
-  - travis-tool.sh install_github ropensci/webmockr@relative-paths ropensci/vcr@write-disk-relative-paths
 
 test_script:
   - travis-tool.sh run_tests
