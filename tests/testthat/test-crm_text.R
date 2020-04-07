@@ -9,7 +9,7 @@ crm_cache$cache_path_set(path = "crminer", type = "tempdir")
 
 test_that("crm_text works: pdf", {
   vcr::use_cassette("crm_text_type_pdf", {
-    links <- crm_links("10.7717/peerj.1268", "pdf")
+    links <- crm_links("10.7717/peerj.8746", "pdf")
     pdf_read <- suppressMessages(crm_text(links, "pdf", read = FALSE,
                                           verbose = FALSE))
     pdf <- suppressMessages(crm_text(links, "pdf", verbose = FALSE))

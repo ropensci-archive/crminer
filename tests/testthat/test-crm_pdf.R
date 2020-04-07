@@ -10,7 +10,8 @@ crm_cache$cache_path_set(path = "crminer", type = "tempdir")
 # don't use a random DOI when caching
 # data(dois_pensoft)
 # doi1 <- sample(dois_pensoft, size = 1)
-doi1 <- "10.3897/phytokeys.74.10380"
+# doi1 <- "10.3897/phytokeys.74.10380"
+doi1 <- "10.3897/phytokeys.136.47386"
 
 if (identical(Sys.getenv("NOT_CRAN"), "true")) {
   vcr::use_cassette("crm_pdf_prep", {
@@ -29,7 +30,7 @@ test_that("crm_pdf works with links input",{
 
 test_that("crm_pdf works with character URL input", {
   vcr::use_cassette("crm_pdf_character_in", {
-    res <- suppressMessages(crm_pdf(url1$pdf))
+    res <- suppressMessages(crm_pdf(url1))
   })
   expect_named(res, c("info", "text"))
   expect_type(res$info$pages, "integer")

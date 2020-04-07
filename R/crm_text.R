@@ -154,7 +154,7 @@ crm_text.tdmurl <- function(url, type = 'xml',
     plain = getTEXT(get_url(url, 'xml'), type, auth, ...),
     html = getTEXT(get_url(url, 'html'), type, auth, ...),
     pdf = getPDF(url = get_url(url, 'pdf'), auth, overwrite, type,
-                 read, cache, ...)
+                 read, attr(url, "doi"), cache, ...)
   )
 }
 

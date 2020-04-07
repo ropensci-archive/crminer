@@ -69,7 +69,7 @@ getTEXT <- function(x, type, auth, ...){
   )
 }
 
-getPDF <- function(url, auth, overwrite, type, read, cache = FALSE, ...) {
+getPDF <- function(url, auth, overwrite, type, read, doi, cache = FALSE, ...) {
   crm_cache$mkdir()
   # if (!file.exists(path)) {
   #   dir.create(path, showWarnings = FALSE, recursive = TRUE)
@@ -77,7 +77,6 @@ getPDF <- function(url, auth, overwrite, type, read, cache = FALSE, ...) {
 
   # pensoft special handling
   if (grepl("pensoft", url[[1]])) {
-    doi <- attr(url, "doi")
     if (is.null(doi)) {
       tmp <- strsplit(url, "=")[[1]]
       doi <- tmp[length(tmp)]

@@ -1,7 +1,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://phytokeys.pensoft.net/lib/ajax_srv/article_elements_srv.php?action=download_pdf&item_id=10380
+    uri: https://phytokeys.pensoft.net/article/47386/download/pdf/
     body:
       encoding: ''
       string: ''
@@ -16,18 +16,18 @@ http_interactions:
       explanation: Request fulfilled, document follows
     headers:
       status: HTTP/1.1 200 OK
-      date: Fri, 20 Mar 2020 22:09:34 GMT
+      date: Tue, 07 Apr 2020 16:41:12 GMT
       server: Apache
       x-powered-by: PHP/7.2.27-5+0~20200202.35+debian10~1.gbp2925f8
       expires: Thu, 19 Nov 1981 08:52:00 GMT
       cache-control: no-store, no-cache, must-revalidate
       pragma: no-cache
-      content-disposition: attachment;filename="PK_article_10380_en_1.pdf"
+      content-disposition: attachment;filename="PK_article_47386_en_1.pdf"
       transfer-encoding: chunked
       content-type: application/pdf
     body:
       encoding: UTF-8
       file: yes
-      string: ../files/10380.pdf
-  recorded_at: 2020-03-20 22:09:37 GMT
-  recorded_with: vcr/0.5.0.92, webmockr/0.6.0.92
+      string: ../files/10.3897.phytokeys.136.47386.pdf
+  recorded_at: 2020-04-07 16:41:14 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2.91

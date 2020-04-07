@@ -78,8 +78,9 @@ crm_pdf.tdmurl <- function(url, overwrite = TRUE, read = TRUE, cache = FALSE,
   if (is.null(url$pdf[[1]])) {
     stop("no pdf link found", call. = FALSE)
   }
+  # getPDF(url, cr_auth(url, 'pdf'), overwrite, "pdf",
   getPDF(url$pdf[[1]], cr_auth(url, 'pdf'), overwrite, "pdf",
-         read, cache, ...)
+         read, attr(url, "doi"), cache, ...)
 }
 
 #' @export
