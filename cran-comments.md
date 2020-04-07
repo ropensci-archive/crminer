@@ -16,7 +16,7 @@ No problems were found.
 
 ---
 
-This version fixes a bug and improves tests.
+This version fixes a bug and improves tests. This is a re-submission of this same version, making the tarball smaller.
 
 Thanks!
 Scott Chamberlain
