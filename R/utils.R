@@ -69,20 +69,15 @@ getTEXT <- function(x, type, auth, ...){
   )
 }
 
-getPDF <- function(url, auth, overwrite, type, read, doi, cache = FALSE, ...) {
-  crm_cache$mkdir()
-  # if (!file.exists(path)) {
-  #   dir.create(path, showWarnings = FALSE, recursive = TRUE)
-  # }
-
+make_file_path <- function(url, doi, type) {
   # pensoft special handling
   if (grepl("pensoft", url[[1]])) {
     if (is.null(doi)) {
       tmp <- strsplit(url, "=")[[1]]
       doi <- tmp[length(tmp)]
     }
-    filepath <- file.path(crm_cache$cache_path_get(),
-                          paste0(sub("/", ".", doi), ".pdf"))
+    ff <- file.path(crm_cache$cache_path_get(),
+      paste0(sub("/", ".", doi), ".pdf"))
   } else {
     burl <- sub("\\?.+", "", url)
     ff <- if (!grepl(type, basename(burl))) {
@@ -90,10 +85,31 @@ getPDF <- function(url, auth, overwrite, type, read, doi, cache = FALSE, ...) {
     } else {
       basename(burl)
     }
-    filepath <- file.path(crm_cache$cache_path_get(), ff)
+    ff <- file.path(crm_cache$cache_path_get(), ff)
   }
+  return(path.expand(ff))
+}
 
-  filepath <- path.expand(filepath)
+alter_url <- function(url) {
+  # wiley special handling
+  ## /pdfdirect/ seems to work more often than /pdf/
+  if (grepl("wiley", url)) {
+    url <- sub("pdf", "pdfdirect", url)
+  }
+  ## some wiley urls have the wrong http scheme
+  if (grepl("wiley", url)) {
+    if (grepl("http://", url))
+      url <- sub("http", "https", url)
+  }
+  return(url)
+}
+
+getPDF <- function(url, auth, overwrite, type, read,
+  doi, cache = FALSE, ...) {
+
+  crm_cache$mkdir()
+  filepath <- make_file_path(url, doi, type)
+  url <- alter_url(url)
   if (cache && file.exists(filepath)) {
     if ( !file.exists(filepath) ) {
       stop( sprintf("%s not found", filepath), call. = FALSE)
