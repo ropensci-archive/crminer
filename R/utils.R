@@ -105,7 +105,7 @@ alter_url <- function(url) {
 }
 
 getPDF <- function(url, auth, overwrite, type, read,
-  doi, cache = FALSE, ...) {
+  doi, cache = FALSE, try_ocr = FALSE, ...) {
 
   crm_cache$mkdir()
   filepath <- make_file_path(url, doi, type)
@@ -134,7 +134,12 @@ getPDF <- function(url, auth, overwrite, type, read,
 
   if (read) {
     message("Extracting text from pdf...")
-    crm_extract(path = filepath)
+    out <- crm_extract(path = filepath)
+    if (!all(nzchar(out$text)) && try_ocr) {
+      message("no text extracted, pdf likely scanned, trying pdftools::pdf_ocr_text ...")
+      out <- crm_extract(path = filepath, try_ocr = TRUE)
+    }
+    return(out)
   } else {
     filepath
   }

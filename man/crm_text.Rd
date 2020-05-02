@@ -11,6 +11,7 @@ crm_text(
   read = TRUE,
   cache = FALSE,
   overwrite_unspecified = FALSE,
+  try_ocr = FALSE,
   ...
 )
 }
@@ -42,6 +43,10 @@ when \code{cache=TRUE}. Default: \code{TRUE}}
 \item{overwrite_unspecified}{(logical) Sometimes the crossref API returns
 mime type 'unspecified' for the full text links (for some Wiley dois
 for example). This parameter overrides the mime type to be \code{type}.}
+
+\item{try_ocr}{(logical) whether to try extracting OCRed
+pages with \code{pdftools::pdf_ocr_text()}. default: \code{FALSE}.
+if \code{FALSE}, we use \code{pdftools::pdf_text()}}
 
 \item{...}{Named curl parameters passed on to \code{\link[crul:HttpClient]{crul::HttpClient()}}, see
 \code{\link[curl:curl_options]{curl::curl_options()}} for available curl options}

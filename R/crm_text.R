@@ -23,6 +23,9 @@
 #' @param overwrite_unspecified (logical) Sometimes the crossref API returns
 #' mime type 'unspecified' for the full text links (for some Wiley dois
 #' for example). This parameter overrides the mime type to be `type`.
+#' @param try_ocr (logical) whether to try extracting OCRed 
+#' pages with `pdftools::pdf_ocr_text()`. default: `FALSE`.
+#' if `FALSE`, we use `pdftools::pdf_text()`
 #' @param ... Named curl parameters passed on to [crul::HttpClient()], see
 #' [curl::curl_options()] for available curl options
 #'
@@ -130,21 +133,24 @@
 #' # crm_text(tmp, type = "pdf", cache=FALSE)
 #' }
 crm_text <- function(url, type = 'xml', overwrite = TRUE, read = TRUE,
-                     cache = FALSE, overwrite_unspecified = FALSE, ...) {
+                     cache = FALSE, overwrite_unspecified = FALSE, 
+                     try_ocr = FALSE, ...) {
   UseMethod("crm_text")
 }
 
 #' @export
 crm_text.default <- function(url, type = 'xml',
                              overwrite = TRUE, read = TRUE, cache = FALSE,
-                             overwrite_unspecified = FALSE, ...) {
+                             overwrite_unspecified = FALSE,
+                             try_ocr = FALSE, ...) {
   stop("no 'crm_text' method for ", class(url), call. = FALSE)
 }
 
 #' @export
 crm_text.tdmurl <- function(url, type = 'xml',
                             overwrite = TRUE, read = TRUE, cache = FALSE,
-                            overwrite_unspecified = FALSE, ...) {
+                            overwrite_unspecified = FALSE, try_ocr = FALSE, 
+                            ...) {
 
   url <- maybe_overwrite_unspecified(overwrite_unspecified, url, type)
   auth <- cr_auth(url, type)
@@ -154,14 +160,15 @@ crm_text.tdmurl <- function(url, type = 'xml',
     plain = getTEXT(get_url(url, 'xml'), type, auth, ...),
     html = getTEXT(get_url(url, 'html'), type, auth, ...),
     pdf = getPDF(url = get_url(url, 'pdf'), auth, overwrite, type,
-                 read, attr(url, "doi"), cache, ...)
+                 read, attr(url, "doi"), cache, try_ocr, ...)
   )
 }
 
 #' @export
 crm_text.list <- function(url, type = 'xml',
                          overwrite = TRUE, read = TRUE, cache = FALSE,
-                         overwrite_unspecified = FALSE, ...) {
+                         overwrite_unspecified = FALSE, try_ocr = FALSE, 
+                         ...) {
   if (!all(vapply(url, class, "", USE.NAMES = FALSE) == "tdmurl")) {
     stop("list input to 'crm_text' must be a list of tdmurl objects",
          call. = FALSE)
@@ -173,5 +180,6 @@ crm_text.list <- function(url, type = 'xml',
   if (is.null(url[[type]])) stop('no links for type ', type)
   crm_text(url[[type]], type = type, overwrite = overwrite,
            read = read, cache = cache,
-           overwrite_unspecified = overwrite_unspecified, ...)
+           overwrite_unspecified = overwrite_unspecified,
+           try_ocr = try_ocr, ...)
 }

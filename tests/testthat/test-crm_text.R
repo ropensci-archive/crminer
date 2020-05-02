@@ -53,3 +53,21 @@ test_that("crm_text with pdf fails for 'unspecified' = FALSE",{
   expect_error(crm_text(links, type = "pdf", overwrite_unspecified = FALSE),
               "no links for type pdf")
 })
+
+# test_that("ocr parameter", {
+#   skip_on_cran()
+#   skip_on_travis()
+#   skip_on_appveyor()
+#
+#   # path <- system.file("examples", "S0022053183710665.pdf",
+#   #   package = "crminer")
+#   doi <- '10.1006/jeth.1993.1066'
+#   z <- crm_links(doi)
+#   ocr_false <- crm_text(z, "pdf", try_ocr = FALSE)
+#   expect_is(ocr_false, "crm_pdf")
+#   expect_true(!all(nzchar(ocr_false$text)))
+#
+#   ocr_true <- crm_text(z, "pdf", try_ocr = TRUE)
+#   expect_is(ocr_true, "crm_pdf")
+#   expect_true(all(nzchar(ocr_true$text)))
+# })

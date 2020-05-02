@@ -3,8 +3,12 @@
 #' @export
 #' @param path (character) path to a file, file must exist
 #' @param raw (raw) raw bytes
+#' @param try_ocr (logical) whether to try extracting OCRed 
+#' pages with `pdftools::pdf_ocr_text()`. default: `FALSE`.
+#' if `FALSE`, we use `pdftools::pdf_text()`
 #' @param ... args passed on to [pdftools::pdf_info()]
-#' and [pdftools::pdf_text()] - any args are passed to
+#' and [pdftools::pdf_text()] (or [pdftools::pdf_ocr_text()] if
+#' `try_ocr=TRUE`) - any args are passed to
 #' both of those function calls, which makes sense
 #' @return An object of class `crm_pdf` with a slot for
 #' `info` (pdf metadata essentially), and `text` (the extracted
@@ -35,7 +39,8 @@
 #' rds <- readRDS(path)
 #' class(rds)
 #' crm_extract(raw = rds)
-crm_extract <- function(path = NULL, raw = NULL, ...) {
+crm_extract <- function(path = NULL, raw = NULL, try_ocr = FALSE, ...) {
+  assert(try_ocr, "logical")
   stopifnot(xor(is.null(path), is.null(raw)))
   if (!is.null(path)) {
     path <- path.expand(path)
@@ -44,11 +49,12 @@ crm_extract <- function(path = NULL, raw = NULL, ...) {
     assert(raw, "raw")
     path <- raw
   }
+  fun <- if (try_ocr) pdftools::pdf_ocr_text else pdftools::pdf_text
   
   structure(
     list(
       info = pdftools::pdf_info(path, ...),
-      text = pdftools::pdf_text(path, ...)
+      text = fun(path, ...)
     ),
     class = "crm_pdf",
     path = if (is.character(path)) path else 'raw'

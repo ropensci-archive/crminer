@@ -104,9 +104,9 @@ get_err <- function(x) {
 
 assert <- function(x, y) {
   if (!is.null(x)) {
-    if (!class(x) %in% y) {
+    if (!inherits(x, y)) {
       stop(deparse(substitute(x)), " must be of class ",
-           paste0(y, collapse = ", "), call. = FALSE)
+        paste0(y, collapse = ", "), call. = FALSE)
     }
   }
 }

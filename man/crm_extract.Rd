@@ -4,15 +4,20 @@
 \alias{crm_extract}
 \title{Extract text from a single pdf document}
 \usage{
-crm_extract(path = NULL, raw = NULL, ...)
+crm_extract(path = NULL, raw = NULL, try_ocr = FALSE, ...)
 }
 \arguments{
 \item{path}{(character) path to a file, file must exist}
 
 \item{raw}{(raw) raw bytes}
 
+\item{try_ocr}{(logical) whether to try extracting OCRed
+pages with \code{pdftools::pdf_ocr_text()}. default: \code{FALSE}.
+if \code{FALSE}, we use \code{pdftools::pdf_text()}}
+
 \item{...}{args passed on to \code{\link[pdftools:pdf_info]{pdftools::pdf_info()}}
-and \code{\link[pdftools:pdf_text]{pdftools::pdf_text()}} - any args are passed to
+and \code{\link[pdftools:pdf_text]{pdftools::pdf_text()}} (or \code{\link[pdftools:pdf_ocr_text]{pdftools::pdf_ocr_text()}} if
+\code{try_ocr=TRUE}) - any args are passed to
 both of those function calls, which makes sense}
 }
 \value{

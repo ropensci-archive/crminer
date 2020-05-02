@@ -43,3 +43,20 @@ test_that("crm_extract fails well", {
   expect_error(crm_extract("3434"), "path does not exist")
   expect_error(crm_extract(raw = 5), 'raw must be of class raw')
 })
+
+# test_that("try_ocr parameter", {
+#   skip_on_cran()
+#   skip_on_travis()
+#   skip_on_appveyor()
+#
+#   # doi <- '10.1006/jeth.1993.1066'
+#   path <- system.file("examples", "S0022053183710665.pdf",
+#     package = "crminer")
+#   ocr_false <- crm_extract(path, try_ocr = FALSE)
+#   expect_is(ocr_false, "crm_pdf")
+#   expect_true(!all(nzchar(ocr_false$text)))
+#
+#   ocr_true <- crm_extract(path, try_ocr = TRUE)
+#   expect_is(ocr_true, "crm_pdf")
+#   expect_true(all(nzchar(ocr_true$text)))
+# })
