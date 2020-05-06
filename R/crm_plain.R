@@ -15,6 +15,7 @@
 #' but only metadata.
 #'
 #' Check out [auth] for details on authentication.
+#' @inheritSection crm_text User-agent
 #' @examples \dontrun{
 #' link <- crm_links("10.1016/j.physletb.2010.10.049", "plain")
 #' crm_plain(link)

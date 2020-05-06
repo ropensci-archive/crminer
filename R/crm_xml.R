@@ -15,6 +15,7 @@
 #' but only metadata.
 #'
 #' Check out [auth] for details on authentication.
+#' @inheritSection crm_text User-agent
 #' @examples \dontrun{
 #' ## peerj
 #' x <- crm_xml("https://peerj.com/articles/2356.xml")

@@ -23,11 +23,12 @@
 #' @param overwrite_unspecified (logical) Sometimes the crossref API returns
 #' mime type 'unspecified' for the full text links (for some Wiley dois
 #' for example). This parameter overrides the mime type to be `type`.
-#' @param try_ocr (logical) whether to try extracting OCRed 
+#' @param try_ocr (logical) whether to try extracting OCRed
 #' pages with `pdftools::pdf_ocr_text()`. default: `FALSE`.
 #' if `FALSE`, we use `pdftools::pdf_text()`
-#' @param ... Named curl parameters passed on to [crul::HttpClient()], see
-#' [curl::curl_options()] for available curl options
+#' @param ... Named curl options passed on to [crul::verb-GET], see
+#' [curl::curl_options()] for available curl options. See especially the
+#' User-agent section below
 #'
 #' @details Note that this function is not vectorized. To do many requests
 #' use a for/while loop or lapply family calls, or similar.
@@ -48,6 +49,20 @@
 #' `paste0(rappdirs::user_cache_dir(), "/crminer")`, but you can
 #' set this directory to something different. Ignored unless getting
 #' pdf. See [crm_cache] for caching details.
+#'
+#' @section User-agent:
+#' You can optionally set a user agent string with the curl option `useragent`,
+#' like `crm_text("some doi", "pdf", useragent = "foo bar")`.
+#' user agent strings are sometimes used by servers to decide whether to
+#' provide a response (in this case, the full text article). sometimes, a
+#' browser like user agent string will make the server happy. by default all
+#' requests in this package have a user agent string like
+#' `libcurl/7.64.1 r-curl/4.3 crul/0.9.0`, which is a string with the names
+#' and versions of the http clients used under the hood. If you supply
+#' a user agent string using the `useragent` curl option, we'll use it instead.
+#' For more information on user agent's, and exmaples of user agent strings you
+#' can use here, see
+#' https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent
 #'
 #' @examples \dontrun{
 #' # set a temp dir. cache path
@@ -133,7 +148,7 @@
 #' # crm_text(tmp, type = "pdf", cache=FALSE)
 #' }
 crm_text <- function(url, type = 'xml', overwrite = TRUE, read = TRUE,
-                     cache = FALSE, overwrite_unspecified = FALSE, 
+                     cache = FALSE, overwrite_unspecified = FALSE,
                      try_ocr = FALSE, ...) {
   UseMethod("crm_text")
 }
@@ -149,7 +164,7 @@ crm_text.default <- function(url, type = 'xml',
 #' @export
 crm_text.tdmurl <- function(url, type = 'xml',
                             overwrite = TRUE, read = TRUE, cache = FALSE,
-                            overwrite_unspecified = FALSE, try_ocr = FALSE, 
+                            overwrite_unspecified = FALSE, try_ocr = FALSE,
                             ...) {
 
   url <- maybe_overwrite_unspecified(overwrite_unspecified, url, type)
@@ -167,7 +182,7 @@ crm_text.tdmurl <- function(url, type = 'xml',
 #' @export
 crm_text.list <- function(url, type = 'xml',
                          overwrite = TRUE, read = TRUE, cache = FALSE,
-                         overwrite_unspecified = FALSE, try_ocr = FALSE, 
+                         overwrite_unspecified = FALSE, try_ocr = FALSE,
                          ...) {
   if (!all(vapply(url, class, "", USE.NAMES = FALSE) == "tdmurl")) {
     stop("list input to 'crm_text' must be a list of tdmurl objects",

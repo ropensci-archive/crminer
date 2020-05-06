@@ -18,8 +18,9 @@ and other publisher specific fixes to URLs}
 mime type 'unspecified' for the full text links (for some Wiley dois
 for example). This parameter overrides the mime type to be \code{type}.}
 
-\item{...}{Named curl parameters passed on to \code{\link[crul:HttpClient]{crul::HttpClient()}}, see
-\code{\link[curl:curl_options]{curl::curl_options()}} for available curl options}
+\item{...}{Named curl options passed on to \link[crul:verb-GET]{crul::verb-GET}, see
+\code{\link[curl:curl_options]{curl::curl_options()}} for available curl options. See especially the
+User-agent section below}
 }
 \description{
 Get full plain text
@@ -39,6 +40,22 @@ but only metadata.
 
 Check out \link{auth} for details on authentication.
 }
+\section{User-agent}{
+
+You can optionally set a user agent string with the curl option \code{useragent},
+like \code{crm_text("some doi", "pdf", useragent = "foo bar")}.
+user agent strings are sometimes used by servers to decide whether to
+provide a response (in this case, the full text article). sometimes, a
+browser like user agent string will make the server happy. by default all
+requests in this package have a user agent string like
+\verb{libcurl/7.64.1 r-curl/4.3 crul/0.9.0}, which is a string with the names
+and versions of the http clients used under the hood. If you supply
+a user agent string using the \code{useragent} curl option, we'll use it instead.
+For more information on user agent's, and exmaples of user agent strings you
+can use here, see
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent
+}
+
 \examples{
 \dontrun{
 link <- crm_links("10.7717/peerj.1545", "html")

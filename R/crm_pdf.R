@@ -21,6 +21,7 @@
 #' `paste0(rappdirs::user_cache_dir(), "/crminer")`, but you can
 #' set this directory to something different. Ignored unless getting
 #' pdf. See [crm_cache] for caching details.
+#' @inheritSection crm_text User-agent
 #' @examples \dontrun{
 #' # set a temp dir. cache path
 #' crm_cache$cache_path_set(path = "crminer", type = "tempdir")
