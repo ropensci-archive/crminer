@@ -1,6 +1,6 @@
 get_url <- function(a, b){
   url <- if (inherits(a, "tdmurl")) a[[1]] else a[[b]]
-  if (grepl("pensoft", url)) {
+  if (grepl("pensoft|elsevier", url)) {
     url
   } else if (attr(a, "member") == "78") {
     url
@@ -31,6 +31,8 @@ cr_auth <- function(url, type) {
   mem <- attr(url, "member")
   if (is.null(mem)) return(list())
   mem_num <- basename(mem)
+  # special handling for DOIs transferred to Elsevier
+  if (grepl("elsevier", url)) mem_num <- "78"
   if (mem_num %in% c(78, 263, 311, 286)) {
     type <- switch(
       type,
@@ -40,7 +42,7 @@ cr_auth <- function(url, type) {
       pdf = "application/pdf"
     )
     switch(
-      mem_num,
+      as.character(mem_num),
       `78` = { # elsevier
         key <- Sys.getenv("CROSSREF_TDM")
         list(`CR-Clickthrough-Client-Token` = key, Accept = type)
@@ -104,6 +106,38 @@ alter_url <- function(url) {
   return(url)
 }
 
+is_ct <- function(type) {
+  function(x) {
+    if (!is.null(x$response_headers$`content-type`)) {
+      grepl(type, x$response_headers$`content-type`)
+    } else {
+      # no content type header, just say TRUE to move on to next code path
+      return(TRUE)
+    }
+  }
+}
+is_ct_pdf <- is_ct(type = "pdf")
+is_ct_html <- is_ct(type = "html")
+is_ct_xml <- is_ct(type = "xml")
+is_ct_plain <- is_ct(type = "plain")
+
+try_extract_pdf_errors <- function(x) {
+  if (!file.exists(x)) return()
+  if (!any(nzchar(readLines(x, n = 10)))) return()
+  html <- xml2::read_html(x)
+  ex <- xml2::xml_find_all(html, "//*[contains(@class, 'error')]")
+  if (!length(ex) == 0) {
+    stop("error in pdf retrieval; attempted to extract any error messages\n",
+      xml2::xml_text(ex), call. = FALSE)
+  }
+  # xml2::xml_find_all(html, "//text()[contains(.,'Not logged in')]")
+  fx <- xml2::xml_find_all(html, "//text()[. = 'Not logged in']")
+  if (!length(fx) == 0) {
+    stop("error in pdf retrieval; attempted to extract any error messages\n",
+      xml2::xml_text(fx), call. = FALSE)
+  }
+}
+
 getPDF <- function(url, auth, overwrite, type, read,
   doi, cache = FALSE, try_ocr = FALSE, ...) {
 
@@ -119,14 +153,16 @@ getPDF <- function(url, auth, overwrite, type, read,
     cli <- crul::HttpClient$new(
       url = url,
       opts = list(followlocation = TRUE, ...),
+      # opts = list(followlocation = TRUE, useragent = ua, verbose = TRUE),
       headers = c(auth, list(Accept = "application/pdf"))
     )
     res <- cli$get(disk = filepath)
     res$raise_for_status()
-    if (res$status_code < 202) {
+    if (res$status_code < 202 && is_ct_pdf(res)) {
       filepath <- res$content
     } else {
-      unlink(filepath)
+      on.exit(unlink(filepath), add = TRUE)
+      try_extract_pdf_errors(filepath)
       filepath <- res$status_code
       read <- FALSE
     }

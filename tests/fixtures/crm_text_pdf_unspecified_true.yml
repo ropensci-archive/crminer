@@ -21,17 +21,17 @@ http_interactions:
       vary: Accept
       access-control-allow-origin: '*'
       access-control-allow-headers: X-Requested-With
-      content-length: '7826'
+      content-length: '7824'
       server: http-kit
-      date: Fri, 20 Mar 2020 22:09:48 GMT
+      date: Wed, 06 May 2020 16:02:55 GMT
       x-rate-limit-limit: '50'
       x-rate-limit-interval: 1s
       connection: close
     body:
       encoding: UTF-8
       file: no
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2019,11,26]],"date-time":"2019-11-26T20:36:26Z","timestamp":1574800586824},"reference-count":19,"publisher":"Wiley","issue":"2","license":[{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1","start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"delay-in-days":577,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["EFSA
-        Journal"],"published-print":{"date-parts":[[2014,2]]},"DOI":"10.2903\/j.efsa.2014.3550","type":"journal-article","created":{"date-parts":[[2016,5,22]],"date-time":"2016-05-22T13:22:12Z","timestamp":1463923332000},"page":"3550","source":"Crossref","is-referenced-by-count":17,"title":["Endogenous
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2020,4,9]],"date-time":"2020-04-09T15:04:28Z","timestamp":1586444668923},"reference-count":19,"publisher":"Wiley","issue":"2","license":[{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1","start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"delay-in-days":577,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["EFSA
+        Journal"],"published-print":{"date-parts":[[2014,2]]},"DOI":"10.2903\/j.efsa.2014.3550","type":"journal-article","created":{"date-parts":[[2016,5,22]],"date-time":"2016-05-22T13:22:12Z","timestamp":1463923332000},"page":"3550","source":"Crossref","is-referenced-by-count":18,"title":["Endogenous
         formaldehyde turnover in humans compared with exogenous contribution from
         food sources"],"prefix":"10.2903","volume":"12","author":[{"name":"European
         Food Safety Authority","sequence":"first","affiliation":[]}],"member":"311","published-online":{"date-parts":[[2014,2,18]]},"reference":[{"key":"10.2903\/j.efsa.2014.3550-BIB0001|efs23550-cit-0001","unstructured":"Agence
@@ -81,8 +81,8 @@ http_interactions:
         (PDMS) microfluidic chip","volume":"114","author":"Weng","year":"2009","journal-title":"Food
         Chemistry"}],"container-title":["EFSA Journal"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.2903%2Fj.efsa.2014.3550","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,24]],"date-time":"2017-06-24T14:26:48Z","timestamp":1498314408000},"score":1.0,"subtitle":["Endogenous
         versus exogenous formaldehyde"],"short-title":[],"issued":{"date-parts":[[2014,2]]},"references-count":19,"journal-issue":{"published-print":{"date-parts":[[2014,2]]},"issue":"2"},"URL":"http:\/\/dx.doi.org\/10.2903\/j.efsa.2014.3550","archive":["Portico"],"relation":{"cites":[]},"ISSN":["1831-4732"],"issn-type":[{"value":"1831-4732","type":"print"}]}}'
-  recorded_at: 2020-03-20 22:09:51 GMT
-  recorded_with: vcr/0.5.0.92, webmockr/0.6.0.92
+  recorded_at: 2020-05-06 16:02:58 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2
 - request:
     method: get
     uri: https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.2903%2Fj.efsa.2014.3550
@@ -94,7 +94,7 @@ http_interactions:
       - application/pdf
       - application/pdf
       Accept-Encoding: gzip, deflate
-      CR-Clickthrough-Client-Token: 86c9b5e5-e7ed333b-b1c3352a-0db0d2a2
+      CR-Clickthrough-Client-Token: <<crossref-tdm-token>>
       User-Agent: libcurl/7.64.1 r-curl/4.3 crul/0.9.0
   response:
     status:
@@ -105,16 +105,16 @@ http_interactions:
       status: 'HTTP/2 200 '
       content-type: application/pdf
       content-length: '273420'
-      content-disposition: inline; filename=69dbafd6-6bf6-4be8-94a0-438d10b14a19.pdf
-      date: Fri, 20 Mar 2020 22:09:50 GMT
+      content-disposition: inline; filename=7488d32f-04c1-4d8e-9a08-56b666e8f2d6.pdf
+      date: Wed, 06 May 2020 16:02:58 GMT
       server: Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
       x-cache: Miss from cloudfront
-      via: 1.1 4c7fd3c8d1d5afb1ce8ed03385580c2e.cloudfront.net (CloudFront)
-      x-amz-cf-pop: HIO50-C2
-      x-amz-cf-id: lbgdPXbKCRYlCCPEWyU7Q2lkmHiNBlmMlw4q5wIxKQenLtJysGaYEw==
+      via: 1.1 8a7696c9764ab79132ce2754e8e20bed.cloudfront.net (CloudFront)
+      x-amz-cf-pop: SFO20-C1
+      x-amz-cf-id: auvukp1eXXKNWKxfT7eVTGHu3JmIG_8NGdcTfd4IceN0pB5ShKXgOQ==
     body:
       encoding: UTF-8
       file: yes
       string: ../files/10.2903%2Fj.efsa.2014.3550.pdf
-  recorded_at: 2020-03-20 22:09:51 GMT
-  recorded_with: vcr/0.5.0.92, webmockr/0.6.0.92
+  recorded_at: 2020-05-06 16:02:59 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2

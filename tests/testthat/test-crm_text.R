@@ -54,6 +54,16 @@ test_that("crm_text with pdf fails for 'unspecified' = FALSE",{
               "no links for type pdf")
 })
 
+test_that("crm_text works w/ elsevier DOI tranferred from another publisher",{
+  vcr::use_cassette("crm_text_plain_elsevier_doi_transfer", {
+    x <- crm_links("10.1016/j.intacc.2003.09.001")
+    out <- crm_text(x, "plain")
+  })
+  expect_is(out, "character")
+  expect_match(out, "10.1016/j.intacc.2003.09.001")
+  expect_match(out, "Directors of Southern Africa")
+})
+
 # test_that("ocr parameter", {
 #   skip_on_cran()
 #   skip_on_travis()

@@ -1,0 +1,1483 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://api.crossref.org/works/10.1016/j.intacc.2003.09.001
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: r-curl/4.3 rOpenSci(crul/%s)0.9.0 rOpenSci(rcrossref/1.0.0) (mailto:myrmecocystus@gmail.com)
+      X-USER-AGENT: r-curl/4.3 rOpenSci(crul/%s)0.9.0 rOpenSci(rcrossref/1.0.0) (mailto:myrmecocystus@gmail.com)
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      content-type: application/json;charset=UTF-8
+      vary: Accept
+      access-control-allow-origin: '*'
+      access-control-allow-headers: X-Requested-With
+      content-length: '30728'
+      server: http-kit
+      date: Wed, 06 May 2020 16:04:53 GMT
+      x-rate-limit-limit: '50'
+      x-rate-limit-interval: 1s
+      connection: close
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2020,4,12]],"date-time":"2020-04-12T21:23:43Z","timestamp":1586726623617},"reference-count":102,"publisher":"World
+        Scientific Pub Co Pte Lt","issue":"4","license":[{"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2003,1,1]],"date-time":"2003-01-01T00:00:00Z","timestamp":1041379200000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
+        International Journal of Accounting"],"published-print":{"date-parts":[[2003,1]]},"DOI":"10.1016\/j.intacc.2003.09.001","type":"journal-article","created":{"date-parts":[[2003,10,15]],"date-time":"2003-10-15T15:49:31Z","timestamp":1066232971000},"page":"465-491","source":"Crossref","is-referenced-by-count":66,"title":["International
+        comparative analysis of the association between board structure and the efficiency
+        of value added by a firm from its physical capital and intellectual capital
+        resources"],"prefix":"10.1142","volume":"38","author":[{"given":"Carol-Anne","family":"Ho","sequence":"first","affiliation":[]},{"given":"S.Mitchell","family":"Williams","sequence":"additional","affiliation":[]}],"member":"219","reference":[{"key":"10.1016\/j.intacc.2003.09.001_BIB1","doi-asserted-by":"crossref","first-page":"377","DOI":"10.2307\/2331397","article-title":"Firm
+        performance and mechanisms to control agency problems between managers and
+        shareholders","volume":"31","author":"Agrawal","year":"1996","journal-title":"Journal
+        of Financial and Quantitative Analysis"},{"key":"10.1016\/j.intacc.2003.09.001_BIB2","doi-asserted-by":"crossref","first-page":"74","DOI":"10.2307\/2393255","article-title":"Leadership
+        instability in hospitals: The influence of board\u2013CEO relations and organizational
+        growth and decline","volume":"38","author":"Alexander","year":"1993","journal-title":"Administrative
+        Science Quarterly"},{"key":"10.1016\/j.intacc.2003.09.001_BIB3","first-page":"206","article-title":"A
+        limited rationality model of interlocking directorates","volume":"8","author":"Bazerman","year":"1983","journal-title":"Academy
+        of Management Review"},{"key":"10.1016\/j.intacc.2003.09.001_BIB4","author":"Berle","year":"1932","series-title":"The
+        modern corporation and private property"},{"issue":"3","key":"10.1016\/j.intacc.2003.09.001_BIB5","first-page":"921","article-title":"The
+        uncertain relationship between board composition and firm performance","volume":"54","author":"Bhagat","year":"1999","journal-title":"Business
+        Lawyer"},{"key":"10.1016\/j.intacc.2003.09.001_BIB6","author":"Blair","year":"1995","series-title":"Ownership
+        and control"},{"issue":"2","key":"10.1016\/j.intacc.2003.09.001_BIB7","doi-asserted-by":"crossref","first-page":"169","DOI":"10.1108\/00251749810204142","article-title":"Intellectual
+        capital: An exploratory study that develops measures and models","volume":"36","author":"Bontis","year":"1998","journal-title":"Management
+        Decision"},{"key":"10.1016\/j.intacc.2003.09.001_BIB8","unstructured":"Bontis,
+        N. (2000). Assessing knowledge assets: A review of the models used to measure
+        intellectual capital. Framework Paper 00\u201301, Queen''s University, Kingston,
+        Canada: Queen''s Management Research Centre for Knowledge-Based Enterprises."},{"key":"10.1016\/j.intacc.2003.09.001_BIB9","author":"Bornemann","year":"1998","article-title":"Empirical
+        analysis of the potential of value systems in Austria according to the VAIC
+        method","series-title":"Paper Presented at 19th Annual National Business Conference"},{"key":"10.1016\/j.intacc.2003.09.001_BIB10","doi-asserted-by":"crossref","first-page":"189","DOI":"10.1016\/S0929-1199(96)00013-2","article-title":"Corporate
+        leadership structure: On the separation of the positions of CEO and chairman
+        of the board","volume":"3","author":"Brickley","year":"1997","journal-title":"Journal
+        of Corporate Finance"},{"key":"10.1016\/j.intacc.2003.09.001_BIB11","doi-asserted-by":"crossref","first-page":"557","DOI":"10.2307\/2392281","article-title":"Cooptive
+        corporate actor networks: A reconsideration of interlocking directorates involving
+        American manufacturing","volume":"25","author":"Burt","year":"1980","journal-title":"Administrative
+        Science Quarterly"},{"key":"10.1016\/j.intacc.2003.09.001_BIB12","doi-asserted-by":"crossref","first-page":"195","DOI":"10.1016\/0304-405X(92)90018-S","article-title":"Do
+        outside directors monitor managers","volume":"32","author":"Byrd","year":"1992","journal-title":"Journal
+        of Financial Economics"},{"key":"10.1016\/j.intacc.2003.09.001_BIB13","author":"Cadbury","year":"1992","series-title":"Report
+        of the Committee on the Financial Aspects of Corporate Governance (Cadbury
+        Report)"},{"issue":"4","key":"10.1016\/j.intacc.2003.09.001_BIB14","doi-asserted-by":"crossref","first-page":"400","DOI":"10.1111\/j.1467-6486.1985.tb00005.x","article-title":"Corporate
+        board size, composition and corporate failure in retailing industry","volume":"22","author":"Chaganti","year":"1985","journal-title":"Journal
+        of Management Studies"},{"key":"10.1016\/j.intacc.2003.09.001_BIB15","author":"Clarkson","year":"1994","series-title":"A
+        risk based of stakeholder theory"},{"key":"10.1016\/j.intacc.2003.09.001_BIB16","doi-asserted-by":"crossref","first-page":"664","DOI":"10.2307\/256121","article-title":"The
+        composition of boards of directors and incidence of golden parachutes","volume":"28","author":"Cochran","year":"1985","journal-title":"Academy
+        of Management Journal"},{"issue":"14","key":"10.1016\/j.intacc.2003.09.001_BIB17","doi-asserted-by":"crossref","first-page":"1595","DOI":"10.1023\/A:1005748230228","article-title":"Board
+        diversity and managerial control as predictors of corporate social performance","volume":"17","author":"Coffey","year":"1998","journal-title":"Journal
+        of Business Ethics"},{"key":"10.1016\/j.intacc.2003.09.001_BIB18","doi-asserted-by":"crossref","first-page":"229","DOI":"10.1111\/j.1468-0084.1994.mp56003001.x","article-title":"Top
+        pay, company performance and corporate governance","volume":"56","author":"Conyon","year":"1994","journal-title":"Oxford
+        Bulletin of Economics and Statistics"},{"key":"10.1016\/j.intacc.2003.09.001_BIB19","doi-asserted-by":"crossref","first-page":"1603","DOI":"10.2307\/256801","article-title":"Bankruptcy
+        and corporate governance: The impact of board composition and structure","volume":"37","author":"Daily","year":"1994","journal-title":"Academy
+        of Management Journal"},{"issue":"6","key":"10.1016\/j.intacc.2003.09.001_BIB21","doi-asserted-by":"crossref","first-page":"674","DOI":"10.2307\/256988","article-title":"Number
+        of directors and financial performance: A meta-analysis","volume":"42","author":"Dalton","year":"1999","journal-title":"Academy
+        of Management Journal"},{"key":"10.1016\/j.intacc.2003.09.001_BIB20","doi-asserted-by":"crossref","first-page":"749","DOI":"10.2307\/256235","article-title":"Organizational
+        performance as an antecedent of inside\/outside chief executive succession:
+        An empirical assessment","volume":"28","author":"Dalton","year":"1985","journal-title":"Academy
+        of Management Journal"},{"issue":"4","key":"10.1016\/j.intacc.2003.09.001_BIB22","doi-asserted-by":"crossref","first-page":"341","DOI":"10.1006\/bare.2000.0146","article-title":"Corporate
+        governance: Overview and research agenda","volume":"32","author":"Demirag","year":"2000","journal-title":"British
+        Accounting Review"},{"key":"10.1016\/j.intacc.2003.09.001_BIB23","doi-asserted-by":"crossref","first-page":"1155","DOI":"10.1086\/261354","article-title":"The
+        structure of corporate ownership: Causes and consequences","volume":"93","author":"Demsetz","year":"1985","journal-title":"Journal
+        of Political Economy"},{"issue":"3","key":"10.1016\/j.intacc.2003.09.001_BIB24","doi-asserted-by":"crossref","first-page":"266","DOI":"10.1016\/S0024-6301(97)00016-2","article-title":"Developing
+        intellectual capital at Skandia","volume":"30","author":"Edvinsson","year":"1997","journal-title":"Long
+        Range Planning"},{"key":"10.1016\/j.intacc.2003.09.001_BIB25","doi-asserted-by":"crossref","first-page":"175","DOI":"10.1177\/1046496491222002","article-title":"Group
+        cohesion and performance: A meta-analysis","volume":"22","author":"Evans","year":"1991","journal-title":"Small
+        Group Research"},{"key":"10.1016\/j.intacc.2003.09.001_BIB28","doi-asserted-by":"crossref","first-page":"505","DOI":"10.2307\/256485","article-title":"Power
+        in top management teams: Dimensions, measurement, and validation","volume":"35","author":"Finkelstein","year":"1992","journal-title":"Academy
+        of Management Journal"},{"issue":"4","key":"10.1016\/j.intacc.2003.09.001_BIB29","doi-asserted-by":"crossref","first-page":"291","DOI":"10.1002\/(SICI)1099-1468(199605)17:3<291::AID-MDE752>3.0.CO;2-X","article-title":"The
+        remuneration of CEOs and corporate financial performance in Norway","volume":"17","author":"Firth","year":"1996","journal-title":"Managerial
+        and Decision Economics"},{"key":"10.1016\/j.intacc.2003.09.001_BIB30","doi-asserted-by":"crossref","first-page":"666","DOI":"10.2307\/256054","article-title":"Perceptions
+        of socially responsible activities and attitudes: A comparison of business
+        school deans and corporate chief executives","volume":"27","author":"Ford","year":"1984","journal-title":"Academy
+        of Management Journal"},{"issue":"3","key":"10.1016\/j.intacc.2003.09.001_BIB31","doi-asserted-by":"crossref","first-page":"321","DOI":"10.1111\/1467-6486.00183","article-title":"Boards
+        of directors and shark repellents: Assessing the value of an agency theory
+        perspective","volume":"37","author":"Frankforter","year":"2000","journal-title":"Journal
+        of Management Studies"},{"key":"10.1016\/j.intacc.2003.09.001_BIB32","author":"Gregory","year":"2001","series-title":"International
+        comparison of corporate governance guidelines and codes of best practice\u2014Developing
+        and emerging markets"},{"key":"10.1016\/j.intacc.2003.09.001_BIB33","author":"Gregory","year":"2001","series-title":"International
+        comparison of corporate governance guidelines and codes of best practice\u2014Developed
+        markets"},{"key":"10.1016\/j.intacc.2003.09.001_BIB35","doi-asserted-by":"crossref","first-page":"193","DOI":"10.5465\/amr.1984.4277628","article-title":"Upper
+        echelons: The organization as a reflection of its top managers","volume":"9","author":"Hambrick","year":"1984","journal-title":"Academy
+        of Management Review"},{"key":"10.1016\/j.intacc.2003.09.001_BIB36","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1002\/smj.4250120102","article-title":"Are
+        institutional investors myopic? A time series study of four technology-driven
+        industries","volume":"12","author":"Hansen","year":"1991","journal-title":"Strategic
+        Management Journal"},{"key":"10.1016\/j.intacc.2003.09.001_BIB37","doi-asserted-by":"crossref","first-page":"101","DOI":"10.2307\/3665716","article-title":"The
+        effects of board composition and direct incentives on firm performance","volume":"20","author":"Hermalin","year":"1991","journal-title":"Financial
+        Management"},{"key":"10.1016\/j.intacc.2003.09.001_BIB38","unstructured":"Hermalin,
+        B., Weisbach, M. (2001). Boards of directors as an endogeneousl determined
+        institution: A survey of the economic literature. NBER working paper, 8161."},{"key":"10.1016\/j.intacc.2003.09.001_BIB40","author":"Institute
+        of Directors of Southern Africa","year":"1994","series-title":"The King Report
+        on corporate governance (King Report I)"},{"key":"10.1016\/j.intacc.2003.09.001_BIB41","author":"Institute
+        of Directors of Southern Africa","year":"2002","series-title":"King Report
+        on corporate governance for South Africa (King Report II)"},{"key":"10.1016\/j.intacc.2003.09.001_BIB42","doi-asserted-by":"crossref","first-page":"305","DOI":"10.1016\/0304-405X(76)90026-X","article-title":"Theory
+        of the firm: Managerial behaviour, costs and ownership structure","volume":"3","author":"Jensen","year":"1976","journal-title":"Journal
+        of Financial Economics"},{"key":"10.1016\/j.intacc.2003.09.001_BIB43","doi-asserted-by":"crossref","first-page":"831","DOI":"10.2307\/2329018","article-title":"The
+        modern industrial revolution, exit, and the failure of internal control systems","volume":"48","author":"Jensen","year":"1993","journal-title":"Journal
+        of Finance"},{"issue":"5","key":"10.1016\/j.intacc.2003.09.001_BIB44","doi-asserted-by":"crossref","first-page":"564","DOI":"10.2307\/256977","article-title":"The
+        effects of corporate governance and institutional ownership types on corporate
+        social performance","volume":"42","author":"Johnson","year":"1999","journal-title":"Academy
+        of Management Journal"},{"key":"10.1016\/j.intacc.2003.09.001_BIB45","doi-asserted-by":"crossref","first-page":"33","DOI":"10.1002\/smj.4250140905","article-title":"Board
+        of director involvement in restructuring: The effects of board versus managerial
+        controls and characteristics","volume":"14","author":"Johnson","year":"1993","journal-title":"Strategic
+        Management Journal"},{"key":"10.1016\/j.intacc.2003.09.001_BIB46","doi-asserted-by":"crossref","first-page":"766","DOI":"10.2307\/256315","article-title":"Institutional
+        and strategic choice perspectives on board involvement in the strategic decision
+        process","volume":"35","author":"Judge","year":"1992","journal-title":"Academy
+        of Management Journal"},{"key":"10.1016\/j.intacc.2003.09.001_BIB48","doi-asserted-by":"crossref","first-page":"66","DOI":"10.2307\/256498","article-title":"Directors''
+        characteristics and committee membership: An investigation of type, occupation,
+        tenure, and gender","volume":"31","author":"Kesner","year":"1988","journal-title":"Academy
+        of Management Journal"},{"key":"10.1016\/j.intacc.2003.09.001_BIB47","doi-asserted-by":"crossref","first-page":"789","DOI":"10.2307\/255945","article-title":"Board
+        composition and the commission of illegal acts: An investigation of Fortune
+        500 Companies","volume":"29","author":"Kesner","year":"1986","journal-title":"Academy
+        of Management Journal"},{"key":"10.1016\/j.intacc.2003.09.001_BIB49","doi-asserted-by":"crossref","first-page":"429","DOI":"10.5465\/amr.1993.9309035146","article-title":"Employee
+        propensity to withhold effort: A conceptual model to intersect three avenues
+        of research","volume":"18","author":"Kidwell","year":"1993","journal-title":"Academy
+        of Management Review"},{"issue":"1","key":"10.1016\/j.intacc.2003.09.001_BIB50","doi-asserted-by":"crossref","first-page":"275","DOI":"10.1086\/467391","article-title":"Firm
+        performance and board committee structure","volume":"41","author":"Klein","year":"1998","journal-title":"Journal
+        of Law & Economics"},{"issue":"2","key":"10.1016\/j.intacc.2003.09.001_BIB51","doi-asserted-by":"crossref","first-page":"435","DOI":"10.2308\/accr.2002.77.2.435","article-title":"Economic
+        determinants of audit committee independence","volume":"77","author":"Klein","year":"2002","journal-title":"Accounting
+        Review"},{"key":"10.1016\/j.intacc.2003.09.001_BIB52","doi-asserted-by":"crossref","first-page":"163","DOI":"10.2307\/2393124","article-title":"Greenmail:
+        A study of board performance in corporate governance","volume":"32","author":"Kosnik","year":"1987","journal-title":"Administrative
+        Science Quarterly"},{"issue":"3","key":"10.1016\/j.intacc.2003.09.001_BIB53","doi-asserted-by":"crossref","first-page":"1131","DOI":"10.2307\/2329518","article-title":"Legal
+        determinants of external finance","volume":"52","author":"La Porta","year":"1997","journal-title":"Journal
+        of Finance"},{"issue":"6","key":"10.1016\/j.intacc.2003.09.001_BIB54","doi-asserted-by":"crossref","first-page":"1113","DOI":"10.1086\/250042","article-title":"Law
+        and finance","volume":"106","author":"La Porta","year":"1998","journal-title":"Journal
+        of Political Economy"},{"key":"10.1016\/j.intacc.2003.09.001_BIB55","doi-asserted-by":"crossref","first-page":"1418","DOI":"10.2307\/2234893","article-title":"Ownership
+        structure, control type classifications and the performance of large British
+        companies","volume":"101","author":"Leech","year":"1991","journal-title":"Economic
+        Journal"},{"key":"10.1016\/j.intacc.2003.09.001_BIB56","first-page":"59","article-title":"A
+        modest proposal for improved corporate governance","volume":"48","author":"Lipton","year":"1992","journal-title":"Business
+        Lawyer"},{"key":"10.1016\/j.intacc.2003.09.001_BIB57","author":"London Stock
+        Exchange, Committee on Corporate Governance","year":"1998","series-title":"The
+        combined code: Principles of good governance and code of best practice"},{"key":"10.1016\/j.intacc.2003.09.001_BIB58","first-page":"37","article-title":"The
+        President and the board of directors","volume":"50","author":"Mace","year":"1972","journal-title":"Harvard
+        Business Review"},{"key":"10.1016\/j.intacc.2003.09.001_BIB59","unstructured":"Mahnke,
+        V. (1997). Can contractual theories of the firm explain the existence of knowledge-intensive
+        firms? Working Paper 97-11, Copenhagen, Denmark: Department of Industrial
+        Economics and Strategy, Copenhagen Business School."},{"key":"10.1016\/j.intacc.2003.09.001_BIB60","doi-asserted-by":"crossref","first-page":"1010","DOI":"10.2307\/256538","article-title":"Effects
+        of board composition and stock ownership on the adoption of \u2018poison pills\u2019","volume":"35","author":"Mallette","year":"1992","journal-title":"Academy
+        of Management Journal"},{"key":"10.1016\/j.intacc.2003.09.001_BIB61","doi-asserted-by":"crossref","first-page":"33","DOI":"10.1086\/209707","article-title":"Board
+        composition and corporate control: Evidence from the insurance industry","volume":"70","author":"Mayers","year":"1997","journal-title":"Journal
+        of Business"},{"key":"10.1016\/j.intacc.2003.09.001_BIB62","doi-asserted-by":"crossref","first-page":"293","DOI":"10.1016\/0304-405X(90)90069-C","article-title":"Additional
+        evidence on equity ownership and corporate value","volume":"27","author":"McConnell","year":"1990","journal-title":"Journal
+        of Financial Economics"},{"key":"10.1016\/j.intacc.2003.09.001_BIB63","doi-asserted-by":"crossref","first-page":"789","DOI":"10.1007\/BF00872346","article-title":"The
+        theory of pluralism in corporate governance: A conceptual framework and empirical
+        test","volume":"14","author":"Molz","year":"1995","journal-title":"Journal
+        of Business Ethics"},{"key":"10.1016\/j.intacc.2003.09.001_BIB64","doi-asserted-by":"crossref","first-page":"293","DOI":"10.1016\/0304-405X(88)90048-7","article-title":"Management
+        ownership and market valuation","volume":"20","author":"Morck","year":"1988","journal-title":"Journal
+        of Financial Economics"},{"key":"10.1016\/j.intacc.2003.09.001_BIB65","doi-asserted-by":"crossref","first-page":"735","DOI":"10.1016\/S0361-3682(01)00022-8","article-title":"Intellectual
+        capital and the capable firm: Narrating visualising and numbering for managing
+        knowledge","volume":"26","author":"Mouritsen","year":"2001","journal-title":"Accounting,
+        Organizations and Society"},{"key":"10.1016\/j.intacc.2003.09.001_BIB66","author":"Netter","year":"1989","series-title":"Applied
+        regression models"},{"key":"10.1016\/j.intacc.2003.09.001_BIB67","unstructured":"Nova
+        Kreditna banka Maribor (2000). Annual Report. Author: Maribor, Slovakia."},{"key":"10.1016\/j.intacc.2003.09.001_BIB68","doi-asserted-by":"crossref","first-page":"214","DOI":"10.5465\/amr.1988.4306868","article-title":"Agency
+        and transaction cost perspectives on the manager\u2013shareholder relationship:
+        Incentives for congruent interests","volume":"13","author":"Oviatt","year":"1988","journal-title":"Academy
+        of Management Review"},{"key":"10.1016\/j.intacc.2003.09.001_BIB69","first-page":"10","article-title":"Why
+        won''t directors rock the boat?","volume":"65","author":"Patton","year":"1987","journal-title":"Harvard
+        Business Review"},{"key":"10.1016\/j.intacc.2003.09.001_BIB70","doi-asserted-by":"crossref","first-page":"349","DOI":"10.2307\/2391668","article-title":"Size,
+        composition, and function of hospital boards of directors: The organization
+        and its environment","volume":"18","author":"Pfeffer","year":"1973","journal-title":"Administrative
+        Science Quarterly"},{"key":"10.1016\/j.intacc.2003.09.001_BIB71","doi-asserted-by":"crossref","first-page":"515","DOI":"10.1016\/0378-4266(93)90050-N","article-title":"Corporate
+        control and bank efficiency","volume":"17","author":"Pi","year":"1993","journal-title":"Journal
+        of Banking and Finance"},{"key":"10.1016\/j.intacc.2003.09.001_BIB72","doi-asserted-by":"crossref","first-page":"221","DOI":"10.2307\/255428","article-title":"Board
+        power and organizational effectiveness among human service agencies","volume":"23","author":"Provan","year":"1980","journal-title":"Academy
+        of Management Journal"},{"key":"10.1016\/j.intacc.2003.09.001_BIB73","unstructured":"Pulic,
+        A. (1998). Measuring the performance of intellectual potential in knowledge
+        economy. Available online: http:\/\/www.measuring-ip.at\/papers\/Pulic\/Vaictxt\/vaictxt.html."},{"key":"10.1016\/j.intacc.2003.09.001_BIB74","unstructured":"Pulic,
+        A. (2000). An accounting tool for IC management. Available online: http:\/\/www.measuring-ip.at\/Papers\/ham99txt.htm."},{"key":"10.1016\/j.intacc.2003.09.001_BIB75","unstructured":"Pulic,
+        A., Bornemann, M. (1999). The physical and intellectual capital of Austrian
+        banks. Available online: http:\/\/www.measuring-ip.at\/Papers\/Pubic\/Bank\/en-bank.html."},{"key":"10.1016\/j.intacc.2003.09.001_BIB76","author":"Rao","year":"1995","article-title":"Governance
+        structure, corporate decision-making and firm performance in North America","series-title":"Corporate
+        decision-making in Canada"},{"key":"10.1016\/j.intacc.2003.09.001_BIB77","doi-asserted-by":"crossref","first-page":"155","DOI":"10.1002\/smj.4250120206","article-title":"CEO
+        duality and organizational performance: A longitudinal analysis","volume":"12","author":"Rechner","year":"1991","journal-title":"Strategic
+        Management Journal"},{"key":"10.1016\/j.intacc.2003.09.001_BIB78","author":"Roos","year":"1997","series-title":"Intellectual
+        capital: Navigating in the new business landscape"},{"key":"10.1016\/j.intacc.2003.09.001_BIB79","doi-asserted-by":"crossref","first-page":"175","DOI":"10.1016\/0304-405X(90)90002-H","article-title":"Outside
+        directors, board independence and shareholder wealth","volume":"26","author":"Rosenstein","year":"1990","journal-title":"Journal
+        of Financial Economics"},{"key":"10.1016\/j.intacc.2003.09.001_BIB80","doi-asserted-by":"crossref","first-page":"229","DOI":"10.1016\/S0304-405X(97)00004-4","article-title":"Inside
+        directors, board effectiveness and shareholder wealth","volume":"44","author":"Rosenstein","year":"1997","journal-title":"Journal
+        of Financial Economics"},{"issue":"2","key":"10.1016\/j.intacc.2003.09.001_BIB81","doi-asserted-by":"crossref","first-page":"158","DOI":"10.2307\/257100","article-title":"Internationalization
+        and firm governance: The roles of CEO compensation, top team composition and
+        board structure","volume":"41","author":"Sanders","year":"1998","journal-title":"Academy
+        of Management Journal"},{"key":"10.1016\/j.intacc.2003.09.001_BIB82","unstructured":"Schneider,
+        U. (1999). The Austrian approach to the measurement of intellectual potential.
+        Available online: http:\/\/www.measuirng-ip.at\/0papers\/Schneider\/Canada\/theoreticalframework.html."},{"issue":"2","key":"10.1016\/j.intacc.2003.09.001_BIB83","doi-asserted-by":"crossref","first-page":"737","DOI":"10.2307\/2329497","article-title":"A
+        survey of corporate governance","volume":"52","author":"Shleifer","year":"1997","journal-title":"Journal
+        of Finance"},{"key":"10.1016\/j.intacc.2003.09.001_BIB84","doi-asserted-by":"crossref","first-page":"7","DOI":"10.2307\/256417","article-title":"Management\u2013board
+        relationships, takeover risk, and the adoption of golden parachutes","volume":"32","author":"Singh","year":"1989","journal-title":"Academy
+        of Management Journal"},{"key":"10.1016\/j.intacc.2003.09.001_BIB85","doi-asserted-by":"crossref","first-page":"192","DOI":"10.2307\/255834","article-title":"Executive
+        apologies for price fixing: Role biased perceptions of causality","volume":"24","author":"Sonnenfeld","year":"1981","journal-title":"Academy
+        of Management Journal"},{"issue":"2","key":"10.1016\/j.intacc.2003.09.001_BIB86","doi-asserted-by":"crossref","first-page":"69","DOI":"10.1080\/10291954.1997.11435074","article-title":"Value
+        added reporting in South Africa: Current disclosure patterns","volume":"11","author":"Stainbank","year":"1997","journal-title":"South
+        African Journal of Accounting Research"},{"key":"10.1016\/j.intacc.2003.09.001_BIB87","author":"Sullivan","year":"2000","series-title":"Value-driven
+        intellectual capital: How to convert intangible corporate assets into market
+        value"},{"key":"10.1016\/j.intacc.2003.09.001_BIB88","author":"Suojanen","first-page":"391","year":"1954","article-title":"Accounting
+        theory and the large corporation","journal-title":"Accounting Review"},{"key":"10.1016\/j.intacc.2003.09.001_BIB89","unstructured":"Sveiby,
+        K. (2000). Intellectual capital and knowledge management. Available online:
+        http:\/\/www.sveiby.com.au\/BookContents.html, accessed: May, 2001."},{"key":"10.1016\/j.intacc.2003.09.001_BIB90","unstructured":"Sveiby,
+        K. (2001). Methods for measuring intangible assets. Available online: http:\/\/www.sveiby.com.au\/BookContents.html,
+        accessed: May, 2001."},{"key":"10.1016\/j.intacc.2003.09.001_BIB91","author":"Swedish
+        Shareholders Association","year":"1993","series-title":"Corporate governance
+        policy"},{"key":"10.1016\/j.intacc.2003.09.001_BIB92","author":"Swedish Shareholders
+        Association","year":"2001","series-title":"Corporate governance policy"},{"key":"10.1016\/j.intacc.2003.09.001_BIB93","author":"The
+        Swedish Academy of Directors, Western Region","year":"1994","series-title":"Introduction
+        to a Swedish code of good boardroom practice"},{"key":"10.1016\/j.intacc.2003.09.001_BIB94","author":"Turnball","year":"1998","series-title":"Report
+        of the Institute of Chartered Accountants in England and Wales (Turnball Report)"},{"key":"10.1016\/j.intacc.2003.09.001_BIB95","doi-asserted-by":"crossref","first-page":"383","DOI":"10.1006\/bare.1998.0075","article-title":"The
+        relationship between board structure and firm performance in the UK","volume":"30","author":"Vafeas","year":"1998","journal-title":"British
+        Accounting Review"},{"issue":"11","key":"10.1016\/j.intacc.2003.09.001_BIB96","doi-asserted-by":"crossref","first-page":"44","DOI":"10.1108\/03074359810765705","article-title":"The
+        usefulness of the value added statement in South Africa","volume":"24","author":"Van
+        Staden","year":"1998","journal-title":"Managerial Finance"},{"issue":"2","key":"10.1016\/j.intacc.2003.09.001_BIB97","doi-asserted-by":"crossref","first-page":"53","DOI":"10.1080\/10291954.1999.11435088","article-title":"Aspects
+        of the predictive and explanatory power of value added information in South
+        Africa","volume":"13","author":"Van Staden","year":"1999","journal-title":"South
+        African Journal of Accounting Research"},{"key":"10.1016\/j.intacc.2003.09.001_BIB98","unstructured":"Van
+        Staden, C. J. (2000). The value added statement: Bastion of social reporting
+        or dinosaur of financial reporting. Working paper. Massey University, Palmerston
+        North, New Zealand."},{"issue":"2","key":"10.1016\/j.intacc.2003.09.001_BIB99","doi-asserted-by":"crossref","first-page":"115","DOI":"10.1007\/BF00872318","article-title":"Boards
+        of directors and stakeholder orientation","volume":"11","author":"Wang","year":"1992","journal-title":"Journal
+        of Business Ethics"},{"key":"10.1016\/j.intacc.2003.09.001_BIB100","doi-asserted-by":"crossref","first-page":"431","DOI":"10.1016\/0304-405X(88)90053-0","article-title":"Outside
+        directors and CEO turnover","volume":"20","author":"Wiesbach","year":"1988","journal-title":"Journal
+        of Financial Economics"},{"issue":"3","key":"10.1016\/j.intacc.2003.09.001_BIB101","doi-asserted-by":"crossref","first-page":"192","DOI":"10.1108\/14691930110399932","article-title":"Is
+        intellectual capital performance and disclosure practices related","volume":"2","author":"Williams","year":"2001","journal-title":"Journal
+        of Intellectual Capital"},{"key":"10.1016\/j.intacc.2003.09.001_BIB102","doi-asserted-by":"crossref","first-page":"373","DOI":"10.1016\/0165-4101(93)90018-B","article-title":"Stock-based
+        incentives and investment decisions: A comment","volume":"16","author":"Wruck","year":"1993","journal-title":"Journal
+        of Accounting and Economics"},{"key":"10.1016\/j.intacc.2003.09.001_BIB103","doi-asserted-by":"crossref","first-page":"185","DOI":"10.1016\/0304-405X(95)00844-5","article-title":"Higher
+        market evaluation of companies with a small board of directors","volume":"40","author":"Yermack","year":"1996","journal-title":"Journal
+        of Financial Economics"},{"issue":"2","key":"10.1016\/j.intacc.2003.09.001_BIB104","doi-asserted-by":"crossref","first-page":"277","DOI":"10.1111\/1467-6486.00181","article-title":"Board
+        of directors and the adoption of a CEO performance evaluation process: Agency\u2014and
+        institutional\u2014theory perspectives","volume":"37","author":"Young","year":"2000","journal-title":"Journal
+        of Management Studies"},{"key":"10.1016\/j.intacc.2003.09.001_BIB105","doi-asserted-by":"crossref","first-page":"291","DOI":"10.1177\/014920638901500208","article-title":"Boards
+        of directors and corporate financial performance: A review and integration
+        model","volume":"15","author":"Zahra","year":"1989","journal-title":"Journal
+        of Management"},{"key":"10.1016\/j.intacc.2003.09.001_BIB106","author":"Zahra","first-page":"336","year":"1993","article-title":"Effects
+        of corporate ownership and board structure on corporate social responsibility
+        and financial performance","journal-title":"Academy of Management Best Paper
+        Proceedings","DOI":"10.5465\/AMBPP.1993.10317088","doi-asserted-by":"crossref"}],"container-title":["The
+        International Journal of Accounting"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0020706303000694?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0020706303000694?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2020,3,26]],"date-time":"2020-03-26T03:33:13Z","timestamp":1585193593000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2003,1]]},"references-count":102,"journal-issue":{"published-print":{"date-parts":[[2003,1]]},"issue":"4"},"alternative-id":["S0020706303000694"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.intacc.2003.09.001","relation":{"cites":[]},"ISSN":["0020-7063"],"issn-type":[{"value":"0020-7063","type":"print"}]}}'
+  recorded_at: 2020-05-06 16:04:55 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2
+- request:
+    method: get
+    uri: https://api.elsevier.com/content/article/PII:S0020706303000694?httpAccept=text/plain
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: libcurl/7.64.1 r-curl/4.3 crul/0.9.0
+      Accept-Encoding: gzip, deflate
+      CR-Clickthrough-Client-Token: <<crossref-tdm-token>>
+      Accept: text/plain
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      allow: GET
+      content-encoding: gzip
+      content-type: text/plain;charset=UTF-8
+      cr-clickthrough-client-token: <<crossref-tdm-token>>
+      date: Wed, 06 May 2020 16:04:53 GMT
+      last-modified: Thu, 14 May 2015 09:49:50 GMT
+      server: Apache-Coyote/1.1
+      vary: Origin
+      x-els-apikey: c67c17d621d3d9452f4fb28f12b3cc82
+      x-els-reqid: 875b6034-7eee-49bc-b3e4-02f481361914
+      x-els-resourceversion: default
+      x-els-status: OK
+      x-els-transid: a8d63347-16a2-4696-adec-8bb567cbc3db
+      transfer-encoding: chunked
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: "https://api.elsevier.com/content/article/pii/S0020706303000694 doi:10.1016/j.intacc.2003.09.001
+        1-s2.0-S0020706303000694 10.1016/j.intacc.2003.09.001 S0020-7063(03)00069-4
+        International comparative analysis of the association between board structure
+        and the efficiency of value added by a firm from its physical capital and
+        intellectual capital resources  The International Journal of Accounting Journal
+        00207063 38 4 465 491 465-491 4 text/plain 2003-12-31 2003 Copyright © 2003
+        University of Illinois. Published by Elsevier Inc. All rights reserved. University
+        of Illinois. Published by Elsevier Inc. Ho, Carol-Anne Williams, S.Mitchell
+        \n               Abstract\n               \n                  This study investigates
+        the link between corporate board features and corporate performance for a
+        sample of 286 publicly traded firms from South Africa (84 firms), Sweden (94
+        firms), and the UK (108 firms). Corporate board features considered are board
+        composition, inside director ownership, duality and board size. In contrast
+        to prior literature, performance is defined as the efficiency of value added
+        (VA) rather than in financial terms. Further, the analysis examines the association
+        between board features and efficiency of VA and each of the firm's physical
+        capital (PC) and intellectual capital (IC), respectively. Finally, the present
+        study analyzes the association between board features and corporate performance
+        conjointly. Comparable to general findings from studies using U.S. data, the
+        empirical analysis as a whole did not discern consistent significant link
+        between the four board features and corporate performance across the three
+        nations. However, individual board features are found to influence corporate
+        performance in isolated cases. Overall, results provide evidence that even
+        under different sociopolitical and economic conditions, governance needs vary
+        across firms. Consequently, these findings do not lend support to the notion
+        that uniform board structures should be mandated.\n               \n             0
+        false  false    Efficiency value added Board structure Intellectual capital
+        Physical capital Corporate governance    https://api.elsevier.com/content/object/eid/1-s2.0-S0020706303000694-si6.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0020706303000694-si5.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0020706303000694-si4.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0020706303000694-si3.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0020706303000694-si2.gif?httpAccept=%2A%2F%2A
+        https://api.elsevier.com/content/object/eid/1-s2.0-S0020706303000694-si1.gif?httpAccept=%2A%2F%2A
+        \ 0345479158 2-s2.0-0345479158  serial JL 272052 291210 291774 31  The International
+        Journal of Accounting INTERNATIONALJOURNALACCOUNTING 2003-10-08 2003-10-08
+        2010-03-26T10:45:09 1-s2.0-S0020706303000694 S0020-7063(03)00069-4 S0020706303000694
+        10.1016/j.intacc.2003.09.001 S300 S300.1 FULL-TEXT 1-s2.0-S0020706300X00313
+        2015-05-14T09:49:50.815734-04:00 0 0 20030101 20031231 2003 2003-10-08T00:00:00Z
+        articleinfo crossmark dco dateupdated tomb dateloaded datesearch indexeddate
+        issuelist volumelist yearnav articletitlenorm authfirstinitialnorm authfirstsurnamenorm
+        cid cids contenttype copyright dateloadedtxt docsubtype doctype doi eid ewtransactionid
+        hubeid issfirst issn issnnorm itemstage itemtransactionid itemweight openaccess
+        openarchive pg pgfirst pglast pii piinorm pubdateend pubdatestart pubdatetxt
+        pubyr sortorder srctitle srctitlenorm srctype subheadings volfirst volissue
+        webpdf webpdfpagecount table body acknowledge affil appendices articletitle
+        auth authfirstini authfull authkeywords authlast footnotes primabst ref alllist
+        content subj ssids 0020-7063 00207063   38 38  4 4  Volume 38, Issue 4 8 465
+        491 465 491  2003  2003 2003-01-01 2003-12-31 2003 converted-article fla Copyright
+        © 2003 University of Illinois. Published by Elsevier Inc. All rights reserved.
+        INTERNATIONALCOMPARATIVEANALYSISASSOCIATIONBETWEENBOARDSTRUCTUREEFFICIENCYVALUEADDEDBYAFIRMPHYSICALCAPITALINTELLECTUALCAPITALRESOURCES
+        HO C 1 Introduction  2 Overview of corporate governance in South Africa, Sweden
+        and United Kingdom  3 Prior literature, theory and hypothesis development
+        3.1 Proportion of outside directors on a firm's board of directors  3.2 Ownership
+        concentration of inside directors of a firm's board of directors  3.3 Leadership
+        structure (duality)  3.4 Size of the board of directors   4 Research method
+        4.1 Measure of dependent variables  4.2 Proxy measures for independent variables
+        and control factors  4.3 Sample data   5 Results 5.1 Correlation analysis
+        \ 5.2 Tests of 1a, 2a, 3a and 4a   5.3 Tests of 1b, 2b, 3b, and 4b   5.4 Tests
+        of 1c, 2c, 3c, and 4c    6 Concluding remarks and future research initiatives
+        \ Acknowledgements  Appendix A Steps in Calculating VAIC for the Dependent
+        Variables  References   AGRAWAL 1996 377 397 A  ALEXANDER 1993 74 99 J  BAZERMAN
+        1983 206 217 M  BERLE 1932 A MODERNCORPORATIONPRIVATEPROPERTY  BHAGAT 1999
+        921 963 S  BLAIR 1995 M OWNERSHIPCONTROL  BONTIS 1998 169 190 N   BORNEMANN
+        1998 M PAPERPRESENTED19THANNUALNATIONALBUSINESSCONFERENCE EMPIRICALANALYSISPOTENTIALVALUESYSTEMSINAUSTRIAACCORDINGVAICMETHOD
+        \ BRICKLEY 1997 189 220 J  BURT 1980 557 581 R  BYRD 1992 195 221 J  CADBURY
+        1992 A REPORTCOMMITTEEFINANCIALASPECTSCORPORATEGOVERNANCECADBURYREPORT  CHAGANTI
+        1985 400 417 R  CLARKSON 1994 M ARISKBASEDSTAKEHOLDERTHEORY  COCHRAN 1985
+        664 671 P  COFFEY 1998 1595 1603 B  CONYON 1994 229 247 M  DAILY 1994 1603
+        1617 C  DALTON 1999 674 686 D  DALTON 1985 749 762 D  DEMIRAG 2000 341 353
+        I  DEMSETZ 1985 1155 1177 H  EDVINSSON 1997 266 373 L  EVANS 1991 175 186
+        C  FINKELSTEIN 1992 505 538 S  FIRTH 1996 291 301 M  FORD 1984 666 674 R  FRANKFORTER
+        2000 321 348 S  GREGORY 2001 H INTERNATIONALCOMPARISONCORPORATEGOVERNANCEGUIDELINESCODESBESTPRACTICEDEVELOPINGEMERGINGMARKETS
+        \ GREGORY 2001 H INTERNATIONALCOMPARISONCORPORATEGOVERNANCEGUIDELINESCODESBESTPRACTICEDEVELOPEDMARKETS
+        \ HAMBRICK 1984 193 206 D  HANSEN 1991 1 16 G  HERMALIN 1991 101 112 B   INSTITUTEOFDIRECTORSOFSOUTHERNAFRICA
+        1994 KINGREPORTCORPORATEGOVERNANCEKINGREPORTI  INSTITUTEOFDIRECTORSOFSOUTHERNAFRICA
+        2002 KINGREPORTCORPORATEGOVERNANCEFORSOUTHAFRICAKINGREPORTII  JENSEN 1976
+        305 360 M  JENSEN 1993 831 880 M  JOHNSON 1999 564 576 R  JOHNSON 1993 33
+        50 R  JUDGE 1992 766 794 W  KESNER 1988 66 84 I  KESNER 1986 789 799 I  KIDWELL
+        1993 429 456 R  KLEIN 1998 275 303 A  KLEIN 2002 435 452 A  KOSNIK 1987 163
+        185 R  LAPORTA 1997 1131 1150 R  LAPORTA 1998 1113 1155 R  LEECH 1991 1418
+        1437 D  LIPTON 1992 59 77 M  LONDONSTOCKEXCHANGECOMMITTEEONCORPORATEGOVERNANCE
+        1998 COMBINEDCODEPRINCIPLESGOODGOVERNANCECODEBESTPRACTICE  MACE 1972 37 49
+        M   MALLETTE 1992 1010 1035 P  MAYERS 1997 33 62 D  MCCONNELL 1990 293 315
+        J  MOLZ 1995 789 804 R  MORCK 1988 293 315 R  MOURITSEN 2001 735 762 J  NETTER
+        1989 J APPLIEDREGRESSIONMODELS   OVIATT 1988 214 225 B  PATTON 1987 10 18
+        A  PFEFFER 1973 349 364 J  PI 1993 515 530 L  PROVAN 1980 221 236 K     RAO
+        1995 P CORPORATEDECISIONMAKINGINCANADA GOVERNANCESTRUCTURECORPORATEDECISIONMAKINGFIRMPERFORMANCEINNORTHAMERICA
+        \ RECHNER 1991 155 160 P  ROOS 1997 J INTELLECTUALCAPITALNAVIGATINGINNEWBUSINESSLANDSCAPE
+        \ ROSENSTEIN 1990 175 191 S  ROSENSTEIN 1997 229 250 S  SANDERS 1998 158 178
+        W   SHLEIFER 1997 737 783 A  SINGH 1989 7 24 H  SONNENFELD 1981 192 198 J
+        \ STAINBANK 1997 69 91 L  SULLIVAN 2000 P VALUEDRIVENINTELLECTUALCAPITALHOWCONVERTINTANGIBLECORPORATEASSETSMARKETVALUE
+        \ SUOJANEN 1954 391 398 W    SWEDISHSHAREHOLDERSASSOCIATION 1993 CORPORATEGOVERNANCEPOLICY
+        \ SWEDISHSHAREHOLDERSASSOCIATION 2001 CORPORATEGOVERNANCEPOLICY  THESWEDISHACADEMYOFDIRECTORSWESTERNREGION
+        1994 INTRODUCTIONASWEDISHCODEGOODBOARDROOMPRACTICE  TURNBALL 1998 N REPORTINSTITUTECHARTEREDACCOUNTANTSINENGLANDWALESTURNBALLREPORT
+        \ VAFEAS 1998 383 407 N  VANSTADEN 1998 44 59 C  VANSTADEN 1999 53 75 C   WANG
+        1992 115 121 J  WIESBACH 1988 431 460 M  WILLIAMS 2001 192 203 M  WRUCK 1993
+        373 380 K  YERMACK 1996 185 211 D  YOUNG 2000 277 295 G  ZAHRA 1989 291 334
+        S  ZAHRA 1993 336 340 S   HOX2003X465 HOX2003X465X491 HOX2003X465XC HOX2003X465X491XC
+        \   item S0020-7063(03)00069-4 S0020706303000694 1-s2.0-S0020706303000694
+        10.1016/j.intacc.2003.09.001 272052 2010-09-30T17:10:57.891762-04:00 2003-01-01
+        2003-12-31 1-s2.0-S0020706303000694-main.pdf https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0020706303000694/MAIN/application/pdf/8b45268c99e882ccef18b815c56994a7/main.pdf
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0020706303000694/MAIN/application/pdf/8b45268c99e882ccef18b815c56994a7/main.pdf
+        main.pdf pdf true 240096 MAIN 27 1-s2.0-S0020706303000694-main_1.png https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0020706303000694/PREVIEW/image/png/2376eb9902d1235b0265fa1084b1226c/main_1.png
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0020706303000694/PREVIEW/image/png/2376eb9902d1235b0265fa1084b1226c/main_1.png
+        main_1.png png 51923 849 656 IMAGE-WEB-PDF 1    1-s2.0-S0020706303000694-si6.gif
+        https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0020706303000694/STRIPIN/image/gif/780c109e4543200e2c5ffb10f1a36e3f/si6.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0020706303000694/STRIPIN/image/gif/780c109e4543200e2c5ffb10f1a36e3f/si6.gif
+        si6 si6.gif gif 591 18 120 ALTIMG  1-s2.0-S0020706303000694-si5.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0020706303000694/STRIPIN/image/gif/ebba016550d7c261318fd193ebe0ce01/si5.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0020706303000694/STRIPIN/image/gif/ebba016550d7c261318fd193ebe0ce01/si5.gif
+        si5 si5.gif gif 503 13 117 ALTIMG  1-s2.0-S0020706303000694-si4.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0020706303000694/STRIPIN/image/gif/85fa63c42f8886093e467ddaf85e2ad7/si4.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0020706303000694/STRIPIN/image/gif/85fa63c42f8886093e467ddaf85e2ad7/si4.gif
+        si4 si4.gif gif 577 18 125 ALTIMG  1-s2.0-S0020706303000694-si3.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0020706303000694/STRIPIN/image/gif/bd5de01e8050352e28d2213959faf2d2/si3.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0020706303000694/STRIPIN/image/gif/bd5de01e8050352e28d2213959faf2d2/si3.gif
+        si3 si3.gif gif 561 18 122 ALTIMG  1-s2.0-S0020706303000694-si2.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0020706303000694/STRIPIN/image/gif/d032dccda3f00d51b1b97285a091b5d9/si2.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0020706303000694/STRIPIN/image/gif/d032dccda3f00d51b1b97285a091b5d9/si2.gif
+        si2 si2.gif gif 842 13 241 ALTIMG  1-s2.0-S0020706303000694-si1.gif https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0020706303000694/STRIPIN/image/gif/0bdd898fc76a794593bfbc03707f979c/si1.gif
+        https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0020706303000694/STRIPIN/image/gif/0bdd898fc76a794593bfbc03707f979c/si1.gif
+        si1 si1.gif gif 793 13 209 ALTIMG     ACCOUN 322 S0020-7063(03)00069-4 10.1016/j.intacc.2003.09.001
+        University of Illinois  Table 1 Summary of major corporate governance characteristics
+        and guidelines in SA, Sweden and UK      Panel A South Africa Sweden United
+        Kingdom   Legal system Mixed jurisdiction—English common law and Roman–Dutch
+        law Roman–Germanic law – Scandinavian English Common law  Level of shareholder
+        rightsa   5 3 5  Level of creditor rightsa   3 2 4  Rating on accounting standardsa
+        \  70 83 78  Ownership concentrationa   52% 28% 20%  Primary source of Corporate
+        Governance Guidelines and Recommendations during 1990s and into 2000sb   King
+        Report II  (2002) —King Report on corporate governance for South Africa; King
+        Report I  (1994) —King reports form basis of The Code of Corporate Practices
+        and Conduct  Corporate governance policy  (1993, 2001) ; Introduction to a
+        Swedish code of good boardroom practice  (1994)  Combined code: Principles
+        of good governance and Code of best practice ; Cadbury Report (1992); Turnball
+        Report (1998)   Primary body issuing guidelines during 1990s and into 2000s
+        Institute of Directors of Southern Africa Swedish Shareholders' Association;
+        Swedish Academy of Directors London Stock Exchange  Links of guidelines published
+        during 1990s and into 2000s to regulatory requirements Appended to Johannesburg
+        Stock Exchange listing requirements; obligated firms must provide statement
+        commenting on extent of compliance with The Code  (JSE Listing Requirement
+        852 (a)) Compliance with guidelines is strictly voluntary and no disclosure
+        requirements on level of compliance Combined Code appended to London Stock
+        Exchange Listing Rules; each listed firm must disclose how applied Combined
+        Code principles and complied with provisions (Listing rules, 12.43A(a) and
+        (b))     Panel B South Africa Sweden United Kingdom  Board structure Unitary
+        Unitary Unitary  Objective of the board Stakeholder emphasis—maximize shareholder
+        value whilst protecting and advancing interests of other stakeholders Shareholder
+        emphasis—maximize shareholder value. Role of stakeholders not covered Shareholder
+        emphasis—maximize shareholder value. Role of stakeholders not covered  Size
+        of the Board Not covered directly Depends on size of firm, its organization,
+        type and direction. Corporate Governance Policy, however, suggests 6–9 people
+        Not covered  Mix of Directors Board needs to be balanced with at least equitable
+        number executive and nonexecutive directors; boards should at minimum have
+        no less than two nonexecutive directors of sufficient caliber Depends on size—generally,
+        as firm six increases there is a strong recommendation for greater representation
+        of nonexecutive (affiliated and independent) directors Board should comprise
+        a balanced mix of executive and nonexecutive directors so no individual or
+        small group of individuals can dominate decision making (The Combined Code,
+        Principle A.3)  Meaning of independence Independent of management and have
+        not contractual nexus with firm for reward Not covered No relationship to
+        management and free from any business or other relationship which could materially
+        interfere with role  Board and corporate leadership Chair should, unless considered
+        not in firm's interests, be a nonexecutive director of firm and should not
+        be chief executive Separation of CEO and Chairperson position not directly
+        covered Recommends separation of CEO and Chairperson roles firms combining
+        two positions must publicly justify decision  Board committees Establish audit,
+        nomination and remuneration committee Establish audit, nomination and remuneration
+        committee Establish audit, nomination and remuneration committee  Ownership
+        of directors Not covered Stresses importance of directors to participate as
+        owners having share holdings in firm Not covered    a La Porta et al. (1997,
+        1998) .  b Other major source include Gregory (2001a, 2001b) .   Table 2 Descriptive
+        statistics on independent regression variables, control factors and the dependent
+        variable and its components                Panel A—Whole sample (n =286) Panel
+        B—SA firms only (n =84) Panel B – SA firms only (n =84) Panel B—SA firms only
+        (n =84)  Mean Median S.D. Mean Median S.D. Mean Median S.D. Mean Median S.D.
+        \  Independent variables   Percentage Outside Directors 59.29% 62.50% 41.96%
+        51.91% 52.79% 15.57% 78.29% 90.00% 9.62% 48.50% 57.52% 62.07%  Percentage
+        Inside Directors Ownership*  5.85% 0.21% 13.70% 9.70% 2.98% 13.45% 1.75% 0.05%
+        4.90% 6.42% 2.45% 27.66%  Duality 45.10% N/A N/A 61.43% N/A N/A 20.64% N/A
+        N/A 53.70% N/A N/A  Board Size 10.47 11.00 4.29 13.02 12.00 5.33 9.28 10.00
+        2.42 9.54 9.00 3.98     Control factors   ROA 10.74% 8.41% 17.43% 12.77% 10.74%
+        27.69% 8.49% 5.02% 5.61% 11.11% 13.13% 9.63%  Leverage 25.40% 56.48% 21.09%
+        25.25% 21.35% 21.69% 29.11% 54.14% 17.52% 22.29% 20.05% 21.02%  Dividend Yield
+        7.04% 3.75% 10.28% 3.84% 2.07% 5.40% 4.31% 3.73% 4.54% 11.92% 6.67% 14.22%
+        \ Industry Type 59.50% N/A N/A 45.71% N/A N/A 69.57% N/A N/A 61.46% N/A N/A
+        \ Size of the Firm (Sales US$) 859.4 1488.3 2015.3 718.0 890.4 2156.4 1584.8
+        256.0 4683.2 3380.8 531.6 5171.2     Dependent variables   TVAIC 2.456 2.150
+        2.456 2.910 2.279 1.791 1.850 1.552 3.217 2.430 2.461 1.156  TVAPC 1.690 1.450
+        4.863 1.359 0.748 2.322 0.840 0.502 0.829 2.687 1.838 9.221  TVAE 4.146 3.110
+        6.270 4.270 3.450 2.418 2.690 2.485 3.447 5.317 3.399 9.305    * One if CEO
+        is Chairperson; zero otherwise.   Table 3 Bivariate Pearson moment correlations
+        \             Independent variables Control factors  VIF PerOutDir PerInsOwn
+        Duality Board Size ROA Leverage Dividend Yield Industry Type Size of the Firm
+        \  PerOutDir 1.912 1.000          PerInsOwn 1.011 −0.089 1.000         Duality
+        2.312 0.191 0.207 1.000        Board size 1.423 −0.256 −0.105 0.174 1.000
+        \      ROA 1.201 0.044 0.122 0.045 0.025 1.000      Leverage 2.101 −0.011
+        −0.103 0.083 0.008 −0.255 1.000     Dividend yield 1.734 −0.054 −0.032 −0.075
+        −0.046 0.193 0.150 1.000    Industry type 1.821 0.251 −0.110 0.029 0.014 0.025
+        0.044 −0.022 1.000   Size of the firm 2.981 0.332 −0.202 −0.027 −0.039 −0.030
+        −0.321 0.155 0.092 1.000    VIF values reported in Table 3  are calculated
+        from a regression model including all independent variables and control factors
+        with TVAE as the dependent variables and all sample firms (see Table 4, Panel
+        A ). VIF values were also calculated for regression models with TVAFC and
+        TVAIC as the dependent variable and/or using sample firms from a select nation;
+        VIF values from the additional regressions did not exceed 3.00.   Table 4
+        Multiple regression of the entire sample and VAIC          General model:
+        TVAE i=a i  +α 1i  PerOutDir i  +α i 2 PerInsOwn i  −α i 3 Duality i  +α i
+        4 Board Size i  +α i 5 ROA i  − α i 6 Leverage i  +α i 7 Dividend Yield i
+        \ +α i 8 Industry Type i  −α i 9 Size of the Firm i  +ε i    Panel A: SA firms
+        only (n =84) Panel B: Sweden firms only (n =94) Panel C: UK firms only (n
+        =108)      Multiple R  0.585 0.667 0.673     R Square  0.342 0.445 0.453     Adjusted
+        R Square  0.262 0.385 0.403     Standard Error  2.077 2.702 7.189     ANOVA:
+        F Statistic (Sig.) 14.814 (0.000α ) 7.482 (0.000α ) 9.024 (0.000α )         t
+        \ statistic P  value t  statistic P  value t  statistic P  value  Intercept
+        2.484 0.015β  2.825 0.006α  1.229 0.222  PerOutDir  1.808 0.075γ  −1.196 0.235
+        0.635 0.527  PerInsOwn  −0.546 0.586 1.792 0.074γ  0.352 0.725  Duality  −2.650
+        0.010β  −2.606 0.011β  −2.314 0.023β   Board Size  −1.554 0.124 −1.086 0.280
+        1.597 0.113  ROA  0.009 0.993 0.479 0.633 0.074 0.942  Leverage  −2.767 0.007α
+        \ −2.237 0.028β  −2.778 0.007α   Dividend Yield  −0.517 0.606 −0.452 0.652
+        6.313 0.000α   Industry Type  −0.354 0.723 2.794 0.006α  1.620 0.109  Size
+        of the Firm  1.005 0.318 −0.301 0.764 −0.025 0.980    Where: α =significant
+        1% confidence level; β =significant 5% confidence level; γ =significant 10%
+        confidence level. TVAEi  =Value Added Coefficient Index  score for company
+        i  for 1998 financial year; PerOutDir i   =ratio # directors not directly
+        employed with or having professional ties to firm to total board size as reported
+        in 1998 annual report of company i ; PerInsOwn i  =ratio of # outstanding
+        common shares held by inside directors to total # outstanding common shares
+        of firm at end 1998 financial year for company i ; Duality i  =dummy variable-firms
+        with same individual acting as CEO and Chairperson as reported in 1998 annual
+        report of company i  coded one, otherwise zero; Board Size i  : directors
+        serving on the board of company i  at the end of 1998; ROA : ratio of a firm's
+        operating net income to average total assets for 1997 and 1998 for company
+        i ; Leverage i  : average of total debt divided by total shareholders' equity
+        as reported in each firm's 1997 and 1998 annual report for company i ; Dividend
+        Yield i  : average of total debt divided by total shareholders' equity as
+        reported in each firm's 1997 and 1998 annual report for company i ; Industry
+        Type i  : dummy variable with company i  determined to be R&D intensive coded
+        a one (1), otherwise coded a zero (0); Size of the firm i  :—natural log of
+        annual sales as reported in each firm's 1998 annual report for company i ;
+        χ i 1–9 =coefficients of variables 1 thru 9; and ε i  =residual term.   Table
+        5 Multiple regression of the entire sample and TVAPC          General model:
+        TVAPC i  =a i  +α i 1 PerOutDir i  +α i 2 PerInsOwn i  −α i 3 Duality i  +α
+        i 4 Board Size i  +α i 5 ROA i  −α i 6 Leverage i  +α i 7 Dividend Yield i
+        \ +α i 8 Industry Type i  −α i 9 Size of the Firm i  +ε i    Panel A: SA firms
+        only (n =84) Panel B: Sweden firms only (n =94) Panel C: UK firms only (n
+        =108)      Multiple R  0.661 0.415 0.653     R Square  0.479 0.273 0.427     Adjusted
+        R Square  0.427 0.184 0.374     Standard Error  1.596 0.793 7.296     ANOVA:
+        F Statistic (Sig.) 14.830 (0.000α ) 7.797 (0.000α ) 8.106 (0.000α )         t
+        \ statistic P  value t  statistic P  value t  statistic P  value  Intercept
+        1.403 0.165 −0.168 0.867 −1.426 0.157  PerOutDir  3.456 0.001α  −0.202 0.840
+        0.376 0.708  PerInsOwn  −0.322 0.748 1.039 0.302 0.351 0.726  Duality  −1.357
+        0.179 −0.049 0.961 −0.231 0.818  Board Size  1.448 0.152 −0.270 0.788 1.722
+        0.088γ   ROA  4.956 0.000α  1.488 0.141 1.789 0.077γ   Leverage  −5.095 0.000α
+        \ −3.199 0.002α  −1.031 0.305  Dividend yield  0.608 0.545 −0.324 0.746 2.673
+        0.009α   Industry type  0.103 0.919 6.192 0.000α  −0.491 0.625  Size of the
+        firm  −4.872 0.000α −0.478 0.634 −1.937 0.056γ    Where: TVAPC=VA efficiency
+        of companyi   from its PC for 1998. Other independent variables and control
+        factors are defined in Table 4 .   Table 6 Multiple regression of the entire
+        sample and TVAIC          General model: TVAIC i  =ai  +α 1i  PerOutDir i
+        \ +α i 2 PerInsOwn i  −α i 3 Duality i  +α i 4 Board Size i   + α i 5 ROA
+        i   −α i 6 Leverage i  +α i 7 Dividend Yield i  +α i 8 Industry Type i  −α
+        i 9 Size of the Firm i  +ε i    Panel A: SA firms only (n =84) Panel B: Sweden
+        firms only (n =94) Panel C: UK firms only (n =108)      Multiple R 0.673 0.646
+        0.602     R Square  0.452 0.418 0.363     Adjusted R Square  0.386 0.355 0.304
+        \    Standard Error  1.403 2.582 0.965     ANOVA: F Statistic (Sig.) 6.795
+        (0.000α ) 6.697 (0.000α ) 6.202 (0.000α )         t  statistic P  value t
+        \ statistic P  value t  statistic P  value  Intercept −1.609 0.112 0.553 0.582
+        −1.290 0.200  PerOutDir  0.254 0.801 1.236 0.220 1.563 0.121  PerInsOwn  −1.175
+        0.244 2.628 0.010β  0.029 0.977  Duality  −2.380 0.020β  −2.127 0.036β  −1.890
+        0.062γ   Board size  −0.654 0.515 1.054 0.295 1.119 0.266  ROA  −2.960 0.004α
+        \ 1.358 0.178 1.368 0.175  Leverage  −1.700 0.093γ  2.499 0.014β  0.488 0.627
+        \ Dividend yield  −1.458 0.149 −0.154 0.878 0.222 0.825  Industry type  −0.226
+        0.822 0.466 0.643 −0.546 0.586  Size of the firm  −4.054 0.000α −2.777 0.007α
+        −3.713 0.000α    Where: TVAIC=VA efficiency of companyI   from its IC (human
+        capital and structural capital) for 1998; that is, HCE+SCE. Other independent
+        variables and control factors are defined in Table 4 .    International comparative
+        analysis of the association between board structure and the efficiency of
+        value added by a firm from its physical capital and intellectual capital resources
+        Carol-Anne Ho  S.Mitchell Williams * mitchellw@smu.edu.sg  Department of Accountancy,
+        Singapore Management University, #05 – 11, 469 Bukit Timah Road, 259756, Singapore,
+        Singapore  * Corresponding author. Tel.: +65-6822-0609; fax: +65-6822-0600.
+        \  Abstract This study investigates the link between corporate board features
+        and corporate performance for a sample of 286 publicly traded firms from South
+        Africa (84 firms), Sweden (94 firms), and the UK (108 firms). Corporate board
+        features considered are board composition, inside director ownership, duality
+        and board size. In contrast to prior literature, performance is defined as
+        the efficiency of value added (VA) rather than in financial terms. Further,
+        the analysis examines the association between board features and efficiency
+        of VA and each of the firm's physical capital (PC) and intellectual capital
+        (IC), respectively. Finally, the present study analyzes the association between
+        board features and corporate performance conjointly. Comparable to general
+        findings from studies using U.S. data, the empirical analysis as a whole did
+        not discern consistent significant link between the four board features and
+        corporate performance across the three nations. However, individual board
+        features are found to influence corporate performance in isolated cases. Overall,
+        results provide evidence that even under different sociopolitical and economic
+        conditions, governance needs vary across firms. Consequently, these findings
+        do not lend support to the notion that uniform board structures should be
+        mandated.   Keywords Efficiency value added  Board structure  Intellectual
+        capital  Physical capital  Corporate governance    1 Introduction Corporate
+        governance concerns in publicly listed firms with diffuse ownership are well
+        known and long established (i.e., Berle & Means, 1932; Hermalin & Weisbach,
+        2001; Shleifer & Vishny, 1997 ). Financial scandals in various nations during
+        the 1980s reignited debate—that continues to the present—on the most appropriate
+        mechanisms for making corporate management more accountable to shareholders
+        and other relevant stakeholders (Demirag, Sudarsanam, & Wright, 2000) . Boards
+        of directors have been at the epicentre of this debate (Bhagat & Black, 1999;
+        Vafeas & Theodorou, 1998) . Members of boards of directors have been extensively
+        criticized for being complacent in their monitoring role, and/or relinquishing
+        control to corporate managers who pursue their own self-interests (Dalton,
+        Daily, Johnson, & Ellstrand, 1999) . Also, boards of directors are accused
+        of being remiss in their accountability to stakeholders (Coffey & Wang, 1998)
+        . Because poor corporate performance is viewed to be a major by-product of
+        an ineffective board of directors, various corporate governance reform advocates
+        frequently argue appropriate changes to its’ composition, structure and ownership
+        configuration1  1 For the purposes of the present paper, board composition
+        refers to the make-up of the board such as the number of directors and mix
+        of inside and outside directors. The phrase board structure is utilized to
+        designate particular structural characteristics that may include presence
+        or absence of a standing committee and whether a single individual or two
+        separate people undertake the roles of CEO and Chairperson of the board. Finally,
+        board ownership configuration relates to the ownership levels of the board.
+        This may include such features as the percentage of outstanding shares owned
+        by inside or outside directors and presence or absence of a block holder on
+        the board.   will enhance both corporate governance and corporate performance.
+        The association between board features and corporate performance has frequently
+        been questioned, both in conceptual (i.e., Jensen & Meckling, 1976; Mace,
+        1972; Molz, 1995 ) and empirical studies (i.e., Daily & Dalton, 1994; Kesner,
+        1988; Kosnik, 1987 ). In this study we provide an international comparative
+        analysis of the association between board features and corporate performance
+        drawing on data (hand collected) from 284 publicly listed firms from South
+        Africa (SA) (n =84), Sweden (n =94) and the UK (n =108). Earlier studies (i.e.,
+        La Porta, Lopez-De-Silanes, Shleifer, & Vishny, 1997; La Porta, Lopez-De-Silanes,
+        Shleifer, & Vishny, 1998 ) clearly indicate that key elements of the corporate
+        governance environment—such as the legal system and capital markets—vary across
+        national boundaries. An international comparative analysis is, therefore,
+        warranted since prior empirical research findings are generally derived using
+        data solely from the United States (Vafeas & Theodorou, 1998) . Corporate
+        governance guidelines published during the 1990s and early 2000s, however,
+        often emphasized the concept of value added (henceforth denoted as VA ) as
+        a primary objective of a firm's board of directors. However, prior studies
+        generally define corporate performance in financial terms with a small number
+        applying societal level concepts (i.e., corporate social and environmental
+        responsibility (Frankforter, Berman, & Jones, 2000) . In a departure from
+        prior research, the present study empirically examines the association between
+        board features and corporate performance, with performance defined as the
+        efficiency of VA by a firm's total resource base (hereafter TVAE). Also, recognizing
+        that a firm's resource base consists of physical capital (PC) and intellectual
+        capital (IC), we conjecture that the different properties underlying PC and
+        IC resources will lead corporate management to adopt dissimilar approaches
+        to the use and application of each type of resource base. The influence of
+        board features on corporate performance could then depend on the firm's mix
+        of PC and IC resources. A unique feature of the present study, therefore,
+        is extending the analysis to test for the association between board features
+        and (1) efficiency of VA by a firm's PC—resources (hereafter TVAPC) and (2)
+        efficiency of VA by a firm's IC—resources (hereafter TVAIC). We use the Value
+        Added Intellectual Capital (VAIC) methodology (i.e., Pulic, 1998 ) to develop
+        proxies for TVAE, TVAPC, and TVAIC.2  2 Whilst the empirical results and discussion
+        reported in the present study primarily focus on proxies developed in line
+        with the VAIC methodology, a comparison with findings using traditional market-
+        and accounting-based measures of corporate performance is also provided in
+        the Results section .   Finally, much of the extant literature generally examines
+        the association between single board features and corporate performance. Vafeas
+        and Theodorou (1998, p. 403)  suggest that attempts to establish the existence
+        of such association without controlling for the influence of other corporate
+        governance characteristics may “lead to spurious relationships and misguided
+        conclusions.” This study attempts to mitigate this concern. SA, Sweden and
+        the UK were selected for this study for several key reasons. First, during
+        the 1990s and early 2000s corporate governance was a major issue for all three.
+        New corporate governance guidelines and regulations were published in SA (King
+        Report I , 1994 ; King Report II, 2002  ,), Sweden (Corporate governance policy,
+        \ 1993 , 2001 ) and the UK (Cadbury Report, 1992; Turnball Report, 1998)  during
+        this period. The goal was to enhance corporate monitoring and performance
+        through the proper employment of more effective board features. It is important,
+        therefore, to investigate the possible impact of such recommendations on corporate
+        performance. Second, there is also a common historical link between corporate
+        governance guidelines and regulations published in the three nations since
+        1992; specifically, the Cadbury Report (1992)  has commonly been used as the
+        initial point of reference in the construction of corporate governance guidelines
+        and regulations. Third, an understanding and familiarity with the concept
+        of IC is another reason for concentrating on SA, Sweden and the UK. Swedish
+        firms, for example, are the acknowledged ‘forefathers’ in the development
+        of the concept of IC and its recognition as a distinctive discipline (Bontis,
+        1998, 2000) . Since the mid-1990s IC has established a strong and growing
+        presence in both the SA and the UK business and political environment (Mouritsen,
+        Larsen, & Bukh, 2001; Williams, 2001) . Fourth, the concept of VA features
+        prominently in each nation's social, scholarly, and business environments
+        (Stainbank, 1997; Van Staden, 1999) . For example, at the time of the present
+        study, SA firms voluntarily provided more value-added statements than any
+        other nation while the vast bulk of academic research on this concept emerged
+        from the UK (Van Staden, 2000) . Finally, the developed capital market and
+        financial reporting environments in SA, Sweden, and the UK have enabled collection
+        of relevant data from a relatively sizeable number of economically significant
+        firms in each nation. Whilst there are dissimilarities among these three nations,
+        such as in the legal system and state of economic development, this should
+        not have an adverse effect on this study. The remainder of this paper is organized
+        as follows: Section 2  provides an overview the corporate governance environment
+        in SA, Sweden and the UK. A discussion of the potential influence of board
+        features on the efficiency of VA by a firm's combined resources and that by
+        the major resource elements of a firm—PC and IC—follows. Testable hypotheses
+        are also developed in this section. An outline of the research design and
+        descriptive statistics related to the sample data is then presented in Section
+        4 . Empirical results are then reported. In the concluding section , ideas
+        for future research are discussed.  2 Overview of corporate governance in
+        South Africa, Sweden and United Kingdom There is presently a lack of consensus
+        on a precise definition of corporate governance. For the purposes of the present
+        study, corporate governance is viewed to encompass the dimensions of law,
+        regulation and suitable voluntary corporate practice that enables the “corporation
+        to attract financial and human capital, perform efficiently, and thereby perpetuate
+        itself by generating long-term economic value for its shareholders, while
+        respecting the interests of stakeholders and society as a whole” (Gregory,
+        2001a, p. 1) . Given key dimensions, such as the legal order and regulatory
+        environment vary between countries, studying corporate governance practices
+        across national boundaries is of interest. Table 1   is a summary of major
+        features of the corporate governance system and factors influencing practices
+        in SA, Sweden and the UK. La Porta et al. (1997, 1998) , argue that the legal
+        order is a key institutional determinant of the development of corporate governance
+        practices and of understanding of related enforcement regulations. In the
+        UK, Common law—based on precedents established by courts—is the primary source
+        of legal principles and rules, while statutory law forms the cornerstone of
+        legal principles and rules in Sweden. Conversely, legal principles and rules
+        in SA are dually influenced by the major codification practices of Roman–Germanic
+        (Dutch) law and case law of the Common law legal system. Also, the extent
+        of shareholder and creditor rights may influence corporate governance practices
+        (La Porta et al., 1997, 1998) . Shareholder rights in SA and the UK are quite
+        comparable, although levels are slightly lower in Sweden. Creditor rights
+        are lowest in Sweden and highest in the UK (La Porta et al., 1997, 1998) .
+        In sum, corporate management and boards of directors of UK firms are more
+        likely than SA or Sweden to face greater pressure to ensure achieving appropriate
+        corporate governance practices and standards. This difference is likely due
+        to greater protection and enforceability of shareholder rights and creditor
+        rights. The quality of a nation's accounting profession and standards and
+        the resulting financial transparency are other measures of corporate governance
+        effectiveness. According to La Porta et al. (1997, 1998) , the quality of
+        accounting standards is highest in Sweden and lowest in SA. This implies financial
+        transparency is likely to be more extensive amongst Swedish firms followed
+        by those in the UK and SA. Prior research suggests ownership structure influences
+        corporate governance practices. For example, ownership diffusion can extrapolate
+        managerial opportunism while block holdings may enhance (or impede) the monitoring
+        of corporate management (Frankforter et al., 2000) . The level of ownership
+        amongst firms is most diffused in the UK with SA having the highest concentration
+        of ownership. Unlike Companies Acts and related regulations in SA, in Sweden
+        and the UK, specific guidelines designed to formally institutionalize corporate
+        governance practices were published during the 1990s and early 2000s. It is
+        argued that compliance with these guidelines may depend in part on (1) the
+        agency issuing the guidelines, (2) whether guidelines were appended to any
+        institutional requirements and (3) disclosure requirements. In Sweden, guidelines
+        were developed by private agencies not supported or appended to the requirements
+        of a major institutional body (such as the stock exchange) and compliance
+        is purely voluntary. The Johannesburg Stock Exchange (JSE), a private body,
+        also strongly supported the development of guidelines in SA with recommendations
+        of the King Report I  (1994)  and II (2002)  appended to the listing requirements
+        of the JSE. Also, debtor firms are required to disclose the extent of compliance
+        with King Report I  (1994)  and II (2002)  guidelines. In the UK, development
+        of recent guidelines were initiated by major institutional bodies such as
+        the London Stock Exchange (1998)  and Institute of Chartered Accountants in
+        England and Wales. As in SA, UK guidelines—condensed into the Combined Code:
+        Principles of Good Governance and Code of Best Practice (1998) —are appended
+        to the listing requirements of the London Stock Exchange. Also, UK firms are
+        required to disclose their compliance with these guidelines. Various recommendations
+        arising from these reports cover issues relevant to the present study. These
+        include the objective of the board, board size, board composition and leadership
+        structure. In respect to the objective of the board, Swedish and UK guidelines
+        emphasize the main duty of the board is to promote shareholders' interests
+        and maximize shareholder value. Guidelines in SA also acknowledge a board's
+        responsibility to shareholders but the overall objective stresses the need
+        for boards to act in the interests of a wider range of stakeholders. Of the
+        three nations included in the present study, only Swedish guidelines make
+        direct recommendations on the size of the board. Conversely, guidelines in
+        all three nations express a preference for the board of directors to contain
+        an appropriate balance of executive and nonexecutive (affiliated and independent)
+        directors. Swedish guidelines, however, express greater need for nonexecutive
+        director representation in particular as firm size increases. Finally, guidelines
+        in each nation place heavy emphasis on the segregation of the positions of
+        chief executive officer (CEO) and Chairperson to minimize duality related
+        conflicts.3  3 Duality refers to the situation when an executive holds both
+        the position of chief executive officer (CEO) and Chairperson of the board.
+        \   3 Prior literature, theory and hypothesis development Generally, the majority
+        of empirical studies examining corporate performance links have defined corporate
+        performance primarily within financial terms and used either financial accounting
+        or market-based measures as proxies for corporate performance. Few studies
+        seek to analyze the association between board features and corporate performance
+        within the context of VA (i.e., Morck, Shleifer, & Vishny, 1988; Hermalin
+        & Weisbach, 1991 ). The concept of VA (also referred to as wealth creation)4
+        \ 4 Formally, VA was defined as the wealth created (or contributed) by the
+        firm through the utilization of its key productive resources (Suojanen, 1954;
+        Van Staden, 1998) .   is increasingly viewed as the primary objective of a
+        firm more so than financial performance. Clarkson (1994, p. 21) , for example,
+        states that the “purpose of the firm is to create wealth or value for its
+        stakeholders by converting their stakes into goods and services.” Some corporate
+        governance advocates highlight the potential association between board features
+        and VA. Blair (1995, p. 322)  argues that it is critical for VA “to enhance
+        the voice of and provide ownership-like incentives to those participants in
+        the firm who contribute or control critical, specialized inputs and to align
+        the interests of these critical stakeholders with the interests of outside,
+        passive shareholders and other related stakeholders.” The voice of key participants,
+        for instance, could be enhanced through suitable representation on the board
+        of directors. In the case of executive directors, ownership incentives may
+        help align their interests with shareholders and other important stakeholders.
+        Prior research indicates corporate managers are generally risk-averse due
+        to their dependence on the firm for their immediate livelihood (Vafeas & Theodorou,
+        1998) . With a preference for reducing uncertainty, corporate managers are
+        likely to support policies and strategies related to PC than IC resources
+        because they are better able to directly control the former (Mahnke, 1997)
+        . This condition arises because ownership in PC resources is attributed to
+        shareholders who then pass responsibility for their use to corporate management.
+        Consequently, control of IC resources may not be within the direct power of
+        a corporate manager. Without direct control, corporate managers have less
+        ability to apply ex ante monitoring criteria and cannot as easily make adjustments
+        on a continuous basis to reduce uncertainties (Mahnke, 1997) . Another personal
+        characteristic of corporate managers is their myopic nature (Vanes & Theodorou,
+        1998) . From a time horizon perspective, VA generated from PC resources is
+        likely to take less time than VA generated from IC resources. IC resources
+        cannot be purchased via business transactions and require lengthy periods
+        of development and refinement offering few guarantees of becoming operational
+        (Mahnke, 1997) . Under enormous pressure to produce immediate results, “short
+        terms” may lead corporate managers to avoid investing in IC resources. A review
+        of the literature indicates four major board features—representation or compositions
+        (proportion of outside directors and board size), structure (duality) and
+        ownership (percentage of inside ownership)—often thought to influence corporate
+        performance. The following subsections reviews the theoretical and empirical
+        literature related to these four boards features in developing hypotheses
+        relevant to an association with TVAE, TVAPC and TVAIC. 3.1 Proportion of outside
+        directors on a firm's board of directors The proposition that outside directors
+        are instrumental in guiding a firm's performance is supported by several theoretical
+        perspectives (including agency theory, resource-dependence theory and stakeholder
+        theory) and has been the central emphasis of various recent corporate governance
+        guideline publications (e.g., Cadbury Report, 1992 ; King Report I,  1994
+        ). From a stakeholder perspective, stakeholder orientations are likely to
+        be more diversified amongst outside directors relative to inside directors
+        (Young, Stedham, & Beekun, 2000) . Also, outside directors are often hired
+        to assist in managing a firm's various stakeholders (Johnson & Greening, 1999;
+        Pfeffer, 1973) . Finally, as Wang and Dewhirst (1992, p. 120)  state, “outside
+        directors have a very strong stakeholder orientation, and recognize that their
+        responsibility encompasses more than shareholders and are very conscious about
+        the needs and expectations of the various constituencies of their firms.”
+        Outside directors also have vested interest in fulfilling their responsibilities;
+        they need to protect their “reputation-capital” so as to enhance future directorship
+        opportunities. In contrast, inside directors have strong self-interest orientations
+        as they rely on the firm for their immediate livelihood (Johnson et al., 1993;
+        Zahra & Pearce, 1989) . While the above reasoning appears compelling, the
+        empirical results of association between the proportion of outside directors
+        and corporate performance are mixed. Rosenstein and Wyatt (1990, 1997)  find
+        positive excess returns following the announcement of the appointment of an
+        outside director, which is supported by Byrd and Hickman (1992); Mayers, Shivdasani,
+        Smith (1997)  and Weisbach (1988) . There is a suggestion that these findings
+        are due to sample selection, which is conditioned to events potentially requiring
+        good decision-making, a major function of outside directors (Frankforter et
+        al., 2000) . In contrast, large cross-sectional studies fail to indicate any
+        relationship (Agrawal & Knoeber, 1996; Hermalin & Weisbach, 1991) . Finally,
+        other empirical findings show that inside directors, rather then outside directors,
+        are essential to corporate performance (i.e., Cochran et al., 1985; Kesner
+        et al., 1986; Singh & Harianto, 1989 ). Despite conflicting empirical results,
+        it is important in the current environment to analyze the association between
+        the proportion of outside directors and corporate performance in settings
+        other than that of the United States, and using other concepts of performance.
+        Therefore, consistent with the stakeholder perspective, we propose the following
+        hypotheses:Hypothesis 1a There is a positive association between the proportion
+        of outside directors to total directors of publicly listed firms in SA, Sweden,
+        and UK and TVAE.  Hypothesis 1b There is a positive association between the
+        proportion of outside directors to total directors of publicly listed firms
+        in SA, Sweden, and UK and TVAPC.  Hypothesis 1c There is a positive association
+        between the proportion of outside directors to total directors of publicly
+        listed firms in SA, Sweden, and UK and TVAIC.    3.2 Ownership concentration
+        of inside directors of a firm's board of directors Inside directors form a
+        significant stakeholder group contributing critical specialized inputs. Under
+        the stakeholder framework the provision of ownership-like incentives to inside
+        directors helps align perceptions with the interests of other stakeholder
+        groups. Zahra, Oviatt, and Minyard (1993)  suggest ownership gives greater
+        motivation to inside directors to develop better strategies allowing for effective
+        resource allocation to the different stakeholders of a firm. Hansen and Hill
+        (1991)  argue that ownership incentive realignment motivates inside directors
+        to forgo short-term returns for long-term projects and strategies. Johnson
+        and Greening (1999, p. 570) , further state that ownership inspires inside
+        directors to “maintain or improve product quality and innovation through increased
+        R&D spending.” Finally, Finkelstein (1992)  argues that ownership empowers
+        inside directors, enabling them to generate new business incentives and strategies,
+        increase innovation and enable the firm to adapt more quickly to a changing
+        environment. As with the case of outside directors the empirical evidence
+        on inside directors is mixed. Some studies have reported no association (Demsetz
+        & Lehn, 1985; Leech & Leahy, 1991; Vafeas & Theodorou, 1998) . In contrast,
+        the empirical findings of McConnell and Servaes (1990)  and Conyon and Leech
+        (1994)  report a positive relationship. Alternatively, the empirical findings
+        of Morck et al. (1988)  imply an elliptical relationship. That is, as inside
+        directors' ownership increased to approximately 5% of total outstanding shares,
+        corporate performance improved. For ownership levels between 5% and 25% there
+        was a decline whilst ownership above 25% again showed improved corporate performance.
+        Given these inconsistent results, based largely on US data, we propose the
+        following hypotheses:Hypothesis 2a There is a positive association between
+        the percentage of inside directors' ownership of publicly listed firms in
+        SA, Sweden and UK and TVAE.  Hypothesis 2b There is a positive association
+        between the percentage of inside directors' ownership of publicly listed firms
+        in SA, Sweden and UK and TVAPC.  Hypothesis 2c There is a positive association
+        between the percentage of inside directors' ownership of publicly listed firms
+        in SA, Sweden and UK and TVAIC.    3.3 Leadership structure (duality) The
+        impact of duality on corporate performance is of interest to advocates of
+        various schools of thought (i.e., Dalton & Kesner, 1985; Hambrick & Mason,
+        1984; Patton & Baker, 1987 ). From a stakeholder perception, duality seriously
+        impedes the overall stakeholder orientation of members of the board. Sonnenfeld
+        (1981) , for example, argues that executives acting as both CEO and Chairperson
+        are biased in their stakeholder orientations toward corporate management.
+        That is, the joint CEO/Chairperson is likely to support the implementation
+        of policies benefiting corporate management at the expense of other stakeholders
+        (Ford & McLaughlin, 1984) . Also, both the positions of CEO and Chairperson
+        are positions of considerable power. Combining them enables the joint CEO/Chairperson
+        to establish greater strategic influence and power that may intimidate other
+        directors. Consequently, other board members may be reluctant to support strategies
+        and policies contrary to the interests of corporate management for fear of
+        incurring the disapproval of their leader (Mallette & Fowler, 1992) . Dividing
+        the positions of CEO and Chairperson of the Board disperses power and authority,
+        thereby enhancing the board of directors' ability to effectively implement
+        decisions addressing the interests of a more diverse set of stakeholders (Wang
+        & Dewhirst, 1992) . Finally, eliminating duality enhances the board's information-processing
+        capacities by enabling more key people to be involved in the decision-making
+        process (Sanders and Carpenter, 1998) . Empirical research offers limited
+        inconclusive findings on duality. Rechner and Dalton (1991)  and Pi and Timme
+        (1993) , for example, find firms separating the two roles consistently outperformed
+        counterparts that combined the two positions. Brickley, Coles, and Jarrell
+        (1997)  and Vafeas and Theodorou (1998)  find contradictory results, however,
+        to further investigate the aforementioned association the following hypotheses
+        are formed based on the foregoing arguments:Hypothesis 3a There is a negative
+        association between the same director jointly holding the roles of CEO and
+        Chairperson of publicly listed firms in SA, Sweden, and UK and TVAE.  Hypothesis
+        3b There is a negative association between the same director jointly holding
+        the roles of CEO and Chairperson of publicly listed firms in SA, Sweden, and
+        UK and TVAPC.  Hypothesis 3c There is a negative association between the same
+        director jointly holding the roles of CEO and Chairperson of publicly listed
+        firms in SA, Sweden, and UK and TVAIC.    3.4 Size of the board of directors
+        While there are suggestions for finding an association between board size
+        and corporate performance (i.e., Alexander, Fennell, & Halpern, 1993; Kidwell
+        & Bennett, 1993; Provan, 1980 ), no consensus exist, as to the direction of
+        this association. Advocates of the stakeholder perspective generally support
+        a positive association. A larger board allows greater balance, thereby, promoting
+        more effective decision making while increasing harmony between a firm's stakeholders.
+        Finally, a larger board enhances information-processing capabilities and the
+        quality of advice given to corporate management (Zahra and Pearce, 1989) .
+        Alternatively, agency theorists generally argue for smaller boards reasoning
+        that as size increases control and monitoring functions are impaired (Dalton
+        et al., 1999; Judge & Zeithaml, 1992) . Agency theory advocates also argue
+        that larger board size increases the opportunity for manipulation by corporate
+        management. For example, Jensen (1993, p. 865)  state that when “boards get
+        beyond seven or eight people they are less likely to function effectively
+        and are easier for the CEO to control.” Finally, some suggest larger board
+        size leads to less participation and cohesion among members, thus, diminishing
+        the ability to achieve a consensus on control decisions (Evans and Dion, 1991;
+        Lipton and Lorsch, 1992) . Empirical analysis has failed to resolve the theoretical
+        debate surrounding the association between board size and corporate performance.
+        Burt (1980) , and Bazerman and Schoorman (1983) , for example, state that
+        larger boards are able to establish far greater interlocks with stakeholders
+        processing resources vital to the firm. These affiliations enable firms to
+        operate more effectively. Similarly, Chaganti et al. (1985)  find that the
+        boards of firms filing for Chapter 11 bankruptcy protection are smaller in
+        size than a matched sample of nonfailing firms. They concluded that larger
+        board size is more effective in preventing corporate failure than is the case
+        for smaller boards. Conversely, Yermack (1996)  shows that higher market evaluation,
+        as well as higher returns on assets and returns on sales, are associated with
+        firms having smaller boards. Yermack (1996)  concludes that any benefits associated
+        with large board size are undermined by poor communication and decision-making
+        processes. Given the inconsistent empirical results, further investigation
+        of board size and corporate performance links is required. Based on the foregoing
+        arguments it is hypothesized that,Hypothesis 4a There is a positive association
+        between the number of members of the board of directors of publicly listed
+        firms in SA, Sweden, and UK and TVAE.  Hypothesis 4b There is a positive association
+        between the number of members of the board of directors of publicly listed
+        firms in SA, Sweden, and UK and TVAPC.  Hypothesis 4c There is a positive
+        association between the number of members of the board of directors publicly
+        listed firms in SA, Sweden, and UK and TVAIC.     4 Research method 4.1 Measure
+        of dependent variables The Value Added Intellectual Coefficient (VAIC) methodology
+        developed by Pulic (1998)  forms the measurement basis for the three dependent
+        variables in the present study. VAIC is an analytical procedure designed to
+        enable management, shareholders and other relevant stakeholders to effectively
+        monitor and evaluate the efficiency of VA by a firm's total resources as well
+        as each major resource component. Formally, VAIC is a composite sum of three
+        indicators formally termed (1) Capital Employed Efficiency (CEE)—indicator
+        of VA efficiency of capital employed; (2) Human Capital Efficiency (HCE)—indicator
+        of VA efficiency of human capital; and (3) Structural Capital Efficiency (SCE)—indicator
+        of VA efficiency of structural capital. Eq. (1)  formalizes the VAIC relationship
+        algebraically:(1) VAIC i =CEE i +HCE i +SCE i    Where VAICi  =VA intellectual
+        coefficient for company i ; CEEi  =VA capital employed coefficient for company
+        i ; HCEi  =human capital coefficient for company i ; and SCEi  =structural
+        capital VA for company i . Pulic (1998) , states that the higher the VAIC
+        coefficient, the better the efficiency of VA by a firm's total resources.
+        The first step in calculating CEE, HCE and SCE is to determine a firm's total
+        VA. This calculation is defined by the following relationship5  5 Prior research
+        has defined VA by the following algebraic equation: Rev – B + Inv=W +I+DP+D+T+M+R
+        [Eq. (7a)] or S–B+Inv–DP=W+I+DP+D+T+M+R [Eq. (7b)]. W refers to total salary
+        and wage expense. Eq. (7a) is commonly referred to as the gross VA and Eq.
+        (7b) is termed the net VA. Theoretical arguments have been forwarded supporting
+        both approaches. Empirical research indicates both methods have been used
+        in practice. Pulic (1998)  argues that because of the central active role
+        human resources plays in the value creation process, labour costs (wages expense)
+        should not be included in VA computations. This view is consistent with the
+        opinions of other IC experts (Edvinsson, 1997; Sveiby, 2000) .  :(2) VA i
+        =Ii +DP i +Di +Ti +Mi +Ri    Where VA for firm i  computed as the sum of interest
+        expenses (I i  ); depreciation expenses (DPi  ); dividends (D i  ); corporate
+        taxes (T i  ); equity of minority shareholders in net income of subsidiaries
+        (M i  ); and profits retained for the year (R i  ). Pulic (1998)  also states
+        that CEE is:(3) CEE i =VA i /CE i    Where CEEi  =capital employed efficiency
+        coefficient for company i ; VAi  =VA for firm i  (see formal definition above);
+        and CEi  =book value of the net assets for firm i . Consistent with views
+        of Edvinsson (1997)  and Pulic (1998); Sveiby (2001)  argues total salary
+        and wage costs are an indicator of a firm's human capital (HC). HCE, therefore,
+        is calculated as:(4) HCE i =VA i /HC i    Where HCEi  =human capital efficiency
+        coefficient for company i ; VAi  =VA for firm i  (see formal definition above);
+        and HCi  =total investment salary and wage for firm i . To calculate SCE,
+        it is first necessary to determine the value of a firm's structural capital
+        (SC) which Pulic (1998)  proposes as:(5) SC i =VA i −HC i    Where SCi  =structural
+        capital for company i ; VAi  =VA for firm i  (see formal definition above);
+        and HCi  =total salary and wage costs for firm i . Pulic (1998)  argues there
+        is a proportionate inverse relationship between HC and SC. Consequently, Pulic
+        (1998)  proposes calculating SCE as:(6) SCE i =SC i /VA i    Where SCEi  =structural
+        capital efficiency coefficient for company i ; SCi  =structural capital for
+        company i ; and VAi  =VA for firm i  (see formal definition above). For this
+        study, VAIC scores are a proxy for TVAE; CEE scores proxy for TVAPC; and the
+        sum of HCE and SCE scores proxy for TVAIC. Appendix A  presents a formal illustration
+        of the calculation of each dependent variable using the VAIC methodology.
+        Apart from encompassing the concept of VA and enabling one to decipher the
+        VA efficiency of a firm's PC and IC resources, several other major reasons
+        underscore the use of the VAIC methodology. First, VAIC provides a standardized
+        and consistent basis of measure (Pulic & Bornemann, 1999) , and thereby, enables
+        the effective conduct of an international comparative analysis. Alternative
+        IC measures are limited (Roos, Roos, Dragonetti, & Edvinsson, 1997; Sullivan,
+        2000)  and the ability to apply alternative IC measures consistently across
+        a large and diversified sample for comparative analysis is diminished. Second,
+        all data used in the VAIC calculation are based on audited information; therefore,
+        the calculations can be considered objective and verifiable (Pulic, 1998,
+        2000) . Other IC measures have been criticized due to subjectivity in measurement
+        and difficulty in verification (Sveiby, 2000; Williams, 2001) . Third, VAIC
+        is a straightforward technique that enhances cognitive understanding and enables
+        ease of calculation by various internal and external stakeholders (Schneider,
+        1999) . Finally, the VAIC methodology is receiving more attention in research
+        and application (see, e.g., Bornemann and Franzen, 1998; Nova Kreditna banka
+        Maribor, 2000; Williams, 2001 ).  4.2 Proxy measures for independent variables
+        and control factors In addition to the four independent variables, five control
+        factors (profitability, leverage, dividend yield, industry type, and firm
+        size) are included in all the multiple regression analysis. Standard proxies,
+        identified from a review of the literature (i.e., Daily & Dalton, 1994; Mallette
+        & Fowler, 1992; Oviatt, 1988; Vafeas & Theodorou, 1998; Young et al., 2000
+        ) are used to measure the independent variables and control factors in this
+        study. Each proxy is formally defined below, plus the expected directional
+        relationship with the dependent variables:1. Percentage of outside directors
+        on the board (PerOutDir) : number of directors on the board, not directly
+        employed with or have professional ties with the firm, as a percentage of
+        total board size—positive relationship with dependent variable;  2. Percentage
+        of outstanding shares owned by inside directors (PerInsOwn) : ratio of number
+        of outstanding common shares held by directors to the total number of outstanding
+        common shares of the firm—positive direction with dependent variable;  3.
+        Leadership structure of the board (Duality) : dummy variable with firms having
+        the same individual acting as the CEO and chairperson of the board being scored
+        a one, otherwise a zero—negative relationship with dependent variable;  4.
+        Board size (Board Size) : number of directors serving on the board—negative
+        relationship with dependent variable;  5. Profitability (ROA) : ratio of the
+        net income (less preference dividends) divided by total assets as reported
+        in the 1998 annual report—positive relationship to dependent variable;  6.
+        Leverage (Leverage) : total debt divided by total shareholders' equity as
+        reported in each firm's annual report—negative relationship to dependent variable;
+        \ 7. Dividend yield (Dividend Yield) :—percentage of cash dividends paid during
+        1998 divided by total shareholders' equity—positive relationship to dependent
+        variable;  8. R&D sensitivity (Industry Type) : dummy variable with firm's
+        determined to be R&D intensive6  6 A firm was defined as being R&D sensitive
+        if it separately disclosed the amount of R&D expense in their annual report.
+        \  coded a one (1), otherwise coded a zero (0) (Sanders & Carpenter, 1998;
+        Wruck, 1993) —positive relationship to dependent variable; and  9. Firm Size
+        (Size of the Firm) : natural log of annual sales as reported in each firm's
+        annual report—positive relationship to dependent variable.     4.3 Sample
+        data Data were hand-collected from 1998 fiscal year annual reports7  7 In
+        SA and Sweden the 1998 fiscal year was generally from 1/1/1998 to 31/12/1998
+        whilst in UK it was from 1/4/1998 – 31/3/1999. The time difference is not
+        considered detrimental to the results of this study as no significant events
+        occurred that may have unduly influenced the findings.   of publicly traded
+        firms listed on the Johannesburg (SA), Stockholm (Sweden) and London (UK)
+        stock exchanges. Consistent with prior research, financial and utility sector
+        firms were excluded (Firth, Lohne, Ropstad, & Sjo, 1996; Vafeas & Theodorou,
+        1998) . Various techniques—direct contact, database, and website searches—were
+        used to collect the final useable sample of 286 (84 in SA; 94 in Sweden; and
+        108 in UK) annual reports.8  8 Nonresponse tests were conducted to determine
+        if there were any significant differences between companies from the original
+        240 companies selected that were included in the final survey to those excluded.
+        Statistical tests showed no significant variations. Consequently, it was concluded
+        there was no significant nonresponse bias.   Table 2   reports descriptive
+        statistics for the dependent and independent variables and control factors
+        for the sample as a whole (Panel A) and by nation (SA—Panel B; Sweden—Panel
+        C; and UK—Panel D). Descriptive statistics related to the independent variables
+        indicate that board structures vary among SA, Sweden, and UK. The average
+        (median) percentage of outside directors (PerOutDir ) is 51.91% (52.79%) in
+        SA, 78.29% (81.46%) in Sweden and 48.50% (42.57%) in UK. Compared to the United
+        States, the proportion of outside directors is lower in SA and UK but higher
+        in Sweden. Average PerInsOwn  in SA, Sweden, and UK is 9.70%, 1.75%, and 6.42%,
+        respectively. Median values (2.98%—SA; 0.05%—Sweden; and 0.11%—UK) indicate,
+        however, that PerInsOwn  values are heavily skewed to the right. PerOwnIns
+        \ in SA, Sweden, and UK are generally lower than that reported for US firms.
+        Duality  is most prominent in SA (61.43% with same CEO/Chairperson) closely
+        followed by the UK (53.70%). These proportions are similar to the United States
+        (i.e., Roa & Lee-Sing, 1995; Klein, 1998, 2002 ). Comparatively, Swedish firms
+        (20.64%) show a greater propensity to segregate the two roles of the Chairperson
+        and CEO. Finally, average Board size  in SA (13.02) is moderately higher than
+        in the United States, but is comparable in both Sweden (9.28) and UK (9.54).
+        Overall, firms in the sample have reasonably high ROA  values. Average Leverage
+        \ levels are also relatively similar. Comparatively, UK firms generally paid
+        more dividends per unit of shareholders equity than firms in SA and Sweden.
+        Across the entire sample, approximately three out of five firms were coded
+        “R&D Intensive”, with Sweden having the highest proportion of “R&D Intensive”
+        firms whilst SA has the lowest proportion. Finally, average sales turnover
+        was highest amongst UK firms followed by Sweden. The efficiency of total VA
+        of a firm's combined resource base is, on average highest in UK followed by
+        SA. In SA and Sweden, IC is the most significant resource base contributing
+        to the efficiency of VA, whilst in the UK it is PC. Relative to prior VAIC
+        studies9  9 Pulic (2000) , for example, studied 30 firms randomly selected
+        from the FTE-250. The average VAIC score for these firms in 1998 was 4.712.
+        The average VAIC score of 70 publicly traded firms from Austria for 1997 was
+        3.981. From a sample of 42 banks from Croatia the average VAIC score was approximately
+        4.90.   for the same period as this study: SA values are comparable, Swedish
+        values generally lower and UK slightly higher. Univariate analysis tests (independent
+        Student t  test and Mann–Whitney U  test)10  10 Tests not reported in body
+        of paper for brevity. Results can be obtained from the authors.   indicate
+        that the national TVAE, TVAPC, and TVAIC means in Sweden were significantly
+        lower than national means in SA and UK. Differences between national means
+        for TVAE, TVAPC, and TVAIC in SA and UK, however, are not statistically significant.
+        \  5 Results 5.1 Correlation analysis Pearson correlations reported in Table
+        3   do not exceed .340. Also the variance inflation factor (VIF) values (calculated
+        with every multiple regression model performed) not exceed 3.00. All VIF values
+        are substantially below the critical value of 10.00 (Netter et al., 1989)
+        . Based on Pearson correlations and VIF values, multicollinearity does not
+        appear to be a serious concern11  11 To further test for multicollinearity,
+        a series of multiple regression models were performed whereby a single independent
+        variable or control factor was excluded from one model but subsequently included
+        in the remainder. The purpose of these regression models was to determine
+        if the exclusion of an independent variable or control factor altered the
+        significance and directional sign on the coefficients of the remaining independent
+        variables and control factors. Findings from these regressions show no significant
+        changes; thus providing further support that multicollinearity was not a concern.
+        \ .  5.2 Tests of 1a, 2a, 3a and 4a  Table 4   presents the results of three
+        multiple regression models with TVAE as the dependent variable. Each regression
+        model is statistically significant (P <.01) with the UK sample firms (see
+        Table 4, Panel C ) explaining the highest proportions of variation in TVAE
+        (40.3%) and SA sample firms (see Table 4, Panel A ) explaining the lowest
+        (26.2%). The coefficients on Duality  are statistically significant and negative
+        in all three regressions in Table 4  (P <.05). Amongst the other three independent
+        variables, coefficients were only moderately statistically significant in
+        two isolated cases. First, the coefficient for PerOutDir  is positive and
+        statistically significant (P <.10) in the regression for SA sample firms only
+        (see Table 4, Panel A ). Second, the coefficient for PerInsOwn  is positive
+        and statistically significant (P <.10) in the regression for the Swedish sample
+        firms only (see Table 4, Panel C ). Overall, and across the three countries,
+        the empirical results presented in Table 4  support only Hypothesis 3a  whilst
+        Hypothesis 4a  is rejected.  5.3 Tests of 1b, 2b, 3b, and 4b  Three regressions
+        reported in Table 5   with TVAPC as the dependent variable are all statistically
+        significant (P <.001). The regression including only SA sample firms explains
+        the highest level of variation in the dependent variable (see Table 5, Panel
+        A ). The regression including only Swedish firms explains the least (see Table
+        5, Panel B ). Coefficients representing the four independent variables are
+        only statistically significant in two cases. First, the coefficient for PerOutDir
+        \ is positive and statistically significant (P <.01) in the regression including
+        SA sample firms only (see Table 5, Panel A ). Second, the coefficient representing
+        Board size  in the regression including UK sample firms only (see Table 5,
+        Panel C ) is positive and is moderately statistically significant (P <.10).
+        Based on findings reported in Table 5 , Hypotheses 2b and 3b  are rejected.
+        \ 5.4 Tests of 1c, 2c, 3c, and 4c  Table 6   presents results of multiple
+        regression analysis with TVAIC as the dependent variable. All regression models
+        are statistically significant (P <.01). The regression comprising only SA
+        sample firms (see Table 6, Panel A ) explained the highest variation (38.6%)
+        in TVAIC. Conversely, the regression comprising only UK sample firms (see
+        Table 6, Panel C ) explained the least variation (30.4%). Consistent with
+        Hypothesis 3c , the findings show that the coefficients for Duality  are negative
+        and statistically significant (P <.05, Panels A and B; P <.10, Panel C). Findings
+        reported in Table 6  Panel C (regression containing only Swedish firms) show
+        the coefficient for PerInsOwn  is positive and statistically significant (P
+        <.01, Table 6, Panel B ). Coefficients representing PerInsOwn  in the remaining
+        two regressions (Table 6, Panels A and C) , however, are not statistically
+        significant. The results in Table 6  indicate no relationship between TVAIC
+        and PerOutDir ; consequently, Hypothesis 1c  is rejected. Finally, coefficients
+        for Board size  in the three regressions reported in Table 6  were negative
+        and statistically insignificant; thus, Hypothesis 4c  is rejected.   6 Concluding
+        remarks and future research initiatives The general purpose of this study
+        is to provide an international comparative analysis of the association between
+        four board features and corporate performance. These four board features are
+        (1) proportion of outside directors, (2) percentage of inside directors' ownership,
+        (3) duality, and (4) size of the board. In contrast to the bulk of prior research,
+        the present study defines corporate performance within the concept of VA.
+        Further, rather than considering VA within a holistic perspective, the present
+        study examines the association between board features and efficiency of VA
+        by the two major elements of a firm's resource base—namely PC and IC resources.
+        Overall, empirical findings fail to show an unconditional link between board
+        features and corporate performance across any of the three nations included
+        in the present study. This result is consistent with prior empirical research
+        utilizing U.S. data (i.e., Hermalin & Weisbach, 1991; Brickley et al., 1997;
+        Klein, 1998 ). No specific board feature is associated with corporate performance.
+        Rather, results show some significant associations between individual board
+        features and individual measures of corporate performance in one nation or
+        the other, but not consistently across all three. While the present study
+        builds on an international setting, further research may address the impact
+        of the introduction of codes or best practice guides of corporate governance
+        on the efficiency of VA efficiency by a firm's PC and IC over time. Results
+        of that type of research could then be compared with findings from studies
+        of board feature–corporate performance links for nations that have not implemented
+        codes or best practice guides of corporate governance. Other research could
+        evaluate the links between board features and the VA by a firm's key resource
+        bases with respect to corporate decisions that allow managerial opportunism
+        such as the adoption of anti-takeover devices or the adoption of CEO evaluation
+        processes. Finally, other research could utilize alternative theoretical frameworks—such
+        as resource-dependence theory or institutional theory—to investigate possible
+        links among other board features, corporate governance mechanisms, and corporate
+        performance. Overall, this study makes three unique contributions. First,
+        it provides the first large-scale evidence about the absence of systematic
+        association between board features (composition, structure, and ownership)
+        and corporate performance, which is defined as the efficiency of value added
+        by a firm's resources. In addition, the present study further advances the
+        analysis to determine if board features influence the efficiency of value
+        added by a firm's two major resource base—(1) PC resources and (2) IC resources.
+        Second, the study also contributes by conducting an international comparative
+        analysis of board feature–corporate performance links in nations offering
+        similar but diverse sociopolitical, economic and corporate governance environments.
+        In particular, the present study provides evidence of associations between
+        board features and corporate performance in nations—namely SA and Sweden—previously
+        ignored in the literature. Finally, the present study provides one of the
+        first attempts to capture the concept of IC. This is an important advance
+        given the increasing significance of this concept and the growing disparity
+        between a firm's book value and market value. Application of the VAIC methodology
+        will assist in developing future research initiatives using these alternative
+        measures to better meet the business environment of the information age.   Acknowledgements
+        The authors wish to express gratitude to the various parties that have assisted
+        in this project. In particular, the authors wish to thank Ante Pulic, Karl
+        Svieby, Nick Bonits, Leif Edvinnson, Greg Tower, Phil Bealieau and Micheal
+        Wright for their advice and suggestions. Also, the authors wish to express
+        their gratitude to the participants in the International Accounting Summer
+        Conference, in particular Professor Inder Khurana, for their remarks. Finally,
+        the authors also wish to thank the two anonymous reviewers for their insightful
+        and helpful comments.  Appendix A Steps in Calculating VAIC for the Dependent
+        Variables   Summary of basic information for company i   Interest Expense
+        (I i  )=$214,700,000  Depreciation expense (DPi  )=$228,200,000  Dividends
+        (D i  )=$284,900,000  Corporate taxation (T i  )=$555,300,000  Equity of minority
+        shareholders in net income of subsidiaries (M i  )=$286,200,000  Profits retained
+        for the year (R i  )=$471,500,000  Book value of net assets (CE i  )=$3,978,100,000
+        \ Salaries and wages (HC i  )=$1,749,700,000     Required Equation in Calculation
+        Computation  VAi  =I i  +DPi  +D i  +T i  +M i  +R i  (Eq. (2))  VA=$214,000,000+$228,200,000+$284,900,000+$555,300,000+$286,200,000+$471,500,000=$2,040,100,000
+        \ CEEi  =VAi  /CAi  (Eq. (3))  CEEi  =2,040,100,000/3,978,100,000=0.513  HCEi
+        \ =VAi  /HCi  (Eq. (4))  HCEi  =2,040,100,000/1,748,700,000=1.167  Part (a):
+        SCi  =VAi  –HCi  (Eq. (5))  SCi  =2,040,100,000 – 1,748,700,000=291,400,000
+        \ Part (b): SCEi  =SCi  /VAi  (Eq. (6))  SCEi  =291,400,000/2,040,100,000=0.143
+        \ VAICi  =CEEi  +HCEi  +SCEi  (Eq. (1))  VAICi  =0.513+1.167+0.143=1.823  TVAEi
+        \ =VAICI   TVAEi  =1.823  TVAICi  =HCEi  +SCEi   TVAICi  =1.167+0.143=1.310
+        \ TVAPCi  =CEEi   TVAPCi  =0.513    Where: VAi  =VA for firm i  during the
+        1998 fiscal year is computed as the sum of interest expenses (I i  ); depreciation
+        expenses (DPi  ); dividends (D i  ); corporate taxes (T i  ); equity of minority
+        shareholders in net income of subsidiaries (M i  ); and profits retained for
+        the year (R i  ); HCi  =total salary and wage costs for firm i  as reported
+        in the 1998 annual report; CEi  =book value of the total shareholders equity
+        for firm i  as reported in the 1998 annual report; VAICi  =VA intellectual
+        coefficient for company i  for 1998 fiscal year; CEEi  =capital employed efficiency
+        coefficient for company i  for 1998 fiscal year; HCEi  =human capital efficiency
+        coefficient for company i  for 1998 fiscal year; SCEi  =structural capital
+        efficiency coefficient for company i  for 1998 fiscal year; TVAEi  = total
+        VA efficiency of company i  for 1998 fiscal year from its entire resource
+        base; TVAICi  = total VA efficiency of company i  for 1998 fiscal year from
+        its entire IC resource base; and TVAPCi  = total VA efficiency of company
+        i  for 1998 fiscal year from its PC resource base.        References Agrawal
+        & Knoeber, 1996 A Agrawal  C Knoeber   Firm performance and mechanisms to
+        control agency problems between managers and shareholders   Journal of Financial
+        and Quantitative Analysis  31  1996  377 397     Alexander et al., 1993 J.A
+        Alexander  M.L Fennell  M.T Halpern   Leadership instability in hospitals:
+        The influence of board–CEO relations and organizational growth and decline
+        \  Administrative Science Quarterly  38  1993  74 99     Bazerman & Schoorman,
+        1983 M.H Bazerman  F.D Schoorman   A limited rationality model of interlocking
+        directorates   Academy of Management Review  8  1983  206 217     Berle &
+        Means, 1932 A Berle  G Means   The modern corporation and private property
+        \  1932 MacMillan New York, NY      Bhagat & Black, 1999 S Bhagat  B Black
+        \  The uncertain relationship between board composition and firm performance
+        \  Business Lawyer  54  3 1999  921 963     Blair, 1995 M.M Blair    Ownership
+        and control  1995 The Brookings Institution Washington, DC      Bontis, 1998
+        N Bontis   Intellectual capital: An exploratory study that develops measures
+        and models   Management Decision  36  2 1998  169 190     Bontis, 2000 Bontis,
+        N. (2000). Assessing knowledge assets: A review of the models used to measure
+        intellectual capital.  Framework Paper 00–01, Queen's University, Kingston,
+        Canada: Queen's Management Research Centre for Knowledge-Based Enterprises.
+        \  Bornemann & Franzens, 1998 M Bornemann  K Franzens   Empirical analysis
+        of the potential of value systems in Austria according to the VAIC method
+        \  Paper Presented at 19th Annual National Business Conference  1998 McMaster
+        University Hamilton, Canada      Brickley et al., 1997 J Brickley  J Coles
+        \ G Jarrell   Corporate leadership structure: On the separation of the positions
+        of CEO and chairman of the board   Journal of Corporate Finance  3  1997  189
+        220     Burt, 1980 R.S Burt   Cooptive corporate actor networks: A reconsideration
+        of interlocking directorates involving American manufacturing   Administrative
+        Science Quarterly  25  1980  557 581     Byrd & Hickman, 1992 J Byrd  K Hickman
+        \  Do outside directors monitor managers   Journal of Financial Economics
+        \ 32  1992  195 221     Cadbury, 1992 A Cadbury   Report of the Committee
+        on the Financial Aspects of Corporate Governance (Cadbury Report)   1992 Committee
+        on the Financial Aspects of Corporate Governance London, UK      Chaganti
+        et al., 1985 R.S Chaganti  V Mahjan  S Sharma   Corporate board size, composition
+        and corporate failure in retailing industry   Journal of Management Studies
+        \ 22  4 1985  400 417     Clarkson, 1994 M.B.E Clarkson   A risk based of
+        stakeholder theory   1994 The Centre for Corporate Social Performance and
+        Ethics, University of Toronto Toronto, ON      Cochran et al., 1985 P.L Cochran
+        \ R.A Wood  T.B Jones   The composition of boards of directors and incidence
+        of golden parachutes   Academy of Management Journal  28  1985  664 671     Coffey
+        & Wang, 1998 B.S Coffey  J Wang   Board diversity and managerial control as
+        predictors of corporate social performance   Journal of Business Ethics  17
+        \ 14 1998  1595 1603     Conyon & Leech, 1994 M Conyon  D Leech   Top pay,
+        company performance and corporate governance   Oxford Bulletin of Economics
+        and Statistics  56  1994  229 247     Daily & Dalton, 1994 C.M Daily  D.R
+        Dalton   Bankruptcy and corporate governance: The impact of board composition
+        and structure   Academy of Management Journal  37  1994  1603 1617     Dalton
+        et al., 1999 D.R Dalton  C.M Daily  J.L Johnson  A.E Ellstrand   Number of
+        directors and financial performance: A meta-analysis   Academy of Management
+        Journal  42  6 1999  674 686     Dalton & Kesner, 1985 D.R Dalton  I.F Kesner
+        \  Organizational performance as an antecedent of inside/outside chief executive
+        succession: An empirical assessment   Academy of Management Journal  28  1985
+        \ 749 762     Demirag et al., 2000 I Demirag  S Sudarsanam  M Wright   Corporate
+        governance: Overview and research agenda   British Accounting Review  32  4
+        2000  341 353     Demsetz & Lehn, 1985 H Demsetz  K Lehn   The structure of
+        corporate ownership: Causes and consequences   Journal of Political Economy
+        \ 93  1985  1155 1177     Edvinsson, 1997 L Edvinsson   Developing intellectual
+        capital at Skandia   Long Range Planning  30  3 1997  266 373     Evans &
+        Dion, 1991 C.R Evans  K.L Dion   Group cohesion and performance: A meta-analysis
+        \  Small Group Research  22  1991  175 186     Finkelstein, 1992 S Finkelstein
+        \  Power in top management teams: Dimensions, measurement, and validation
+        \  Academy of Management Journal  35  1992  505 538     Firth et al., 1996
+        M Firth  J.C Lohne  R Ropstad  J Sjo   The remuneration of CEOs and corporate
+        financial performance in Norway   Managerial and Decision Economics  17  4
+        1996  291 301     Ford & McLaughlin, 1984 R Ford  F McLaughlin   Perceptions
+        of socially responsible activities and attitudes: A comparison of business
+        school deans and corporate chief executives   Academy of Management Journal
+        \ 27  1984  666 674     Frankforter et al., 2000 S.A Frankforter  S.L Berman
+        \ T.M Jones   Boards of directors and shark repellents: Assessing the value
+        of an agency theory perspective   Journal of Management Studies  37  3 2000
+        \ 321 348     Gregory, 2001a H.J Gregory   International comparison of corporate
+        governance guidelines and codes of best practice—Developing and emerging markets
+        \  2001 Weil, Gotshal and Manges New York, NY      Gregory, 2001b H.J Gregory
+        \  International comparison of corporate governance guidelines and codes of
+        best practice—Developed markets   2001 Weil, Gotshal and Manges New York,
+        NY      Hambrick & Mason, 1984 D.C Hambrick  P.A Mason   Upper echelons: The
+        organization as a reflection of its top managers   Academy of Management Review
+        \ 9  1984  193 206     Hansen & Hill, 1991 G.S Hansen  C.W.L Hill   Are institutional
+        investors myopic? A time series study of four technology-driven industries
+        \  Strategic Management Journal  12  1991  1 16     Hermalin & Weisbach, 1991
+        B Hermalin  M Weisbach   The effects of board composition and direct incentives
+        on firm performance   Financial Management  20  1991  101 112     Hermalin
+        & Weisbach, 2001 Hermalin, B., Weisbach, M. (2001). Boards of directors as
+        an endogeneousl determined institution: A survey of the economic literature.
+        \ NBER working paper, 8161.   Institute of Directors of Southern Africa, 1994
+        Institute of Directors of Southern Africa   The King Report on corporate governance
+        (King Report I)   1994 Author Johannesburg, South Africa      Institute of
+        Directors of Southern Africa, 2002 Institute of Directors of Southern Africa
+        \   King Report on corporate governance for South Africa (King Report II)
+        \ 2002 Author Johannesburg, South Africa      Jensen & Meckling, 1976 M Jensen
+        \ W Meckling   Theory of the firm: Managerial behaviour, costs and ownership
+        structure   Journal of Financial Economics  3  1976  305 360     Jensen, 1993
+        M.C Jensen   The modern industrial revolution, exit, and the failure of internal
+        control systems   Journal of Finance  48  1993  831 880     Johnson & Greening,
+        1999 R.A Johnson  D.W Greening   The effects of corporate governance and institutional
+        ownership types on corporate social performance   Academy of Management Journal
+        \ 42  5 1999  564 576     Johnson et al., 1993 R.A Johnson  R.E Hoskisson
+        \ M.A Hitt   Board of director involvement in restructuring: The effects of
+        board versus managerial controls and characteristics   Strategic Management
+        Journal  14  1993  33 50     Judge & Zeithaml, 1992 W.Q Judge  C.P Zeithaml
+        \  Institutional and strategic choice perspectives on board involvement in
+        the strategic decision process   Academy of Management Journal  35  1992  766
+        794     Kesner, 1988 I.E Kesner   Directors' characteristics and committee
+        membership: An investigation of type, occupation, tenure, and gender   Academy
+        of Management Journal  31  1988  66 84     Kesner et al., 1986 I.E Kesner
+        \ B Victor  B.T Lamont   Board composition and the commission of illegal acts:
+        An investigation of Fortune 500 Companies   Academy of Management Journal
+        \ 29  1986  789 799     Kidwell & Bennett, 1993 R.E Kidwell  N Bennett   Employee
+        propensity to withhold effort: A conceptual model to intersect three avenues
+        of research   Academy of Management Review  18  1993  429 456     Klein, 1998
+        A Klein   Firm performance and board committee structure   Journal of Law
+        & Economics  41  1 1998  275 303     Klein, 2002 A Klein   Economic determinants
+        of audit committee independence   Accounting Review  77  2 2002  435 452     Kosnik,
+        1987 R.D Kosnik   Greenmail: A study of board performance in corporate governance
+        \  Administrative Science Quarterly  32  1987  163 185     La Porta et al.,
+        1997 R La Porta  F Lopez-De-Silanes  A Shleifer  R.W Vishny   Legal determinants
+        of external finance   Journal of Finance  52  3 1997  1131 1150     La Porta
+        et al., 1998 R La Porta  F Lopez-De-Silanes  A Shleifer  R.W Vishny   Law
+        and finance   Journal of Political Economy  106  6 1998  1113 1155     Leech
+        & Leahy, 1991 D Leech  H Leahy   Ownership structure, control type classifications
+        and the performance of large British companies   Economic Journal  101  1991
+        \ 1418 1437     Lipton & Lorsch, 1992 M Lipton  J.W Lorsch   A modest proposal
+        for improved corporate governance   Business Lawyer  48  1992  59 77     London
+        Stock Exchange, Committee on Corporate Governance, 1998 London Stock Exchange,
+        Committee on Corporate Governance   The combined code: Principles of good
+        governance and code of best practice   1998 Author London, UK      Mace, 1972
+        M.L Mace   The President and the board of directors   Harvard Business Review
+        \ 50  1972  37 49     Mahnke, 1997 Mahnke, V. (1997). Can contractual theories
+        of the firm explain the existence of knowledge-intensive firms?  Working Paper
+        97-11, Copenhagen, Denmark: Department of Industrial Economics and Strategy,
+        Copenhagen Business School.   Mallette & Fowler, 1992 P Mallette  K.L Fowler
+        \  Effects of board composition and stock ownership on the adoption of ‘poison
+        pills’   Academy of Management Journal  35  1992  1010 1035     Mayers et
+        al.,, 1997 D Mayers  D Shivdasani  C Smith   Board composition and corporate
+        control: Evidence from the insurance industry   Journal of Business  70  1997
+        \ 33 62     McConnell & Servaes, 1990 J McConnell  H Servaes   Additional
+        evidence on equity ownership and corporate value   Journal of Financial Economics
+        \ 27  1990  293 315     Molz, 1995 R Molz   The theory of pluralism in corporate
+        governance: A conceptual framework and empirical test   Journal of Business
+        Ethics  14  1995  789 804     Morck et al., 1988 R Morck  A Shleifer  R Vishny
+        \  Management ownership and market valuation   Journal of Financial Economics
+        \ 20  1988  293 315     Mouritsen et al., 2001 J Mouritsen  H.T Larsen  P.N.D
+        Bukh   Intellectual capital and the capable firm: Narrating visualising and
+        numbering for managing knowledge   Accounting, Organizations and Society  26
+        \ 2001  735 762     Netter et al., 1989 J.W Netter  J Wasserman  M.H Kutner
+        \  Applied regression models   1989 Richard D. Irwin Homewood, Illinois      Nova
+        Kreditna banka Maribor, 2000 Nova Kreditna banka Maribor (2000). Annual Report
+        . Author: Maribor, Slovakia.   Oviatt, 1988 B Oviatt   Agency and transaction
+        cost perspectives on the manager–shareholder relationship: Incentives for
+        congruent interests   Academy of Management Review  13  1988  214 225     Patton
+        & Baker, 1987 A Patton  J.C Baker   Why won't directors rock the boat?   Harvard
+        Business Review  65  1987, November–December  10 18     Pfeffer, 1973 J Pfeffer
+        \  Size, composition, and function of hospital boards of directors: The organization
+        and its environment   Administrative Science Quarterly  18  1973  349 364
+        \    Pi & Timme, 1993 L Pi  S Timme   Corporate control and bank efficiency
+        \  Journal of Banking and Finance  17  1993  515 530     Provan, 1980 K.G
+        Provan   Board power and organizational effectiveness among human service
+        agencies   Academy of Management Journal  23  1980  221 236     Pulic, 1998
+        Pulic, A. (1998). Measuring the performance of intellectual potential in knowledge
+        economy.  Available online: http://www.measuring-ip.at/papers/Pulic/Vaictxt/vaictxt.html
+        .   Pulic, 2000 Pulic, A. (2000). An accounting tool for IC management.  Available
+        online: http://www.measuring-ip.at/Papers/ham99txt.htm .   Pulic & Bornemann,
+        1999 Pulic, A., Bornemann, M. (1999). The physical and intellectual capital
+        of Austrian banks.  Available online: http://www.measuring-ip.at/Papers/Pubic/Bank/en-bank.html
+        .   Rao & Lee-Sing, 1995 P.S Rao  C.R Lee-Sing   Governance structure, corporate
+        decision-making and firm performance in North America   R.J Daniels  R Morck
+        \  Corporate decision-making in Canada  1995 The University of Calgary Press
+        Calgary, Canada      Rechner & Dalton, 1991 P Rechner  R Dalton   CEO duality
+        and organizational performance: A longitudinal analysis   Strategic Management
+        Journal  12  1991  155 160     Roos et al., 1997 J.G Roos  G Roos  N.C Dragonetti
+        \ L Edvinsson   Intellectual capital: Navigating in the new business landscape
+        \  1997 Macmillan Houndsmills, Basingtoke      Rosenstein & Wyatt, 1990 S
+        Rosenstein  J Wyatt   Outside directors, board independence and shareholder
+        wealth   Journal of Financial Economics  26  1990  175 191     Rosenstein
+        & Wyatt, 1997 S Rosenstein  J Wyatt   Inside directors, board effectiveness
+        and shareholder wealth   Journal of Financial Economics  44  1997  229 250
+        \    Sanders & Carperter, 1998 W.G Sanders  M.A Carperter   Internationalization
+        and firm governance: The roles of CEO compensation, top team composition and
+        board structure   Academy of Management Journal  41  2 1998  158 178     Schneider,
+        1999 Schneider, U. (1999). The Austrian approach to the measurement of intellectual
+        potential.  Available online: http://www.measuirng-ip.at/0papers/Schneider/Canada/theoreticalframework.html.
+        \   Shleifer & Vishny, 1997 A Shleifer  R.W Vishny   A survey of corporate
+        governance   Journal of Finance  52  2 1997  737 783     Singh & Harianto,
+        1989 H Singh  E Harianto   Management–board relationships, takeover risk,
+        and the adoption of golden parachutes   Academy of Management Journal  32
+        \ 1989  7 24     Sonnenfeld, 1981 J.A Sonnenfeld   Executive apologies for
+        price fixing: Role biased perceptions of causality   Academy of Management
+        Journal  24  1981  192 198     Stainbank, 1997 L.J Stainbank   Value added
+        reporting in South Africa: Current disclosure patterns   South African Journal
+        of Accounting Research  11  2 1997  69 91     Sullivan, 2000 P.H Sullivan
+        \  Value-driven intellectual capital: How to convert intangible corporate
+        assets into market value   2000 Wiley Toronto, Canada      Suojanen, 1954
+        W.W Suojanen   Accounting theory and the large corporation   Accounting Review
+        \  1954, July  391 398     Sveiby, 2000 Sveiby, K. (2000). Intellectual capital
+        and knowledge management.  Available online: http://www.sveiby.com.au/BookContents.html
+        , accessed: May, 2001.   Sveiby, 2001 Sveiby, K. (2001). Methods for measuring
+        intangible assets.  Available online: http://www.sveiby.com.au/BookContents.html
+        , accessed: May, 2001.   Swedish Shareholders Association, 1993 Swedish Shareholders
+        Association   Corporate governance policy   1993 Author Stockholm, Sweden
+        \     Swedish Shareholders Association, 2001 Swedish Shareholders Association
+        \  Corporate governance policy   2001 Author Stockholm, Sweden      The Swedish
+        Academy of Directors, 1994 The Swedish Academy of Directors, Western Region
+        \  Introduction to a Swedish code of good boardroom practice   1994 Author
+        Stockholm, Sweden      Turnball, 1998 N Turnball   Report of the Institute
+        of Chartered Accountants in England and Wales (Turnball Report)   1998 Institute
+        of Chartered Accountants of England and Wales London, UK      Vafeas & Theodorou,
+        1998 N Vafeas  E Theodorou   The relationship between board structure and
+        firm performance in the UK   British Accounting Review  30  1998  383 407
+        \    Van Staden, 1998 C.J Van Staden   The usefulness of the value added statement
+        in South Africa   Managerial Finance  24  11 1998  44 59     Van Staden, 1999
+        C.J Van Staden   Aspects of the predictive and explanatory power of value
+        added information in South Africa   South African Journal of Accounting Research
+        \ 13  2 1999  53 75     Van Staden, 2000 Van Staden, C. J. (2000). The value
+        added statement: Bastion of social reporting or dinosaur of financial reporting.
+        \ Working paper. Massey University, Palmerston North, New Zealand.   Wang
+        & Dewhirst, 1992 J Wang  H.D Dewhirst   Boards of directors and stakeholder
+        orientation   Journal of Business Ethics  11  2 1992  115 121     Wiesbach,
+        1988 M Wiesbach   Outside directors and CEO turnover   Journal of Financial
+        Economics  20  1988  431 460     Williams, 2001 M Williams   Is intellectual
+        capital performance and disclosure practices related   Journal of Intellectual
+        Capital  2  3 2001  192 203     Wruck, 1993 K Wruck   Stock-based incentives
+        and investment decisions: A comment   Journal of Accounting and Economics
+        \ 16  1993  373 380     Yermack, 1996 D Yermack   Higher market evaluation
+        of companies with a small board of directors   Journal of Financial Economics
+        \ 40  1996  185 211     Young et al., 2000 G.Y Young  Y Stedham  R.I Beekun
+        \  Board of directors and the adoption of a CEO performance evaluation process:
+        Agency—and institutional—theory perspectives   Journal of Management Studies
+        \ 37  2 2000  277 295     Zahra & Pearce, 1989 S.A Zahra  J.A Pearce   Boards
+        of directors and corporate financial performance: A review and integration
+        model   Journal of Management  15  1989  291 334     Zahra et al., 1993 S.A
+        Zahra  B.M Oviatt  K Minyard   Effects of corporate ownership and board structure
+        on corporate social responsibility and financial performance   Academy of
+        Management Best Paper Proceedings   1993  336 340             "
+  recorded_at: 2020-05-06 16:04:55 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2
