@@ -135,29 +135,6 @@ is_ct_html <- is_ct(type = "html")
 is_ct_xml <- is_ct(type = "xml")
 is_ct_plain <- is_ct(type = "plain")
 
-try_extract_pdf_errors <- function(x) {
-  if (!file.exists(x)) return()
-  if (likely_pdf(x)) return()
-  if (!any(nzchar(readLines(x, n = 10)))) return()
-  html <- xml2::read_html(x)
-  ex <- xml2::xml_find_all(html, "//*[contains(@class, 'error')]")
-  if (!length(ex) == 0) {
-    stop("error in pdf retrieval; attempted to extract any error messages\n",
-      xml2::xml_text(ex), call. = FALSE)
-  }
-  fx <- xml2::xml_find_all(html, "//text()[. = 'Not logged in']")
-  if (!length(fx) == 0) {
-    stop("error in pdf retrieval; attempted to extract any error messages\n",
-      xml2::xml_text(fx), call. = FALSE)
-  }
-  html_txt <- xml2::xml_text(html)
-  fx <- grepl('Bad Request|Error', html_txt)
-  if (fx) {
-    stop("error in pdf retrieval; could not extract any error messages\n",
-      call. = FALSE)
-  }
-}
-
 likely_pdf <- function(x) {
   z=tryCatch(suppressMessages(pdftools::pdf_info(x)), error = function(e) e)
   !inherits(z, "error")
