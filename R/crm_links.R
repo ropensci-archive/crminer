@@ -85,7 +85,7 @@ crm_links <- function(doi, type = 'all', ...) {
   if (is.null(unlist(res$links))) {
     return(list())
   } else {
-    elife <- if (grepl("elife", res$links[[1]]$URL)) TRUE else FALSE
+    elife <- grepl("elife", res$links[[1]]$URL)
     withtype <- if (type == 'all') {
       res$links
     } else {
@@ -104,17 +104,7 @@ crm_links <- function(doi, type = 'all', ...) {
       }))
 
       if (elife) {
-        withtype <-
-          c(
-            withtype,
-            stats::setNames(
-              list(
-                utils::modifyList(
-                  withtype[[1]],
-                  list(`content-type` = "application/xml"))
-              ),
-            "xml")
-          )
+        withtype <- Filter(function(w) !grepl("lookup", w$URL), withtype)
       }
 
       if (basename(res$member) == "78") {

@@ -45,6 +45,24 @@ test_that("crm_links works", {
   expect_identical(l5, l6)
 })
 
+test_that("crm_links: elife special handling", {
+  # for elife, in crm_links we remove one or more urls that don't work, 
+  # and should get no more than 2 urls:
+  # 1. normal articles should have a pdf and xml url
+  # 2. corrections/etc seem to just have an xml url
+
+  # normal article e.g.
+  x <- crm_links("10.7554/elife.04059")
+  expect_equal(length(x), 2)
+  expect_match(x$pdf[[1]], "cdn.elifesciences.org")
+  expect_match(x$xml[[1]], "cdn.elifesciences.org")
+
+  # correction article e.g.
+  z <- crm_links("10.7554/elife.04371")
+  expect_equal(length(z), 1)
+  expect_match(z$xml[[1]], "cdn.elifesciences.org")
+})
+
 test_that("crm_links fails correctly", {
   expect_error(crm_links(), 'argument "doi" is missing')
   #expect_null(crm_links("10.7717/peerj.1268", type = "adfasf"))
