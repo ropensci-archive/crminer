@@ -22,6 +22,7 @@
 #' set this directory to something different. Ignored unless getting
 #' pdf. See [crm_cache] for caching details.
 #' @inheritSection crm_text User-agent
+#' @inheritSection crm_text Elsevier-partial
 #' @examples \dontrun{
 #' # set a temp dir. cache path
 #' crm_cache$cache_path_set(path = "crminer", type = "tempdir")
@@ -79,7 +80,6 @@ crm_pdf.tdmurl <- function(url, overwrite = TRUE, read = TRUE, cache = FALSE,
   if (is.null(url$pdf[[1]])) {
     stop("no pdf link found", call. = FALSE)
   }
-  # getPDF(url, cr_auth(url, 'pdf'), overwrite, "pdf",
   getPDF(url$pdf[[1]], cr_auth(url, 'pdf'), overwrite, "pdf",
          read, attr(url, "doi"), cache, ...)
 }

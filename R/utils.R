@@ -71,6 +71,12 @@ getTEXT <- function(x, type, auth, ...){
   )
 }
 
+last <- function(x) x[length(x)]
+lastn <- function(x, n = 1) {
+  stopifnot(n >= 1)
+  x[(length(x)-(n-1)):length(x)]
+}
+
 make_file_path <- function(url, doi, type) {
   # pensoft special handling
   if (grepl("pensoft", url[[1]])) {
@@ -80,6 +86,14 @@ make_file_path <- function(url, doi, type) {
     }
     ff <- file.path(crm_cache$cache_path_get(),
       paste0(sub("/", ".", doi), ".pdf"))
+  } else if (last(strsplit(url, "/")[[1]]) == "pdf") {
+    # special handling for urls that just end in pdf
+    parts <- strsplit(url, "/")[[1]]
+    parts <- parts[-length(parts)]
+    ff <- file.path(crm_cache$cache_path_get(), paste0(
+      gsub("=|-|\\s", "_", paste0(lastn(parts, 3), collapse="")),
+      ".pdf"
+    ))
   } else {
     burl <- sub("\\?.+", "", url)
     ff <- if (!grepl(type, basename(burl))) {
@@ -123,6 +137,7 @@ is_ct_plain <- is_ct(type = "plain")
 
 try_extract_pdf_errors <- function(x) {
   if (!file.exists(x)) return()
+  if (likely_pdf(x)) return()
   if (!any(nzchar(readLines(x, n = 10)))) return()
   html <- xml2::read_html(x)
   ex <- xml2::xml_find_all(html, "//*[contains(@class, 'error')]")
@@ -130,12 +145,33 @@ try_extract_pdf_errors <- function(x) {
     stop("error in pdf retrieval; attempted to extract any error messages\n",
       xml2::xml_text(ex), call. = FALSE)
   }
-  # xml2::xml_find_all(html, "//text()[contains(.,'Not logged in')]")
   fx <- xml2::xml_find_all(html, "//text()[. = 'Not logged in']")
   if (!length(fx) == 0) {
     stop("error in pdf retrieval; attempted to extract any error messages\n",
       xml2::xml_text(fx), call. = FALSE)
   }
+  html_txt <- xml2::xml_text(html)
+  fx <- grepl('Bad Request|Error', html_txt)
+  if (fx) {
+    stop("error in pdf retrieval; could not extract any error messages\n",
+      call. = FALSE)
+  }
+}
+
+likely_pdf <- function(x) {
+  z=tryCatch(suppressMessages(pdftools::pdf_info(x)), error = function(e) e)
+  !inherits(z, "error")
+}
+
+no_elsevier_warning <- function(x, file) {
+  hds <- x$response_headers
+  if ("x-els-status" %in% names(hds)) {
+    warning(paste("Elsevier", hds[["x-els-status"]]),
+      sprintf("\n file (%s) deleted", file))
+    unlink(file)
+    return(FALSE)
+  }
+  return(TRUE)
 }
 
 getPDF <- function(url, auth, overwrite, type, read,
@@ -153,17 +189,20 @@ getPDF <- function(url, auth, overwrite, type, read,
     cli <- crul::HttpClient$new(
       url = url,
       opts = list(followlocation = TRUE, ...),
-      # opts = list(followlocation = TRUE, useragent = ua, verbose = TRUE),
       headers = c(auth, list(Accept = "application/pdf"))
     )
     res <- cli$get(disk = filepath)
+    if (!res$success()) on.exit(unlink(filepath), add = TRUE)
     res$raise_for_status()
-    if (res$status_code < 202 && is_ct_pdf(res)) {
+    if (
+      res$status_code < 202 &&
+      is_ct_pdf(res) && 
+      no_elsevier_warning(res, filepath)
+    ) {
       filepath <- res$content
     } else {
       on.exit(unlink(filepath), add = TRUE)
       try_extract_pdf_errors(filepath)
-      filepath <- res$status_code
       read <- FALSE
     }
   }

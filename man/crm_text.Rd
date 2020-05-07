@@ -94,6 +94,18 @@ can use here, see
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent
 }
 
+\section{Elsevier-partial}{
+
+For at least some PDFs from Elsevier, most likely when you do not have
+full access to the full text, they will return a successful response,
+but only return the first page of the PDF. They do however include
+a warning message in the response headers, which we look for and pass
+on to the user AND delete the pdf because we assume if you are using this
+package you don't want just the first page but the whole article. This
+behavior as far as we know does not occur with other article types
+(xml, plain), but let us know if you see it.
+}
+
 \examples{
 \dontrun{
 # set a temp dir. cache path
