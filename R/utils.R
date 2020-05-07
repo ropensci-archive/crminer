@@ -86,7 +86,7 @@ make_file_path <- function(url, doi, type) {
     }
     ff <- file.path(crm_cache$cache_path_get(),
       paste0(sub("/", ".", doi), ".pdf"))
-  } else if (last(strsplit(url, "/")[[1]]) == "pdf") {
+  } else if (last(strsplit(url, "/")[[1]]) == "pdf" && !grepl("elsevier", url)) {
     # special handling for urls that just end in pdf
     parts <- strsplit(url, "/")[[1]]
     parts <- parts[-length(parts)]
