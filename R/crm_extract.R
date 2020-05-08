@@ -69,3 +69,8 @@ print.crm_pdf <- function(x, ...) {
   cat("  Created: ", as.character(as.Date(x$info$created)), "\n",
       sep = "")
 }
+#' @export
+print.crm_pdf_text <- function(x, ...) {
+  cat("<document>", attr(x, "path"), "\n", sep = "")
+  cat("  No. characters: ", sum(nchar(x$text)), "\n", sep = "")
+}

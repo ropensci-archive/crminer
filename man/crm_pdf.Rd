@@ -4,14 +4,7 @@
 \alias{crm_pdf}
 \title{Get full text PDFs}
 \usage{
-crm_pdf(
-  url,
-  overwrite = TRUE,
-  read = TRUE,
-  cache = FALSE,
-  overwrite_unspecified = FALSE,
-  ...
-)
+crm_pdf(url, overwrite = TRUE, read = TRUE, overwrite_unspecified = FALSE, ...)
 }
 \arguments{
 \item{url}{A URL (character) or an object of class \code{tdmurl} from a call
@@ -29,12 +22,6 @@ text from the pdf or simply download. If \code{TRUE}, you get the text from
 the pdf back. If \code{FALSE}, you only get back the metadata.
 Default: \code{TRUE}}
 
-\item{cache}{(logical) Use cached files or not. All files are written to
-your machine locally, so this doesn't affect that. This only states whether
-you want to use cached version so that you don't have to download the file
-again. The steps of extracting and reading into R still have to be performed
-when \code{cache=TRUE}. Default: \code{FALSE}}
-
 \item{overwrite_unspecified}{(logical) Sometimes the crossref API returns
 mime type 'unspecified' for the full text links (for some Wiley dois
 for example). This parameter overrides the mime type to be \code{type}.}
@@ -46,7 +33,8 @@ User-agent section below}
 \description{
 Get full text PDFs
 }
-\details{
+\section{Notes}{
+
 Note that this function is not vectorized. To do many requests
 use a for/while loop or lapply family calls, or similar.
 
@@ -60,13 +48,6 @@ of the links that are apparently full text are not in facct full text,
 but only metadata.
 
 Check out \link{auth} for details on authentication.
-}
-\section{Caching}{
-
-By default we use
-\code{paste0(rappdirs::user_cache_dir(), "/crminer")}, but you can
-set this directory to something different. Ignored unless getting
-pdf. See \link{crm_cache} for caching details.
 }
 
 \section{User-agent}{
@@ -97,6 +78,23 @@ behavior as far as we know does not occur with other article types
 (xml, plain), but let us know if you see it.
 }
 
+\section{Caching}{
+
+By default we use
+\code{paste0(rappdirs::user_cache_dir(), "/crminer")}, but you can
+set this directory to something different. Ignored unless getting
+pdf. See \link{crm_cache} for caching details.
+
+We cache pdfs, as well as the extracted text from the pdf. The text is
+saved in a text file with the same file name as the pdf, but with the
+file extension ".txt". On subsequent requests of the same DOI, we first look
+for a cached .txt file matching the DOI, and return it if it exists.
+If it does not exist, but the the PDF does exist, we skip the PDF
+download step and move on to reading the PDF to text; we cache that text
+in to .txt file. If there's no .txt or .pdf file, we download the PDF and
+read the pdf to text, and both are cached.
+}
+
 \examples{
 \dontrun{
 # set a temp dir. cache path
@@ -109,26 +107,14 @@ x <- crm_pdf("https://peerj.com/articles/2356.pdf")
 
 ## pensoft
 data(dois_pensoft)
-(links <- crm_links(dois_pensoft[1], "all"))
-### pdf
-crm_text(url=links, type="pdf", read = FALSE)
-crm_text(links, "pdf")
+(links <- crm_links(dois_pensoft[10], "all"))
+crm_pdf(links)
 
 ## hindawi
 data(dois_pensoft)
-(links <- crm_links(dois_pensoft[1], "all"))
+(links <- crm_links(dois_pensoft[12], "all"))
 ### pdf
-crm_text(links, "pdf", read=FALSE)
-crm_text(links, "pdf")
-
-### Caching, for PDFs
-# out <- cr_members(2258, filter=c(has_full_text = TRUE), works = TRUE)
-# (links <- crm_links(out$data$DOI[10], "all"))
-# crm_text(links, type = "pdf", cache=FALSE)
-# system.time( cacheyes <- crm_text(links, type = "pdf", cache=TRUE) )
-### second time should be faster
-# system.time( cacheyes <- crm_text(links, type = "pdf", cache=TRUE) )
-# system.time( cacheno <- crm_text(links, type = "pdf", cache=FALSE) )
-# identical(cacheyes, cacheno)
+crm_pdf(links, read=FALSE)
+crm_pdf(links)
 }
 }

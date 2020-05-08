@@ -1,0 +1,441 @@
+CompCytogen 10(4): 543–554 (2016)                                                                               COMPARATIVE                   A peer-reviewed open-access journal
+                                       Towards a FISH-based karyotype of Rosa L. (Rosaceae)                                                                         543
+doi: 10.3897/CompCytogen.v10i4.9536                               RESEARCH ARTICLE                              Cytogenetics
+http://compcytogen.pensoft.net                                                                                         International Journal of Plant & Animal Cytogenetics,
+                                                                                                                              Karyosystematics, and Molecular Systematics
+Towards a FISH-based karyotype of Rosa L. (Rosaceae)
+   Ilya V. Kirov1,2,3, Katrijn Van Laere3, Nadine Van Roy4, Ludmila I. Khrustaleva1,2
+1 Center of Molecular Biotechnology, Russian State Agrarian University - Moscow Timiryazev Agricultural
+Academy, Timiryazevskay str. 49, 127550, Moscow, Russia 2 Department of Genetics and Biotechnology, Rus-
+sian State Agrarian University - Moscow Timiryazev Agricultural Academy, Timiryazevskay str. 3, 127550,
+Moscow, Russia 3 Institute for Agricultural and Fisheries Research (ILVO), Plant Sciences Unit, Applied Gene-
+tics and Breeding, Caritasstraat 39, 9090, Melle, Belgium 4 Center of Medical Genetics, Faculty of Medicine
+and Health Sciences, Ghent University, De Pintelaan 185, 9000, Ghent, Belgium
+Corresponding author: Ilya V. Kirov (kirovez@gmail.com)
+Academic editor: A. Joachimiak | Received 29 June 2016 | Accepted 8 September 2016 | Published 4 November 2016
+                                        http://zoobank.org/4B2D9EE5-1366-4BB0-B49B-86C166FD82FD
+Citation: Kirov IV, Van Laere K, Van Roy N, Khrustaleva LI (2016) Towards a FISH-based karyotype of Rosa L.
+(Rosaceae). Comparative Cytogenetics 10(4): 543–554. doi: 10.3897/CompCytogen.v10i4.9536
+Abstract
+The genus Rosa Linnaeus, 1753 has important economic value in ornamental sector and many breeding
+activities are going on supported by molecular studies. However, the cytogenetic studies of rose species are
+scarce and mainly focused on chromosome counting and chromosome morphology-based karyotyping.
+Due to the small size of the chromosomes and a high frequency of polyploidy in the genus, karyotyping
+is very challenging for rose species and requires FISH-based cytogenetic markers to be applied. Therefore,
+in this work the aim is to establish a FISH-based karyotype for Rosa wichurana (Crépin, 1888), a rose spe-
+cies with several benefits for advanced molecular cytogenetic studies of genus Rosa (Kirov et al. 2015a). It
+is shown that FISH signals from 5S, 45S and an Arabidopsis-type telomeric repeat are distributed on five
+(1, 2, 4, 5 and 7) of seven chromosome pairs. In addition, it is demonstrated that the interstitial telom-
+eric repeat sequences (ITR) are located in the centromeric regions of four chromosome pairs. Using low
+hybridization stringency for ITR visualization, we showed that the number of ITR signals increases four
+times (1–4 signals). This study is the first to propose a FISH-based R. wichurana karyotype for the reliable
+identification of chromosomes. The possible origin of R. wichurana ITR loci is discussed.
+Keywords
+Cytogenetic markers, fluorescence in situ hybridization, interstitial telomeric repeat (ITR), 5S rDNA, 45S
+rDNA, Rosa wichurana
+Copyright Ilya V. Kirov et al. This is an open access article distributed under the terms of the Creative Commons Attribution License (CC BY 4.0),
+which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.
+
+544             Ilya V. Kirov et al. / Comparative Cytogenetics 10(4): 543–554 (2016)
+Introduction
+Rosa Linnaeus, 1753 is an economically important ornamental genus belonging to
+the Rosaceae. Of the approximately 200 described Rosa species (Wissemann and Ritz
+2005), only 8 to 15 species contributed to the original germplasm of the modern
+rose cultivars. Rosa is one of the most widely cultivated ornamental plants worldwide,
+but few basic molecular cytogenetic studies in Rosa have been performed, including
+chromosome counts and karyotyping (Wylie 1954, Price et al. 1981, Liu and Li 1985,
+Subramanian 1987, Ma et al. 1997, Fernandez-Romero et al. 2001, Akasaka et al.
+2002, 2003, Jian et al. 2013a, 2013b). Performing molecular cytogenetics in roses is
+a big challenge due to their very small genome size (the diploid genome size is 0.83 to
+1.30 pg/2C, Roberts et al. 2009), small chromosomes (Kirov et al. 2014a), low mitotic
+index in roots and shoots, and weak root development (Ma et al. 1996). Moreover,
+most wild roses are polyploids (Vamosi and Dickinson 2006), ranging from diploid
+(2n = 2x = 14) to decaploid (2n = 10x = 70) (Roberts et al. 2009, Jian et al. 2010).
+     Rosa wichurana (Crépin, 1888) is a valuable model species for molecular cytoge-
+netic studies in Rosa genus (Kirov et al. 2015b). It is a diploid species (2n = 2x = 14)
+with suitable apical and root meristems that can be used for chromosome prepara-
+tions. Rosa wichurana is involved in the origin of modern rose cultivars and is one of
+the parental species used for the construction of several rose genetic maps (Crespel et
+al. 2002, Dugo et al. 2005, Shupert et al. 2007, Spiller et al. 2011, Moghaddam et
+al. 2012). To increase the efficiency of FISH experiments, we recently developed the
+“SteamDrop” protocol for the preparation of high quality chromosome slides (Kirov
+et al. 2014b). Using this “SteamDrop” protocol and Tyramide-FISH it was possible to
+physically map several single-copy genes on the mitotic and meiotic chromosomes of R.
+wichurana (Kirov et al. 2014a, Kirov et al. 2015a) and to anchor three linkage groups
+of the genetic map (Moghaddam et al. 2012) to three R. wichurana chromosomes.
+     Because the chromosomes are difficult to distinguish, further progress in cytogenetic
+mapping depends on the development of cytogenetic markers useful for chromosome iden-
+tification. The conservative tandemly organized repetitive sequences 5S and 45S rRNA
+genes are valuable sources of cytogenetic markers, and have been used for chromosome iden-
+tification in many plant species including Rosa species (Ma et al. 1997, Fernandez-Romero
+et al. 2001, Akasaka et al. 2002, 2003, Lim et al. 2005, Jian et al. 2012, Kirov et al. 2014a).
+Other conservative repeats, such as the Arabidopsis-type telomeric repeat (Fuchs et al. 1995,
+He et al. 2013) might be used for chromosome identification. Typically, telomeric repeats
+(TRs) occupy the end (telomere) of the chromosomes (Fuchs et al. 1995). However, the lo-
+cation of TRs on plant chromosomes is not restricted to the telomere ends and telomere-like
+sequences have been found in centromeric, subtelomeric and interstitial regions in several
+genera (Fuchs et al. 1995, Uchida et al. 2002, Tek and Jiang 2004, Mlinarec et al. 2009,
+Mandakova et al. 2010, Gong et al. 2012, He et al. 2013, Sousa et al. 2014). The unique
+position of these interstitial telomeric repeats (ITRs) on some chromosomes and their high
+copy number make them valuable cytogenetic markers. The position of ITR on chromo-
+somes can also reflect ancient chromosomal rearrangement as telomeric sequences and
+
+                       Towards a FISH-based karyotype of Rosa L. (Rosaceae)             545
+their remnants are involved in chromosomal rearrangements via illegitimate recombination
+between centromeric/telomeric repeats (Murat et al. 2010) and can be associated with fragile
+sites of chromosomes (Grabowska-Joachimiak et al. 2015). In addition, the chromosomal
+location of ITR can be used to detect descending dysploidy (Sousa and Renner 2015).
+     Development of an effective cytogenetic marker system is an important step in
+answering many biological questions (Jiang and Gill 2006). FISH-based markers have
+shown their effectiveness and ease-to-use. The modern methods of probe labeling and
+the application of directly labeled oligonucleotides make FISH-based chromosome iden-
+tification a robust and fast procedure (Kato et al. 2004, Fu et al. 2015, Tang et al. 2014,
+Cuadrado et al. 2009). Up-to-date FISH based karyotyping was established for many
+plant species including wheat, maize, rice, soybean, common bean and others (Cheng et
+al. 2001, Kato et al. 2004, Findley et al. 2010, Iwata-Otsubo et al. 2015). Cytogenetic
+markers are widely used to trace individual chromosomes in hybrids accelerating transfer-
+ring of desirable traits from wild relatives (Szinay et al. 2010). FISH-based karyotyping is
+used to shed light on speciation and allopolyploid formation (Badaeva et al. 2016). And
+a relatively new application came with the development of a FISH-based chromosome
+sorting procedure, allowing individual chromosome identification, sorting and further
+sequencing (Giorgi et al. 2013). These and other applications clearly demonstrate the im-
+portance of having a system of cytogenetic markers enabling chromosome identification.
+     This study aims to explore the opportunities of ITRs, 5S and 45S rDNA as cy-
+togenetic markers allowing to distinguish individual chromosomes of Rosa. FISH with
+5S rDNA, 45S rDNA and the Arabidopsis-type telomeric repeat was performed. These
+FISH results were combined with chromosome morphology measurements (Kirov et
+al. 2014a), in order to identify all seven mitotic chromosomes of R. wichurana. In
+addition, we also attempted to identify pachytene bivalents by FISH using the 45S
+rDNA and Arabidopsis-type telomeric repeat probes.
+Materials and methods
+Plant material
+Rosa wichurana plants were grown in the field. For chromosome slide preparations, cut-
+tings were made. Rooted cuttings were transferred to terracotta stone pots and grown
+in the greenhouse (moderate climatic conditions, East Flanders, Belgium). To prepare
+mitotic chromosome slides, young meristems were harvested. For meiotic (pachytene)
+chromosome slides, flowers buds with a hypanthium size of 3 mm were harvested.
+Probe labeling
+Plasmids containing 5S rRNA genes of rye (pSCT7, Lawrence and Appels 1986) and 45S
+rRNA genes of wheat (pTA71, Gerlach and Bedbrook 1979) were labeled by Digoxigenin-
+
+546              Ilya V. Kirov et al. / Comparative Cytogenetics 10(4): 543–554 (2016)
+and Biotin- Nick Translation Mix (Roche, Germany), respectively, according to the manu-
+facturer’s protocol. The Arabidopsis-type telomere repeat (CCCTAAA)3, labeled by TAMRA
+at the 5’ end (Syntol, Russia) was used.
+Chromosome preparation and fluorescence in situ hybridisation
+Pachytene and mitotic chromosomes were prepared according to the “SteamDrop”
+protocol (Kirov et al. 2014b).
+     For FISH we used the protocol described in Heslop-Harrison et al. (1991) with
+some modifications. Briefly, slides were incubated overnight at 37°C. Chromosomes
+were pretreated with 4% paraformaldehyde in 2xSSC (pH 8.3–8.5) for 6 min and
+dehydrated in ethanol (70%, 90% and 100%). Hybridization mixture consisted of
+50% (v/v) deionized formamide, 10% (w/v) dextran sulphate, 2xSSC, 0.25% sodium
+dodecyl sulphate, 2.00 ±1.00 ng/µl probe DNA. The mixture was denatured at 75°C
+for 5 min, placed on ice for 5 min and 60 µl was applied on each slide. Slides were
+denaturated at 75°C for 5 min and incubated in a humid chamber for 15–16 hours
+at 37°C (the common hybridization condition) or at 23–25°C (the low stringency
+hybridization condition). For stringency washing 0.1xSSC solution was used at 48°C
+(2 times 7 minutes). Biotin and digoxigenin labeled probes were detected by Strepta-
+vidin-Cy3 (Sigma-Aldrich, USA), diluted 1:200 in TNB buffer, and anti-digoxigenin-
+FITC (Roche, Germany), diluted 1:200 in TNB buffer, respectively.
+     For sequential FISH experiments, the slides were washed in the series of ethanol
+(70%, 90% and 100%) after the first round of FISH and then the above-mentioned
+FISH procedure was applied.
+Microscopy and image analysis
+Images were acquired using a Zeiss AxioImager M2 fluorescence microscope (400×
+and 1000× magnification) equipped with an AxioCam MRm camera and Zen software
+(Zeiss, Belgium). Final image adjustments were performed using Photoshop (Adobe
+Inc., USA). Measurements of chromosome lengths and karyotyping was done in Mi-
+croMeasure version 3.2 (Reeves and Tear 2000) for at least 10 well-spread metaphases.
+Results
+FISH using Arabidopsis-type telomere repeat, 5S rDNA and 45S rDNA allows
+unambiguous identification of 3 Rosa wichurana mitotic chromosomes
+FISH using the common hybridisation temperature of 37°C with 45S rDNA revealed
+a signal on chromosome 7, while the Arabidopsis type telomere-based probe hybridized
+on chromosome 5 (Fig. 1A).
+
+                         Towards a FISH-based karyotype of Rosa L. (Rosaceae)                  547
+Figure 1. FISH on the chromosomes of R. wichurana. A FISH with Arabidopsis-type telomere probe
+(red) and 45S (green) under hybridization at 37°C B FISH with Arabidopsis-type telomere probe under
+the low hybridization stringency condition (23-25°C). Arrows indicate the major ITRs on chromosome
+5 and arrowheads show the ITRs which are visible under the low hybridization stringency condition
+C The same metaphase as in 1B rehybridized with 5S rDNA under the common hybridization stringency
+(37°C). Arrows indicate the 5S rDNA signals. Sacale bar: 5 µm.
+     To further evaluate the value of the telomeric repeat (TR) as a cytogenetic marker,
+FISH was carried out at room temperature (the low hybridization temperature). We
+observed the Arabidopsis-type TR signals on all chromosome ends (Fig. 1B). Besides the
+telomeric signals, a bright fluorescent signal in the centromeric region on chromosome
+5 and weak signals in the centromeric region on three other chromosomes 1, 2 and 7
+were observed. Remarkably, the weak centromeric signals on chromosomes 1, 2 and 7
+were not observed when performing a hybridization at 37°C (Fig. 1A). No ITRs were
+present on chromosomes 3, 4 and 6. FISH with 5S rDNA using the common hybridiza-
+tion temperature of 37°C showed fluorescent signals on the long arm of chromosomes
+4 and 7 (Fig. 1C) but the signal frequency across the metaphases was low (20–40%).
+     Sequential FISH at the low hybridization temperature with the Arabidopsis-type
+telomere-based probe and 5S rDNA showed co-localization of these signals on chro-
+mosome 7. We also performed double-color FISH with the Arabidopsis-type telomere
+repeat-based probe and the 45S rDNA probe under the low temperature of hybridiza-
+tion (Fig. 2) which confirmed the identification of four (1, 2, 5 and 7) out of seven
+chromosomes.
+     A summary of the karyotypic features and distribution of FISH probes is given
+in Fig. 3. Taken together, three chromosomes (4, 5 and 7) of R. wichurana could be
+unambiguoulsy identified by 5S rDNA, 45S rDNA and the Arabidopsis-type TR using
+common FISH hybridisation conditions (Fig. 3).
+     All the other chromosomes can only be distinguished at this time based on their
+morphological parameters. Differentiation between chromosome 1 and 2 is possible
+by their centromeric indices which are 46.00 ±1.2% and 40.30 ±1.3%, respectively
+(Kirov et al. 2014a) and by the presence of an ITR when using FISH at low tempera-
+ture hybridization conditions. Chromosomes 3 and 6 have centromeric indices on the
+level of 44.3 ±1.0% and 41.8 ±1.1%, respectively (Kirov et al. 2014a). However, these
+chromosomes still remain very difficult to distinguish from each other.
+
+548               Ilya V. Kirov et al. / Comparative Cytogenetics 10(4): 543–554 (2016)
+Figure 2. Double-color FISH under the low hybridization conditions using the Arabidopsis-type telomere
+repeat-based (red) and 45S rDNA (green) probes to R. wichurana mitotic chromosomes. Scales bar: 10 µm.
+ITRs are located on the centromere of chromosome 5
+FISH experiments with 5S rDNA, 45S rDNA, and the Arabidopsis-type TR on rose
+pachytene chromosomes provide a much higher resolution of the mapped sequences.
+5S rDNA-FISH on pachytene chromosomes did not reveal any reliable signals, while
+FISH with the 45S rDNA probe resulted in a clear signal at the subtelomeric region
+of the NOR-bearing chromosome (Fig. 4). FISH with the Arabidopsis-type TR probe
+resulted in signals on all ends of pachytene chromosomes and one bright signal on the
+centromeric region of chromosome 5 (Fig. 4). Since centromeres of rose pachytene
+bivalents are clearly visible after DAPI staining as being the weakest part of the chro-
+mosomes (Kirov et al. 2015a), comparison between the DAPI stained chromosomes
+(Fig. 4B’) and the ITR signal positions (Fig. 4A’) revealed that the ITRs are located
+exactly on the centromere of chromosome 5.
+
+                         Towards a FISH-based karyotype of Rosa L. (Rosaceae)                      549
+Figure 3. Distribution of the repetitive sequences on the mitotic R. wichurana chromosomes.
+1
+  – ITR1: signals that are visible under hybridization at 37°C as well as at low temperature (23–25°C).
+2
+  – ITR2: signals that are visible only under hybridization at low temperature (23–25°C).
+Figure 4. High resolution physical mapping of ITR on R. wichurana pachytene chromosomes. FISH
+with the Arabidopsis-type telomere repeat probe (red) and 45S (green). Merged (A) and the DAPI gray
+scale (B) pictures are shown. FISH was performed under the low hybridization stringency condition.
+Dotted lines show the regions that were digitally enlarged (A’ and B’). Scales bar: 5 µm.
+
+550             Ilya V. Kirov et al. / Comparative Cytogenetics 10(4): 543–554 (2016)
+Discussion
+Rosa mitotic and meiotic chromosomes are difficult to distinguish by common karyo-
+type analysis (Kirov et al. 2014, Kirov et al. 2015a). The development of cytogenetic
+markers is necessary for individual chromosome identification and further cytogenetic
+studies in Rosa. In our study, we positively evaluated the use of the conservative tan-
+dem repeats, Arabidopsis-type telomere, 45S and 5S probes, as FISH-based cytoge-
+netic chromosome markers for R. wichurana. However, the 5S rDNA probe cannot
+be considered as a good cytogenetic marker for R. wichurana chromosomes due to the
+low reliability of the FISH-signals. Application of FISH with the 5S rDNA probe to
+chromosome slides prepared by an alternative method (spread protocol of Pijnacker
+and Ferwerda (1984)) and using FAM labeled 5S oligos or a R. wichurana 5S clone as
+probes, did not improve FISH results (data not shown). Thus the reason for weak 5S
+rDNA FISH signals on R. wichurana chromosomes remains unclear. FISH with the
+Arabidopsis-type TR under low hybridization conditions (hybridization at 23-25°C in-
+stead of 37°C) provided us an additional tool for identification of Rosa chromosomes.
+     In this study, FISH with the 45S rDNA and the Arabidopsis-type telomere probe,
+reliably identified 2 (chromosome 5 and 7) of the 7 pachytene bivalents of R. wichura-
+na. These markers will accelerate the ongoing physical mapping of pachytene chromo-
+somes of R. wichurana as their identification by morphological parameters or specific
+heterochromatin patterns is impossible (Kirov et al. 2015a).
+     ITRs can be used to trace ancient chromosomes rearrangements such as chromosome
+fusions, Robertsonian translocations and duplications resulting in dysploidy (Mandakova
+et al. 2010, Sousa et al. 2014). However, Rosa species have a basic chromosome number n
+= 7, suggesting that no descending dysploidy, which usually results in basic chromosome
+number changes, has occurred. Therefore, it seems unlikely that the observed ITRs are the
+indications of such chromosome fusions or translocations. ITRs might also be the traces
+of intrachromosomal rearragements implicating telomeres (e.g., inversions and duplica-
+tions) (Murat et al. 2010). In our study, the Arabidopsis telomere-like motif was found in
+centromeric repeats of Rosa wichurana, as is also observed in several other genera (Tek and
+Jiang 2004, He et al. 2013, Emadzade et al. 2014). The FISH signal from ITRs on chro-
+mosome 5 is significantly stronger than those observed in the telomeres of R. wichurana
+chromosomes. Thus, we hypothesize that the occurrence of ITRs in the centromeric re-
+gions of R. wichurana chromosomes is the result of insertion of Arabidopsis telomere-like
+sequence into centromeric sequence followed by massive amplification of centromeric
+tandem repeat(s) containing an Arabidopsis telomere-like motif. To check this hypothesis
+identification of centromeric repeats of R. wichurana should be done (Tek and Jiang
+2004). The events leading to insertion of ITR sequences into centromere are unknown.
+     Interestingly, FISH under the low hybridization temperature – and thus low strin-
+gency – revealed more chromosomes possessing the telomeric repeat compared to FISH
+performed under the common hybridization temperature. This result suggest that these
+chromosomes (1, 2 and 7) may contain truncated or diverged telomere motifs. As a
+consequence for our experiments, the telomeric probe may be much more informative
+as cytogenetic marker when hybridized at a lower temperature than at 37°C (Fuchs et al.
+
+                        Towards a FISH-based karyotype of Rosa L. (Rosaceae)                    551
+1995, Tek and Jiang 2004, Sousa et al. 2014, Sousa and Renner 2015). However, the
+application of ITR markers under the low-hybridization stringency and simultaneous
+mapping of other probes (e.g. genes) can be challenging as non-specific hybridization
+signals may occur due to low stringency. In this case sequential FISH can be applied.
+     High-resolution FISH on pachytene chromosomes with the telomere probe re-
+sulted in a signal in the centromere of chromosome 5, indicating that the telomere-like
+motifs may be the components of the R. wichurana functional centromere as it has
+been shown for potato (Tek and Jiang 2004).
+     This is the first report describing valuable cytogenetic markers for four mitotic chro-
+mosomes and two pachytene bivalents of R. wichurana. Moreover, by combining our
+FISH results with the chromosome morphology measurements (Kirov et al. 2014a),
+all 7 mitotic chromosomes of R. wichurana could be identified. Because R. wichurana
+has many advantages as a model species for cytogenetic studies of the Rosa genus, the
+development of a complete set of cytogenetic markers should facilitate the physical
+mapping of its genome. Designing new DNA probes based on NGS data covering all
+chromosomes of R. wichurana is a scope for our future research. These markers will be
+indispensable for high-resolution physical mapping experiments (Kirov et al. 2015a)
+that are currently ongoing for this species.
+Acknowledgements
+The authors would like to thank Oleg S. Alexandrov for providing the telomere probe.
+References
+Akasaka M, Ueda Y, Koba T (2002) Karyotype analyses of five wild rose species belonging to
+     septet A by fluorescence in situ hybridization. Chromosome Science 6(1): 17–26.
+Akasaka M, Ueda Y, Koba T (2003) Karyotype analysis of wild rose species belonging to septets
+     B, C, and D by molecular cytogenetic method. Breeding Science 53(2): 177–182. doi:
+     10.1270/jsbbs.53.177
+Badaeva ED, Ruban AS, Zoshchuk SA, Surzhikov SA, Knüpffer H, Kilian B (2016) Molecular
+     cytogenetic characterization of Triticum timopheevii chromosomes provides new insight
+     on genome evolution of T. zhukovskyi. Plant Systematics and Evolution Volume 302(8):
+     943–956. doi: 10.1007/s00606-016-1309-3
+Cheng Z, Buell CR, Wing RA, Gu M, Jiang J (2001) Toward a cytological characterization of
+     the rice genome. Genome Research 11(12): 2133–2141. doi: 10.1101/gr.194601
+Crespel L, Chirollet M, Durel CE, Zhang D, Meynet J, Gudin S (2002) Mapping of qualitative
+     and quantitative phenotypic traits in Rosa using AFLP markers. Theoretical and Applied
+     Genetics 105: 1207–1214. doi: 10.1007/s00122-002-1102-2
+Cuadrado Á, Golczyk H, Jouve N (2009) A novel, simple and rapid nondenaturing FISH (ND-
+     FISH) technique for the detection of plant telomeres. Potential used and possible target struc-
+     tures detected. Chromosome Research 17(6): 755–762. doi: 10.1007/s10577-009-9060-z
+
+552               Ilya V. Kirov et al. / Comparative Cytogenetics 10(4): 543–554 (2016)
+Dugo MD, Satovic Z, Millan T, Cubero JI, Rubiales D, Cabrera A, Torres AM (2005) Genetic
+     mapping of QTLs controlling horticultural traits in diploid roses. Theoretical and Applied
+     Genetics 111(3): 511–520. doi: 10.1007/s00122-005-2042-4
+Emadzade K, Jang TS, Macas J, Kovařík A, Novák P, Parker J, Weiss-Schneeweiss H (2014) Dif-
+     ferential amplification of satellite PaB6 in chromosomally hypervariable Prospero autumnale
+     complex (Hyacinthaceae). Annals of Botany 114(8): 1597–1608. doi: 10.1093/aob/mcu178
+Fernández-Romero MD, Torres AM, Millán T, Cubero JI, Cabrera A (2001) Physical mapping
+     of ribosomal DNA on several species of the subgenus Rosa. Theoretical and Applied Genet-
+     ics 103(6-7): 835–838. doi: 10.1007/s001220100709
+Findley SD, Cannon S, Varala K, Du J, Ma J, Hudson ME, Birchler JA, Stacey G (2010) A
+     fluorescence in situ hybridization system for karyotyping soybean. Genetics 185(3): 727–
+     744. doi: 10.1534/genetics.109.113753
+Fu S, Chen L, Wang Y, Li M, Yang Z, Qiu L, Yan B, Ren Z, Tang Z (2015) Oligonucleotide
+     probes for ND-FISH analysis to identify rye and wheat chromosomes. Scientific Reports
+     5: 10552. doi: 10.1038/srep10552
+Fuchs J, Brandes A, Schubert I (1995) Telomere sequence localization and karyotype evolu-
+     tion in higher plants. Plant Systematics and Evolution 196(3–4): 227–241. doi: 10.1007/
+     BF00982962
+Gerlach WL, Bedbrook JR (1979) Cloning and characterization of ribosomal RNA genes from
+     wheat and barley. Nucleic Acids Research 7(7): 1869–1885. doi: 10.1093/nar/7.7.1869
+Giorgi D, Farina A, Grosso V, Gennaro A, Ceoloni C, Lucretti S (2013) FISHIS: fluorescence
+     in situ hybridization in suspension and chromosome flow sorting made easy. PLoS ONE
+     8(2): e57994. doi: 10.1371/journal.pone.0057994
+Gong ZY, Wu YF, Koblížková A, Torres GA, Wang K, Iovene M, Neumann P, Zhang WL, Novák
+     P, Buell CR, Macas J, Jiang JM (2012) Repeatless and repeat-based centromeres in potato: im-
+     plications for centromere evolution. Plant Cell 24: 3559–3574. doi: 10.1105/tpc.112.100511
+Grabowska-Joachimiak A, Kula A, Gernand-Kliefoth D, Joachimiak AJ (2015) Karyotype
+     structure and chromosome fragility in the grass Phleum echinatum Host. Protoplasma
+     252(1): 301–306. doi: 10.1007/s00709-014-0681-5
+He L, Liu J, Torres GA, Zhang H, Jiang J, Xie C (2013) Interstitial telomeric repeats are
+     enriched in the centromeres of chromosomes in Solanum species. Chromosome Research
+     21(1): 5–13. doi: 10.1007/s10577-012-9332-x
+Heslop-Harrison JS, Schwarzacher T, Anamthawat-Jdnsson K, Leitch AR, Shi M, Leitch IJ (1991)
+     In-situ hybridization with automated chromosome denaturation. Technique 3: 109–116.
+Iwata-Otsubo A, Radke B, Findley S, Abernathy B, Vallejos CE, Jackson SA (2016) Fluorescence
+     In Situ Hybridization (FISH)-Based Karyotyping Reveals Rapid Evolution of Centromeric
+     and Subtelomeric Repeats in Common Bean (Phaseolus vulgaris) and Relatives. G3: Genes,
+     Genomes, Genetics 6(4): 1013–1022.
+Jian H, Zhang H, Tang K, Li S, Wang Q, Zhang T, Qiu X, Yan H (2010) Decaploidy in Rosa
+     praelucens Byhouwer (Rosaceae) endemic to Zhangdian Plateau, China. Caryologia 63:
+     162–167. doi: 10.1080/00087114.2010.10589722
+Jian HY, Min T, Ting Z, Li SB, Zhang H, Tang KX (2013a) Chromosome variation from
+     Sect. Chinensis (Rosa L.) through Chinese old garden roses to modern rose cultivars. Acta
+     Horticulturae 977: 157–165. doi: 10.17660/ActaHortic.2013.977.17
+
+                        Towards a FISH-based karyotype of Rosa L. (Rosaceae)                553
+Jian HY, Zhang T, Wang QG, Li SB, Zhang H, Tang KX (2013b) Karyological diversity of
+     wild Rosa in Yunnan, Southwestern China. Genetic Resources and Crop Evolution 60(1):
+     115–127. doi: 10.1007/s10722-012-9820-z
+Jiang J, Gill BS (2006) Current status and the future of fluorescence in situ hybridization
+     (FISH) in plant genome research. Genome 49(9): 1057–1068. doi: 10.1139/g06-076
+Kato A, Lamb JC, Birchler JA (2004) Chromosome painting using repetitive DNA sequences
+     as probes for somatic chromosome identification in maize. Proceedings of the National
+     Academy of Sciences of the United States of America 101(37): 13554–13559. doi:
+     10.1073/pnas.0403659101
+Kirov I, Van Laere K, De Riek J, De Keyser E, Van Roy N, Khrustaleva L (2014a) An-
+     choring linkage groups of the Rosa genetic map to physical chromosomes with Tyra-
+     mide-FISH and EST-SNP markers. PLoS ONE 9(4): e95793. doi: 10.1371/journal.
+     pone.0095793
+Kirov I, Divashuk M, Van Laere K, Soloviev A, Khrustaleva L (2014b) An easy “SteamDrop”
+     method for high quality plant chromosome preparation. Molecular Cytogenetics 7(1): 21.
+     doi: 10.1186/1755-8166-7-21
+Kirov IV, Van Laere K, Khrustaleva LI (2015a) High resolution physical mapping of single
+     gene fragments on pachytene chromosome 4 and 7 of Rosa. BMC Genetics 16(1): 1. doi:
+     10.1186/s12863-015-0233-9
+Kirov IV, Khrustaleva LI, Van Laere K, Van Roy N (2015b) Molecular Cytogenetics in the
+     Genus Rosa: Current Status and Future Perspectives. Acta Horticulturae 1087: 41–48.
+     doi: 10.17660/ActaHortic.2015.1087.4
+Lawrence GJ, Appels R (1986) Mapping the nucleolus organizer region, seed protein loci and
+     isozyme loci on chromosome 1R in rye. Theoretical and Applied Genetics 71(5): 742–749.
+     doi: 10.1007/BF00263273
+Lim KY, Werlemark G, Matyasek R, Bringloe JB, Sieber V, El Mokadem H, Roberts AV
+     (2005) Evolutionary implications of permanent odd polyploidy in the stable sexual, penta-
+     ploid of Rosa canina L. Heredity 94(5): 501–506. doi: 10.1038/sj.hdy.6800648
+Liu DH, Li MX (1985) A study on karyotypes of some flowers of Rosa in China. Journal of
+     Wuhan Botanical Research (Wuhan zhiwuxue Yanjou) 3: 403–408.
+Ma Y, Islam-Faridi MN, Crane CF, Ji Y, Stelly DM, Price HJ, Byrne DH (1997) In situ
+     hybridization of ribosomal DNA to rose chromosomes. Journal of Heredity 88(2): 158–
+     161. doi: 10.1093/oxfordjournals.jhered.a023078
+Mandáková T, Joly S, Krzywinski M, Mummenhoff K, Lysak MA (2010) Fast diploidization
+     in close mesopolyploid relatives of Arabidopsis. The Plant Cell Online 22(7): 2277–2290.
+     doi: 10.1105/tpc.110.074526
+Mlinarec J, Chester M, Siljak-Yakovlev S, Papeš D, Leitch AR, Besendorfer V (2009) Molecular
+     structure and chromosome distribution of three repetitive DNA families in Anemone hortensis
+     L. (Ranunculaceae). Chromosome Research 17(3): 331–346. doi: 10.1007/s10577-009-
+     9025-2
+Moghaddam HH, Leus L, De Riek J, Van Huylenbroeck J, Van Bockstaele E (2012) Construc-
+     tion of a genetic linkage map with SSR, AFLP and morphological markers to locate QTLs
+     controlling pathotype-specific powdery mildew resistance in diploid roses. Euphytica 184:
+     413–427. doi: 10.1007/s10681-011-0616-6
+
+554              Ilya V. Kirov et al. / Comparative Cytogenetics 10(4): 543–554 (2016)
+Murat F, Xu JH, Tannier E, Abrouk M, Guilhot N, Pont C, Messing J, Salse J (2010) Ancestral
+     grass karyotype reconstruction unravels new mechanisms of genome shuffling as a source
+     of plant evolution. Genome Research 20(11): 1545–1557. doi: 10.1101/gr.109744.110
+Pijnacker LP, Ferwerda MA (1984) Giemsa C-banding of potato chromosomes. Canadian
+     Journal of Genetics and Cytology 26(4): 415–419. doi: 10.1139/g84-067
+Price L, Short KC, Roberts AV (1981) Poor resolution of C-bands and the presence of B-chro-
+     mosomes in Rosa rugosa ‘Scabrosa’. Caryologia 34: 69–72. doi: 10.1080/00087114.19­
+     81.1079687
+Reeves A, Tear J (2000) MicroMeasure for Windows. Version 3.2. http://www.colostate.edu/
+     Depts/Biology/MicroMeasure [accessed 20 May 2014]
+Roberts AV, Gladis T, Brumme H (2009) DNA amounts of roses (Rosa L.) and their use in at-
+     tributing ploidy levels. Plant Cell Reports 28(1): 61–71. doi: 10.1007/s00299-008-0615-9
+Shupert DA, Byrne DH, Pemberton HB (2007) Inheritance of flower traits, leaflet num-
+     ber and prickles in roses. Acta Horticulturae 751: 331–335. doi: 10.17660/ActaHor-
+     tic.2007.751.42
+Sousa A, Cusimano N, Renner SS (2014) Combining FISH and model-based predictions to
+     understand chromosome evolution in Typhonium (Araceae). Annals of Botany 113(4):
+     669–680. doi: 10.1093/aob/mct302
+Sousa A, Renner SS (2015) Interstitial telomere‐like repeats in the monocot family Araceae.
+     Botanical Journal of the Linnean Society 177(1): 15–26. doi: 10.1111/boj.12231
+Spiller M, Linde M, Hibrand-Saint Oyant L, Tsai CJ, Byrne DH, Smulders MJ, Debener T
+     (2011) Towards a unified genetic map for diploid roses. Theoretical and Applied Genetics
+     122(3): 489–500. doi: 10.1007/s00122-010-1463-x
+Szinay D, Bai Y, Visser R, de Jong H (2010) FISH applications for genomics and plant breed-
+     ing strategies in tomato and other solanaceous crops. Cytogenetic and Genome Research,
+     129(1-3): 199–210. doi: 10.1159/000313502
+Tang Z, Yang Z, Fu S (2014) Oligonucleotides replacing the roles of repetitive sequences pAs1,
+     pSc119. 2, pTa-535, pTa71, CCS1, and pAWRC for FISH analysis. Journal of Applied
+     Genetics 55(3): 313–318. doi: 10.1007/s13353-014-0215-z
+Tek AL, Jiang JM (2004) The centromeric regions of potato chromosomes contain megabase-
+     sized tandem arrays of telomere-similar sequence. Chromosoma 113: 77–83. doi: 10.1007/
+     s00412-004-0297-1
+Roberts AV, Gladis T, Brumme H (2009) DNA amounts of roses (Rosa L.) and their use in
+     attributing ploidy levels. Plant Cell Reports 28: 61–71. doi: 10.1007/s00299-008-0615-9
+Vamosi JC, Dickinson TA (2006) Polyploidy and diversification: a phylogenetic investigation
+     in Rosaceae. International Journal of Plant Sciences 167: 349–358. doi: 10.1086/499251
+Uchida W, Matsunaga S, Sugiyama R, Kawano S (2002) Interstitial telomere-like repeats in the
+     Arabidopsis thaliana genome. Genes & Genetic Systems 77: 63–67. doi: 10.1266/ggs.77.63
+Wissemann V, Ritz CM (2005) The genus Rosa (Rosoideae, Rosaceae) revisited: molecular
+     analysis of nrITS‐1 and atpB‐rbcL intergenic spacer (IGS) versus conventional taxono-
+     my. Botanical Journal of the Linnean Society 147(3): 275–290. doi: 10.1111/j.1095-
+     8339.2005.00368.x
+Wylie AP (1954) The history of garden roses. Journal of the Royal Horticultural Society (London)
+     79: 555–571.
+

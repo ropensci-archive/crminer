@@ -143,24 +143,30 @@ likely_pdf <- function(x) {
 no_elsevier_warning <- function(x, file) {
   hds <- x$response_headers
   if ("x-els-status" %in% names(hds)) {
-    warning(paste("Elsevier", hds[["x-els-status"]]),
-      sprintf("\n file (%s) deleted", file))
-    unlink(file)
-    return(FALSE)
+    if ("ok" != tolower(hds$`x-els-status`)) {
+      warning(paste("Elsevier", hds[["x-els-status"]]),
+        sprintf("\n file (%s) deleted", file))
+      unlink(file)
+      return(FALSE)
+    }
+    return(TRUE)
   }
   return(TRUE)
 }
 
 getPDF <- function(url, auth, overwrite, type, read,
-  doi, cache = FALSE, try_ocr = FALSE, ...) {
+  doi, try_ocr = FALSE, ...) {
 
   crm_cache$mkdir()
   filepath <- make_file_path(url, doi, type)
+  txtpath <- sub("pdf", "txt", filepath)
+  if (file.exists(txtpath) && read) {
+    cache_mssg(txtpath)
+    return(give_txt(txtpath))
+  }
   url <- alter_url(url)
-  if (cache && file.exists(filepath)) {
-    if ( !file.exists(filepath) ) {
-      stop( sprintf("%s not found", filepath), call. = FALSE)
-    }
+  if (file.exists(filepath)) {
+    cache_mssg(filepath)
   } else {
     message("Downloading pdf...")
     cli <- crul::HttpClient$new(
@@ -186,16 +192,34 @@ getPDF <- function(url, auth, overwrite, type, read,
   }
 
   if (read) {
-    message("Extracting text from pdf...")
-    out <- crm_extract(path = filepath)
-    if (!all(nzchar(out$text)) && try_ocr) {
-      message("no text extracted, pdf likely scanned, trying pdftools::pdf_ocr_text ...")
-      out <- crm_extract(path = filepath, try_ocr = TRUE)
+    txtpath <- sub("pdf", "txt", filepath)
+    if (!file.exists(txtpath)) {
+      message("Extracting text from pdf...")
+      out <- crm_extract(path = filepath)
+      if (!all(nzchar(out$text)) && try_ocr) {
+        message("no text extracted, pdf likely scanned,",
+          " trying pdftools::pdf_ocr_text ...")
+        out <- crm_extract(path = filepath, try_ocr = TRUE)
+      }
+      cache_pdf_text(out, txtpath)
+    } else {
+      out <- structure(
+        list(
+          info = pdftools::pdf_info(filepath),
+          text = readLines(txtpath)
+        ),
+        class = "crm_pdf",
+        path = filepath
+      )
     }
     return(out)
   } else {
     filepath
   }
+}
+
+give_txt <- function(x) {
+  structure(list(text = readLines(x)), class = "crm_pdf_text", path = x)
 }
 
 maybe_overwrite_unspecified <- function(overwrite_unspecified, url, type) {
@@ -204,4 +228,21 @@ maybe_overwrite_unspecified <- function(overwrite_unspecified, url, type) {
     attr(url, "type") <- type
   }
   return(url)
+}
+
+cache_pdf_text <- function(x, txtpath) {
+  if (!file.exists(txtpath) && !is.null(x$text)) {
+    cat(x$text, file = txtpath, sep = "\n")
+  }
+}
+
+stract <- function(str, pattern) regmatches(str, regexpr(pattern, str))
+cache_mssg <- function(file) {
+  fi <- file.info(file)
+  size <- round(fi$size/1000000, 3)
+  chaftdec <- nchar(stract(as.character(size), '^[0-9]+'))
+  if (chaftdec > 1) size <- round(size, 1)
+  message("using cached file: ", file)
+  message(
+    sprintf("date created (size, mb): %s (%s)", fi$ctime, size))
 }

@@ -8,9 +8,8 @@ http_interactions:
     headers:
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
-      User-Agent: r-curl/4.3 rOpenSci(crul/%s)0.9.0 rOpenSci(rcrossref/1.0.0.93) (mailto:myrmecocystus@gmail.com)
-      X-USER-AGENT: r-curl/4.3 rOpenSci(crul/%s)0.9.0 rOpenSci(rcrossref/1.0.0.93)
-        (mailto:myrmecocystus@gmail.com)
+      User-Agent: r-curl/4.3 rOpenSci(crul/%s)0.9.0 rOpenSci(rcrossref/1.0.0) (mailto:myrmecocystus@gmail.com)
+      X-USER-AGENT: r-curl/4.3 rOpenSci(crul/%s)0.9.0 rOpenSci(rcrossref/1.0.0) (mailto:myrmecocystus@gmail.com)
   response:
     status:
       status_code: '200'
@@ -24,7 +23,7 @@ http_interactions:
       access-control-allow-headers: X-Requested-With
       content-length: '7642'
       server: http-kit
-      date: Tue, 07 Apr 2020 16:24:56 GMT
+      date: Fri, 08 May 2020 23:17:40 GMT
       x-rate-limit-limit: '50'
       x-rate-limit-interval: 1s
       connection: close
@@ -51,8 +50,8 @@ http_interactions:
         history of garden roses.","volume":"79","author":"Wylie","year":"1954","journal-title":"Journal
         of the Royal Horticultural Society (London)"}],"container-title":["Comparative
         Cytogenetics"],"original-title":[],"link":[{"URL":"http:\/\/compcytogen.pensoft.net\/lib\/ajax_srv\/article_elements_srv.php?action=download_pdf&item_id=9536","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/compcytogen.pensoft.net\/lib\/ajax_srv\/article_elements_srv.php?action=download_xml&item_id=9536","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/compcytogen.pensoft.net\/article_preview.php?id=9536&skip_redirect=1","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,25]],"date-time":"2017-06-25T02:48:54Z","timestamp":1498358934000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2016,11,4]]},"references-count":52,"journal-issue":{"published-online":{"date-parts":[[2016,11,4]]},"issue":"4"},"URL":"http:\/\/dx.doi.org\/10.3897\/compcytogen.v10i4.9536","relation":{"cites":[]},"ISSN":["1993-078X","1993-0771"],"issn-type":[{"value":"1993-0771","type":"print"},{"value":"1993-078X","type":"electronic"}]}}'
-  recorded_at: 2020-04-07 16:25:06 GMT
-  recorded_with: vcr/0.5.4, webmockr/0.6.2.91
+  recorded_at: 2020-05-08 23:17:44 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2.92
 - request:
     method: get
     uri: http://compcytogen.pensoft.net/lib/ajax_srv/article_elements_srv.php?action=download_pdf&item_id=9536
@@ -70,7 +69,7 @@ http_interactions:
       explanation: Request fulfilled, document follows
     headers:
       status: HTTP/1.1 200 OK
-      date: Tue, 07 Apr 2020 16:25:01 GMT
+      date: Fri, 08 May 2020 23:17:43 GMT
       server: Apache
       x-powered-by: PHP/7.2.27-5+0~20200202.35+debian10~1.gbp2925f8
       expires: Thu, 19 Nov 1981 08:52:00 GMT
@@ -82,6 +81,6 @@ http_interactions:
     body:
       encoding: UTF-8
       file: yes
-      string: ../files/9536.pdf
-  recorded_at: 2020-04-07 16:25:06 GMT
-  recorded_with: vcr/0.5.4, webmockr/0.6.2.91
+      string: ../files/10.3897.compcytogen.v10i4.9536.pdf
+  recorded_at: 2020-05-08 23:17:44 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2.92

@@ -1,0 +1,378 @@
+                                                                                       EFSA Journal 2014;12(2):3550
+                                      SCIENTIFIC REPORT OF EFSA
+  Endogenous formaldehyde turnover in humans compared with exogenous
+                                    contribution from food sources1
+                                     European Food Safety Authority2, 3
+                             European Food Safety Authority (EFSA), Parma, Italy
+ABSTRACT
+The FEEDAP Panel received a request to deliver a scientific opinion on the safety and efficacy of formaldehyde
+used in feed for all animal species based on dossiers submitted by applicants. In parallel, the ANS Panel
+evaluated the safety of formaldehyde formed from endogenous production and from dietary sources of methanol,
+including aspartame. In order to support both evaluations, assistance was requested to the SCER unit to evaluate
+the oral internal dose of formaldehyde in humans from endogenous production, food-derived from target animals
+exposed to formaldehyde-treated feed and formaldehyde generated from dietary sources of methanol, including
+from food additives such as aspartame. Endogenous turnover of formaldehyde was estimated to be
+approximately 0.61-0.91 mg/kg bw per minute and 878-1310 mg/kg bw per day assuming a half life of
+1-1.5 min. Compared with formaldehyde turnover and the background levels of formaldehyde from food
+sources (1.7-1.4 mg/kg b. w per day for a 60-70 kg person), including from dietary methanol, the relative
+contribution of exogenous formaldehyde from consumption of animal products (milk, meat) from target animals
+exposed to formaldehyde-treated feed was negligible (<0.001 %). Oral exposure to formaldehyde from
+aspartame involves metabolism to methanol and further oxidation to formaldehyde. At the current ADI of
+40 mg/kg bw per day for aspartame, formaldehyde would be approximately 4 mg/kg bw per day and represent
+only 0.3-0.4 % of the endogenous turnover of formaldehyde.
+© European Food Safety Authority, 2014
+KEY WORDS
+formaldehyde, endogenous, background levels, carry-over, aspartame, methanol
+1
+  On request from EFSA, Question No EFSA-Q-2013-01033, approved on 28 January 2014.
+2
+  Correspondence: scer@efsa.europa.eu
+3
+  Acknowledgement: EFSA wishes to thank EFSA staff: Jean Lou Dorne, Camille Bechaux, Georges Kass and Matteo
+  Innocenti for the support provided to this scientific output. EFSA greatly acknowledges Jan Alexander, David Gott and
+  Georges Bories for reviewing this scientific report.
+Suggested citation: European Food Safety Authority, 2014. Endogenous formaldehyde turnover in humans compared with
+exogenous contribution from food sources. EFSA Journal 2014;12(2):3550, 11 pp. doi:10.2903/j.efsa.2014.3550
+Available online: www.efsa.europa.eu/efsajournal
+© European Food Safety Authority, 2014
+
+                                                               Endogenous versus exogenous formaldehyde
+SUMMARY
+Formaldehyde is an important metabolic intermediate that is physiologically present in all cells. The
+electrophilic nature of formaldehyde makes it reactive towards a variety of endogenous molecules,
+including glutathione, proteins, nucleic acids and folic acid.
+In order to estimate the synthesis and metabolism of formaldehyde in the human body, authors in the
+scientific literature have assumed that it is present in all aqueous body fluids because of its water
+solubility and have estimated its half life in humans as 1-1.5 min. Blood and intracellular steady state
+concentrations of formaldehyde have been estimated in humans to be around 2.6 mg/L (87 µM) and
+12 mg/L (400 µM), respectively. Based on blood steady state concentrations and half life values in
+humans of 1-1.5 min, formaldehyde turnover was estimated to be approximately 0.61-0.91mg/kg bw
+per minute corresponding to a daily turnover of 878-1310 mg/kg bw per day.
+Background levels in food products of formaldehyde are very variable and range from values around
+0.1-0.3 mg/kg in milk to over 200 mg/kg in some fish species. Considering such wide variability in
+formaldehyde concentrations and assuming a person would be eating one kilogram of food per day, it
+was assumed that oral exposure to formaldehyde in humans would not exceed 100 mg formaldehyde
+per day, corresponding to 1.7 and 1.4 mg/kg bw per day for 60 kg and 70 kg respectively. Carry over
+in animal tissues has been measured in a few limited tissue deposition studies, mostly in cows and the
+data showed a maximum increase in formaldehyde concentration between 0.1-0.2 mg/kg milk or meat.
+Such levels of formaldehyde resulting from the consumption of milk or meat from animals fed with
+formaldehyde-supplemented feed would represent 0.1-0.3 % of human oral exposure from background
+levels in food products and would be below 0.001 % considering the endogenous formaldehyde
+turnover. Such levels were considered negligible.
+Based on the analysis of the EFSA Scientific Panel on Food Additives and Nutrient Sources added to
+Food using actual usage data, methanol from aspartame was estimated to contribute to 0.5-9.7 % of
+the total daily exposure to endogenous and exogenous methanol. For formaldehyde, and assuming
+exposure to aspartame at the current Acceptable Daily Intake of 40 mg/kg bw per day together with a
+10 % conversion to methanol with further conversion to formaldehyde, a daily exposure of 4 mg/kg
+bw per day is estimated. This exposure would only contribute to approximately 0.3-0.4 % of human
+oral exposure from background levels in food products and endogenous turnover.
+EFSA Journal 2014;12(2):3550                                                                           2
+
+                                                                                             Endogenous versus exogenous formaldehyde
+TABLE OF CONTENTS
+Abstract .................................................................................................................................................... 1
+Summary .................................................................................................................................................. 2
+Table of contents ...................................................................................................................................... 3
+Background as provided by EFSA ........................................................................................................... 4
+Terms of reference as provided by EFSA ................................................................................................ 4
+Assessment ............................................................................................................................................... 5
+1. Introduction ..................................................................................................................................... 5
+2. Endogenous turnover of formaldehyde in humans .......................................................................... 5
+3. Background levels of formaldehyde in food.................................................................................... 5
+4. Tissue deposition studies of formaldehyde in animal species ......................................................... 6
+5. Comparison of endogenous formaldehyde with oral exposure from food sources.......................... 7
+  5.1.      Endogenous formaldehyde versus background levels in food and carry over from animal
+  products ................................................................................................................................................ 7
+  5.2.      Aspartame-derived methanol/formaldehyde versus endogenous and background levels in
+  food       ................................................................................................................................................ 7
+Conclusions .............................................................................................................................................. 8
+References ................................................................................................................................................ 9
+Abbreviations ......................................................................................................................................... 11
+EFSA Journal 2014;12(2):3550                                                                                                                                 3
+
+                                                               Endogenous versus exogenous formaldehyde
+BACKGROUND AS PROVIDED BY EFSA
+Formaldehyde, a known carcinogen, is currently being considered in ongoing evaluations by the ANS
+and FEEDAP Panels. The ANS Panel has re-evaluated, among others, the artificial sweetener
+aspartame that forms formaldehyde as part of its metabolism (EFSA-Q-2011-00406). The FEEDAP
+Panel is currently evaluating formaldehyde as a preservative for feed, and their terms of reference
+include both consumers and users and target species (EFSA-Q-2013-00763). In addition, both the
+ANS Panel and the FEEDAP Panel are re-evaluating hexamethylenetetramine (EFSA-Q-2011-00458
+and EFSA-Q-2012-00415), that is also partially metabolised to formaldehyde. The SCER unit has
+produced an internal report resulting from an assistance request from the FEEDAP and the FIP unit.
+The report evaluated the internal exposure to formaldehyde in humans from food derived from target
+animals exposed to formaldehyde-treated feed and compare this to (i) the endogenous production of
+formaldehyde and (ii) the internal exposure to formaldehyde from aspartame and other dietary or
+endogenous sources (performed by the ANS Panel).
+TERMS OF REFERENCE AS PROVIDED BY EFSA
+The SCER unit is requested to produce a scientific report from the internal report on “endogenous
+formaldehyde synthesis and metabolism in humans compared with exogenous contribution from food
+sources”, by 31 January 2014. In order to follow the EFSA procedure for scientific reports, the SCER
+unit should have the report reviewed by at least two external reviewers with relevant expertise.
+EFSA Journal 2014;12(2):3550                                                                          4
+
+                                                                Endogenous versus exogenous formaldehyde
+ASSESSMENT
+1.        Introduction
+This Scientific report summarises the scientific support provided by the SCER unit after receiving an
+assistance request from the FEEDAP and FIP unit, for the evaluation and comparison of the internal
+dose to formaldehyde in humans from endogenous turnover, background levels in food, food-derived
+from target animals exposed to formaldehyde-treated feed and formaldehyde derived from aspartame-
+derived methanol.
+2.        Endogenous turnover of formaldehyde in humans
+Formaldehyde is an essential metabolic intermediate estimated from measurements in nasal tissue to
+be present in cells at an intracellular concentration of around 12 mg/L (400 µM) (EFSA, 2013). There
+are numerous sources of endogenous formaldehyde including the one carbon pool, amino acid
+metabolism (serine, glycine, methionine, and choline), methanol metabolism, lipid peroxidation, and
+P450 dependent demethylation (e.g. O-, N-, and S-methyl) (Dhareshwar and Stella, 2008; Swenberg et
+al., 2011). The metabolism of formaldehyde is rapid and catalysed by glutathione-dependent
+formaldehyde dehydrogenase (which is also known as alcohol dehydrogenase 5, ADH5) and S-
+formyl-glutathione hydrolase to formic acid. Formic acid then enters the one-carbon pool where it can
+be incorporated as a methyl group into nucleic acids and proteins and is either excreted in the urine or
+oxidised to carbon dioxide and exhaled at a significantly slower rate than its formation from
+formaldehyde (formic acid halflife in plasma is between 1 and 6 h) (Dhareshwar and Stella, 2008).
+ADH5 has been detected in all human tissues at all stages of development, from embryo through adult.
+The electrophilic nature of formaldehyde makes it reactive towards a variety of endogenous
+molecules, including glutathione, proteins, nucleic acids and folic acid. (NTP, 2011). Ideally, an
+evaluation of the fate of formaldehyde in vivo requires a distinction between products which are
+normal cellular metabolites, those which are detoxification products and those which are formed
+chemically in localized tissues due to the reactivity of formaldehyde (Dhareshwar and Stella, 2008).
+Formaldehyde concentration in the blood of mammals resulting from endogenous production is similar
+in different species with 2.2, 2.4 and 2.6 mg/L in the rat, monkey and humans, respectively (Heck et
+al., 1982; 1985; Casanova et al., 1988). In order to estimate the total content of formaldehyde in the
+human body, authors have assumed that it is present in all aqueous body fluids because of its water
+solubility and have estimated its half life in humans as 1-1.5 min (Sullivan and Krieger, 2001) with a
+volume of distribution as approximately total body water (42 and 49 L for an adult of 60 and 70 kg,
+respectively), giving a total body content of 1.82 mg/kg bw and using the steady state concentration of
+2.6 mg/L. Based on the latter total body formaldehyde content and the reported half-lives of 1 and
+1.5 min (Clary and Sullivan, 2001), there would be a turnover of 0.61-0.91 mg formaldehyde/kg bw
+per minute or 878-1310 mg formaldehyde/kg bw per day to maintain a formaldehyde steady state
+concentration of 2.6 mg/L in the blood stream (Cascieri and Clary, 1992; Dhareshwar and Stella,
+2008).
+3.        Background levels of formaldehyde in food
+Background levels of formaldehyde have been measured in milk, meat, plant material, mushrooms and
+fish.
+Formaldehyde is present in the milligram range with the lowest level measured in fresh milk
+(0.013 - < 1 mg/kg) (Kaminski et al. 1993; Trezl et al., 1997).
+In pig tissues, background formaldehyde levels (n=3) has been measured with values of 11.8±0.17,
+8.75±0.28, 6.24±0.12 mg/kg in liver, kidney and muscle, respectively (Retfalvi et al., 1998). In meat,
+background levels of formaldehyde ranged from 2.5 mg/kg in sandwich paste from poultry, 2.9-4.6
+EFSA Journal 2014;12(2):3550                                                                           5
+
+                                                                Endogenous versus exogenous formaldehyde
+mg/kg in cold meat cuts, ham from poultry, turkey, up to 10-20.7 mg/kg in sausages and up to
+224-267 mg/kg in the outer layer of smoked ham (Brunn and Klostermeyer, 1984; Trezl et al., 1997).
+In fish, formaldehyde background levels show the highest values measured in food with extreme
+values 232-293 mg/kg in deep frozen hake, lowest values in haddock and mullet 1.47-4.87 mg/kg and
+average values in cod around 100 mg/kg (Bianchi et al. 2007; Weng et al. 2009). It has been noted that
+the post-mortem formation of formaldehyde in fish is the result of the reduction of trimethylamine-N-
+oxide to formaldehyde and dimethylamine (Sotelo et al., 1995; Badii and Howell, 2002)
+In plant material such as fruit vegetables, background formaldehyde levels (mg/kg) range from 6.3 and
+6.8 in apples and carrots, 9.0 in fresh water melon, 9.5 in apricot to 13.3 in tomatoes, 16.3 in bananas,
+19.5 in potatoes to 26.9, 31 and 35 in cauliflower, kohlrabi and large beetroot respectively (Trezl et al.,
+1997).
+From these figures, background levels in food products of formaldehyde are very variable and range
+from values below1 mg/kg in milk to over 200 mg/kg in some fish species (Kaminski et al., 1993;
+Trezl et al., 1997; Bianchi et al., 2007; Dhareshwar and Stella, 2008; Weng et al., 2009). Providing a
+precise exposure assessment was not the purpose of this report but assuming a person would be eating
+one kilogram of food per day (including milk, fish, meat, ham, vegetables, fruit) and giving of the
+variability of background formaldehyde concentration in raw commodities and food products, it was
+assumed that oral exposure to formaldehyde in humans from dietary sources would not exceed 100 mg
+formaldehyde per day corresponding to 1.7 and 1.4 mg/kg bw per day for 60 kg and 70 kg
+respectively. It should be noted that these exposure estimates do not include endogenously produced
+formaldehyde from dietary and endogenous sources of methanol. Table 1 summarises the background
+levels of formaldehyde in a range of food commodities as described in literature.
+Table 1:      Background levels of formaldehyde in food
+                             Formaldehyde
+        Food Product
+                             content mg/kg
+ Meat and poultry           5.7-20
+ Fish                       6.4-293
+ Milk and milk products     0.01-0.80
+ Sugar and sweeteners       0.75
+ Fruit and vegetables       6-35
+ Coffee                     3.4-16
+ Alcohol beverages          0.27-3.0
+4.        Tissue deposition studies of formaldehyde in animal species
+Few tissue deposition studies investigating the internal dose of formaldehyde in the bloodstream of
+animal species after supplementation of feed treated with formaldehyde were available. In cows,
+Buckley et al. (1988) supplemented whey forage with formaldehyde at increasing levels ranging from
+0, 185, 370 or 555 mg /kg whey given to cows at 75 kg per day corresponding to 13900, 27800, 41600
+mg per cow, respectively, or 21.4, 42.8, 64 mg/kg bw per day for a 650 kg cow. Overall, maximum
+formaldehyde levels in the milk of cows receiving 0, 21.4, 42.8 and 64 mg/kg bw per day for 33 days
+were < 0.026 mg/kg (below limit of detection), 0.052, 0.094 and 0.193 mg/kg giving maximum
+incremental increase of formaldehyde in milk of 0.02,0.07, 0.17 mg/kg milk. In addition, the authors
+concluded that it was likely that storage and pasteurisation of milk resulted in a reduction of free
+formaldehyde through irreversible binding to milk protein. Average blood concentration in cows was
+also measured and was only slightly higher at 64 mg/kg bw per day after 33 days but not significant
+(P>0.05) compared with controls (0.831 vs 0.615).
+EFSA Journal 2014;12(2):3550                                                                             6
+
+                                                                Endogenous versus exogenous formaldehyde
+In addition, a trial was performed in 6 calves per treatment (0, 24.1 and 45.0 mg/kg bw per day
+(average) calves or 185 and 370 mg/kg feed respectively) for 95 days and two calves from each
+treatment group were slaughtered at days 81, 88, and 95 days after the beginning of the trial. Tissue
+samples of heart, kidney, liver, and muscle (M. longissimus dorsi) were collected and frozen until
+subjected to formaldehyde analysis (limit of detection 0.026 mg/kg) The only significant difference
+between control and the highest dose group (P<0.05), was found for the muscle (0.256 mg/kg vs
+0.158 mg/kg, respectively for the 45.0 mg/kg bw per day (370 mg/kg) versus controls) but for no other
+organs (heart, kidney, liver) or blood levels. It is worth noting that there is considerable uncertainty in
+the data since only two animals per group were used (Buckley et al., 1988).
+In another study, five grams of formaldehyde per day from formaldehyde treated soybean meal was
+administered to dairy cows in a 10 week feeding study and an slight increase in the formaldehyde
+concentration of milk from initial 0.023 - 0.039 mg/L to 0.095 - 0.114 mg/L (three weeks) and to
+0.25 mg/L after 10 weeks (Pinault, 1989, cited from AFSSA, 2004). This data gives an incremental
+increase of 0.1 mg/L after three weeks and around 0.2 mg/L of milk after 10 weeks.
+A 12-month feeding study in beef cattle administered 1 g formaldehyde/day from formalin treated
+soybean meal showed a slight increase in formaldehyde muscle content from 0.065 mg/kg to
+0.167 mg/kg (incremental increase of 0.102 mg/kg) (Pinault, 1989, cited from AFSSA, 2004).
+From the limited studies available describing formaldehyde deposition in animal-tissues or milk and
+muscle after supplementation of feed with formaldehyde, it can be concluded that formaldehyde
+concentrations in milk and muscle have been shown to increase slightly (0.1-0.2 mg/L milk and
+muscle at minimum levels of exposure >300 mg formaldehyde per kg feed with a minimum of 33 day
+of exposure). Such levels are well below the background levels of formaldehyde in food (0.1-0.3 %).
+5.        Comparison of endogenous formaldehyde with oral exposure from food sources
+5.1.      Endogenous formaldehyde versus background levels in food and carry over from
+          animal products
+The turnover of endogenous formaldehyde to maintain the human blood steady state concentration of
+2.6 mg/l has been estimated to be approximately 0.61-0.91 mg/kg bw per minute equivalent to 878-
+1310mg/kg bw per day for half lives of 1-1.5 min. (Section 2).
+Background levels of formaldehyde have been shown to be very variable in food ranging from
+<0.1 mg/kg in milk to >200 mg/kg in fish) and taking a consumption scenario of 1 kg of food per
+person (including milk, fish, meat, ham, vegetables, fruit), it was assumed that oral exposure to
+formaldehyde in humans from background levels in food would not exceed 100 mg/kg food per person
+per day corresponding to 1.7 and 1.4 mg/kg bw per day for a 60 kg and 70 kg person, respectively
+(Section 3).
+Carry over in animal tissue or products of formaldehyde has been measured in a few limited tissue
+deposition studies mostly available in cows and showed that the maximum increase in formaldehyde
+concentration was between 0.1-0.2 mg/kg milk or meat (muscle) (Section 4). Such levels of
+formaldehyde resulting from the consumption of milk or meat from animals fed with formaldehyde-
+supplemented feed would represent 0.1-0.3 % of human oral exposure to formaldehyde from
+background levels of formaldehyde in food products (100 mg person per day or 1.7 and 1.4 mg/kg bw
+per day for 60 kg and 70 kg person) and would be below 0.001 % considering the daily turnover of
+formaldehyde (874-1310 mg/kg bw per day). Such levels were considered negligible.
+5.2.      Aspartame-derived methanol/formaldehyde versus endogenous and background levels
+          in food
+With regards to aspartame, the Scientific Panel on food additives and nutrients in its scientific opinion
+on the re-evaluation of aspartame has discussed that aspartame is partially metabolised into methanol
+EFSA Journal 2014;12(2):3550                                                                              7
+
+                                                               Endogenous versus exogenous formaldehyde
+(10 % of a dose per weight) which is then further oxidised sequentially to formaldehyde by alcohol
+dehydrogenase in humans, formic acid or formate in a pH-dependent manner and finally to carbon
+dioxide (EFSA, 2013). Endogenous methanol production also occurs and the Panel estimated the basal
+endogenous methanol production to range from a minimum of 2 to a maximum of 9 mg/kg bw per day
+in adults. In addition, pectin degradation from fruit and vegetables has been shown to be a source of
+methanol and the Panel has estimated that the body increases in methanol production following
+consumption of pectin-containing foods such as apples would range by an additional 6-20 mg/kg bw
+per day. On a daily basis, endogenous methanol and methanol from pectin degradation would range
+from 8 to about 34 mg/kg bw per day (mean to high level exposure) (EFSA, 2013). Based on actual
+usage data, methanol from aspartame (8-34 mg/kg b.w per day) only contributes 0.5-9.7 % of the total
+exposure to methanol from endogenous and exogenous sources (EFSA, 2013). Assuming exposure to
+aspartame at the current Acceptable Daily Intake (ADI) of 40 mg/kg bw per day and a 10 %
+conversion to methanol additional exposure to methanol (4 mg/kg bw per day) would be well below
+endogenous and background levels in food (2 to 9-fold). Further conversion of methanol to
+formaldehyde would yield a daily exposure of 4 mg/kg bw per day, which would only represent
+0.3-0.4 % of the total formaldehyde exposure, based on a daily turnover of formaldehyde of
+878-1310 mg/kg bw per day (EFSA, 2013).
+CONCLUSIONS
+        Formaldehyde is an essential metabolic intermediate present in all cells at an intracellular
+        concentration of around 400 µM (12 mg/L) which is synthesised endogenously. Sources of
+        endogenous formaldehyde include the one carbon pool, amino acid metabolism, methanol
+        metabolism, lipid peroxidation, and P450 dependent demethylation.
+        Formaldehyde metabolism is rapid and catalysed by glutathione-dependent formaldehyde
+        dehydrogenase and S-formyl-glutathione hydrolase to formic acid. Formic acid then enters the
+        one-carbon pool and is either excreted in the urine or oxidised to carbon dioxide and exhaled.
+        The electrophilic nature of formaldehyde makes it reactive with a variety of endogenous
+        molecules, including glutathione, proteins, nucleic acids, and folic acid.
+        Formaldehyde concentration in the blood of mammals resulting from endogenous production
+        is similar in different species with 2.2, 2.4 and 2.6 mg/L in the rat, monkey and humans
+        respectively. Formaldehyde half life in humans is very short and has been estimated to be
+        within 1-1.5 min associated with a volume of distribution approximately corresponding to
+        total body water (49 L). Total content of formaldehyde in the human body has been estimated
+        assuming its presence in all aqueous body fluids and a range of half-lives of 1 and 1.5 min,
+        daily endogenous turn over of formaldehyde has been estimated to be around 878-1310 mg/kg
+        bw per day.
+        Background levels in food products of formaldehyde are very variable and range from values
+        below 1 mg/kg in milk to over 200 mg/kg in some fish species. Considering the wide
+        variability of formaldehyde concentrations in food, daily exposure to formaldehyde from
+        would not exceed 100 mg per kilogram of food and per person.
+        Carry over in animal tissue or products of formaldehyde has been measured in a few limited
+        tissue deposition studies mostly available in cows and showed a maximum increase in
+        concentration between 0.1-0.2 mg/kg milk or meat (muscle). The levels of formaldehyde
+        resulting from the consumption of milk or meat from animals fed with formaldehyde-
+        supplemented feed would be around 0.1 % of the background levels of formaldehyde in food
+        products and below 0.001 % of daily endogenous turnover of formaldehyde. Such levels are
+        considered negligible.
+        Oral exposure to formaldehyde derived from aspartame-derived methanol at the current
+        acceptable daily intake of aspartame would be 4 mg/kg bw per day assuming a 10 %
+        conversion. Such exposure only represents 0.3-0.4 % of the combined background level in
+        food and the daily turnover of formaldehyde for an adult.
+EFSA Journal 2014;12(2):3550                                                                          8
+
+                                                               Endogenous versus exogenous formaldehyde
+REFERENCES
+Agence Francaise de Securite Sanitaire des Aliments (AFSSA), 2004. Evaluation des risques liés à
+   l’utilisation    du     formaldéhyde       en     alimentation       animale.    Available     from:
+   http://www.anses.fr/Documents/ALAN-Ra-formaldehyde.pdf
+Badii F and Howell NK, 2002. Changes in the texture and structure of cod and haddock fillets during
+   frozen storage. Food Hydrocolloids, 16, 313-319.
+Bianchi F, Careri M, Musci M and Mangia A, 2007. Fish and food safety: Determination of
+   formaldehyde in 12 fish species by SPME extraction and GC–MS analysis. Food Chemistry, 100,
+   1049-1053.
+Brunn W, Klostermeyer H.1983; Detection and determination of protein-bound formaldehyde. II.
+   Improved recovery of formaldehyde by reduction with sodium cyanoborohydride (NaCNBH3)]. Z
+   Lebensm Unters Forsch., 176, 367-370.
+Buckley KE, Fisher LJ and Mackay VG, 1988. Levels of formaldehyde in milk, blood, and tissues of
+   dairy cows and calves consuming formalin-treated whey. Journal of Agricultural and Food
+   Chemistry, 36, 1146–1150.
+Casanova M, Heck HD, Everitt JI, Harrington WW Jr, Popp JA. 1988. Formaldehyde concentrations
+   in the blood of rhesus monkeys after inhalation exposure. Food and Chemical Toxicology, 26, 715-
+   716.
+Cascieri TC, Clary JJ, 1992. Formaldehyde-oral toxicity assessment. Comments Toxicol., 4, 295–304.
+Clary JJ and Sullivan JB, 2001. Chapter 95: Formaldehyde. In: Clinical Environmental Health and
+   Toxic Exposures. Eds Sullivan JB and Krieger GR, 2nd ed. Lippincott, Williams and Wilkins,
+   Philadelphia, USA.
+Dhareshwar SS and Stella VJ, 2008. Your Prodrug Releases Formaldehyde: Should you be
+   Concerned? No! Journal of Pharmaceutical Sciences, 97, 4184-4193.
+EFSA ANS Panel (EFSA Panel on Food Additives and Nutrient Sources added to Food), 2013.
+   Scientific Opinion on the re-evaluation of aspartame (E 951) as a food additive. EFSA Journal
+   2013;11(12):3496, 263 pp. doi:10.293/j.efsa.2013.3496
+Heck HD, White EL and Casanova-Schmitz M, 1982. Determination of formaldehyde in biological
+   tissues by gas-chromatography mass-spectrometry. Biomedical Mass Spectrometry, 9, 347-353.
+Heck HD, Casanova-Schmitz M, Dodd PB, Schachter EN, Witek TJ and Tosun T, 1985.
+   Formaldehyde (CH2O) concentrations in the blood of humans and Fischer-344 rats exposed to
+   CH2O under controlled conditions. Am Ind Hyg Assoc J. 46, 1-3.
+Kaminski J, Atwal AS and Mahadevan S, 1993. Determination of formaldehyde in fresh and retail
+   milk by liquid column chromatography. Journal of the Association of Official Analytical Chemists
+   International, 76, 1010–1013.
+NTP (National Toxicology Program), 2011. Formaldehyde. Report on Carcinogens, Twelfth Edition.
+   Available online: http://ntp.niehs.nih.gov/ntp/roc/twelfth/profiles/formaldehyde.pdf
+Rétfalvi T, Németh ZI, Sarudi I and Albert L. 1998 Alteration of endogenous formaldehyde level
+   following mercury accumulation in different pig tissues. Acta Biologica Hungarica, 49, 375-379.
+Sotelo CG, Pineiro C and Perez-Martin RI, 1995. Denaturation of fish proteins during frozen storage:
+   role of formaldehyde. Lebensmittel-Untersuchung und Forschung, 200, 14-23.
+Sullivan JB and Krieger GR, 2001. Formaldehyde. In: Clinical Environmental Health Toxic
+   Exposures. 2nd ed. Philadelphia: Lippincott Williams and Wilkins, 1006-1014.
+Trezl L, Csiba A, Juhasz S, Szentgyorgyi M, Lombai G and Hullan L, 1997. Endogenous
+   formaldehyde level of foods and its biological significance. Zeitschrift für Lebensmittel-
+   Untersuchung und -Forschung, 205, 300-304.
+EFSA Journal 2014;12(2):3550                                                                          9
+
+                                                         Endogenous versus exogenous formaldehyde
+Weng X, Chon CH, Jiang H and Li D, 2009. Rapid detection of formaldehyde concentration in food
+  on a polydimethylsiloxane (PDMS) microfluidic chip. Food Chemistry, 114, 1079-1089.
+EFSA Journal 2014;12(2):3550                                                                   10
+
+                                                            Endogenous versus exogenous formaldehyde
+ABBREVIATIONS
+ADI             Acceptable daily intake
+ANS             Scientific Panel on Food Additives and Nutrient Sources added to Food of the
+                European Food Safety Authority
+EFSA            European Food Safety Authority
+SCER            EFSA’s Scientific Committee and Emerging Risks Unit
+FEEDAP          Scientific Panel on Additives and Products or Substances used in Animal Feed of the
+                European Food Safety Authority
+FIP             EFSA’s Food Ingredients and Packaging’s Unit
+EFSA Journal 2014;12(2):3550                                                                      11
+

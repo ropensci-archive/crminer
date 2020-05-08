@@ -20,18 +20,18 @@ if (identical(Sys.getenv("NOT_CRAN"), "true")) {
 }
 
 test_that("crm_pdf works with links input",{
-  vcr::use_cassette("crm_pdf_links_in", {
+  # vcr::use_cassette("crm_pdf_links_in", {
     links <- crm_links("10.3897/compcytogen.v10i4.9536", type = "all")
     res <- suppressMessages(crm_pdf(links))
-  })
+  # })
   expect_named(res, c("info", "text"))
   expect_equal(res$info$pages, 12)
 })
 
 test_that("crm_pdf works with character URL input", {
-  vcr::use_cassette("crm_pdf_character_in", {
+  # vcr::use_cassette("crm_pdf_character_in", {
     res <- suppressMessages(crm_pdf(url1))
-  })
+  # })
   expect_named(res, c("info", "text"))
   expect_type(res$info$pages, "integer")
 })
@@ -39,10 +39,10 @@ test_that("crm_pdf works with character URL input", {
 test_that("crm_pdf works for 'unspecified' = TRUE",{
   skip_if_not(Sys.getenv("CROSSREF_TDM") != "",
               "Needs 'Sys.setenv(CROSSREF_TDM = \"your-key\")' to be set.")
-  vcr::use_cassette("crm_pdf_unspecified_true", {
+  # vcr::use_cassette("crm_pdf_unspecified_true", {
     links <- crm_links("10.2903/j.efsa.2014.3550", type = "all")
     res <- crm_pdf(links, overwrite_unspecified = TRUE)
-  })
+  # })
   expect_equal(res$info$pages, 11)
 })
 
@@ -65,7 +65,6 @@ test_that("crm_pdf fails well",{
   expect_error(crm_pdf(url1, overwrite = "adfdf"),
                "overwrite must be of class logical")
   expect_error(crm_pdf(url1, read = 5), "read must be of class logical")
-  expect_error(crm_pdf(url1, cache = 5), "cache must be of class logical")
   expect_error(crm_pdf(url1, overwrite_unspecified = 5),
                "overwrite_unspecified must be of class logical")
 })

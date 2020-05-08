@@ -9,7 +9,6 @@ crm_text(
   type = "xml",
   overwrite = TRUE,
   read = TRUE,
-  cache = FALSE,
   overwrite_unspecified = FALSE,
   try_ocr = FALSE,
   ...
@@ -34,12 +33,6 @@ text from the pdf or simply download. If \code{TRUE}, you get the text from
 the pdf back. If \code{FALSE}, you only get back the metadata.
 Default: \code{TRUE}}
 
-\item{cache}{(logical) Use cached files or not. All files are written to
-your machine locally, so this doesn't affect that. This only states whether
-you want to use cached version so that you don't have to download the file
-again. The steps of extracting and reading into R still have to be performed
-when \code{cache=TRUE}. Default: \code{FALSE}}
-
 \item{overwrite_unspecified}{(logical) Sometimes the crossref API returns
 mime type 'unspecified' for the full text links (for some Wiley dois
 for example). This parameter overrides the mime type to be \code{type}.}
@@ -55,7 +48,8 @@ User-agent section below}
 \description{
 Get full text
 }
-\details{
+\section{Notes}{
+
 Note that this function is not vectorized. To do many requests
 use a for/while loop or lapply family calls, or similar.
 
@@ -70,12 +64,22 @@ but only metadata.
 
 Check out \link{auth} for details on authentication.
 }
+
 \section{Caching}{
 
 By default we use
 \code{paste0(rappdirs::user_cache_dir(), "/crminer")}, but you can
 set this directory to something different. Ignored unless getting
 pdf. See \link{crm_cache} for caching details.
+
+We cache pdfs, as well as the extracted text from the pdf. The text is
+saved in a text file with the same file name as the pdf, but with the
+file extension ".txt". On subsequent requests of the same DOI, we first look
+for a cached .txt file matching the DOI, and return it if it exists.
+If it does not exist, but the the PDF does exist, we skip the PDF
+download step and move on to reading the PDF to text; we cache that text
+in to .txt file. If there's no .txt or .pdf file, we download the PDF and
+read the pdf to text, and both are cached.
 }
 
 \section{User-agent}{
@@ -146,12 +150,11 @@ if (requireNamespace("rcrossref")) {
   library("rcrossref")
   out <- cr_members(2258, filter=c(has_full_text = TRUE), works = TRUE)
   # (links <- crm_links(out$data$DOI[10], "all"))
-  # crm_text(links, type = "pdf", cache=FALSE)
-  # system.time( cacheyes <- crm_text(links, type = "pdf", cache=TRUE) )
+  # crm_text(links, type = "pdf")
+  # system.time( first <- crm_text(links, type = "pdf") )
   ### second time should be faster
-  # system.time( cacheyes <- crm_text(links, type = "pdf", cache=TRUE) )
-  # system.time( cacheno <- crm_text(links, type = "pdf", cache=FALSE) )
-  # identical(cacheyes, cacheno)
+  # system.time( second <- crm_text(links, type = "pdf") )
+  # identical(first, second)
 }
 
 ## elsevier
@@ -168,6 +171,12 @@ link <- crm_links("10.1016/j.funeco.2010.11.003", "xml")
 link <- crm_links("10.1016/j.funeco.2010.11.003", "plain")
 # res <- crm_text(url = link, "plain")
 
+# try_ocr
+x <- crm_links('10.1006/jeth.1993.1066')
+# (out <- crm_text(x, "pdf", try_ocr = TRUE))
+x <- crm_links('10.1006/jeth.1997.2332')
+# (out <- crm_text(x, "pdf", try_ocr = TRUE))
+
 ## Wiley
 ## requires authentication
 ### load some Wiley DOIs
@@ -178,16 +187,16 @@ data(dois_wiley)
 
 ### all wiley
 tmp <- crm_links("10.1111/apt.13556", "all")
-# crm_text(url = tmp, type = "pdf", cache=FALSE,
+# crm_text(url = tmp, type = "pdf",
 #   overwrite_unspecified = TRUE)
 
 #### older dates for Wiley
 # tmp <- crm_links(dois_wiley$set2[1], "all")
-# crm_text(tmp, type = "pdf", cache=FALSE,
+# crm_text(tmp, type = "pdf",
 #    overwrite_unspecified=TRUE)
 
 ### Wiley paper with CC By 4.0 license
 # tmp <- crm_links("10.1113/jp272944", "all")
-# crm_text(tmp, type = "pdf", cache=FALSE)
+# crm_text(tmp, type = "pdf")
 }
 }
