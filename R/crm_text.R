@@ -19,7 +19,7 @@
 #' your machine locally, so this doesn't affect that. This only states whether
 #' you want to use cached version so that you don't have to download the file
 #' again. The steps of extracting and reading into R still have to be performed
-#' when `cache=TRUE`. Default: `TRUE`
+#' when `cache=TRUE`. Default: `FALSE`
 #' @param overwrite_unspecified (logical) Sometimes the crossref API returns
 #' mime type 'unspecified' for the full text links (for some Wiley dois
 #' for example). This parameter overrides the mime type to be `type`.

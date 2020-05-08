@@ -38,7 +38,7 @@ Default: \code{TRUE}}
 your machine locally, so this doesn't affect that. This only states whether
 you want to use cached version so that you don't have to download the file
 again. The steps of extracting and reading into R still have to be performed
-when \code{cache=TRUE}. Default: \code{TRUE}}
+when \code{cache=TRUE}. Default: \code{FALSE}}
 
 \item{overwrite_unspecified}{(logical) Sometimes the crossref API returns
 mime type 'unspecified' for the full text links (for some Wiley dois
