@@ -174,7 +174,8 @@ getPDF <- function(url, auth, overwrite, type, read,
     if (
       res$status_code < 202 &&
       is_ct_pdf(res) && 
-      no_elsevier_warning(res, filepath)
+      no_elsevier_warning(res, filepath) &&
+      likely_pdf(filepath)
     ) {
       filepath <- res$content
     } else {

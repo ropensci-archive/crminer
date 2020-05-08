@@ -7,6 +7,14 @@ try_extract_pdf_errors <- function(x) {
   
   html <- xml2::read_html(x)
 
+  # check for an malformed PDF file
+  # publisher: Cambridge e.g., 10.1017/s0081305200012255
+  txt <- xml2::xml_text(html)
+  if (grepl("%PDF", txt)) {
+    stop("malformed pdf detected; contact publisher, see if they can fix\n",
+      call. = FALSE)
+  }
+
   # publisher: Oxford University Press; eg.: 10.1093/reseval/rvv030
   ex <- xml2::xml_find_all(html, "//*[contains(@class, 'error')]")
   if (!length(ex) == 0 && any(nzchar(xml2::xml_text(ex)))) {
