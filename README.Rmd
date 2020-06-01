@@ -25,7 +25,7 @@ search API (https://github.com/CrossRef/rest-api-doc) for metadata for scholarly
 Publishers can optionally provide links in metadata they provide to Crossref for
 full text of the work, but that data is often missing, although coverage of links
 does seem to increase through time. Find out more about it
-at https://support.crossref.org/hc/en-us/articles/215750183-Crossref-Text-and-Data-Mining-Services
+at https://www.crossref.org/education/retrieve-metadata/rest-api/providing-full-text-links-to-tdm-tools/
 
 See <https://github.com/ropensci/rcrossref> for a full fledged R client
 for working with the Crossref search API (https://github.com/CrossRef/rest-api-doc)
