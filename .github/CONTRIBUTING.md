@@ -13,4 +13,8 @@
 * Push up to your account
 * Submit a pull request to home base at `ropensci/crminer`
 
+### README contributions
+
+Follow above instructions for forking/etc. Make changes to `README.Rmd`, then run `make readme`. If that fails for any reason, don't worry about it, just submit the changed `README.Rmd` in your pull request.
+
 ### Also, check out our [discussion forum](https://discuss.ropensci.org)
