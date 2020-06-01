@@ -193,7 +193,7 @@ You can also use `crm_xml()` to get XML.
 Get PDF full text links with `crm_links()`
 
 ```{r}
-links <- lapply(dois_pensoft[1:3], crm_links, type = "pdf")
+links <- lapply(dois_hindawi[1:3], crm_links, type = "pdf")
 ```
 
 Then get pdf and text is extracted

@@ -18,7 +18,7 @@ search API (https://github.com/CrossRef/rest-api-doc) for metadata for scholarly
 Publishers can optionally provide links in metadata they provide to Crossref for
 full text of the work, but that data is often missing, although coverage of links
 does seem to increase through time. Find out more about it
-at https://support.crossref.org/hc/en-us/articles/215750183-Crossref-Text-and-Data-Mining-Services
+at https://www.crossref.org/education/retrieve-metadata/rest-api/providing-full-text-links-to-tdm-tools/
 
 See <https://github.com/ropensci/rcrossref> for a full fledged R client
 for working with the Crossref search API (https://github.com/CrossRef/rest-api-doc)
@@ -193,7 +193,7 @@ Get PDF full text links with `crm_links()`
 
 
 ```r
-links <- lapply(dois_pensoft[1:3], crm_links, type = "pdf")
+links <- lapply(dois_hindawi[1:3], crm_links, type = "pdf")
 ```
 
 Then get pdf and text is extracted
@@ -204,10 +204,8 @@ Then get pdf and text is extracted
 ```
 
 ```
-#> <document>/Users/sckott/Library/Caches/R/crminer/10445.pdf
-#>   Pages: 28
-#>   No. characters: 73844
-#>   Created: 2106-02-07
+#> <document>/Users/sckott/Library/Caches/R/crminer/598193.txt
+#>   No. characters: 69809
 ```
 
 
@@ -216,11 +214,7 @@ cat(substring(res$text[[1]], 1, 300))
 ```
 
 ```
-#>                                       Research Ideas and Outcomes 2: e10445
-#>                                       doi: 10.3897/rio.2.e10445
-#>                                                           Project Report
-#> EMODnet Workshop on mechanisms and guidelines
-#> to mobilise historical data into biogeogr
+#> Journal of Healthcare Engineering · Vol. 5 · No. 2 · 2014 Page 123–144                         123
 ```
 
 You can also use `crm_pdf()` to get PDF.
@@ -236,7 +230,7 @@ path <- system.file("examples", "MairChamberlain2014RJournal.pdf", package = "cr
 ```
 
 ```
-#> <document>/Library/Frameworks/R.framework/Versions/3.6/Resources/library/crminer/examples/MairChamberlain2014RJournal.pdf
+#> <document>/Library/Frameworks/R.framework/Versions/4.0/Resources/library/crminer/examples/MairChamberlain2014RJournal.pdf
 #>   Pages: 4
 #>   No. characters: 17358
 #>   Created: 2014-07-29
