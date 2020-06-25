@@ -6,8 +6,8 @@
 #' @param try_ocr (logical) whether to try extracting OCRed 
 #' pages with `pdftools::pdf_ocr_text()`. default: `FALSE`.
 #' if `FALSE`, we use `pdftools::pdf_text()`
-#' @param ... args passed on to [pdftools::pdf_info()]
-#' and [pdftools::pdf_text()] (or [pdftools::pdf_ocr_text()] if
+#' @param ... args passed on to `pdftools::pdf_info()`
+#' and `pdftools::pdf_text()` (or `pdftools::pdf_ocr_text()` if
 #' `try_ocr=TRUE`) - any args are passed to
 #' both of those function calls, which makes sense
 #' @return An object of class `crm_pdf` with a slot for
