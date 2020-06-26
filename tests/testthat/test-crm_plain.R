@@ -20,10 +20,10 @@ test_that("crm_plain works with links input",{
   expect_is(res, "character")
   expect_length(res, 6)
   expect_gt(nchar(paste0(res, collapse = "")), 100000L)
-  expect_true(any(grepl(title, res)))`
+  expect_true(any(grepl(title, res)))
 })
 
-test_that("crm_plain works with links input, another eg",{
+test_that("crm_plain works with links input, another eg", {
   skip_on_cran()
   skip_on_ci()
 
