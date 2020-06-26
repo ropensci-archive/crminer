@@ -12,7 +12,7 @@ if (identical(Sys.getenv("NOT_CRAN"), "true")) {
 
 test_that("crm_plain works with links input",{
   skip_on_cran()
-  # skip_on_travis()
+  skip_on_ci()
 
   # vcr::use_cassette("crm_plain_links_in", {
   res <- suppressMessages(crm_plain(link1))
@@ -20,12 +20,12 @@ test_that("crm_plain works with links input",{
   expect_is(res, "character")
   expect_length(res, 6)
   expect_gt(nchar(paste0(res, collapse = "")), 100000L)
-  expect_true(any(grepl(title, res)))
+  expect_true(any(grepl(title, res)))`
 })
 
 test_that("crm_plain works with links input, another eg",{
   skip_on_cran()
-  # skip_on_travis()
+  skip_on_ci()
 
   # vcr::use_cassette("crm_plain_elsevier", {
   res <- suppressMessages(crm_plain(link2))
