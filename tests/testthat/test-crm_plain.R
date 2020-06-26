@@ -14,23 +14,25 @@ test_that("crm_plain works with links input",{
   skip_on_cran()
   # skip_on_travis()
 
-  vcr::use_cassette("crm_plain_links_in", {
-    res <- suppressMessages(crm_plain(link1))
-  }, preserve_exact_body_bytes = TRUE)
+  # vcr::use_cassette("crm_plain_links_in", {
+  res <- suppressMessages(crm_plain(link1))
+  # }, preserve_exact_body_bytes = TRUE)
   expect_is(res, "character")
-  expect_gt(nchar(res), 100000L)
-  expect_match(res, title)
+  expect_length(res, 6)
+  expect_gt(nchar(paste0(res, collapse = "")), 100000L)
+  expect_true(any(grepl(title, res)))
 })
 
 test_that("crm_plain works with Elsevier input",{
   skip_on_cran()
   # skip_on_travis()
 
-  vcr::use_cassette("crm_plain_elsevier", {
-    res <- suppressMessages(crm_plain(link2))
-  }, preserve_exact_body_bytes = TRUE)
+  # vcr::use_cassette("crm_plain_elsevier", {
+  res <- suppressMessages(crm_plain(link2))
+  # }, preserve_exact_body_bytes = TRUE)
   expect_is(res, "character")
-  expect_gt(nchar(res), 100L)
+  expect_length(res, 8)
+  expect_gt(nchar(paste0(res, collapse = "")), 100L)
 })
 
 # FIXME: this doesn't quite work, 

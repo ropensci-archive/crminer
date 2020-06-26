@@ -13,7 +13,7 @@
 #' ## like crm_cache$cache_path_set(full_path = "your/path")
 #'
 #' ## peerj
-#' x <- crm_pdf("https://peerj.com/articles/2356.pdf")
+#' x <- crm_pdf("https://peerj.com/articles/6840.pdf")
 #'
 #' ## pensoft
 #' data(dois_pensoft)

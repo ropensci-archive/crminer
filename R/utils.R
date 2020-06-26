@@ -59,18 +59,6 @@ cr_auth <- function(url, type) {
   }
 }
 
-getTEXT <- function(x, type, auth, ...){
-  cli <- crul::HttpClient$new(url = x, headers = auth, opts = list(...))
-  res <- cli$get()
-  switch(
-    type,
-    xml = xml2::read_xml(res$parse("UTF-8")),
-    plain = res$parse("UTF-8"),
-    html = xml2::read_html(res$parse("UTF-8")),
-    stop("only 'xml', 'plain', and 'html' supported")
-  )
-}
-
 last <- function(x) x[length(x)]
 lastn <- function(x, n = 1) {
   stopifnot(n >= 1)
@@ -84,15 +72,15 @@ make_file_path <- function(url, doi, type) {
       tmp <- strsplit(url, "=")[[1]]
       doi <- tmp[length(tmp)]
     }
-    ff <- file.path(crm_cache$cache_path_get(),
-      paste0(sub("/", ".", doi), ".pdf"))
+    ff <- file.path(crm_cache$cache_path_get(), type,
+      paste0(sub("/", ".", doi), paste0(".", type)))
   } else if (last(strsplit(url, "/")[[1]]) == "pdf" && !grepl("elsevier", url)) {
     # special handling for urls that just end in pdf
     parts <- strsplit(url, "/")[[1]]
     parts <- parts[-length(parts)]
-    ff <- file.path(crm_cache$cache_path_get(), paste0(
+    ff <- file.path(crm_cache$cache_path_get(), type, paste0(
       gsub("=|-|\\s", "_", paste0(lastn(parts, 3), collapse="")),
-      ".pdf"
+      paste0(".", type)
     ))
   } else {
     burl <- sub("\\?.+", "", url)
@@ -101,7 +89,7 @@ make_file_path <- function(url, doi, type) {
     } else {
       basename(burl)
     }
-    ff <- file.path(crm_cache$cache_path_get(), ff)
+    ff <- file.path(crm_cache$cache_path_get(), type, ff)
   }
   return(path.expand(ff))
 }
@@ -154,12 +142,35 @@ no_elsevier_warning <- function(x, file) {
   return(TRUE)
 }
 
+getTEXT <- function(url, auth, type, doi, ...) {
+  dir.create(file.path(crm_cache$cache_path_get(), type),
+    showWarnings = FALSE, recursive = TRUE)
+  filepath <- make_file_path(url, doi, type)
+  if (file.exists(filepath)) {
+    cache_mssg(filepath)
+    return(switch_text(filepath, type))
+  }
+  cli <- crul::HttpClient$new(url = url, headers = auth,
+    opts = list(followlocation = TRUE, ...))
+  res <- cli$get(disk = filepath)
+  switch_text(res$content, type)
+}
+switch_text <- function(x, type) {
+  switch(
+    type,
+    xml = xml2::read_xml(x),
+    txt = readLines(x, warn = FALSE, encoding = "UTF-8"),
+    html = xml2::read_html(x),
+    stop("only 'xml', 'txt', and 'html' supported")
+  )
+}
 getPDF <- function(url, auth, overwrite, type, read,
   doi, try_ocr = FALSE, ...) {
 
-  crm_cache$mkdir()
+  dir.create(file.path(crm_cache$cache_path_get(), "pdf"),
+    showWarnings = FALSE, recursive = TRUE)
   filepath <- make_file_path(url, doi, type)
-  txtpath <- sub("pdf", "txt", filepath)
+  txtpath <- sub("pdf$", "txt", filepath)
   if (file.exists(txtpath) && read) {
     cache_mssg(txtpath)
     return(give_txt(txtpath))
@@ -192,7 +203,7 @@ getPDF <- function(url, auth, overwrite, type, read,
   }
 
   if (read) {
-    txtpath <- sub("pdf", "txt", filepath)
+    txtpath <- sub("pdf$", "txt", filepath)
     if (!file.exists(txtpath)) {
       message("Extracting text from pdf...")
       out <- crm_extract(path = filepath)

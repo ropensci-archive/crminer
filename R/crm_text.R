@@ -43,16 +43,17 @@
 #' @section Caching:
 #' By default we use
 #' `paste0(rappdirs::user_cache_dir(), "/crminer")`, but you can
-#' set this directory to something different. Ignored unless getting
-#' pdf. See [crm_cache] for caching details.
-#' 
-#' We cache pdfs, as well as the extracted text from the pdf. The text is 
-#' saved in a text file with the same file name as the pdf, but with the 
-#' file extension ".txt". On subsequent requests of the same DOI, we first look
-#' for a cached .txt file matching the DOI, and return it if it exists. 
-#' If it does not exist, but the the PDF does exist, we skip the PDF 
-#' download step and move on to reading the PDF to text; we cache that text 
-#' in to .txt file. If there's no .txt or .pdf file, we download the PDF and 
+#' set this directory to something different. Paths are setup under "/crminer"
+#' for each of the file types: "/crminer/pdf", "/crminer/xml", "/crminer/txt",
+#' and "/crminer/html". See [crm_cache] for caching details.
+#'
+#' We cache all file types, as well as the extracted text from the pdf. The
+#' text is saved in a text file with the same file name as the pdf, but with
+#' the file extension ".txt". On subsequent requests of the same DOI, we first
+#' look for a cached .txt file matching the DOI, and return it if it exists.
+#' If it does not exist, but the the PDF does exist, we skip the PDF
+#' download step and move on to reading the PDF to text; we cache that text
+#' in to .txt file. If there's no .txt or .pdf file, we download the PDF and
 #' read the pdf to text, and both are cached.
 #'
 #' @section User-agent:
@@ -68,15 +69,15 @@
 #' For more information on user agent's, and exmaples of user agent strings you
 #' can use here, see
 #' https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent
-#' 
+#'
 #' @section Elsevier-partial:
-#' For at least some PDFs from Elsevier, most likely when you do not have 
-#' full access to the full text, they will return a successful response, 
+#' For at least some PDFs from Elsevier, most likely when you do not have
+#' full access to the full text, they will return a successful response,
 #' but only return the first page of the PDF. They do however include
 #' a warning message in the response headers, which we look for and pass
 #' on to the user AND delete the pdf because we assume if you are using this
 #' package you don't want just the first page but the whole article. This
-#' behavior as far as we know does not occur with other article types 
+#' behavior as far as we know does not occur with other article types
 #' (xml, plain), but let us know if you see it.
 #' @examples \dontrun{
 #' # set a temp dir. cache path
@@ -137,7 +138,7 @@
 #' ## plain text
 #' link <- crm_links("10.1016/j.funeco.2010.11.003", "plain")
 #' # res <- crm_text(url = link, "plain")
-#' 
+#'
 #' # try_ocr
 #' x <- crm_links('10.1006/jeth.1993.1066')
 #' # (out <- crm_text(x, "pdf", try_ocr = TRUE))
@@ -187,13 +188,14 @@ crm_text.tdmurl <- function(url, type = 'xml',
 
   url <- maybe_overwrite_unspecified(overwrite_unspecified, url, type)
   auth <- cr_auth(url, type)
+  doi <- attr(url, "doi")
   switch(
     pick_type(type, url),
-    xml = getTEXT(get_url(url, 'xml'), type, auth, ...),
-    plain = getTEXT(get_url(url, 'xml'), type, auth, ...),
-    html = getTEXT(get_url(url, 'html'), type, auth, ...),
-    pdf = getPDF(url = get_url(url, 'pdf'), auth, overwrite, type,
-                 read, attr(url, "doi"), try_ocr, ...)
+    xml = getTEXT(get_url(url, 'xml'), auth, type, doi, ...),
+    plain = getTEXT(get_url(url, 'xml'), auth, 'txt', doi, ...),
+    html = getTEXT(get_url(url, 'html'), auth, type, doi, ...),
+    pdf = getPDF(get_url(url, 'pdf'), auth, overwrite, type,
+                 read, doi, try_ocr, ...)
   )
 }
 

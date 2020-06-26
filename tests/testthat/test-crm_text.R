@@ -8,12 +8,12 @@ skip_on_cran()
 crm_cache$cache_path_set(path = "crminer", type = "tempdir")
 
 test_that("crm_text works: pdf", {
-  # vcr::use_cassette("crm_text_type_pdf", {
+  vcr::use_cassette("crm_text_type_pdf_prep", {
     links <- crm_links("10.7717/peerj.8746", "pdf")
-    pdf_read <- suppressMessages(crm_text(links, "pdf", read = FALSE,
-                                          verbose = FALSE))
-    pdf <- suppressMessages(crm_text(links, "pdf", verbose = FALSE))
-  # })
+  })
+  pdf_read <- suppressMessages(crm_text(links, "pdf", read = FALSE,
+                                        verbose = FALSE))
+  pdf <- suppressMessages(crm_text(links, "pdf", verbose = FALSE))
 
   expect_is(pdf_read, "character")
   expect_is(pdf, "crm_pdf")
@@ -55,13 +55,13 @@ test_that("crm_text with pdf fails for 'unspecified' = FALSE",{
 })
 
 test_that("crm_text works w/ elsevier DOI tranferred from another publisher",{
-  vcr::use_cassette("crm_text_plain_elsevier_doi_transfer", {
+  vcr::use_cassette("crm_text_plain_elsevier_doi_transfer_prep", {
     x <- crm_links("10.1016/j.intacc.2003.09.001")
-    out <- crm_text(x, "plain")
   })
+  out <- crm_text(x, "plain")
   expect_is(out, "character")
-  expect_match(out, "10.1016/j.intacc.2003.09.001")
-  expect_match(out, "Directors of Southern Africa")
+  expect_true(any(grepl("10.1016/j.intacc.2003.09.001", out)))
+  expect_true(any(grepl("Directors of Southern Africa", out)))
 })
 
 # test_that("ocr parameter", {

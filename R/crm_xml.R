@@ -25,12 +25,6 @@
 #' (links <- crm_links(dois_pensoft[1], "all"))
 #' ### xml
 #' crm_xml(url=links)
-#'
-#' ## hindawi
-#' data(dois_pensoft)
-#' (links <- crm_links(dois_pensoft[1], "all"))
-#' ### xml
-#' crm_xml(links)
 #' }
 crm_xml <- function(url, overwrite_unspecified = FALSE, ...) {
   UseMethod("crm_xml")
@@ -44,17 +38,17 @@ crm_xml.default <- function(url, overwrite_unspecified = FALSE, ...) {
 #' @export
 crm_xml.tdmurl <- function(url, overwrite_unspecified = FALSE, ...) {
   assert(overwrite_unspecified, "logical")
-
   url <- maybe_overwrite_unspecified(overwrite_unspecified, url, "xml")
   if (is.null(url$xml[[1]])) stop("no xml link found")
-  getTEXT(url$xml[[1]], "xml", cr_auth(url, 'xml'), ...)
+  getTEXT(url$xml[[1]], cr_auth(url, 'xml'), "xml",
+    attr(url, "doi"), ...)
 }
 
 #' @export
 crm_xml.list <- function(url, overwrite_unspecified = FALSE, ...) {
   if (!all(vapply(url, class, "", USE.NAMES = FALSE) == "tdmurl")) {
     stop("list input to 'crm_xml' must be a list of tdmurl objects",
-         call. = FALSE)
+      call. = FALSE)
   }
   crm_xml(url$xml, overwrite_unspecified = overwrite_unspecified, ...)
 }
@@ -62,5 +56,5 @@ crm_xml.list <- function(url, overwrite_unspecified = FALSE, ...) {
 #' @export
 crm_xml.character <- function(url, overwrite_unspecified = FALSE, ...) {
   crm_xml(as_tdmurl(url, "xml"),
-          overwrite_unspecified = overwrite_unspecified, ...)
+    overwrite_unspecified = overwrite_unspecified, ...)
 }

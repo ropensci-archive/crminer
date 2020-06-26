@@ -42,7 +42,8 @@ crm_html.tdmurl <- function(url, overwrite_unspecified = FALSE, ...) {
   if (is.null(url$html[[1]])) {
     stop("no html text link found", call. = FALSE)
   }
-  getTEXT(url$html[[1]], "html", cr_auth(url, 'html'), ...)
+  getTEXT(url$html[[1]], cr_auth(url, 'html'), "html", attr(url, "doi"),
+    ...)
 }
 
 #' @export
