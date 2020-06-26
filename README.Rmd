@@ -228,4 +228,4 @@ cat(substring(res$text[[1]], 1, 300))
 
 [![rofooter](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)
 
-[coc]: https://github.com/ropensci/crminer/blob/master/CODE_OF_CONDUCT.md
+[coc]: https://github.com/ropensci/crminer/blob/master/.github/CODE_OF_CONDUCT.md
