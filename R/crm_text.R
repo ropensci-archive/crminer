@@ -22,7 +22,7 @@
 #' pages with `pdftools::pdf_ocr_text()`. default: `FALSE`.
 #' if `FALSE`, we use `pdftools::pdf_text()`
 #' @param ... Named curl options passed on to [crul::verb-GET], see
-#' [curl::curl_options()] for available curl options. See especially the
+#' `curl::curl_options()` for available curl options. See especially the
 #' User-agent section below
 #'
 #' @section Notes:

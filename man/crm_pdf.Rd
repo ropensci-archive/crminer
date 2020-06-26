@@ -27,7 +27,7 @@ mime type 'unspecified' for the full text links (for some Wiley dois
 for example). This parameter overrides the mime type to be \code{type}.}
 
 \item{...}{Named curl options passed on to \link[crul:verb-GET]{crul::verb-GET}, see
-\code{\link[curl:curl_options]{curl::curl_options()}} for available curl options. See especially the
+\code{curl::curl_options()} for available curl options. See especially the
 User-agent section below}
 }
 \description{

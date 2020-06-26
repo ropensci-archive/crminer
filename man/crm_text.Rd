@@ -42,7 +42,7 @@ pages with \code{pdftools::pdf_ocr_text()}. default: \code{FALSE}.
 if \code{FALSE}, we use \code{pdftools::pdf_text()}}
 
 \item{...}{Named curl options passed on to \link[crul:verb-GET]{crul::verb-GET}, see
-\code{\link[curl:curl_options]{curl::curl_options()}} for available curl options. See especially the
+\code{curl::curl_options()} for available curl options. See especially the
 User-agent section below}
 }
 \description{
