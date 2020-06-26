@@ -23,7 +23,7 @@ test_that("crm_plain works with links input",{
   expect_true(any(grepl(title, res)))
 })
 
-test_that("crm_plain works with Elsevier input",{
+test_that("crm_plain works with links input, another eg",{
   skip_on_cran()
   # skip_on_travis()
 
