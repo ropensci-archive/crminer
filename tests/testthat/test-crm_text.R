@@ -55,13 +55,16 @@ test_that("crm_text with pdf fails for 'unspecified' = FALSE",{
 })
 
 test_that("crm_text works w/ elsevier DOI tranferred from another publisher",{
+  skip_on_cran()
   vcr::use_cassette("crm_text_plain_elsevier_doi_transfer_prep", {
-    x <- crm_links("10.1016/j.intacc.2003.09.001")
+    x <- crm_links("10.1016/j.actao.2019.01.006")
   })
+
+  skip_on_ci() # no elsevier access
   out <- crm_text(x, "plain")
   expect_is(out, "character")
-  expect_true(any(grepl("10.1016/j.intacc.2003.09.001", out)))
-  expect_true(any(grepl("Directors of Southern Africa", out)))
+  expect_true(any(grepl("10.1016/j.actao.2019.01.006", out)))
+  # expect_true(any(grepl("Directors of Southern Africa", out)))
 })
 
 # test_that("ocr parameter", {

@@ -62,7 +62,7 @@ link <- crm_links("10.1016/j.physletb.2010.10.049", "plain")
 crm_plain(link)
 
 # another eg, which requires Crossref TDM authentication, see ?auth
-link <- crm_links("10.1016/j.funeco.2010.11.003", "plain")
+link <- crm_links(dois_elsevier[3], "plain")
 # crm_plain(link)
 }
 }

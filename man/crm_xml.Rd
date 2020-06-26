@@ -66,11 +66,5 @@ data(dois_pensoft)
 (links <- crm_links(dois_pensoft[1], "all"))
 ### xml
 crm_xml(url=links)
-
-## hindawi
-data(dois_pensoft)
-(links <- crm_links(dois_pensoft[1], "all"))
-### xml
-crm_xml(links)
 }
 }

@@ -69,13 +69,14 @@ Check out \link{auth} for details on authentication.
 
 By default we use
 \code{paste0(rappdirs::user_cache_dir(), "/crminer")}, but you can
-set this directory to something different. Ignored unless getting
-pdf. See \link{crm_cache} for caching details.
+set this directory to something different. Paths are setup under "/crminer"
+for each of the file types: "/crminer/pdf", "/crminer/xml", "/crminer/txt",
+and "/crminer/html". See \link{crm_cache} for caching details.
 
-We cache pdfs, as well as the extracted text from the pdf. The text is
-saved in a text file with the same file name as the pdf, but with the
-file extension ".txt". On subsequent requests of the same DOI, we first look
-for a cached .txt file matching the DOI, and return it if it exists.
+We cache all file types, as well as the extracted text from the pdf. The
+text is saved in a text file with the same file name as the pdf, but with
+the file extension ".txt". On subsequent requests of the same DOI, we first
+look for a cached .txt file matching the DOI, and return it if it exists.
 If it does not exist, but the the PDF does exist, we skip the PDF
 download step and move on to reading the PDF to text; we cache that text
 in to .txt file. If there's no .txt or .pdf file, we download the PDF and
