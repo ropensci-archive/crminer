@@ -107,7 +107,7 @@ crm_links <- function(doi, type = 'all', ...) {
         withtype <- Filter(function(w) !grepl("lookup", w$URL), withtype)
       }
 
-      if (basename(res$member) == "2258") {
+      if (basename(res$member) %in% c("2258", "179")) {
         withtype <- lapply(withtype, function(z) {
           z$URL <- sub("http://", "https://", z$URL)
           z
