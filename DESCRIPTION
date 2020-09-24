@@ -34,7 +34,7 @@ Suggests:
     rcrossref,
     testthat,
     vcr (>= 0.5.4)
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
 X-schema.org-applicationCategory: Literature
 X-schema.org-keywords: text-mining, literature, publications, crossref, pdf, xml
 X-schema.org-isPartOf: https://ropensci.org
