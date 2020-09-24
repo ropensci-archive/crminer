@@ -46,6 +46,8 @@ test_that("crm_links works", {
 })
 
 test_that("crm_links: elife special handling", {
+  skip_on_cran()
+
   # for elife, in crm_links we remove one or more urls that don't work, 
   # and should get no more than 2 urls:
   # 1. normal articles should have a pdf and xml url
@@ -86,6 +88,8 @@ test_that("crm_links - email works", {
 })
 
 test_that("crm_links - email utility functions work", {
+  skip_on_cran()
+  
   Sys.setenv("crossref_email" = "name@example.com")
   mt <- email_get()
   expect_is(mt, "character")
